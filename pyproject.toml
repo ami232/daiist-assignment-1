@@ -1,7 +1,7 @@
 [project]
 name = "daiist-assignment1"
 version = "0.1.0"
-description = "Assignment 1: linear/logistic regression trained three ways, served with Gradio"
+description = "Assignment 1: logistic regression predicting premium Vinho Verde wines, trained three ways, served with Gradio"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "numpy>=2.0",

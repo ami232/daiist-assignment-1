@@ -1,0 +1,13 @@
+,scikit-learn,Manual PyTorch,nn.Module + optim
+fixed acidity,0.3486,0.3484,0.3484
+volatile acidity,-0.5462,-0.547,-0.547
+citric acid,0.0388,0.0388,0.0388
+residual sugar,0.1974,0.1976,0.1976
+chlorides,-0.4817,-0.4808,-0.4808
+total sulfur dioxide,-0.192,-0.1919,-0.1919
+pH,0.2953,0.2951,0.2951
+sulphates,0.2739,0.2737,0.2737
+alcohol,1.1235,1.124,1.124
+color,0.392,0.3915,0.3915
+free_so2_ratio,0.3724,0.3723,0.3723
+intercept,-2.1069,-2.1073,-2.1073
