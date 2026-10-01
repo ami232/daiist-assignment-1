@@ -232,11 +232,10 @@ that total is what matters most.
 I used **Claude (Anthropic), through Claude Code**, as an assistant
 throughout this assignment.
 
-- **Decisions (mine)**: I chose the by searching on the internet and asking Gemini too,
-  , chose the final feature set after comparing the options,
-  decided to keep the approach as simpleand neat as possible to better understand
+- **Decisions (mine)**: I chose the dataset by searching on the internet and asking Gemini too, chose the final feature set after comparing the options,
+  decided to keep the approach as simple and neat as possible to better understand
   everything.
-- **Code**: Claude helped me with the code, specially in the more technical parts.
+- **Code**: Claude helped me with the code, especially in the more technical parts.
   I went through it step by step with Claude's explanations until I understood
   each part.
 - **Report**: I drafted a first version of this report, including the
