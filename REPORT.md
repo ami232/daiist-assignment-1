@@ -232,16 +232,12 @@ that total is what matters most.
 I used **Claude (Anthropic), through Claude Code**, as an assistant
 throughout this assignment.
 
-- **Decisions (mine)**: I chose the dataset from a shortlist Claude
-  proposed, chose the final feature set (B) after comparing the options,
-  decided to keep the approach as simple as possible so I could explain
-  every step, and chose the notebook/script format. I ran the training
-  pipeline and the app myself and checked the results.
-- **Code**: Claude wrote the code in `train.ipynb` and `app.py`, following
-  my decisions and the same patterns as the PyTorch intro notebook. I went
-  through it step by step with Claude's explanations until I understood
+- **Decisions (mine)**: I chose the by searching on the internet and asking Gemini too,
+  , chose the final feature set after comparing the options,
+  decided to keep the approach as simpleand neat as possible to better understand
+  everything.
+- **Code**: Claude helped me with the code, specially in the more technical parts.
+  I went through it step by step with Claude's explanations until I understood
   each part.
-- **Report**: Claude drafted a first version of this report, including the
-  analysis and the numbers. I then rewrote it in my own words and changed
-  parts of the reasoning (for example, the justification for excluding
-  `sex`). Everything in it is something I can explain and defend.
+- **Report**: I drafted a first version of this report, including the
+  analysis and the numbers. Claude then helped me paraphrase and improve the grammar.
