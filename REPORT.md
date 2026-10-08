@@ -1,45 +1,78 @@
-# Assignment 1 Report
+**Designing artificial intelligence & implementing smart technologies**   
+**Assignment 1**
 
-*Delete this italic guidance as you fill in each section. You'll be asked to
-defend any of this without your code in front of you — write only what you
-can actually explain.*
+# **Madrid Bargain Finder**  
 
-- **Name**:
-- **Student ID**:
-- **Email**:
-- **Group**: [BBADBA 5A | BBADBA 5B | PPLEDBA 5A | BDBA 3A]
+# **using Idealista Data**
 
-## Dataset
+Name: Allan Stalker  
+Student ID: 19004  
+Email: astalker.ieu2022@student.ie.edu  
+Group: BBADBA 5A
 
-*What is it, where did you get it, what does one row represent, how many
-rows/columns, and why did you pick it.*
+## 
 
-## Business / real-life framing
+## **Dataset**
 
-*The hypothetical scenario this model serves, and what that scenario implies
-for how you built the pipeline — target definition, whether a time-based
-split was necessary and why (or why not), which metric should drive the
-decision threshold and why.*
+The dataset I will be working with is Idealista data from 2018, published by researchers (Rey-Blanco et al., 2024), ODbL licence. One row in the dataset is equal to one listing in one quarter in Madrid in 2018\. The data set is 94,815 rows × 41 columns with 75,804 unique flats and will be using 75,240 after cleaning. Some of the features included are standard variables for home listing but also unique ones like building quality, year and distances, from a metro or from the city center. I chose this data set because I live in Madrid and thought my knowledge of the city could help me better understand the data and help with decision making during feature engineering. Additionally, I found this data set much richer than other real estate data sets on kaggle as well as this is data from real listings, not pre cleaned data. This allows me to learn how to handle real data rather than clean optimized perfect data from a pre cleaned kaggle data set.
 
-## Data preparation & feature engineering
+## **Business framing**
 
-*What you engineered and why, and any data-quality decisions you made along
-the way — e.g. "segment X had defective data, so I excluded it and used a
-population-average default for scope Y at inference time; the impact of
-that choice is Z."*
+This project is for an investor seeking to buy bargain listings in order to make a good investment. This project not only will create a tool that allows them to find these bargains by showing the estimated market price of the property against what they are listed for, but also help determine what factors affect the price of the property so they have a much better understanding of the real estate market. Their current problem is that they want to invest however they are inexperienced and scared of risking their money, however they do want to make an investment, they just want to feel more prepared and confident. This tool will support them because it will find the best deals and help them understand what drives value in the market.
 
-## Modeling: three implementations, one model
+The tool works by inputting the features of the apartment, such as the number of rooms, location, amenities, building age etc, and with that it estimates the apartment's market price. Then the user can compare this with the listing price and determine whether it is worth buying. A bargain is defined as a property whose listing price is at least the margin of safety (26%) below its estimated market price, and not more than 50% below. A margin of safety is needed because the model is not perfect: on the validation set it is typically off by around 14%. I set the margin at 26%, which is the 75th percentile of the validation error, meaning only 1 in 4 listings sits that far from its estimate by normal error. The reason I chose the 75th percentile over the 90th percentile is the 90th percentile is set at 40% margin which leaves a very small gap for bargains, and the median (14.5%) is the model's typical error, so half of normal listings already deviate that much and many "bargains" would just be model error. The 75th percentile is the right mix between safety of investment with regard to error and realistic deals for the user. Additionally a discount above 50% should also be excluded as it is too high and possibly something is misleading in the property. With these rules, the tool flags around 6% of listings as bargains (915 on the test set).
 
-*Which model (linear or logistic regression) and why. A results table
-comparing scikit-learn, the manual PyTorch loop, and the standard
-torch.nn.Module/torch.optim workflow, on the same test set, against the
-naive baseline. Do the three agree? If not, why not?*
+The target we are predicting in the case of the model is the asking price, but overall is the estimated market price of the apartment. Asking price is the prediction because that is what is available and the true value can be subjective, so we use what property owners feel their property is worth, and use the features of their property to determine if it is true. We are removing duplicates to lower the risk of data leakage, as if it has the same listing twice, duplicates overweight some flats and add noisy copies of the target. We take the mean price since it averages out the privacy noise. We also use the log(price) because we want to focus on relative differences, not absolute, because a €100k difference for a €200k property vs a €2M property is a huge difference. €100k is 50% of €200k but only 5% of €2M, so clearly different impact as an investor.
 
-## Limitations & next steps
+Regarding the split of data, I used a temporal split that replicates how the market evolves, as we would have older market data to predict new one and the splits would be made by quarter. The first 3 quarters for training and the last quarter split in half, 1 for validation 1 for testing, this works because Q4 is 41 % of the data. In the Q4 data I stratified by price band so that the validation and test would have a similar mix of cheap and expensive listings.
 
-*Real limitations you found, and concretely how you'd address each one with
-more time or data — not generic hedging.*
+Regarding the metric, I will be using RMSE on log price, because RMSE punishes big mistakes by squaring the error and big mistakes hurt the objective of my target user as they are investing here so if they make a big mistake it cost them big, so we need to ensure that these mistakes are shown. The log is there to make them relative as mentioned above.
 
-## Generative AI use disclosure
+The investor's knowledge and point of view not only described the project, it shaped the main decisions in the pipeline. I used Q1-Q3 as the training data because investors use past data to predict the future, so I did the same in this pipeline. A random split would make the score look better than it is because it could use future data to predict. I used the log price because relative price differences are more important for an investor than absolute, as I explained above with the €100k difference example. I added the margin, in order to protect the investors from potential risks with errors in the model. I did this because normal model error would get flagged as bargains, and the investor overpays. I dropped listings that were €/m² \< 1,000 because it tends not to be realistic listing, could be partial ownership, a typo, so removed them during cleaning. We need this as these would show up as the top "bargains" in the investor's list, when in reality it is not. Overall the idea was to build a tool an investor can trust and learn with, so that was at the center of all the decisions.
 
-*Per the syllabus AI Policy: what you used and how, or "no AI content used."*
+## **Data preparation & feature engineering**
+
+Firstly, I found that there were 13,829 flats listed more than once using the “ASSETID” to identify them. I decided to merge these rows and use the mean price because random noise can push some prices up and others down, so averaging helps cancel this out. The reason I merged them is because keeping duplicates would give some flats more importance in the model than others, which could bias the results. Additionally, since duplicates are always within the same quarter, the leakage risk is specifically in Q4, where one copy could end up in validation and another in test, meaning the two sets would not be completely independent.
+
+Additionally I removed rows where the value seemed unreasonable, must have a data-entry error or the listing is not a normal sale, so it would mislead a bargain-finding tool. Some of the rules used were for apartments where €/m² \< 1,000. The €1,000 isn't a statistical cut-off. It's a domain and business threshold, and the statistics support it rather than define it, as it is 2.4 SD below average. These flats are unusually cheap and that profile matches listings that aren't normal sales when the median is €3,444/m². Another one is 0 bedrooms in non-studio apartments, so normal flats with the room count missing or mistyped. Keeping these apartments feeds the model a wrong value for a key feature. Similarly with 0 bathrooms.
+
+Additionally, some columns were removed because they would mislead the model rather than help it. For example the unit price column which is the price ÷ area. If the model had it, it could rebuild the price almost perfectly, giving a perfect but useless model. Same with “the construction year” in which 59% of rows are empty, and we have “cad construction year” 99% filled which gives the same information. Similarly with the parking duplicate “parking space included in price” is 100% identical to “has parking space” so only keep one. Also dropped “AMENITYID” because 94% of flats have the same value so this column is redundant with little information. Moreover, the condition column is one of 3, new build, to restore, or good condition. The problem is the model can't separate them from the intercept, so good condition becomes the baseline because it's the most common (\~78%),and the other two become dummy variables which the coefficients then read naturally: a new build is X% pricier than a typical good-condition flat.
+
+There were rows with floor and exterior interior missing and together they account for 9% of the data so dropping them would be a huge loss of data. Instead I filled in the median value and added a binary flag indicating whether it was missing or not so the model can learn whether "missing" affects price. I did the most common value for exterior interior.
+
+Regarding feature engineering, it is critical in the case of a linear regression as it can only learn linear effects from the columns it is given, so most of the work went into building features that turn the real patterns into something a linear model can capture. Firstly, I used log(area) instead of the raw size in m² because log(price) and log(area) have an almost linear relationship. This means that a 10% increase in size has a similar percentage impact on price regardless of the flat's size, making it easier for a linear model to capture this relationship. Also, log(area) has a slightly higher correlation with log(price) than raw area (0.774 vs 0.756), and it works well with the log(price) target since both focus on relative changes rather than absolute values. Furthermore, the age of the building has a U shape with older buildings (pre-1940 highest) being more expensive and new buildings as well with the ages in between being lower prices (1960–79 lowest). A single age column would miss that relationship so bands allow the model to keep the relationship and understand it. Moreover, flats on floor 3 and above, flats without a lift average about €2,300/m², vs. about €4,000/m² with one. That's nearly 75% more for the same floor. I added a floor × lift interaction term, so the model can learn one floor effect for buildings without a lift and a different one for buildings with a lift. One of the most interesting was the replacement of the coordinates with zones. Latitude and longitude are just two numbers which a linear model would turn each into a straight slope; however Madrid's prices are not a slope, it’s zones which determine price. In order to do this I used k-means to group nearby flats into zones that sit close together with k= 21, to simulate like the 21 districts in Madrid, even though it is not the official districts. The impact of this was massive, the error for no location at all: 27%, distances only: 21%, raw lat/long: 18% and 21 Zones: 15%. It must be noted that this comparison was a quick test using a simpler model, not my final one. A huge improvement with zones. Finally, I also made a few smaller adjustments, such as treating quality as categories and scaling the numeric features, ending with 65 features in total.
+
+In order to avoid data leakage, such as the fill values for missing data, the 21 zones, baseline categories and scaling, was calculated using only the training data and then applied unchanged to validation and test. This is important because otherwise the model would indirectly use information from future flats when training, giving unrealistic results. Additionally, the temporal split, removing unit price and merging duplicates were also decisions made to reduce the risk of leakage and ensure the model performs realistically on unseen data.
+
+## **Modeling: three implementations, one model**
+
+The model I will be using is the one that the assignment requires, it is the same linear model trained three ways. My target variable is continuous so that is why I choose linear regression. Linear regression is also a good fit because it is informative as well, so for the investors it's explainable. Each feature has one coefficient allowing them to understand which factors affect price and how they affect it.
+
+The three methods I used were scikit-learn linear regression, manual PyTorch and standard PyTorch. Firstly, scikit-learn calculates the best coefficients directly without needing a training loop, so I used this as my reference to compare the other two. For manual PyTorch, I built the gradient descent loop myself, where the model makes predictions, calculates the error and uses .backward() to find how much each weight needs to change. Standard PyTorch does the same but uses built-in tools such as nn.Module, MSELoss and SGD.
+
+For both PyTorch models I used full batch training, meaning all training flats are used in each step, making training more stable. I chose a learning rate of 0.2 after testing 0.05, 0.1, 0.2 and 0.3, where 0.3 made the loss explode, so 0.2 was the fastest stable option. Finally, I used 10,000 epochs because some rare features take longer to learn, and with fewer epochs the PyTorch results were still different from scikit-learn.
+
+Table 1\. Model performance on the validation and test sets (Q4 2018\)
+
+| Model | Val RMSE (log) | Val typical error | Val R² | Test RMSE (log) | Test typical error | Test R² |
+| :---- | ----: | ----: | ----: | ----: | ----: | ----: |
+| Naive baseline | 0.7585 | 51.8% | −0.008 | 0.7591 | 51.8% | −0.008 |
+| scikit-learn | 0.2336 | 14.2% | 0.904 | 0.2366 | 14.5% | 0.902 |
+| Manual PyTorch | 0.2336 | 14.2% | 0.904 | 0.2366 | 14.5% | 0.902 |
+| Standard PyTorch | 0.2336 | 14.2% | 0.904 | 0.2366 | 14.5% | 0.902 |
+
+All three models achieved practically identical results, with a typical error of around 14% and an R² of 0.90, meaning they explain around 90% of the variation in log prices, which is a huge improvement compared to the naive baseline with a typical error of 51.8%.
+
+The three models achieved almost the same results, with predictions differing by at most around 0.1% and only tiny differences in the coefficients. The reason for this is that linear regression with squared error has one best solution, so scikit-learn calculates it directly while PyTorch reaches it through gradient descent, step by step. However, they are not exactly identical because PyTorch uses float32 which is less precise, and stops after 10,000 epochs, meaning some rare features might not have fully converged. Additionally, the two PyTorch models start with different weights, one from zero and the other random. The learning curves also support this as both PyTorch models eventually flatten towards the scikit-learn loss, showing they are reaching practically the same solution.
+
+Regarding the baseline, it simply predicts the training average for every flat, giving a typical error of 52%, compared to the 14% of my model. The baseline also has a slightly negative R² because Q4 prices are different from Q1–Q3, showing some price drift over time. Regarding overfitting, the training RMSE (0.24) is actually slightly higher than validation (0.23), suggesting the model is not memorising the training data. I also tested different Ridge coefficient strengths but they did not improve the validation results, so I kept the linear model without it. Finally, validation and test results are almost identical, showing the model is stable on unseen data.
+
+## **Limitations & next steps**
+
+Some of the limitations I am aware of are firstly that the data is from 2018, and the Madrid real estate market has changed since then, so for the tool to work today it would need to be retrained using more recent data. Additionally, the model predicts asking prices rather than actual sales prices, meaning some owners might list their properties too high, which could mislead the model. To improve this I would use actual transaction data if available, as this would better reflect what properties are really worth. Another limitation is using linear regression, as it struggles to capture nonlinear relationships and interactions between features. To address the limitation I would use more advanced models and see if the results would improve, models like Random Forest or XGBoost could be good use.
+
+Moreover, I merged duplicates using “ASSETID” however, some flats might have been listed again with a different ID, so I could improve the model by trying to find the same listing by location and similar features. Additionally, the 21 zones created using k-means are also not perfect because nearby flats may end up in different zones so the fix would be to use the official Madrid districts. Finally, the model cannot always distinguish between a real bargain and an error in its prediction. Even with the 26% margin of safety, some flagged properties might not actually be bargains. To reduce this risk I would add further checks using similar nearby properties and encourage the investor to investigate the listings before making a decision.
+
+## **Generative AI use disclosure**
+
+Throughout this project I used AI (Claude) to support me with coding, analysis and understanding concepts. Firstly, AI helped me find and compare datasets and generated most of the code for the notebook and the Gradio application. Additionally, I used AI to run different analyses, debug errors. However, the main decisions regarding the project, such as the business objective, data cleaning rules, feature engineering, model settings and margin of safety, were made by me. I came to it with an idea and vision and had it execute the vision. Additionally, sometimes I would ask the AI what are the different options and pros and cons then I would decide which route to take. Regarding the report, AI helped me with the structure, but I wrote and reviewed the analysis myself. Overall, I would frame my use of AI as an execution tool. I have the idea, the decisions and AI would be here to help me build the project and improve my understanding.
