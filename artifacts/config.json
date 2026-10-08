@@ -1,0 +1,23 @@
+{
+  "coupon_cost": 8.0,
+  "recovery_gain": 1.0,
+  "use_page_values": true,
+  "train_months": [
+    "Feb",
+    "Mar",
+    "May",
+    "June",
+    "Jul",
+    "Aug",
+    "Sep"
+  ],
+  "val_months": [
+    "Oct"
+  ],
+  "test_months": [
+    "Nov",
+    "Dec"
+  ],
+  "default_threshold": 0.1,
+  "n_features": 70
+}
