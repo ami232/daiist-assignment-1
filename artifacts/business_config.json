@@ -1,0 +1,7 @@
+{
+    "optimal_threshold": 0.03,
+    "save_probability": 0.2,
+    "intervention_cost": 5.0,
+    "contribution_margin": 0.7,
+    "n_features": 139
+}
