@@ -1,0 +1,14 @@
+{
+  "best_C": 10,
+  "lambda": 2.3668639053254438e-05,
+  "manual_lr": 0.1,
+  "standard_lr": 0.1,
+  "epochs": 3000,
+  "best_threshold": 0.38,
+  "n_features": 23,
+  "max_coef_diff": 0.003997053130154499,
+  "max_prob_diff": 0.0012637286048181595,
+  "offer_cost": 150,
+  "months_lost": 12,
+  "offer_success": 0.5
+}

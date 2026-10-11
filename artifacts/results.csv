@@ -1,0 +1,5 @@
+model,roc_auc,log_loss,accuracy@0.5,cost@0.38 (€)
+sklearn,0.8402,0.4206,0.797,288323.4
+manual_pytorch,0.8403,0.4207,0.7977,288323.4
+standard_pytorch,0.8402,0.4206,0.797,288323.4
+baseline,0.5,0.5787,0.7346,337971.0
