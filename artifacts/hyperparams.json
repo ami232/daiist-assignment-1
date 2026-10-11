@@ -1,0 +1,9 @@
+{
+  "best_alpha": 0.01,
+  "best_lr_manual": 0.5,
+  "best_lr_module": 0.5,
+  "epochs": 30000,
+  "y_mean": 167.7134552001953,
+  "y_std": 160.77931213378906,
+  "clip_predictions_at_zero": true
+}
