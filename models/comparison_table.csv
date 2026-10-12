@@ -1,0 +1,5 @@
+,accuracy,precision,recall,roc_auc
+baseline,0.8395,0.0,0.0,0.5
+sklearn,0.9,0.7738,0.5328,0.9093
+manual,0.9,0.7738,0.5328,0.9093
+nn.Module,0.9,0.7738,0.5328,0.9093
