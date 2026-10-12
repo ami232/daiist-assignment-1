@@ -14,6 +14,12 @@ dependencies = [
     "nbconvert>=7.16",
     "ipykernel>=6.29",
     "pytest>=8.0",
+    "pyarrow>=26.0.0",
+    "seaborn>=0.13.2",
+    "scipy>=1.18.1",
+    "filterpy>=1.4.5",
+    "jupyter>=1.1.1",
+    "tqdm>=4.70.1",
 ]
 
 [tool.uv]
