@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,f1
+Naive baseline (majority class),0.5198,0.0,0.0,0.0
+scikit-learn,0.7613,0.8626,0.5982,0.7065
+Manual PyTorch loop,0.7618,0.8628,0.5992,0.7072
+Standard PyTorch (nn.Module),0.7604,0.8612,0.5972,0.7053
