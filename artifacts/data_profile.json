@@ -1,0 +1,18 @@
+{
+  "n_rows": 6497,
+  "n_red": 1599,
+  "n_white": 4898,
+  "n_missing": 0,
+  "n_exact_duplicates": 1177,
+  "quality_counts": {
+    "3": 30,
+    "4": 216,
+    "5": 2138,
+    "6": 2836,
+    "7": 1079,
+    "8": 193,
+    "9": 5
+  },
+  "n_rows_after_dedup": 5320,
+  "premium_rate_after_dedup": 0.18966165413533834
+}

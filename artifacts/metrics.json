@@ -1,0 +1,285 @@
+{
+  "costs_eur": {
+    "fp": 50,
+    "fn": 200
+  },
+  "bayes_threshold_if_calibrated": 0.2,
+  "best_C": 1.0,
+  "C_search_val_log_loss": {
+    "0.01": 0.35685966202995173,
+    "0.1": 0.3448112200384158,
+    "1.0": 0.3428515360012639,
+    "10.0": 0.3429275049829093
+  },
+  "best_lr": 1.0,
+  "lr_search_final_train_objective": {
+    "0.1": 0.3527581457548672,
+    "0.5": 0.3526698639915321,
+    "1.0": 0.3526698319346413,
+    "2.0": 0.4363677118192115
+  },
+  "epochs": 20000,
+  "feature_names": [
+    "fixed_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "pH",
+    "sulphates",
+    "alcohol",
+    "is_red",
+    "volatile_acidity_x_red",
+    "sulphates_x_red",
+    "residual_sugar_x_red",
+    "citric_acid_x_red",
+    "alcohol_x_red",
+    "total_sulfur_dioxide_spl0",
+    "total_sulfur_dioxide_spl1",
+    "total_sulfur_dioxide_spl2",
+    "total_sulfur_dioxide_spl3",
+    "total_sulfur_dioxide_spl4",
+    "density_spl0",
+    "density_spl1",
+    "density_spl2",
+    "density_spl3",
+    "density_spl4",
+    "volatile_acidity_spl0",
+    "volatile_acidity_spl1",
+    "volatile_acidity_spl2",
+    "volatile_acidity_spl3",
+    "volatile_acidity_spl4",
+    "free_sulfur_dioxide_spl0",
+    "free_sulfur_dioxide_spl1",
+    "free_sulfur_dioxide_spl2",
+    "free_sulfur_dioxide_spl3",
+    "free_sulfur_dioxide_spl4"
+  ],
+  "n_features": 33,
+  "split_sizes": {
+    "train": 3192,
+    "val": 1064,
+    "test": 1064
+  },
+  "train_time_s": {
+    "sklearn": 0.038571249999222346,
+    "manual_pytorch": 4.297276667000915,
+    "nn_module_pytorch": 6.633629042000393
+  },
+  "results": {
+    "sklearn": {
+      "val": {
+        "roc_auc": 0.8619144977142725,
+        "pr_auc": 0.5908933529889712,
+        "log_loss": 0.3428515360012639,
+        "brier": 0.10735912545572898,
+        "threshold": 0.2,
+        "precision": 0.44415584415584414,
+        "recall": 0.8465346534653465,
+        "tp": 171,
+        "fp": 214,
+        "fn": 31,
+        "tn": 648,
+        "cost_eur": 16900,
+        "cost_per_batch_eur": 15.88345864661654
+      },
+      "test": {
+        "roc_auc": 0.8105086030644828,
+        "pr_auc": 0.5052275349213254,
+        "log_loss": 0.3880039820364145,
+        "brier": 0.1208088268457178,
+        "threshold": 0.2,
+        "precision": 0.40106951871657753,
+        "recall": 0.7425742574257426,
+        "tp": 150,
+        "fp": 224,
+        "fn": 52,
+        "tn": 638,
+        "cost_eur": 21600,
+        "cost_per_batch_eur": 20.30075187969925
+      }
+    },
+    "manual_pytorch": {
+      "val": {
+        "roc_auc": 0.8619144977142725,
+        "pr_auc": 0.5908933529889712,
+        "log_loss": 0.3428516459856502,
+        "brier": 0.10735915581875129,
+        "threshold": 0.2,
+        "precision": 0.44415584415584414,
+        "recall": 0.8465346534653465,
+        "tp": 171,
+        "fp": 214,
+        "fn": 31,
+        "tn": 648,
+        "cost_eur": 16900,
+        "cost_per_batch_eur": 15.88345864661654
+      },
+      "test": {
+        "roc_auc": 0.8105086030644828,
+        "pr_auc": 0.5052275349213254,
+        "log_loss": 0.38800394971237245,
+        "brier": 0.12080880848650319,
+        "threshold": 0.2,
+        "precision": 0.40106951871657753,
+        "recall": 0.7425742574257426,
+        "tp": 150,
+        "fp": 224,
+        "fn": 52,
+        "tn": 638,
+        "cost_eur": 21600,
+        "cost_per_batch_eur": 20.30075187969925
+      }
+    },
+    "nn_module_pytorch": {
+      "val": {
+        "roc_auc": 0.8619144977142725,
+        "pr_auc": 0.5908933529889712,
+        "log_loss": 0.34285160288897504,
+        "brier": 0.10735913030322916,
+        "threshold": 0.2,
+        "precision": 0.44415584415584414,
+        "recall": 0.8465346534653465,
+        "tp": 171,
+        "fp": 214,
+        "fn": 31,
+        "tn": 648,
+        "cost_eur": 16900,
+        "cost_per_batch_eur": 15.88345864661654
+      },
+      "test": {
+        "roc_auc": 0.8105086030644828,
+        "pr_auc": 0.5052275349213254,
+        "log_loss": 0.3880039924463446,
+        "brier": 0.12080882060428674,
+        "threshold": 0.2,
+        "precision": 0.40106951871657753,
+        "recall": 0.7425742574257426,
+        "tp": 150,
+        "fp": 224,
+        "fn": 52,
+        "tn": 638,
+        "cost_eur": 21600,
+        "cost_per_batch_eur": 20.30075187969925
+      }
+    },
+    "baseline_prior": {
+      "val": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.18984962406015038,
+        "log_loss": 0.4860051638642605,
+        "brier": 0.1538068424507384,
+        "threshold": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 202,
+        "tn": 862,
+        "cost_eur": 40400,
+        "cost_per_batch_eur": 37.96992481203007
+      },
+      "test": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.18984962406015038,
+        "log_loss": 0.4860051638642605,
+        "brier": 0.1538068424507384,
+        "threshold": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 202,
+        "tn": 862,
+        "cost_eur": 40400,
+        "cost_per_batch_eur": 37.96992481203007
+      }
+    },
+    "baseline_alcohol_only": {
+      "val": {
+        "roc_auc": 0.8120477360961154,
+        "pr_auc": 0.49035523770256817,
+        "log_loss": 0.38547540996564905,
+        "brier": 0.12061929206414514,
+        "threshold": 0.18,
+        "precision": 0.3945409429280397,
+        "recall": 0.7871287128712872,
+        "tp": 159,
+        "fp": 244,
+        "fn": 43,
+        "tn": 618,
+        "cost_eur": 20800,
+        "cost_per_batch_eur": 19.548872180451127
+      },
+      "test": {
+        "roc_auc": 0.7790712365900163,
+        "pr_auc": 0.46122353826011625,
+        "log_loss": 0.4059243024372945,
+        "brier": 0.12774785666009872,
+        "threshold": 0.18,
+        "precision": 0.369727047146402,
+        "recall": 0.7376237623762376,
+        "tp": 149,
+        "fp": 254,
+        "fn": 53,
+        "tn": 608,
+        "cost_eur": 23300,
+        "cost_per_batch_eur": 21.898496240601503
+      }
+    },
+    "baseline_flag_all": {
+      "val": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.18984962406015038,
+        "log_loss": 22.385300066789732,
+        "brier": 0.8101503759398496,
+        "threshold": 0.5,
+        "precision": 0.18984962406015038,
+        "recall": 1.0,
+        "tp": 202,
+        "fp": 862,
+        "fn": 0,
+        "tn": 0,
+        "cost_eur": 43100,
+        "cost_per_batch_eur": 40.50751879699248
+      },
+      "test": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.18984962406015038,
+        "log_loss": 22.385300066789732,
+        "brier": 0.8101503759398496,
+        "threshold": 0.5,
+        "precision": 0.18984962406015038,
+        "recall": 1.0,
+        "tp": 202,
+        "fp": 862,
+        "fn": 0,
+        "tn": 0,
+        "cost_eur": 43100,
+        "cost_per_batch_eur": 40.50751879699248
+      }
+    }
+  },
+  "agreement_vs_sklearn": {
+    "sklearn": {
+      "train_objective": 0.35266983192089857
+    },
+    "manual_pytorch": {
+      "train_objective": 0.352669831936525,
+      "objective_gap_vs_sklearn": 1.562644458275031e-11,
+      "max_abs_coef_diff_vs_sklearn": 0.00013129695094338256,
+      "intercept_diff_vs_sklearn": 3.5898407757528616e-07,
+      "max_abs_prob_diff_vs_sklearn": 8.362405501560755e-06,
+      "test_label_disagreements_at_sklearn_threshold": 0,
+      "test_label_disagreements_at_own_threshold": 0
+    },
+    "nn_module_pytorch": {
+      "train_objective": 0.3526698319424178,
+      "objective_gap_vs_sklearn": 2.1519230841704484e-11,
+      "max_abs_coef_diff_vs_sklearn": 0.00016720149973759035,
+      "intercept_diff_vs_sklearn": 5.663237296893442e-07,
+      "max_abs_prob_diff_vs_sklearn": 1.1171305667134757e-05,
+      "test_label_disagreements_at_sklearn_threshold": 0,
+      "test_label_disagreements_at_own_threshold": 0
+    }
+  }
+}
