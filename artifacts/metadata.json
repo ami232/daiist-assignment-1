@@ -1,0 +1,118 @@
+{
+  "seed": 42,
+  "variant": "history_context",
+  "lambda": 0.01,
+  "sklearn_C": 0.004046617028164454,
+  "learning_rate": 0.7904521973888791,
+  "gradient_tolerance": 1e-07,
+  "threshold": 0.03442741374188578,
+  "call_cost_eur": 2,
+  "missed_subscriber_cost_eur": 50,
+  "n_features": 46,
+  "training_seconds": {
+    "sklearn": 0.058383333031088114,
+    "manual": 11.68901958304923,
+    "standard": 12.24145408399636
+  },
+  "agreement": {
+    "manual": {
+      "max_probability_difference_all_rows": 5.60804931942771e-06,
+      "max_weight_difference": 1.2563098020007741e-05,
+      "intercept_difference": 4.709152624871038e-05,
+      "test_decision_disagreements": 0
+    },
+    "standard": {
+      "max_probability_difference_all_rows": 5.6080493194832215e-06,
+      "max_weight_difference": 1.2563098020014788e-05,
+      "intercept_difference": 4.709152624871038e-05,
+      "test_decision_disagreements": 0
+    }
+  },
+  "diagnostics": {
+    "rows": 41188,
+    "columns": 21,
+    "null_cells": 0,
+    "exact_duplicate_rows": 12,
+    "sentinel_with_positive_previous_count": 4110,
+    "unknown_counts": {
+      "job": 330,
+      "marital": 80,
+      "education": 1731,
+      "default": 8597,
+      "housing": 990,
+      "loan": 990,
+      "contact": 0,
+      "month": 0,
+      "day_of_week": 0,
+      "poutcome": 0,
+      "y": 0
+    },
+    "split_summary": {
+      "train": {
+        "rows": 24712,
+        "positive_rate": 0.04807381029459372,
+        "first_row_id": 0,
+        "last_row_id": 24711
+      },
+      "validation": {
+        "rows": 8238,
+        "positive_rate": 0.11070648215586307,
+        "first_row_id": 24712,
+        "last_row_id": 32949
+      },
+      "test": {
+        "rows": 8238,
+        "positive_rate": 0.3083272638990046,
+        "first_row_id": 32950,
+        "last_row_id": 41187
+      }
+    },
+    "unseen_categories": {
+      "validation": {
+        "job": [],
+        "marital": [],
+        "education": [],
+        "default": [],
+        "housing": [],
+        "loan": [],
+        "poutcome": [],
+        "loan_combination": []
+      },
+      "test": {
+        "job": [],
+        "marital": [],
+        "education": [],
+        "default": [],
+        "housing": [],
+        "loan": [],
+        "poutcome": [],
+        "loan_combination": []
+      }
+    }
+  },
+  "excluded_columns": [
+    "duration",
+    "campaign",
+    "contact",
+    "month",
+    "day_of_week",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed"
+  ],
+  "source_sha256": "74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "torch": "2.11.0",
+    "gradio": "6.28.0"
+  },
+  "intercepts": {
+    "sklearn": -3.0188097290058216,
+    "manual": -3.018762637479573,
+    "standard": -3.018762637479573
+  }
+}

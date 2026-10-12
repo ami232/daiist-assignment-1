@@ -1,0 +1,5 @@
+I would not deploy this policy as is. Under the EUR 2/EUR 50 assumptions, skipping a customer only pays off if their subscription probability is below 4%. In the final verified run, the 97 customers the model skipped included 32 subscribers (about 33%), so the policy saved EUR 194 in call costs and incurred EUR 1,600 in assumed missed-subscriber costs, ending EUR 1,406 worse than calling everyone.
+
+My proposed explanation is that the model was trained on a population with a 4.8% subscription rate and then tested on one with 30.8%, leaving its probabilities too pessimistic for the later population. This is a hypothesis to investigate, not an established causal explanation.
+
+The most useful next step is a temporal backtest with a calibration check on successive later campaign blocks, to see whether the shift is persistent and whether recalibrating on recent data fixes it. Real cost and revenue estimates should then replace the hypothetical EUR 2/EUR 50 before the policy is reconsidered.

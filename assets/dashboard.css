@@ -1,0 +1,58 @@
+:root {color-scheme:light}
+body {background:#f5f4ef!important}
+.gradio-container {max-width:1320px!important; margin:auto!important; padding:24px 48px 40px!important; font-family:Arial,sans-serif!important}
+.gradio-container .prose {max-width:none!important}
+.gradio-container h1,.gradio-container h2,.gradio-container h3 {color:#192e35!important;letter-spacing:-.025em;line-height:1.2!important}
+.gradio-container h2 {font-size:26px!important}.gradio-container h3 {font-size:20px!important}
+.gradio-container p {line-height:1.65!important;color:#58676a}
+.bank-masthead {display:flex;justify-content:space-between;align-items:center;padding:4px 0 22px;border-bottom:1px solid #cbd3ce;gap:24px;color:#192e35}
+.bank-brand {font-size:19px;font-weight:700;letter-spacing:-.5px}.bank-brand span {font-weight:400;color:#697774;margin-left:9px}
+.bank-masthead small {font-size:10px;letter-spacing:1.4px;text-transform:uppercase;line-height:1.8;text-align:right}
+.gradio-container .tab-nav {border-bottom:1px solid #cbd3ce!important;gap:30px!important;padding:0!important;margin:0 0 30px!important;overflow-x:auto;flex-wrap:nowrap!important}
+.gradio-container .tab-nav button {white-space:nowrap;border:0!important;border-radius:0!important;padding:17px 0!important;font-size:13px!important;font-weight:500!important;color:#667572!important;transition:color .18s,border-color .18s}
+.gradio-container .tab-nav button.selected {color:#17675d!important;border-bottom:2px solid #17675d!important;font-weight:700!important}
+.gradio-container .tabitem {padding:0!important;border:0!important;background:transparent!important}
+.bank-kicker {font-size:10px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#627470;margin-bottom:16px}
+.bank-overview {padding:14px 0 8px;color:#192e35}
+.bank-overview h1 {font-family:Georgia,serif!important;font-size:42px!important;font-weight:400!important;line-height:1.12!important;margin:0 0 22px!important;letter-spacing:-1.4px!important;max-width:480px}
+.bank-overview h1 em {font-style:normal;color:#9b5439}
+.bank-overview p {font-size:14px;max-width:400px;margin:0 0 20px}
+.bank-status {display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#8b4e36;margin-top:2px}
+.bank-status:before {content:'';width:6px;height:6px;background:#a16043;border-radius:50%}
+.bank-scope {font-size:11px!important;color:#71817a!important;margin-top:20px!important}
+.bank-arithmetic {display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;padding:25px 0 28px;border-top:1px solid #cbd3ce;border-bottom:1px solid #cbd3ce;margin:12px 0 28px}
+.bank-arithmetic .label {font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#596e67}
+.bank-arithmetic strong {display:block;font-family:Georgia,serif;font-size:33px;font-weight:400;color:#203c38;margin:7px 0}
+.bank-arithmetic strong.negative {color:#9b5439}
+.bank-arithmetic small {font-size:12px;color:#647570;line-height:1.6;display:block}
+.bank-caption {font-size:11px;color:#74827d;margin-top:3px}
+.bank-insight {padding:5px 0 15px;color:#223c37}
+.bank-insight h2 {font-family:Georgia,serif!important;font-weight:400!important;font-size:27px!important;line-height:1.2!important;margin:4px 0 12px!important}
+.bank-insight p {max-width:460px;font-size:14px;margin:0}
+.bank-insight .bank-kicker {margin-bottom:10px}
+.bank-summary {padding:14px 0 20px;color:#192e35;animation:appear .25s ease-out}
+.bank-result {font-family:Georgia,serif;font-size:31px;line-height:1.2;font-weight:400;margin:0 0 12px;letter-spacing:-.7px}
+.bank-summary p {font-size:14px;margin:6px 0 16px}
+.bank-stats {display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cbd3ce;border-bottom:1px solid #cbd3ce;margin:20px 0;padding:18px 0;gap:20px}
+.bank-stat strong {display:block;font-size:25px;font-weight:500;line-height:1.2;font-variant-numeric:tabular-nums}
+.bank-stat span {display:block;font-size:11px;margin-top:7px;color:#677a72;line-height:1.5}
+.bank-warning {color:#9b5439}.bank-good {color:#17675d}
+.bank-equation {padding:0 0 0 14px;font-size:13px;line-height:1.7;border-left:2px solid #17675d}
+.bank-note {font-size:11px!important;color:#6e7f76!important;line-height:1.5!important;margin-top:16px!important}
+#policy-controls {padding:18px 26px 0 0!important;border-right:1px solid #cbd3ce;gap:20px!important}
+#policy-output {padding-left:22px!important}
+.gradio-container .block {box-shadow:none!important}
+.gradio-container .plot {border:0!important;background:transparent!important;padding:0!important}
+.gradio-container .form {background:transparent!important;border:0!important;box-shadow:none!important}
+.gradio-container button {transition:background .18s, color .18s, transform .18s}
+.gradio-container button.primary:hover {transform:translateY(-1px)}
+.gradio-container button:focus-visible,.gradio-container input:focus-visible {outline:2px solid #17675d!important;outline-offset:3px}
+.gradio-container details {border:0!important;border-top:1px solid #ccd5ce!important;border-radius:0!important;background:transparent!important}
+.gradio-container .table-wrap {border-color:#d5dcd5!important}
+.bank-footer {display:flex;justify-content:space-between;gap:20px;border-top:1px solid #cbd3ce;padding:22px 0 0;margin-top:30px;font-size:10px;letter-spacing:.65px;color:#6a7973;text-transform:uppercase}
+.bank-footer a {color:#17675d}
+@keyframes appear {from {opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.bank-overview,.bank-insight {animation:appear .35s ease-out}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:800px){.gradio-container{padding:18px 22px!important}.gradio-container .tab-nav{gap:24px!important}.bank-overview h1{font-size:35px!important}.bank-masthead small{display:none}.bank-arithmetic{gap:14px}.bank-arithmetic strong{font-size:27px}#policy-controls{border-right:0;border-bottom:1px solid #cbd3ce;padding:0 0 22px!important}#policy-output{padding:0!important}}
+@media(max-width:480px){.gradio-container{padding:14px 16px!important}.bank-brand{font-size:17px}.bank-brand span{display:block;margin:4px 0 0;font-size:13px}.bank-arithmetic .label{font-size:9px}.bank-arithmetic strong{font-size:25px}.bank-arithmetic small{font-size:10px}.bank-result{font-size:27px}.bank-stat strong{font-size:21px}.bank-footer{flex-direction:column;gap:8px}}

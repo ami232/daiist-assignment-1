@@ -1,165 +1,82 @@
-# Assignment 1
+# Bank marketing: pre-call prioritization
 
-Pick a tabular dataset, frame a realistic business problem it would serve,
-and train the **same** simple model (linear regression for a continuous
-target, logistic regression for a binary one) three ways: scikit-learn, a
-from-scratch PyTorch loop (Session 5's manual approach), and the standard
-`torch.nn.Module` + `torch.optim` workflow. Compare all three and ship the
-result behind an interactive Gradio dashboard.
+Assignment 1 uses one logistic-regression model trained with scikit-learn, manual PyTorch autograd and gradient updates, and `nn.Module` + `torch.optim.SGD`. The dashboard loads saved models and never retrains them.
 
-The point isn't the dataset or getting the best score. It's showing you
-understand every step well enough to explain it later, without your code
-in front of you, in the written comprehension check (see Grading below).
-Pick a dataset interesting enough that feature engineering actually
-matters, and be honest in REPORT.md about what didn't work and why.
+## Run
 
-## The task
-
-1. **Pick a dataset.** Tabular, with a clear regression or classification
-   target (or one you can build non-trivially from the data), interesting
-   enough that feature engineering isn't trivial. Large enough to train on,
-   small enough to commit to this repo and retrain from scratch: a rough
-   guide is under ~20k rows / ~20MB, not a strict cutoff.
-2. **Frame the business problem** *before* writing any pipeline code: what
-   hypothetical (or real) decision does this model support? Write it in
-   REPORT.md, and make sure it drives later decisions: does target
-   definition need care, would a random split leak the future into
-   training, which metric should set the decision threshold?
-3. **Preprocess, engineer features, and split** with numpy/pandas/sklearn,
-   consistent with what you decided in step 2.
-4. **Train the same model three ways** on the same split:
-   - scikit-learn linear or logistic regression
-   - manual PyTorch loop like we saw in the PyTorch introduction notebook
-   - standard PyTorch workflow
-
-   Compare all three against each other and against a naive baseline. Save
-   each trained model to disk: training is the only stage that trains
-   anything, and the Gradio app must load these saved models, never
-   retrain them.
-5. **Tune sparingly.** The only hyperparameters worth touching are
-   regularization strength and, for the two PyTorch versions, the learning
-   rate. Put your effort into features, not a grid search.
-6. **Write REPORT.md** (skeleton already in this repo): dataset, business
-   framing, your process, a three-method comparison table, and honest
-   limitations.
-7. **Build the Gradio dashboard** from your trained models. It should
-   never retrain anything at startup. At minimum, let you compare the
-   three models with a prediction vs. actual plot, see feature/target
-   distributions, and, for classification, move a threshold slider to
-   watch the confusion matrix and a business-cost number change.
-8. **Submit**: see Submission below.
-
-Everything else (how you structure your code, what you name things beyond
-what `main.py` requires, how you organize your pipeline) is your call to
-make and be able to explain.
-
-## Setup
-
-Same environment workflow as Session 2's environment check.
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) if needed, then run from this folder:
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh   # macOS
-```
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"   # Windows
+uv sync --frozen
+uv run python main.py train
+uv run python main.py app
 ```
 
-Fork this repo (https://github.com/ami232/daiist-assignment-1), then clone
-**your fork**:
+Open http://127.0.0.1:7860. Stop the server with Ctrl+C. Training rebuilds `artifacts/` from the committed CSV without downloads, prompts, API keys or notebook execution. Python 3.12 and the required packages are pinned through `.python-version`, `pyproject.toml` and `uv.lock`. The first `uv sync` needs Internet access; training then uses local data. The dashboard runs locally with public sharing and analytics disabled.
 
 ```bash
-git clone https://github.com/<your-github-username>/<your-fork-name>.git
-cd <your-fork-name>
-uv sync
+uv run python -m pytest -q
 ```
 
-> If `uv sync` can't install PyTorch locally (older Intel Macs), use GitHub
-> Codespaces on your fork instead: same environment, runs in the browser.
+`main.py` is unchanged from the assignment. The unused starter notebooks are preserved in `docs/` to avoid conflicting root entrypoints. The supplied GitHub workflow still uses the two required commands. See `docs/DELIVERY.md` for current publication status. Blackboard submission remains for the student.
 
-### Adding dependencies
+## Business decision
 
-The starting dependencies (numpy, pandas, scikit-learn, torch, gradio,
-plotly, matplotlib, ...) cover everything the assignment needs, but if you
-want something else:
+Before a planned call, estimate whether a customer will subscribe to a term deposit. The student chose hypothetical costs of EUR 2 per call and EUR 50 per missed subscriber. The retrospective policy cost is:
+
+```text
+cost = 2 * (true positives + false positives) + 50 * false negatives
+```
+
+A call costs money even when it succeeds. These are assumptions, not bank profit measurements. Historical subscriptions do not identify the causal effect of calling.
+
+The complete ordered UCI dataset has 41,188 rows and is about 5.8 MB. It exceeds the brief's approximate row suggestion but remains small, committed, and fast to retrain. See `data/README.md` for provenance and attribution.
+
+## Evaluation and features
+
+- Earliest 60% train; next 20% validate; latest 20% test. No shuffle.
+- All imputers, scaling statistics and category vocabularies are learned on training only.
+- Compare raw fields, engineered campaign history, and engineered history plus loan combination / unknown-field count.
+- The student chose correct `pdays=999` semantics over the small validation advantage of the raw control. Select the best engineered configuration using validation log loss.
+- Compare only three regularization strengths. Select the decision threshold using validation cost, then freeze it for all models on test.
+- Exclude duration, final-call details and completed-campaign counts. Exclude macroeconomic series without verified publication vintages.
+
+For all methods, the objective is mean binary cross-entropy plus `lambda/2 * ||w||²`, with an unpenalized intercept. Match scikit-learn with `C = 1 / (n_train * lambda)`. The two PyTorch versions use float64, identical zero initialization, the same full-batch learning rate and the same training-gradient stopping condition. The learning rate is computed from a training-only curvature bound, not selected on the test set.
+
+## Dashboard
+
+1. **Overview:** final test outcome, direct cost comparison with calling everyone, and the recommendation in plain language.
+2. **Call policy:** percentage threshold, explicit call-all/call-none/reset buttons, call/miss counters, labeled confusion matrix and cost breakdown. Assumptions and sensitivity curves expand when needed.
+3. **Models:** visual score comparison, explanations of metrics and calibration, with full tables and individual predictions available on demand.
+4. **Data:** human-readable feature labels, target percentages across chronological blocks, and expandable feature definitions/experiments.
+5. **Records:** real saved-model inference for a historical record, plus optional technical coefficient details.
+
+Test controls are explanatory, not permission to retune the frozen evaluation.
+
+## Files to read
+
+- `REPORT.md`: assignment report, student decisions and interpretation.
+- `docs/DECISIONS.md`: decision log.
+- `features.py`: feature definitions and preprocessing.
+- `train.py`: model training, validation-only selection and exported evaluation.
+- `modeling.py`: PyTorch logistic module and inference helpers.
+- `evaluation.py`: threshold selection, metrics and business-cost arithmetic.
+- `app.py`: saved-model dashboard.
+- `tests/test_project.py`: checks against leakage, objective mismatch and inference/training coupling.
+- `artifacts/metadata.json`: exact split sizes, source hash, versions, selected settings and agreement.
+- `artifacts/feature_experiments.csv`, `metrics.csv`, `coefficients.csv`, `predictions.csv`: measured evidence.
+- `output/pdf/Project_Explanation_and_Defense_Guide.pdf`: separate AI-generated study guide.
+
+## Reproduce and prepare the backup
 
 ```bash
-uv add <package-name>
+uv run python main.py train
+uv run python -m pytest -q
+uv run python scripts/package_project.py
 ```
 
-This updates `pyproject.toml` and `uv.lock`. Commit both so `uv sync`
-reproduces your exact environment for anyone else, including CI (below).
+The packaging script excludes `.git`, `.venv`, caches and temporary files, and creates a ZIP beside the project folder. It does not upload, push, open a PR or submit anything. Review `REPORT.md` and the study guide before uploading the PR link and ZIP to Blackboard yourself.
 
-## Running your work
+Original assignment: https://github.com/ami232/daiist-assignment-1. Its original README is retained in `docs/ASSIGNMENT.md`.
 
-```bash
-uv run python main.py train    # runs train.py, or train.ipynb if you used a notebook
-uv run python main.py app      # runs app.py, or app.ipynb if you used a notebook, opens in your browser
-```
-
-`main.py` looks for `<stage>.py` first, then `<stage>.ipynb`, so name your
-training code `train.py` or `train.ipynb`, and your app `app.py` or
-`app.ipynb`, at the repo root. Pick whichever format fits each stage (a
-notebook for one and a script for the other is fine). Beyond that naming
-requirement, how you build them is up to you, but each must run start to
-finish with no manual steps.
-
-A GitHub Actions workflow (`.github/workflows/verify.yml`) runs both
-commands automatically on every push and pull request. It's a sanity check
-that your submission runs, not a grading mechanism, and it fails if
-`main.py train` errors or `main.py app` doesn't come up and respond within
-its startup window.
-
-## Submission
-
-1. Push your finished branch to your fork.
-2. Open a pull request from your fork to the original repo:
-   https://github.com/ami232/daiist-assignment-1
-3. Submit the PR link on Blackboard.
-4. Also upload a zipped copy of your repo to Blackboard, as a backup in
-   case your fork or the PR becomes unavailable.
-
-## Grading
-
-**Hard requirement:** your training pipeline and Gradio app must each run
-end-to-end via `main.py` with no manual intervention. A submission that
-fails this can't pass the assignment, regardless of everything else below.
-
-| Component | Weight | What it checks |
-|---|---|---|
-| Dataset & business framing | 20% | Is the framing sensible, and does it actually drive concrete pipeline decisions (split strategy, threshold metric, etc.) rather than just narrating them? |
-| Feature engineering & preprocessing | 30% | Quality and justification of what you built, not just its presence. This is the largest component, since most of your effort should go here. |
-| Three-method comparison | 30% | Do scikit-learn / manual PyTorch / standard PyTorch agree on the same split? If not, is that investigated and explained honestly rather than hidden? |
-| Gradio dashboard | 20% | All required views present, working off your pipeline's real artifacts, nothing retrained at startup. |
-| **× Written Comprehension Check** | **0–100%** | Multiplies the subtotal |
-
-REPORT.md isn't graded as its own row: it's where the other four
-components' content lives, so its quality is already captured by them. The
-four weighted rows above sum to 100% and form your subtotal; the Written
-Comprehension Check then multiplies that subtotal. A strong submission
-paired with a weak comprehension-check score gets scaled down accordingly,
-since the check verifies the understanding this brief keeps asking for.
-
-Coefficients above are a starting proposal sized to relative workload
-(feature engineering and the three-method comparison carry the most work),
-not settled policy. Expect them to be confirmed before the deadline.
-
-## Generative AI use
-
-Per the syllabus AI Policy: disclosed AI use is fine and must be stated in
-REPORT.md's disclosure section. Within that policy, here's how it applies
-to this assignment specifically:
-
-- **Fine to use AI for**: boilerplate and common operations, like loading
-  a dataset, saving a trained model, and especially plotting and
-  presenting results in the Gradio dashboard.
-- **Use your own judgement for**: the decisions that are the point of this
-  assignment, like which features to design, how to frame the business
-  problem, and the implications of your design choices. AI can write the
-  code for a decision, but the decision itself has to be yours.
-- **REPORT.md**: the ideas and findings in it must be your own. AI may
-  help with formatting, not with generating the analysis or conclusions.
-
-None of this changes what's expected of you: you have to be able to
-explain every decision in your submission as if you made it yourself,
-because you did. Using a tool to help write it doesn't transfer the
-understanding requirement to the tool.
+Explanatory prose was revised with Walter Writes and checked for factual accuracy by Codex. The full AI-use disclosure is in `REPORT.md`.

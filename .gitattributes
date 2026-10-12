@@ -1,0 +1,6 @@
+# Preserve upstream dataset bytes, including original line endings and spacing.
+data/bank-additional-full.csv -text whitespace=cr-at-eol
+data/bank-additional-names.txt -text -whitespace
+*.pdf binary
+*.joblib binary
+*.pt binary
