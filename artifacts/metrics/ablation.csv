@@ -1,0 +1,11 @@
+setup,n_columns,duplicate_columns,cv_roc_auc,cv_log_loss,final_wins_folds
+"Raw columns, plain one-hot",30,7,0.8426822256593812,0.4200849708875493,5/5
+Final feature set,17,0,0.8489128410278004,0.4119584691426928,0/5
+Raw tenure instead of log_tenure,17,0,0.8417833456153281,0.42064891391147763,5/5
+Contract dummies instead of contract_months,18,0,0.8489233684517398,0.4119882863121978,3/5
+PaymentMethod dummies instead of electronic_check,19,0,0.8486618024569388,0.412241269680717,4/5
++ MonthlyCharges and TotalCharges (dropped),19,0,0.8489428036959357,0.41206621126152027,2/5
++ gender (dropped),18,0,0.8488881420716352,0.4119464470119447,3/5
++ is_new_customer (rejected),18,0,0.8489282272627887,0.41199528322206724,3/5
++ num_addon_services (rejected),18,1,0.8489225586498984,0.41195962257034024,2/5
++ fiber_month_to_month (rejected),18,0,0.8488699215302017,0.4121200452838492,3/5

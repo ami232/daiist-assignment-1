@@ -1,0 +1,36 @@
+{
+  "feature_names": [
+    "log_tenure",
+    "contract_months",
+    "electronic_check",
+    "SeniorCitizen",
+    "Partner_yes",
+    "Dependents_yes",
+    "PaperlessBilling_yes",
+    "PhoneService_yes",
+    "MultipleLines_yes",
+    "OnlineSecurity_yes",
+    "OnlineBackup_yes",
+    "DeviceProtection_yes",
+    "TechSupport_yes",
+    "StreamingTV_yes",
+    "StreamingMovies_yes",
+    "InternetService_Fiber optic",
+    "InternetService_No"
+  ],
+  "C": 0.1,
+  "lambda": 0.002370229912301493,
+  "manual_lr": 1.0,
+  "adam_lr": 0.01,
+  "n_epochs": 3000,
+  "threshold": 0.24,
+  "break_even": 0.23255813953488372,
+  "offer_months": 1,
+  "months_kept": 12,
+  "save_rate": 0.3,
+  "training_objectives": {
+    "scikit-learn": 0.4060509651234551,
+    "Manual PyTorch": 0.40605096512345484,
+    "Standard PyTorch": 0.40605096512345484
+  }
+}

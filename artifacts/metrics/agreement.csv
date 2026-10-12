@@ -1,0 +1,4 @@
+pair,max_weight_difference,intercept_difference,max_test_probability_difference
+scikit-learn vs Manual PyTorch,4.340020898219166e-08,1.7953545983218078e-08,3.893269595600657e-08
+scikit-learn vs Standard PyTorch,4.340020898219166e-08,1.7953546427307288e-08,3.8932695844984266e-08
+Manual PyTorch vs Standard PyTorch,8.326672684688674e-16,4.440892098500626e-16,4.440892098500626e-16
