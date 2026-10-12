@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "MAE": 156.6,
+    "RMSE": 208.1,
+    "signed_error": 51.5,
+    "pct_too_low": 50.9
+  },
+  "sklearn": {
+    "MAE": 72.3,
+    "RMSE": 98.3,
+    "signed_error": -4.0,
+    "pct_too_low": 39.9
+  },
+  "manual": {
+    "MAE": 72.5,
+    "RMSE": 98.4,
+    "signed_error": -4.0,
+    "pct_too_low": 40.0
+  },
+  "standard": {
+    "MAE": 72.6,
+    "RMSE": 98.5,
+    "signed_error": -4.0,
+    "pct_too_low": 39.9
+  }
+}
