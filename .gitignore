@@ -4,3 +4,6 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
+data/raw/
+assignment_guide.html
+tmp*.py

@@ -1,0 +1,171 @@
+{
+  "feature_cols": [
+    "n_sellers",
+    "promised_days",
+    "customer_state",
+    "log_distance_km",
+    "log_freight"
+  ],
+  "numeric_cols": [
+    "n_sellers",
+    "promised_days",
+    "log_distance_km",
+    "log_freight"
+  ],
+  "categorical_cols": [
+    "customer_state"
+  ],
+  "feature_names_after_preprocessing": [
+    "n_sellers",
+    "promised_days",
+    "log_distance_km",
+    "log_freight",
+    "customer_state_BA",
+    "customer_state_CE",
+    "customer_state_DF",
+    "customer_state_ES",
+    "customer_state_GO",
+    "customer_state_MG",
+    "customer_state_PA",
+    "customer_state_PE",
+    "customer_state_PR",
+    "customer_state_RJ",
+    "customer_state_RS",
+    "customer_state_SC",
+    "customer_state_SP",
+    "customer_state_infrequent_sklearn"
+  ],
+  "n_features": 18,
+  "best_C": 1.0,
+  "best_lam": 7.510326699211416e-05,
+  "best_lr": 2.0,
+  "n_epochs": 5000,
+  "cost_fn": 5.0,
+  "cost_fp": 1.0,
+  "threshold_by_model": {
+    "sklearn": 0.2,
+    "manual pytorch": 0.2,
+    "nn.Module": 0.2
+  },
+  "train_late_rate": 0.07975966954562523,
+  "val_start": "2018-04-01",
+  "test_start": "2018-06-01",
+  "val_results": {
+    "sklearn": {
+      "log loss": 0.19616295783025417,
+      "roc auc": 0.7555430289364901,
+      "pr auc": 0.16248397270648587,
+      "accuracy": 0.9446219382321619,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 156.0,
+      "tn": 2661.0
+    },
+    "manual pytorch": {
+      "log loss": 0.19613315165042877,
+      "roc auc": 0.7556080709970224,
+      "pr auc": 0.16228791428490388,
+      "accuracy": 0.9446219382321619,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 156.0,
+      "tn": 2661.0
+    },
+    "nn.Module": {
+      "log loss": 0.19613315165042877,
+      "roc auc": 0.7556080709970224,
+      "pr auc": 0.16228791428490388,
+      "accuracy": 0.9446219382321619,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 156.0,
+      "tn": 2661.0
+    }
+  },
+  "test_results": {
+    "constant (train late rate)": {
+      "log loss": 0.17161520972393074,
+      "roc auc": 0.5,
+      "pr auc": 0.036185060739209095,
+      "accuracy": 0.9638149392607909,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 140.0,
+      "tn": 3729.0,
+      "cost": 700.0
+    },
+    "never late": {
+      "log loss": 0.5832343665118077,
+      "roc auc": 0.5,
+      "pr auc": 0.036185060739209095,
+      "accuracy": 0.9638149392607909,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tp": 0.0,
+      "fp": 0.0,
+      "fn": 140.0,
+      "tn": 3729.0,
+      "cost": 700.0
+    },
+    "always late": {
+      "log loss": 15.534861384953828,
+      "roc auc": 0.5,
+      "pr auc": 0.036185060739209095,
+      "accuracy": 0.036185060739209095,
+      "precision": 0.036185060739209095,
+      "recall": 1.0,
+      "tp": 140.0,
+      "fp": 3729.0,
+      "fn": 0.0,
+      "tn": 0.0,
+      "cost": 3729.0
+    },
+    "sklearn": {
+      "log loss": 0.1827770314286208,
+      "roc auc": 0.6357832433053672,
+      "pr auc": 0.06646479411621728,
+      "accuracy": 0.8720599638149392,
+      "precision": 0.06172839506172839,
+      "recall": 0.17857142857142858,
+      "tp": 25.0,
+      "fp": 380.0,
+      "fn": 115.0,
+      "tn": 3349.0,
+      "cost": 955.0
+    },
+    "manual pytorch": {
+      "log loss": 0.18285498023033142,
+      "roc auc": 0.6364249320001532,
+      "pr auc": 0.06623129514808539,
+      "accuracy": 0.8718014990953735,
+      "precision": 0.06157635467980296,
+      "recall": 0.17857142857142858,
+      "tp": 25.0,
+      "fp": 381.0,
+      "fn": 115.0,
+      "tn": 3348.0,
+      "cost": 956.0
+    },
+    "nn.Module": {
+      "log loss": 0.18285498023033142,
+      "roc auc": 0.6364249320001532,
+      "pr auc": 0.06623129514808539,
+      "accuracy": 0.8718014990953735,
+      "precision": 0.06157635467980296,
+      "recall": 0.17857142857142858,
+      "tp": 25.0,
+      "fp": 381.0,
+      "fn": 115.0,
+      "tn": 3348.0,
+      "cost": 956.0
+    }
+  }
+}
