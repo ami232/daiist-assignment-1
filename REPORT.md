@@ -1,45 +1,73 @@
 # Assignment 1 Report
 
-*Delete this italic guidance as you fill in each section. You'll be asked to
-defend any of this without your code in front of you — write only what you
-can actually explain.*
-
-- **Name**:
-- **Student ID**:
-- **Email**:
-- **Group**: [BBADBA 5A | BBADBA 5B | PPLEDBA 5A | BDBA 3A]
+- **Name**: Javier Alonso
+- **Student ID**: 20101
+- **Email**: jalonso.ieu2022@student.ie.edu
+- **Group**: PPLEDBA 5A 
 
 ## Dataset
 
-*What is it, where did you get it, what does one row represent, how many
-rows/columns, and why did you pick it.*
+This project uses a real dataset from Display Internacional SRL, leader in the store fixture imports in the Dominican Republic. The dataset is exported form their stock system in July 2025. Includes 2,098 rows (where one row equals one SKU) of which 2,067 were used, and 17 original columns: code, description, stock, unit cost, four price tiers, pack size, supplier/department/area IDs, reorder point and quantity, and alert flags. 44 features were engineered such as product family and material parsed from the description, size in cm, code prefix, department, frequency-encoded supplier/department/area, word count, color and dimension flags. For cleaning, there were a total of 3 duplicates and 134 negative- stock values. The export displays negative stock as 0 but still computes Subtotal from the true value, so for 134 SKUs with Inventario = 0 and a negative Subtotal  the real stock was recovered as Subtotal ÷ Costo; these are items that sold beyond what was received, and without the correction they would be indistinguishable from genuinely idle zero-stock SKUs.A location column was empty and dropped as there was no relevance to stock location since all stock are stored in the same warehouse. Descriptions were normalized (whitespace, double spaces); the real work on them is feature engineering. When exporting, supplier, department, area had no name tables.They were kept as numeric ID’s and were handled later with frequency encoding explained later in the feature engineering section. Currency was confirmed to be at Dominican Pesos, as initially assumed. While this dataset offered real decision making power, another option was a 2024 dataset of purchases. However, the dataset, even though showing significant value transactions, was smaller and didn't offer a clear target nor depth for the relevance of this project. This dataset on the contrary provided the depth and clarity necessary but also a challenge since the heavy text descriptions consisted of inconsistent text and unclear ID’s that required feature engineering.
 
 ## Business / real-life framing
 
-*The hypothetical scenario this model serves, and what that scenario implies
-for how you built the pipeline — target definition, whether a time-based
-split was necessary and why (or why not), which metric should drive the
-decision threshold and why.*
+The business cases arises from a real need. Display Internacional is currently transforming their operations culture to embrace smart technologies and AI. In order to improve competitive advantage, one of their bottlenecks is how manual stock keeping/checks are currently done. With 63% of the catalogue having 0 to negative stock, their is a clear opportunity in a dead stock classifier. Of the 1,300 plus SKUs, which are the ones that are worth discontinuing.  This model ranks them to provide a shortlist so the companies supplier relations and sales departments can make informed decisions when it comes product performance evaluation. A dashboard that outputs this ranking was created to allow the company to review their decisions and their effects. The dashboard lets them move the threshold and watch the expected cost and number of flagged SKUs change. Under the cost assumptions the cost-minimizing threshold comes out at 0.80, which flags about 390 SKUs across the catalogue. Because this dataset is a snapshot of July 2025, there is no future data that can leak into the training set making a random split adequate. The target of the model labels any SKU as dead when its stock is  less than or equal to 0 and there are no reorder points in the dataset. A zero stock item with a reorder point is automatically assumed to be one the company would decide to keep. This of course is a proxy since implementing this would require sales history which was not available for the previous years. However, the current data suffices for the scope of this assignment. An unstratified random 80/20 split gave 61% dead in train and 58% in test. When stratifying on the label, both were 60.6% and the test set reflected the same class balance the model learned from.
+
+The objective was to create a threshold that shows wherever the expected cost of mistakes is lowest. There’s to possible mistakes in Displays actual business case, one being leaving a dead item in the catalogue resulting in False Negative, and taking off the catalogue a product that sells resulting in a False Positive. To define what was the effect of each, the first idea were flat numbers based on each items actual cost, but they varied per SKU and were unknown since a lower costing item could not possible have the same cost effect as a pricer item. The next idea were to frame False Positives as cost per SKU from the data. The export has price and cost, so gross margin per unit is known. Dropping a selling item would result in the absence of possible future sales so the cost derives from a fixed possible sale. This was calculated as the margin (which is the how the company profits, price-cost) times a fixed number of sales for which 2 was chosen merely as an empirical assumption. There’s an obvious caveat and it is that some items sale more than others for example smaller items like ganchos and perchas have more rotation while bigger ones like estantes and checkout tables have more sporadic rotation so fixing the future sales at two is likely inaccurate and not representative to the actual behavior of the items, with sales history the multiplier could be replaced by each item’s actual monthly sales rate. Price was used only in this cost calculation and never as a model feature: it is set as a fixed markup on cost, so it carries no information the cost column doesn’t already have, and keeping it out of the features avoids any question of leakage.
+
+Resulting from this decision, pricier items would overshadow cheaper items simply because they have bigger margins since they are pricier. The FP  definition would take margins in terms of absolute values and interprets them as higher cost  or loss. This  version of the model had 5 showcases that would go on to dominate at 36 to 43k Dominican pesos each. Because of this the minimizing threshold went to 0.96 and the model flagged almost nothing. To solve this, the FP cost was capped at 10,000 DOP. The cap of 10,000 DOP is an assumption: roughly three typical items’ FP cost, enough to bound the handful of 36–43k outliers without touching ordinary SKUs, and simple for the company to revise. A wrongly dropped expensive item gets noticed and relisted within weeks, bounding the real loss and thus justifying the cap. With the cap, and a .98 cost-minimizing threshold, only two items were flagged. It did not completely solve the problem. 
+
+In contrast to False Positives whose effect is felt once (the absent sale), False Negatives create a yearly effect, taking space in the catalogue and time on the sales team when quoting for an item that is not there. To reflect this, FN was  calculated as an horizon, 500 DOP, assumption reflecting the quoting time lost in terms of cost, times 3 years, assumption of the time it takes to notice a dead stock on a manual inventory system as the one Display currently has.  The model gives a p that its dead for all SKU’s. Flagged items that are live with a probability of 1-p have a cost of FP. Items not flagged with probability p but is dead have a cost of FN. Flagging is always cheaper when the probability of flagging the item when live (1-p), times the cost FP is less than the probability of not flagging a dead item times its cost FN. A break even probability was calculated resulting of solving for p in the previous condition when flagging is cheaper than not, resulting in *p* > FP ÷ (FP + FN). This break even probability, reflects the probability above which flagging is the cheaper choice. For a typical item with FP ≈ 1,300: with FN = 500 it’s 1300/1800 = 0.72; with FN = 1,500 it’s 1300/2800 = 0.46. The model rarely reaches 72% confidence but often reaches 46%, so the cost-minimising threshold dropped from 0.98 to 0.80 and the flagged count went from 2 to 78 of 414 test SKUs. With the break even probability, the threshold reacts to how expensive each mistake is more accurately. Our definition of a dead item is one that appears in the catalogue but isn’t in the inventory. Because nothing was bought and it can’t be sold, the cost of leaving a dead expensive vs a cheap item is virtually the same. To reflect this FN is flat. To reflect the cost of holding the item as FN we would require historical sales data as mentioned in the limitations of this model.
+
 
 ## Data preparation & feature engineering
 
-*What you engineered and why, and any data-quality decisions you made along
-the way — e.g. "segment X had defective data, so I excluded it and used a
-population-average default for scope Y at inference time; the impact of
-that choice is Z."*
+As mentioned in the dataset introduction, feature engineering was necessary to handle inconsistent text and non-informative ID’s. From Description, product family and material were taken as keywords. Similarly to the overshadowing issue in the uncapped FP definition, largely sized items would overshadow smaller items,  stretching the scale immensely. To handle this, Size in cm was parsed from inches/mm/metres, using using a logarithmic function. This allowed the manual gradient-descent loop to match sklearn.  has_dims flags items to =1 if description has “AxB” , has_color flags items to =1 if description contains a color word, and n_words is the count of words in the description. From Codigo, the alphabetical prefix  was taken. Only the 10 most frequent prefixes get their own column, every other was taken grouped into OTHER. Department was created from the 8 most frequent departments got a column each (1 if the SKU belongs to that department, 0 otherwise), the rest grouped as OTHER. Supplier, department and area IDs were also frequency-encoded, each ID replaced by how many times it appears in the training set. With 74 suppliers on ~1,650 rows, one-hot encoding would create dozens of mostly-empty columns that fit noise rather than signal.
+
+The fit dict includes everything learned form the data from the frequency tables to the scaler which were computed on train only and reused on test and the dashboard for input. Column order was locked so that in a test row a missing category aligns. Scaling was done lastly. To prevent leakage, stock reorder value and alert columns were banned since labels were built from them. the price column as mentioned before wasn’t used as a feature but rather to compute False Positives. Shuffling the values of all columns that were banned would show whether they would leak or not into the feature columns, they didn’t. Somethings required rethinking, such as log(Costo) coefficient as a feature (+.07) which added practically nothing, it was dropped. Empaque was a constant in nearly all SKUs (99.7% of them specifically). A pack of 12 landed 17 SD out and drove the score to P = .000 so it was also dropped. The first dataset option was dropped, and so was the original framing of the project: it began as a regression predicting log(cost), but ±78% median error was too weak to support any pricing decision, so after a quick logistic test gave AUC 0.72 the problem was reframed as classification.
 
 ## Modeling: three implementations, one model
 
-*Which model (linear or logistic regression) and why. A results table
-comparing scikit-learn, the manual PyTorch loop, and the standard
-torch.nn.Module/torch.optim workflow, on the same test set, against the
-naive baseline. Do the three agree? If not, why not?*
+| Method | thr | acc | prec | rec | F1 | AUC |
+| --- | --- | --- | --- | --- | --- | --- |
+| Majority baseline | — | 0.606 | 0.606 | 1.00 | 0.755 | 0.50 |
+| Costo > median | — | 0.548 | 0.672 | 0.498 | 0.572 | 0.562 |
+| sklearn LogReg (C=1) | 0.5 | 0.623 | 0.681 | 0.713 | 0.696 | 0.721 |
+| manual PyTorch (lr=0.1, 2000 ep) | 0.5 | 0.628 | 0.683 | 0.721 | 0.702 | 0.720 |
+| nn.Linear + Adam | 0.5 | 0.626 | 0.682 | 0.717 | 0.699 | 0.721 |
+| sklearn / manual / nn.Linear | 0.80 | 0.54 | 0.89 | 0.28 | 0.43 | 0.72 |
+
+
+Three implementations were used in the logistic regression model. Scikit-earn, a manual PyTorch loop, and the standard PyTorch implementation. All share the same stratified 80/20 split, same 44 scaled features, same L2 penalty strength, and same validation slice for picking hyperparameters.
+
+The Scikit-Learn Implementation: 
+- LogisticRegression(C=1).fit(X_train, y_train)
+- Is our reference answer: solved to convergence by sklearn’s L-BFGS solver, so it’s the reference the other two are checked against
+
+The manual PyTorch loop:
+- Create weights vector w (length 44 which is the total features engineered) and bias b. Both with requires_grad=True
+- 2,000 Epochs: lr 0.1 picked on the validation slice
+- PROCESS:
+    - logits = X·w + b
+    - loss = cross-entropy on the logits + l2 × Σw² 
+    -  backward() fills w.grad and b.grad
+    - Update w and b by lr × grad inside no_grads
+    - Zero the grads
+    - Repeat
+
+Standard PyTorch implementation:
+- Implemented through nn.Linear + BCEWithLogitsLoss + Adam
+- nn.Linear holds the Regresssion fromula, BCEWithLogitsLoss holds the loss formula, and Adam is the libraries optimizer updates and adapts per weight.
+- The learning rate was left untuned at 0.05, because of Adam  optimizer, in contrast to the Manual implementation that was tuned.
+- 3,000 epochs; weight_decay matched to the penalty.
+
+The results of the three converge. At first, they did not agree. The validation grid initially picked C=10, which beat C=1 by only 0.0006 AUC, but with regularisation effectively switched off the manual loop was 1.85 away from sklearn on its worst coefficient after 2,000 epochs, and still 0.91 away after 50,000. The gap was entirely on two kinds of feature: size_cm, where a few huge values stretch the scale, and empaque / log1p:empaque, which carry the same information twice. Both make the loss surface steep in some directions and almost flat in others, so plain gradient descent, which takes the same small step everywhere, crawls along the flat direction. sklearn’s solver adapts its step to the shape of the surface and is not affected. The predictions were unaffected (test AUC 0.719 vs 0.721) because those particular weights barely change the output, so the three disagreed on coefficients but not on behaviour. Instead of training longer, I fixed the features: log1p on size, removed the duplicate pack-size column, and limited C to at most 1 so the penalty is never switched off. After that the loop converged in 2,000 epochs and all three implementations matched. The two PyTorch versions also report the same loss once you account for where the penalty lives: the manual loop prints 0.584, which is BCE 0.569 plus the L2 term 0.015 it adds explicitly; nn.Linear prints 0.568, BCE only, because its penalty is applied by Adam’s weight_decay rather than inside the loss. They are minimizing the same thing.
+
 
 ## Limitations & next steps
 
-*Real limitations you found, and concretely how you'd address each one with
-more time or data — not generic hedging.*
+There are several limitations to this model. First and foremost the most important limitation comes from the data itself, since its a snapshot of a singular month with no other historical sales data to draw conclusions from, this is the source of many other limitations to be mentioned in continuation. In relation to this limitation, as mentioned in the beginning, the dead label is a proxy since its definition, stock ≤ 0 with no reorder point, is what the data allows for. Additionally, the nature of the data prevents us from using the model for future data than the one the model was trained on. A solution to these limitations is to have 12-24 month sales data which would allow to a scope extension, time-based splits. Moving on to limitations unrelated to the nature of the data, assumptions are reasoned but not validated with the company. This limitation was handled with the threshold slider in the dashboard. While precision was .89, a .80 threshold recall was .28. This shows that while the model guesses are correct, it predicts less than it probably should. A fix would be redoing features in order to make the model apt for complete stock clean-up. The supplier, department, and area ID’s are still uninformative despite frequency encoding, which shows how common they are but not what they mean. The fix would be to amplitfy the data so it includes the supplier name table with related information. Because descriptions are so different, some with English abbreviations others with Spanish ones, and five different measurement types, the method chosen of using the most frequent ones is good for generalization but still misses a significant amount of items. This largely affected the AUC which held at .72. Natural Language Processing Techniques such as TF-IDF could be used. The last limitation resulted from not checking feature distribution before training. log(cost) and pack size needed transformations but were useless in the end on all three implementations, time could’ve been saved if feature distribution had been checked. 
 
 ## Generative AI use disclosure
 
-*Per the syllabus AI Policy: what you used and how, or "no AI content used."*
+I used Claude (chat) and Claude Code throughout this assignment, within the syllabus policy. Claude cleaned the two raw exports from the company’s stock system (duplicates, the negative-stock recovery, column normalisation), assessed which dataset was suitable, scaffolded the repository, and helped me debug the environment (NumPy/torch incompatibility, CI setup on the fork). Claude Code generated train.py,  app.py, src/features.py and src/train_manual.py from specifications I wrote, and I read and reviewed every file; the manual PyTorch loop and feature code were walked through with me line by line until I could explain them. The decisions in this report — the choice of dataset, the switch from regression to classification after the first results, the target definition, the leakage rules, which features to try and which to drop, and the four-step cost model (per-SKU margin, cap, time horizon) that sets the threshold — are mine, and they were made in conversation with Claude acting as a reviewer who questioned them. Claude also helped me format the results table and tidy the write-up of the three-method comparison from my run output. An earlier AI-drafted report from the abandoned regression version was kept as working notes and deleted before submission.
