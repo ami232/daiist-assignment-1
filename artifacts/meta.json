@@ -1,0 +1,53 @@
+{
+  "features": [
+    "log_daily_watch",
+    "active_daily",
+    "last_login_days",
+    "inactive_30",
+    "low_watch",
+    "shared_account",
+    "basic_plan",
+    "prepaid_payment"
+  ],
+  "target": "churned",
+  "best_C": 100,
+  "lr_manual": 2.0,
+  "lr_standard": 0.1,
+  "costs": {
+    "TP": 54.73359999999999,
+    "FP": 13.683399999999997,
+    "FN": 82.10039999999998,
+    "TN": 0.0
+  },
+  "threshold": 0.333,
+  "test_results": {
+    "naive baseline": {
+      "AUC": 0.5,
+      "log loss": 0.6931,
+      "Brier": 0.25,
+      "accuracy@0.5": 0.503,
+      "EUR/1,000 @ t*": 34331.6506
+    },
+    "scikit-learn": {
+      "AUC": 0.995,
+      "log loss": 0.0892,
+      "Brier": 0.023,
+      "accuracy@0.5": 0.971,
+      "EUR/1,000 @ t*": 28023.6032
+    },
+    "manual torch": {
+      "AUC": 0.995,
+      "log loss": 0.0892,
+      "Brier": 0.023,
+      "accuracy@0.5": 0.971,
+      "EUR/1,000 @ t*": 28023.6032
+    },
+    "standard torch": {
+      "AUC": 0.995,
+      "log loss": 0.0892,
+      "Brier": 0.023,
+      "accuracy@0.5": 0.971,
+      "EUR/1,000 @ t*": 28023.6032
+    }
+  }
+}
