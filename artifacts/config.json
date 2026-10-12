@@ -1,0 +1,1 @@
+{"best_C": 0.1, "compas_cut": 5, "limit_fpr": 0.2647058823529412, "thresholds": {"sklearn": 0.3886019650252235, "manual_torch": 0.38888832926750183, "standard_torch": 0.38888171315193176}}
