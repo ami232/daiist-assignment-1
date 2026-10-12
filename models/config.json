@@ -1,0 +1,16 @@
+{
+  "features": [
+    "elo_diff",
+    "elo_surf_diff",
+    "form_diff",
+    "surf_wr_diff",
+    "fatigue_diff",
+    "exp_diff",
+    "log_rank_diff"
+  ],
+  "best_c": 0.01,
+  "lambda": 0.004434196523589925,
+  "lr_manual": 1.0,
+  "lr_module": 1.0,
+  "edge_threshold": 0.0
+}
