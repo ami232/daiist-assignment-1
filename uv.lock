@@ -231,6 +231,7 @@ dependencies = [
     { name = "plotly" },
     { name = "pytest" },
     { name = "scikit-learn" },
+    { name = "scipy" },
     { name = "torch", version = "2.11.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
     { name = "torch", version = "2.11.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "platform_machine != 'arm64' or sys_platform != 'darwin'" },
 ]
@@ -246,6 +247,7 @@ requires-dist = [
     { name = "plotly", specifier = ">=5.24" },
     { name = "pytest", specifier = ">=8.0" },
     { name = "scikit-learn", specifier = ">=1.5" },
+    { name = "scipy", specifier = ">=1.18.1" },
     { name = "torch", specifier = ">=2.4,<2.12", index = "https://download.pytorch.org/whl/cpu" },
 ]
 
