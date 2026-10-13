@@ -1,0 +1,53 @@
+{
+  "features": [
+    "log_recency",
+    "log_orders",
+    "log_revenue",
+    "log_avg_order",
+    "log_lines_per_order",
+    "log_products",
+    "days_since_first",
+    "one_time",
+    "log_overdue",
+    "recent_share",
+    "return_rate",
+    "uk",
+    "season_spring",
+    "season_autumn",
+    "season_winter",
+    "xmas_share",
+    "xmas_x_autumn"
+  ],
+  "lookback_days": 180,
+  "horizon_days": 90,
+  "cutoffs": {
+    "train": [
+      "2010-06-01",
+      "2010-09-01",
+      "2010-12-01",
+      "2011-03-01"
+    ],
+    "val": "2011-06-01",
+    "test": "2011-09-01"
+  },
+  "costs": {
+    "discount": 0.1,
+    "margin": 0.3,
+    "save_rate": 0.15,
+    "retained_quarters": 4,
+    "mail_cost": 1.0
+  },
+  "break_even_threshold": 0.37735849056603776,
+  "chosen_thresholds": {
+    "sklearn": 0.38,
+    "manual": 0.38,
+    "module": 0.38
+  },
+  "recency_rule_days": 40,
+  "C": 1.0,
+  "lam": 8.145312372729494e-05,
+  "lr": {
+    "manual": 2.0,
+    "module": 2.0
+  }
+}
