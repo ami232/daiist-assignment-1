@@ -1,45 +1,63 @@
 # Assignment 1 Report
 
-*Delete this italic guidance as you fill in each section. You'll be asked to
-defend any of this without your code in front of you — write only what you
-can actually explain.*
 
-- **Name**:
-- **Student ID**:
-- **Email**:
-- **Group**: [BBADBA 5A | BBADBA 5B | PPLEDBA 5A | BDBA 3A]
+- **Name**: Andrés Ramírez López
+- **Student ID**: 19077
+- **Email**: aramirez.ieu2022@student.ie.edu
+- **Group**: BBADBA 5A 
 
 ## Dataset
 
-*What is it, where did you get it, what does one row represent, how many
-rows/columns, and why did you pick it.*
+I used the UCI Bank Marketing dataset, taken from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing). I worked with the 'bank.csv' file, not the larger 'bank-full.csv' version because I thought that it would be enough to use the unextended dataset, also it simplified the model training. This 'bank.csv' dataset has 4,521 rows and 17 columns. Each row is one client and the result of a direct marketing campaign run by a Portuguese bank. The target variable ("y") shows whether the client subscribed to a term deposit ("yes" or "no"). The columns can be grouped into four types of information: client profile ("age", "job", "marital", "education"), financial situation ("default", "balance", "housing", "loan"), campaign contact ("contact", "day", "month", "duration", "campaign"), and history of previous campaigns ("pdays", "previous", "poutcome"), plus the result ("y"). Two details are worth noting: "pdays = -1" means the client was not contacted in a previous campaign, and "marital = divorced" also includes widowed people, according to the dataset description. I chose this dataset because I am interested in finance and would like to work in banking in the future, and starting with models like this will give me a perspective on how the industry works. Especially this is within commercial banking, which I find interesting. Also, it is an open dataset and easy to access, which again made the data availability relatively.
 
 ## Business / real-life framing
 
-*The hypothetical scenario this model serves, and what that scenario implies
-for how you built the pipeline — target definition, whether a time-based
-split was necessary and why (or why not), which metric should drive the
-decision threshold and why.*
+The model helps a bank's marketing team decide which clients to call first before a campaign. It gives each client a probability of subscribing to a term deposit, which is a savings product where the client keeps money in the bank for a fixed period and receives interest for it. The target is "y", which is "yes" or "no". The model helps to prioritize clients, but it cannot say what each client will do. It is used before the campaign starts, so I do not use "duration" or "campaign" because those values are only known after contacting the client.
+
+The model can make two kinds of errors. A false positive, which is when a client predicted as "yes" whose recorded outcome is "no". The bank makes a call that does not convert into a client, or in other words, a useless call. The other error would be a false negative, which is when a client predicted as "no" and whose recorded outcome is "yes". The bank may lose a possible subscription because they decided not to call. I assume a false positive costs 1 unit and a false negative costs 3 units, because missing a subscription seems worse than making one extra call. These numbers are assumptions made from me, but can be changed in the dashboard according to others criteria. The dataset does not show the real cost of a call or the value of a subscription, thus, I used hypothetical units. The total cost is (false positives × 1) + (false negatives × 3). For this reason, accuracy is not my main metric. I use the validation set to see how the cost changes with different thresholds. The dashboard starts with the same 1:3 assumption, but as said previously, can be changed.
+
+I would have trained the model with older campaigns and test it with newer ones. This is how the model would be used in real life: to predict something that has not happened yet. But this dataset only has the day and the month of each contact, not the year. Because of this, I cannot tell which campaigns came first. So I split the data randomly into training, validation, and test sets. I also made sure each set has a similar share of "yes" and "no" clients. This is called a stratified split. The result may look better than it would in a real future campaign. Also, the model only finds patterns in the data. It does not prove that calling a client makes them subscribe.
 
 ## Data preparation & feature engineering
 
-*What you engineered and why, and any data-quality decisions you made along
-the way — e.g. "segment X had defective data, so I excluded it and used a
-population-average default for scope Y at inference time; the impact of
-that choice is Z."*
+I loaded "bank.csv" with pandas, using sep=";" because it was how the file separated attributes and values. The file has 4,521 rows, 17 columns, and no missing values. Some categorical columns have the value "unknown", but since this is not a missing value, I kept it as a category. I also turned the target "y" into numbers: "yes" is 1 and "no" is 0. The data has 521 "yes" and 4,000 "no". I did not use oversampling or undersampling, so the original distribution stays the same and results are not altered in any way.
+
+I chose 11 columns at the start. They are about the client's profile ("age", "job", "marital", "education"), their finances ("default", "balance", "housing", "loan"), and their previous campaigns ("pdays", "previous", "poutcome"). I did not use "duration" and "campaign", because they have information about the current campaign. We would not have it when predicting before the campaign starts so it would be unreal using it for this assignment. I also left out "contact", "day", and "month", because they describe how the customer was contacted and the moment of past contacts, not the client, which made it less relevant for our models. Moreover, in the dataset I found quite a tricky variable, which was "pdays". "pdays = -1" means the client was never contacted before, so it does not mean "minus one day" as it can be understood if not looking carefully. To solve this, I created two new variables: "was_previously_contacted", which is 0 (if not) or 1 (if yes) and "days_since_previous_contact" has the number of days since the last call, and I set it to 0 for clients without a previous contact. Then I removed the original "pdays". I thought this made it easier to understand this variable and facilitated training because we had clearer features.
+
+I split the data into 60% training, 20% validation, and 20% test, which gives 2,712, 904, and 905 rows. The split is stratified, which means that each set keeps about the same share of "yes" clients as the full dataset, which is 11.52% as mentioned before. I did this because the data is imbalanced, and a normal random split could give one set with many more or many fewer "yes" than the others and affect training. I also used random_state=42. This fixes the random process, so the split is always the same and I can repeat my results whenever I want. The number 42 is just a common choice in ML designs but can be changed if desired and the split would be different with another number.
+
+The five numeric variables are standardized with "StandardScaler". This is done because they have very different ranges. For example, "balance" goes from -3,313 to 71,188, and "age" goes from 19 to 87. The scaler puts them on a comparable scale for a better training. The seven categorical variables use "OneHotEncoder(handle_unknown="ignore")". For example, "job" has 12 categories, and "education" includes "unknown". One-hot encoding creates a 0/1 column for each category. This way, I do not give a false numeric order to categories like "student", "retired", or "technician". I built the preprocessing with a "ColumnTransformer". I fitted it only on the training set and then applied it to validation and test without fitting it again. This way, the test set does not influence the scaling or the categories learned during training. After the transformations, the model receives 34 columns: 5 numeric and 29 one-hot columns. I use the same matrix for the three models. This is something that it is very commonly done when preparating data for training a model because with this, it will allow to include all of the relevant categorical features as well as use similar scales in the numeric ones.
 
 ## Modeling: three implementations, one model
 
-*Which model (linear or logistic regression) and why. A results table
-comparing scikit-learn, the manual PyTorch loop, and the standard
-torch.nn.Module/torch.optim workflow, on the same test set, against the
-naive baseline. Do the three agree? If not, why not?*
+The target "y" has two values, "yes" and "no", so this is a binary classification problem. I used logistic regression because it is simple and I can build it in three different ways without changing the model. This way I compare the training methods, not different models. It has limits too: it only learns linear relationships, and it does not prove that the variables cause a subscription.
+
+The three implementations use the same training rows, the same 34 features, and L2 regularization. This is important because then the differences come only from the implementation. The first one uses scikit-learn with LogisticRegression(C=1.0, solver="lbfgs", max_iter=2000). The second is a manual PyTorch version, where I calculate the loss, get the gradients with autograd, and update the weights myself. The third is a standard PyTorch version with nn.Linear and torch.optim.SGD. Both PyTorch versions use a learning rate of 0.1 and 10,000 epochs, and their test probabilities are the same. scikit-learn uses a different algorithm, but its results are very close.
+
+I also compared the models with a naive baseline that always predicts "no". This is important because only 11.52% of the clients are "yes", so a rule that learns nothing already gets about 88.5% accuracy and show us that we cannot use accuracy as our main metric thereof.
+
+I evaluated everything on the test set (905 rows) with the default threshold of 0.5. I used it as a neutral starting point, so the three models and the baseline are compared with the same rule. It is probably not the best threshold for this problem, because only 11.52% of the clients are "yes" and a false negative costs more than a false positive in my scenario. I did not choose a threshold using the test set, because then the test results would not be an honest evaluation. 
+
+The three models have almost the same results: accuracy 0.892, precision for "yes" 0.615, recall for "yes" 0.154, F1 0.246, and ROC-AUC 0.680. Average precision is 0.303 for scikit-learn and 0.304 for both PyTorch versions. The baseline has accuracy 0.885, ROC-AUC 0.500, and average precision 0.115, and its precision, recall and F1 for "yes" are 0.
+
+The accuracy is only 0.7 points higher than the baseline. The improvement is clearer in ROC-AUC (0.680 against 0.500) and average precision (about 0.304 against 0.115), so the models rank clients better than a constant prediction. But the recall for "yes" is only 0.154, so the models find about 15% of the real "yes" clients. This means the models beat the baseline in some metrics, but they are not good enough for a real campaign yet.
+
+The dashboard uses the validation set to see how the confusion matrix and the cost change with the threshold. I keep the test set for the final comparison. The dashboard starts with a cost of 1 for each false positive and 3 for each false negative. These are assumptions, not real costs, that I made because I believe that a lost customer has to be more expensive than a useless phone call.
 
 ## Limitations & next steps
 
-*Real limitations you found, and concretely how you'd address each one with
-more time or data — not generic hedging.*
+The first limitation is that the model finds very few "yes" clients with the default threshold. On the test set, the recall for "yes" is 0.154 with a threshold of 0.5, so the model detects only about 15% of the real subscriptions. ROC-AUC and average precision are better than the baseline, but this does not mean the model is already good to select clients. As a next step, I would try different thresholds on the validation set using the 1:3 cost, choose one, and test it only once on the test set. For now, the test results use 0.5, so the threshold is not optimized yet.
+
+The second limitation is that I cannot know how the model would work in future campaigns. The data has no year, so I used a random split, and the results come from one partition of a small dataset (4,521 rows). They do not prove that the model will work the same in another campaign. A next step would be to get data from several campaigns with dates and use the most recent ones as the test set.
+
+The third limitation is that the 1:3 cost is my own assumption, not a real economic calculation. I decided that losing a client who would subscribe is worse than making a call that does not work. But the dataset does not say how much a call costs or how much a term deposit is worth, so the costs in the dashboard are only relative units. A next step would be to ask the bank for these numbers and calculate the cost and the threshold again. In the meantime, the dashboard can show how the decision changes with different assumptions.
+
+There are also some smaller limitations. Logistic regression is a simple model and it may not capture complex relationships, but for this assignment it lets me compare the three training methods. The value "unknown" can mean different things in each variable, so I would ask the person in charge of the data what it means. Also, the predictions do not prove causality: the model finds patterns, but it does not show that calling a client causes a subscription. To measure that, I would need a controlled test. All these improvements are only proposals, and I have not tested them in this project.
 
 ## Generative AI use disclosure
 
-*Per the syllabus AI Policy: what you used and how, or "no AI content used."*
+I used an AI assistant (Claude) in this project. It helped me in several ways, and it did more than correct grammar. It helped me explore the dataset and understand the meaning of some variables, for example "pdays = -1". 
+
+The AI also helped me write and debug the code to explore the data, prepare the variables, train the three versions of logistic regression, save their artifacts, and build the dashboard. It helped me interpret the metrics, compare the models with the baseline, and check that the app started correctly. Finally, it helped me structure and review the sections of this report.
+
+I reviewed all these suggestions and accepted them.
