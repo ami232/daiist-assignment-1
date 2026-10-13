@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
+data/Loan_default.csv
+__pycache__/

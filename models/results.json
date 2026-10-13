@@ -1,0 +1,60 @@
+{
+  "results": {
+    "baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.116,
+      "threshold": 0.01,
+      "cost": 1989.0,
+      "cost_per_loan": 0.884,
+      "tn": 0,
+      "fp": 1989,
+      "fn": 0,
+      "tp": 261
+    },
+    "sklearn": {
+      "roc_auc": 0.7561877683581538,
+      "pr_auc": 0.31696293981365214,
+      "threshold": 0.09999999999999999,
+      "cost": 1386.0,
+      "cost_per_loan": 0.616,
+      "tn": 1243,
+      "fp": 746,
+      "fn": 64,
+      "tp": 197
+    },
+    "manual_torch": {
+      "roc_auc": 0.7557235292191344,
+      "pr_auc": 0.3175755401350302,
+      "threshold": 0.09999999999999999,
+      "cost": 1395.0,
+      "cost_per_loan": 0.62,
+      "tn": 1244,
+      "fp": 745,
+      "fn": 65,
+      "tp": 196
+    },
+    "standard_torch": {
+      "roc_auc": 0.7476677280598849,
+      "pr_auc": 0.30893910687213433,
+      "threshold": 0.09,
+      "cost": 1382.0,
+      "cost_per_loan": 0.6142222222222222,
+      "tn": 1147,
+      "fp": 842,
+      "fn": 54,
+      "tp": 207
+    }
+  },
+  "config": {
+    "fn_cost": 10.0,
+    "fp_cost": 1.0,
+    "best_C": 10.0,
+    "lam": 9.524716639679969e-06,
+    "lr_manual": 1.0,
+    "lr_standard": 0.01,
+    "manual_epochs": 1000,
+    "standard_epochs": 30,
+    "seed": 42,
+    "base_rate": 0.11620154300409563
+  }
+}
