@@ -4,3 +4,7 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
+
+# large data (not committable)
+data/all_marathons_final.csv
+data/marathons_features.csv

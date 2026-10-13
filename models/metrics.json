@@ -1,0 +1,57 @@
+{
+  "best_C": 10,
+  "lambda": 9.803921568627451e-06,
+  "lr_manual": 1.0,
+  "lr_module": 1.0,
+  "epochs": 3000,
+  "cost_fn": 10,
+  "cost_fp": 1,
+  "thresholds": {
+    "baseline": 0.01,
+    "sklearn": 0.06,
+    "manual": 0.06,
+    "module": 0.06
+  },
+  "results": [
+    {
+      "model": "baseline",
+      "roc_auc": 0.5,
+      "log_loss": 0.45766550952010704,
+      "threshold": 0.01,
+      "accuracy": 0.15616666666666668,
+      "precision": 0.15616666666666668,
+      "recall": 1.0,
+      "cost": 5063
+    },
+    {
+      "model": "sklearn",
+      "roc_auc": 0.7757831894437452,
+      "log_loss": 0.36968410033318255,
+      "threshold": 0.06,
+      "accuracy": 0.5216666666666666,
+      "precision": 0.22995250069851914,
+      "recall": 0.8783351120597652,
+      "cost": 3896
+    },
+    {
+      "model": "manual",
+      "roc_auc": 0.7756587172385678,
+      "log_loss": 0.36979976829097033,
+      "threshold": 0.06,
+      "accuracy": 0.5213333333333333,
+      "precision": 0.22967309304274938,
+      "recall": 0.8772678762006404,
+      "cost": 3907
+    },
+    {
+      "model": "module",
+      "roc_auc": 0.7756589280297704,
+      "log_loss": 0.36979976829097033,
+      "threshold": 0.06,
+      "accuracy": 0.5213333333333333,
+      "precision": 0.22967309304274938,
+      "recall": 0.8772678762006404,
+      "cost": 3907
+    }
+  ]
+}
