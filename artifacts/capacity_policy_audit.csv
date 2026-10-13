@@ -1,0 +1,4 @@
+model,threshold,policy,sessions_contacted,contact_rate,purchasers_contacted,precision,recall,capacity_exceeded
+Scikit-learn,0.25,A: Conservative fixed cutoff,136,0.0787492762015055,31,0.22794117647058823,0.14351851851851852,False
+Manual PyTorch,0.25,A: Conservative fixed cutoff,136,0.0787492762015055,31,0.22794117647058823,0.14351851851851852,False
+PyTorch nn.Module,0.25,A: Conservative fixed cutoff,136,0.0787492762015055,31,0.22794117647058823,0.14351851851851852,False
