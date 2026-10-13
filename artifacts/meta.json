@@ -1,0 +1,104 @@
+{
+ "feature_set": "5. + growth trend (final)",
+ "feature_names": [
+  "temp",
+  "temp_sq",
+  "hum",
+  "windspeed",
+  "weather_mist",
+  "weather_rain_snow",
+  "off_01h",
+  "off_02h",
+  "off_03h",
+  "off_04h",
+  "off_05h",
+  "off_06h",
+  "off_07h",
+  "off_08h",
+  "off_09h",
+  "off_10h",
+  "off_11h",
+  "off_12h",
+  "off_13h",
+  "off_14h",
+  "off_15h",
+  "off_16h",
+  "off_17h",
+  "off_18h",
+  "off_19h",
+  "off_20h",
+  "off_21h",
+  "off_22h",
+  "off_23h",
+  "work_00h",
+  "work_01h",
+  "work_02h",
+  "work_03h",
+  "work_04h",
+  "work_05h",
+  "work_06h",
+  "work_07h",
+  "work_08h",
+  "work_09h",
+  "work_10h",
+  "work_11h",
+  "work_12h",
+  "work_13h",
+  "work_14h",
+  "work_15h",
+  "work_16h",
+  "work_17h",
+  "work_18h",
+  "work_19h",
+  "work_20h",
+  "work_21h",
+  "work_22h",
+  "work_23h",
+  "trend_years"
+ ],
+ "scaler": {
+  "temp": [
+   0.46764313370129335,
+   0.1884466753555544
+  ],
+  "temp_sq": [
+   0.254199324491309,
+   0.18370815510201338
+  ],
+  "hum": [
+   0.6269692725924705,
+   0.20035834587178442
+  ],
+  "windspeed": [
+   0.1961703435208831,
+   0.125169457943294
+  ],
+  "trend_years": [
+   0.7028903782329569,
+   0.4024726983316099
+  ]
+ },
+ "alpha": 10.0,
+ "alpha_search": [
+  {
+   "alpha": 0.1,
+   "val MAE": 60.21580121353097
+  },
+  {
+   "alpha": 1.0,
+   "val MAE": 60.06392232660814
+  },
+  {
+   "alpha": 10.0,
+   "val MAE": 59.217861405144504
+  }
+ ],
+ "learning_rate": 0.5,
+ "epochs": 3000,
+ "agreement": {
+  "max |coef diff| manual vs sklearn": 0.0018280191942741109,
+  "max |coef diff| nn.Module vs sklearn": 0.0018280191942741109,
+  "max |test prediction diff| manual vs sklearn (bikes)": 0.3759910960866648,
+  "max |test prediction diff| nn.Module vs sklearn (bikes)": 0.3759910960866648
+ }
+}
