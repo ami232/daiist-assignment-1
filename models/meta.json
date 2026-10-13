@@ -1,0 +1,12 @@
+{
+  "prior": 0.35305271141448613,
+  "thresholds": {
+    "baseline": 0.0,
+    "sklearn": 0.28,
+    "manual": 0.28,
+    "nn": 0.28
+  },
+  "C": 100,
+  "manual_lr": 1.0,
+  "nn_lr": 1.0
+}

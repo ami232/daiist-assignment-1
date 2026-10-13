@@ -1,0 +1,16 @@
+,sklearn,manual,nn
+log_period,-0.832,-0.842,-0.842
+log_depth,-2.185,-2.024,-2.037
+log_snr,4.362,4.354,4.354
+log_prad,-0.492,-0.689,-0.672
+log_duration,-1.027,-1.023,-1.023
+log_teq,-2.792,-2.798,-2.798
+log_srad,1.279,1.357,1.351
+koi_impact,-0.13,-0.117,-0.118
+koi_steff,-0.102,-0.101,-0.101
+koi_kepmag,0.645,0.643,0.643
+log_snr_per_transit,-0.926,-0.925,-0.925
+log_centroid_offset,-2.52,-2.514,-2.514
+is_giant,-3.032,-3.043,-3.042
+is_grazing,0.004,0.058,0.054
+is_multi,0.968,0.967,0.967
