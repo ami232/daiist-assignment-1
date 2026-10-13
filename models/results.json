@@ -1,0 +1,49 @@
+{
+  "alpha": 1,
+  "results": {
+    "val": {
+      "baseline": {
+        "median_APE_%": 24.55,
+        "within_10%": 22.1,
+        "RMSE_$": 83163
+      },
+      "scikit-learn": {
+        "median_APE_%": 5.45,
+        "within_10%": 75.5,
+        "RMSE_$": 19959
+      },
+      "manual PyTorch": {
+        "median_APE_%": 5.51,
+        "within_10%": 75.0,
+        "RMSE_$": 19994
+      },
+      "nn.Module": {
+        "median_APE_%": 5.51,
+        "within_10%": 74.8,
+        "RMSE_$": 19994
+      }
+    },
+    "test": {
+      "baseline": {
+        "median_APE_%": 24.79,
+        "within_10%": 20.8,
+        "RMSE_$": 75315
+      },
+      "scikit-learn": {
+        "median_APE_%": 6.51,
+        "within_10%": 72.1,
+        "RMSE_$": 20265
+      },
+      "manual PyTorch": {
+        "median_APE_%": 6.43,
+        "within_10%": 70.1,
+        "RMSE_$": 19916
+      },
+      "nn.Module": {
+        "median_APE_%": 6.43,
+        "within_10%": 70.1,
+        "RMSE_$": 19916
+      }
+    }
+  }
+}
