@@ -1,0 +1,31 @@
+TEAM_ID,ABBREVIATION,NICKNAME,CITY,ARENA
+1610612737,ATL,Hawks,Atlanta,State Farm Arena
+1610612738,BOS,Celtics,Boston,TD Garden
+1610612740,NOP,Pelicans,New Orleans,Smoothie King Center
+1610612741,CHI,Bulls,Chicago,United Center
+1610612742,DAL,Mavericks,Dallas,American Airlines Center
+1610612743,DEN,Nuggets,Denver,Pepsi Center
+1610612745,HOU,Rockets,Houston,Toyota Center
+1610612746,LAC,Clippers,Los Angeles,Staples Center
+1610612747,LAL,Lakers,Los Angeles,Staples Center
+1610612748,MIA,Heat,Miami,AmericanAirlines Arena
+1610612749,MIL,Bucks,Milwaukee,Fiserv Forum
+1610612750,MIN,Timberwolves,Minnesota,Target Center
+1610612751,BKN,Nets,Brooklyn,Barclays Center
+1610612752,NYK,Knicks,New York,Madison Square Garden
+1610612753,ORL,Magic,Orlando,Amway Center
+1610612754,IND,Pacers,Indiana,Bankers Life Fieldhouse
+1610612755,PHI,76ers,Philadelphia,Wells Fargo Center
+1610612756,PHX,Suns,Phoenix,Talking Stick Resort Arena
+1610612757,POR,Trail Blazers,Portland,Moda Center
+1610612758,SAC,Kings,Sacramento,Golden 1 Center
+1610612759,SAS,Spurs,San Antonio,AT&T Center
+1610612760,OKC,Thunder,Oklahoma City,Chesapeake Energy Arena
+1610612761,TOR,Raptors,Toronto,Scotiabank Arena
+1610612762,UTA,Jazz,Utah,Vivint Smart Home Arena
+1610612763,MEM,Grizzlies,Memphis,FedExForum
+1610612764,WAS,Wizards,Washington,Capital One Arena
+1610612765,DET,Pistons,Detroit,Little Caesars Arena
+1610612766,CHA,Hornets,Charlotte,Spectrum Center
+1610612739,CLE,Cavaliers,Cleveland,Quicken Loans Arena
+1610612744,GSW,Warriors,Golden State,Chase Center

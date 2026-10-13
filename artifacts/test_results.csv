@@ -1,0 +1,5 @@
+,MAE,RMSE,R2,within 3 pts %,picks winner %
+Naive baseline,12.212,15.337,-0.004,12.114,54.39
+scikit-learn,11.245,14.256,0.132,17.317,64.634
+Manual PyTorch,11.245,14.256,0.132,17.317,64.634
+Standard PyTorch,11.245,14.256,0.132,17.317,64.634

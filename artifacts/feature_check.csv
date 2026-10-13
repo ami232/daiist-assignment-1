@@ -1,0 +1,13 @@
+,validation MAE,vs final set,std error of difference
+constant (home court only),11.365,1.191,0.148
+"rating_diff, not shrunk",10.436,0.262,0.057
+"rating_diff, shrunk (K 10, prior 0.5)",10.252,0.077,0.028
+  shrink check: K 5,10.277,0.102,0.029
+  shrink check: K 20,10.241,0.067,0.034
+  shrink check: prior weight 0,10.322,0.147,0.037
+  shrink check: prior weight 1,10.24,0.065,0.036
++ form_diff,10.235,0.061,0.024
++ rest and back to backs,10.187,0.013,0.011
++ altitude (final set),10.175,0.0,0.0
+final set + away road trip,10.178,0.003,0.003
+final set + team home edge,10.181,0.007,0.008

@@ -1,0 +1,8 @@
+,scikit-learn,Manual PyTorch,Standard PyTorch
+rating_diff,4.838,4.838,4.838
+form_diff,0.863,0.863,0.863
+rest_diff,0.25,0.25,0.25
+home_b2b,-0.4,-0.4,-0.4
+away_b2b,0.582,0.582,0.582
+altitude,0.442,0.442,0.442
+intercept,2.698,2.698,2.698
