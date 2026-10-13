@@ -1,0 +1,1213 @@
+source_row,car,price,body,mileage,engV,engType,registration,year,model,drive,removal_reasons
+6,Mercedes-Benz,33000.0,vagon,91,,Other,yes,2013,E-Class,,missing_engine_displacement; missing_drive_type
+15,BMW,4700.0,sedan,200,,Petrol,yes,1996,316,rear,missing_engine_displacement
+20,Nissan,16600.0,crossover,83,2.0,Petrol,yes,2013,X-Trail,full,exact_duplicate
+22,Land Rover,0.0,crossover,0,4.4,Diesel,yes,2016,Range Rover,full,missing_nonfinite_or_nonpositive_price
+32,Nissan,13980.0,hatch,31,,Other,yes,2013,Leaf,front,missing_engine_displacement
+33,Nissan,17300.0,hatch,24,,Other,yes,2013,Leaf,front,missing_engine_displacement
+39,Audi,2850.0,sedan,260,,Other,no,1999,A6,,missing_engine_displacement; missing_drive_type
+43,Nissan,13275.0,hatch,12,,Other,yes,2013,Leaf,front,missing_engine_displacement
+44,Mercedes-Benz,20400.0,sedan,190,1.8,Gas,yes,2011,E-Class,rear,exact_duplicate
+46,BMW,39333.0,sedan,6,2.0,Petrol,yes,2016,520,,missing_drive_type
+54,Mercedes-Benz,31500.0,sedan,123,2.2,Diesel,yes,2011,E-Class,,missing_drive_type
+55,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLE-Class,full,missing_nonfinite_or_nonpositive_price
+58,Nissan,17000.0,hatch,38,,Other,yes,2013,Leaf,front,missing_engine_displacement
+72,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLE-Class,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+73,Toyota,0.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,missing_nonfinite_or_nonpositive_price
+88,Toyota,103999.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate
+92,Porsche,0.0,sedan,22,4.8,Petrol,yes,2014,Panamera,full,missing_nonfinite_or_nonpositive_price
+94,Audi,0.0,crossover,0,3.0,Diesel,yes,2015,Q7,full,missing_nonfinite_or_nonpositive_price
+96,Toyota,0.0,crossover,49,4.5,Diesel,yes,2014,Land Cruiser 200,full,missing_nonfinite_or_nonpositive_price
+99,Volkswagen,0.0,van,165,2.0,Diesel,yes,2013,T5 (Transporter) груз,front,missing_nonfinite_or_nonpositive_price
+100,Mercedes-Benz,20400.0,sedan,190,1.8,Gas,yes,2011,E-Class,rear,exact_duplicate
+104,Mercedes-Benz,0.0,van,450,2.2,Diesel,yes,2000,Vito пасс.,front,missing_nonfinite_or_nonpositive_price
+105,Volkswagen,10000.0,van,231,1.9,Diesel,yes,2005,T5 (Transporter) пасс.,,missing_drive_type
+107,Porsche,0.0,crossover,0,3.0,Diesel,yes,2016,Cayenne,full,missing_nonfinite_or_nonpositive_price
+109,Volkswagen,33500.0,crossover,98,,Petrol,yes,2013,Touareg,full,missing_engine_displacement
+111,Nissan,12400.0,hatch,26,,Other,yes,2011,Leaf,,missing_engine_displacement; missing_drive_type
+113,Renault,10500.0,vagon,185,1.5,Diesel,yes,2011,Megane,front,exact_duplicate
+121,Mercedes-Benz,29500.0,sedan,37,1.8,Petrol,yes,2012,E-Class,,missing_drive_type
+123,Volkswagen,0.0,van,162,2.0,Diesel,yes,2011,T5 (Transporter) груз,front,missing_nonfinite_or_nonpositive_price
+126,BMW,0.0,crossover,1,3.0,Diesel,yes,2014,X6,full,missing_nonfinite_or_nonpositive_price
+127,BMW,0.0,crossover,0,3.0,Diesel,yes,2015,X6,full,missing_nonfinite_or_nonpositive_price
+139,Mercedes-Benz,93555.0,crossover,0,,Other,yes,2016,GLS 350,,missing_engine_displacement; missing_drive_type
+152,Daewoo,3500.0,sedan,112,,Petrol,yes,2007,Lanos,front,missing_engine_displacement
+156,Nissan,17700.0,crossover,40,1.6,Petrol,yes,2014,Qashqai,,missing_drive_type
+160,Land Rover,0.0,crossover,45,3.0,Petrol,yes,2014,Range Rover Sport,full,missing_nonfinite_or_nonpositive_price
+162,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLS 350,full,missing_nonfinite_or_nonpositive_price
+165,Mercedes-Benz,17900.0,van,167,2.2,Diesel,yes,2012,Vito груз.,,missing_drive_type
+182,BMW,0.0,crossover,36,3.0,Diesel,yes,2013,X5,full,missing_nonfinite_or_nonpositive_price
+185,Toyota,195000.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate
+186,Audi,4600.0,vagon,242,99.99,Diesel,no,2004,A6,front,engine_outside_0.5_to_10_litres
+190,Mercedes-Benz,0.0,crossover,1,3.0,Petrol,yes,2015,GLE-Class,full,missing_nonfinite_or_nonpositive_price
+194,Mercedes-Benz,20500.0,sedan,173,1.8,Gas,yes,2011,E-Class,rear,exact_duplicate
+200,Ford,15500.0,crossover,68,2.5,Gas,yes,2010,Kuga,full,exact_duplicate
+205,Lexus,0.0,crossover,11,5.7,Petrol,yes,2016,LX 570,full,missing_nonfinite_or_nonpositive_price
+208,Mercedes-Benz,0.0,other,22,3.0,Diesel,yes,2015,S 350,full,missing_nonfinite_or_nonpositive_price
+214,Hyundai,10500.0,crossover,120,,Other,yes,2007,Tucson,full,missing_engine_displacement
+217,Mercedes-Benz,0.0,sedan,62,3.0,Diesel,yes,2013,S 350,rear,missing_nonfinite_or_nonpositive_price
+218,Porsche,51900.0,sedan,78,4.8,Petrol,yes,2011,Panamera,,missing_drive_type
+221,Nissan,11500.0,crossover,128,2.0,Petrol,yes,2008,Qashqai,,missing_drive_type
+229,BMW,104999.0,crossover,2,3.0,Diesel,yes,2016,X5,full,exact_duplicate
+233,Nissan,17000.0,hatch,20,,Other,yes,2014,Leaf,front,missing_engine_displacement
+236,Mercedes-Benz,24999.0,sedan,112,2.2,Diesel,yes,2012,C-Class,,missing_drive_type
+241,Nissan,14200.0,sedan,28,,Other,yes,2014,Leaf,front,missing_engine_displacement
+242,Tesla,159600.0,sedan,0,,Other,yes,2016,Model S,full,missing_engine_displacement
+243,Mercedes-Benz,0.0,vagon,200,2.2,Diesel,yes,2006,Vito пасс.,rear,missing_nonfinite_or_nonpositive_price
+246,Audi,0.0,crossover,65,3.0,Diesel,yes,2013,A6,full,missing_nonfinite_or_nonpositive_price
+249,Nissan,17500.0,hatch,62,,Other,yes,2013,Leaf,front,missing_engine_displacement
+251,Porsche,0.0,crossover,200,4.8,Petrol,yes,2007,Cayenne,full,missing_nonfinite_or_nonpositive_price
+256,Audi,1950.0,sedan,320,19.0,Other,no,1996,A4,,missing_drive_type; engine_outside_0.5_to_10_litres
+257,Mercedes-Benz,20300.0,sedan,198,1.8,Gas,yes,2011,E-Class,rear,exact_duplicate
+258,Subaru,14000.0,crossover,171,99.99,Petrol,yes,2010,Forester,full,engine_outside_0.5_to_10_litres
+261,Nissan,16500.0,hatch,32,,Other,yes,2013,Leaf,front,missing_engine_displacement
+263,Renault,13300.0,other,132,1.5,Diesel,yes,2012,Megane,,missing_drive_type
+267,Porsche,0.0,sedan,14,3.6,Petrol,yes,2014,Panamera,full,missing_nonfinite_or_nonpositive_price
+272,Renault,10500.0,vagon,185,1.5,Diesel,yes,2011,Megane,front,exact_duplicate
+275,Audi,2200.0,sedan,250,,Diesel,no,2001,A6,front,missing_engine_displacement
+277,Audi,2350.0,vagon,250,,Diesel,no,2001,A6,front,missing_engine_displacement
+278,Audi,2500.0,sedan,180,,Petrol,no,2000,A4,front,missing_engine_displacement
+279,BMW,0.0,crossover,8,2.0,Diesel,yes,2016,X5,full,missing_nonfinite_or_nonpositive_price
+292,Porsche,0.0,crossover,13,3.0,Diesel,yes,2015,Macan,full,missing_nonfinite_or_nonpositive_price
+310,Nissan,17700.0,hatch,21,0.11,Other,yes,2014,Leaf,front,engine_outside_0.5_to_10_litres
+312,Mitsubishi,6200.0,sedan,170,,Other,yes,2005,Lancer,front,missing_engine_displacement
+318,Tesla,80000.0,sedan,27,,Other,yes,2013,Model S,front,missing_engine_displacement
+321,Tesla,58000.0,hatch,52,,Other,yes,2013,Model S,front,missing_engine_displacement
+336,Toyota,36000.0,crossover,940,,Other,yes,2009,Land Cruiser 200,,missing_engine_displacement; missing_drive_type
+339,Nissan,18500.0,hatch,9,,Other,yes,2015,Leaf,front,missing_engine_displacement
+340,Nissan,20999.0,hatch,12,,Other,yes,2015,Leaf,front,missing_engine_displacement
+343,Tesla,85500.0,sedan,1,,Other,yes,2016,Model S,full,missing_engine_displacement
+365,BMW,8000.0,sedan,330,,Diesel,yes,1997,525,rear,missing_engine_displacement
+373,Audi,1300.0,sedan,250,,Gas,no,1994,80,front,missing_engine_displacement
+386,Volkswagen,0.0,vagon,217,2.0,Diesel,no,2008,Passat B6,full,missing_nonfinite_or_nonpositive_price
+388,Tesla,58000.0,sedan,8,,Other,yes,2013,Model S,front,missing_engine_displacement
+392,Tesla,59000.0,sedan,30,,Other,yes,2013,Model S,rear,missing_engine_displacement
+395,Smart,10700.0,other,23,1.0,Petrol,yes,2014,Fortwo,,missing_drive_type
+396,Mercedes-Benz,41900.0,sedan,95,6.2,Petrol,yes,2011,S 500,,missing_drive_type
+405,Nissan,15700.0,hatch,22,0.11,Other,yes,2013,Leaf,front,engine_outside_0.5_to_10_litres
+409,Land Rover,102999.0,crossover,39,5.0,Petrol,yes,2014,Range Rover,full,exact_duplicate
+412,Mercedes-Benz,17800.0,van,162,1.8,Diesel,yes,2012,B 180,front,exact_duplicate
+413,Mercedes-Benz,20300.0,sedan,198,1.8,Gas,yes,2011,E-Class,rear,exact_duplicate
+423,Ford,6450.0,hatch,150,1.4,Petrol,yes,2007,Fiesta,front,exact_duplicate
+429,Tesla,159600.0,sedan,7,,Other,yes,2016,Model S,rear,missing_engine_displacement
+433,Nissan,16800.0,crossover,70,2.0,Petrol,yes,2013,Qashqai,,missing_drive_type
+452,Audi,2850.0,vagon,280,2.5,Diesel,no,1999,A6,,missing_drive_type
+462,Land Rover,79450.0,other,0,,Diesel,yes,2016,Range Rover Sport,,missing_engine_displacement; missing_drive_type
+470,Renault,7250.0,van,83,,Other,yes,2013,Kangoo груз.,,missing_engine_displacement; missing_drive_type
+495,BMW,0.0,crossover,5,3.0,Diesel,yes,2016,X6,full,missing_nonfinite_or_nonpositive_price
+501,Smart,4200.0,other,130,99.99,Petrol,yes,2002,Fortwo,,missing_drive_type; engine_outside_0.5_to_10_litres
+511,Lexus,0.0,crossover,22,4.5,Diesel,yes,2016,LX 450,full,missing_nonfinite_or_nonpositive_price
+513,BMW,0.0,sedan,240,2.8,Gas,yes,1997,528,rear,missing_nonfinite_or_nonpositive_price
+514,Volkswagen,23000.0,sedan,75,2.0,Petrol,yes,2013,Passat CC,,missing_drive_type
+517,Audi,16000.0,sedan,250,2.0,Diesel,yes,2008,A6,,missing_drive_type
+526,Mazda,13500.0,crossover,69,,Petrol,yes,2008,CX-7,full,missing_engine_displacement
+529,Land Rover,53500.0,crossover,57,3.0,Diesel,yes,2013,Range Rover Sport,full,exact_duplicate
+530,Nissan,16600.0,crossover,83,2.0,Petrol,yes,2013,X-Trail,full,exact_duplicate
+534,Honda,14700.0,sedan,93,2.0,Petrol,yes,2009,Accord,,missing_drive_type
+542,Mercedes-Benz,0.0,crossover,63,5.5,Petrol,yes,2011,GL 550,full,missing_nonfinite_or_nonpositive_price
+552,Mercedes-Benz,12000.0,van,177,,Diesel,yes,2013,Vito груз.,rear,missing_engine_displacement
+554,VAZ,0.0,sedan,13,1.6,Petrol,yes,2012,2115,front,missing_nonfinite_or_nonpositive_price
+555,Nissan,18000.0,hatch,45,,Other,yes,2013,Leaf,front,missing_engine_displacement
+562,BMW,15000.0,other,205,,Petrol,yes,2004,530,rear,missing_engine_displacement
+565,Nissan,15500.0,hatch,41,,Other,yes,2014,Leaf,full,missing_engine_displacement
+567,Nissan,15000.0,hatch,22,,Other,yes,2014,Leaf,front,missing_engine_displacement
+572,Volkswagen,0.0,van,146,2.5,Diesel,yes,2009,T5 (Transporter) пасс.,full,missing_nonfinite_or_nonpositive_price
+581,SsangYong,11400.0,crossover,153,,Diesel,yes,2010,Kyron,full,missing_engine_displacement
+583,Chevrolet,6700.0,hatch,88,1.6,Petrol,yes,2009,Lacetti,,missing_drive_type
+585,Toyota,8300.0,sedan,140,3.0,Petrol,yes,2002,Camry,,missing_drive_type
+598,Mazda,0.0,sedan,350,2.0,Other,yes,2003,6,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+603,Mercedes-Benz,3550.0,sedan,274,3.2,Diesel,no,2002,E-Class,,missing_drive_type
+605,Porsche,49900.0,crossover,73,3.0,Diesel,yes,2011,Cayenne,full,exact_duplicate
+606,Porsche,50900.0,crossover,53,3.6,Petrol,yes,2013,Cayenne,full,exact_duplicate
+629,Fiat,7800.0,van,1,,Diesel,yes,2010,Doblo пасс.,,missing_engine_displacement; missing_drive_type
+644,Volkswagen,0.0,van,207,2.0,Diesel,yes,2012,T5 (Transporter) груз,front,missing_nonfinite_or_nonpositive_price
+646,Volkswagen,0.0,van,239,2.0,Diesel,yes,2012,T5 (Transporter) пасс.,front,missing_nonfinite_or_nonpositive_price
+650,Volkswagen,10600.0,van,153,1.6,Diesel,yes,2012,Caddy груз.,,missing_drive_type
+652,Nissan,15861.0,hatch,29,,Other,yes,2014,Leaf,front,missing_engine_displacement
+658,Audi,0.0,crossover,1,3.0,Diesel,yes,2016,A6 Allroad,full,missing_nonfinite_or_nonpositive_price
+664,Ford,0.0,sedan,200,2.5,Diesel,yes,1996,Scorpio,rear,missing_nonfinite_or_nonpositive_price
+665,Nissan,14673.0,hatch,34,,Other,yes,2013,Leaf,front,missing_engine_displacement
+668,BMW,30500.0,sedan,630,,Petrol,yes,2010,523,rear,missing_engine_displacement
+669,BMW,29500.0,sedan,850,,Petrol,yes,2011,523,rear,missing_engine_displacement
+676,Hyundai,9500.0,crossover,87,2.0,Gas,yes,2008,Tucson,,missing_drive_type
+678,Nissan,14246.0,hatch,42,,Other,yes,2013,Leaf,front,missing_engine_displacement
+694,Bentley,85000.0,other,20,6.0,Petrol,yes,2008,Continental,full,exact_duplicate
+695,Chevrolet,5200.0,sedan,11,,Petrol,yes,2007,Aveo,front,missing_engine_displacement
+705,Porsche,79900.0,sedan,29,3.0,Petrol,yes,2014,Panamera,full,exact_duplicate
+710,Nissan,15658.0,hatch,49,,Other,yes,2013,Leaf,front,missing_engine_displacement
+720,Renault,0.0,van,159,1.5,Diesel,yes,2011,Kangoo груз.,front,missing_nonfinite_or_nonpositive_price
+721,Audi,0.0,crossover,65,2.99,Diesel,yes,2013,A6 Allroad,full,missing_nonfinite_or_nonpositive_price
+726,Volkswagen,0.0,van,124,1.6,Diesel,yes,2013,Caddy груз.,front,missing_nonfinite_or_nonpositive_price
+731,Volkswagen,0.0,other,142,2.5,Diesel,yes,2007,Multivan,full,missing_nonfinite_or_nonpositive_price
+734,Nissan,19800.0,hatch,33,,Other,yes,2014,Leaf,front,missing_engine_displacement
+735,Nissan,15444.0,hatch,61,,Other,yes,2013,Leaf,front,missing_engine_displacement
+737,Nissan,12850.0,hatch,30,,Other,yes,2011,Leaf,front,missing_engine_displacement
+756,Toyota,0.0,crossover,1,4.5,Diesel,yes,2016,Land Cruiser 200,full,missing_nonfinite_or_nonpositive_price
+758,Audi,0.0,vagon,0,3.0,Diesel,yes,2016,A6 Allroad,full,missing_nonfinite_or_nonpositive_price
+767,Nissan,16238.0,hatch,27,,Other,yes,2013,Leaf,front,missing_engine_displacement
+785,Fiat,4300.0,van,196,1.3,Diesel,yes,2004,Doblo пасс.,,missing_drive_type
+798,Nissan,25000.0,hatch,2,,Other,yes,2015,Leaf,front,missing_engine_displacement
+807,Nissan,16700.0,hatch,39,,Other,yes,2015,Leaf,front,missing_engine_displacement
+828,Volkswagen,13700.0,other,103,2.0,Diesel,yes,2011,Passat B6,,missing_drive_type
+839,BMW,45000.0,sedan,110,,Other,yes,2012,535,full,missing_engine_displacement
+850,Dodge,0.0,other,0,3.0,Diesel,yes,2015,RAM,full,missing_nonfinite_or_nonpositive_price
+851,Great Wall,10500.0,other,32,2.0,Petrol,yes,2013,Haval,,missing_drive_type
+853,Toyota,99999.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate
+858,Mercedes-Benz,0.0,van,190,2.2,Diesel,yes,2007,Vito пасс.,rear,missing_nonfinite_or_nonpositive_price
+862,Nissan,15000.0,other,30,,Other,yes,2013,Leaf,front,missing_engine_displacement
+863,Nissan,95000.0,other,3,3.8,Petrol,yes,2013,GT-R,,missing_drive_type
+868,Opel,5650.0,sedan,151,1.4,Petrol,yes,2008,Astra G,,missing_drive_type
+877,Mercedes-Benz,0.0,crossover,1,3.0,Diesel,yes,2016,GLS 350,full,missing_nonfinite_or_nonpositive_price
+880,Mercedes-Benz,71999.0,crossover,0,2.2,Diesel,yes,2016,GLE-Class,full,exact_duplicate
+885,Dodge,0.0,other,0,3.0,Diesel,yes,2015,RAM,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+896,Toyota,14400.0,crossover,119,,Gas,yes,2008,Rav 4,full,missing_engine_displacement
+899,VAZ,1850.0,sedan,60,,Other,yes,1989,2106,,missing_engine_displacement; missing_drive_type
+900,Volkswagen,0.0,other,440,1.4,Petrol,yes,2008,Eos,front,missing_nonfinite_or_nonpositive_price
+907,BMW,20500.0,other,114,,Other,yes,2008,325,,missing_engine_displacement; missing_drive_type
+911,Toyota,14800.0,crossover,150,,Gas,yes,2006,Land Cruiser Prado,full,missing_engine_displacement
+913,Honda,13300.0,sedan,148,,Petrol,yes,2009,Accord,front,missing_engine_displacement
+923,Audi,17700.0,other,70,2.0,Petrol,yes,2009,TT,,missing_drive_type
+945,Hyundai,12200.0,crossover,92,,Petrol,yes,2009,Tucson,full,missing_engine_displacement
+948,Volkswagen,4999.0,van,225,,Other,no,2003,Caravelle,,missing_engine_displacement; missing_drive_type
+978,Audi,2999.0,vagon,320,,Diesel,no,1999,A6,front,missing_engine_displacement
+996,Nissan,16500.0,hatch,11,,Other,yes,2015,Leaf,front,missing_engine_displacement
+1004,Nissan,17700.0,vagon,30,,Other,yes,2013,Leaf,front,missing_engine_displacement
+1007,Mercedes-Benz,42900.0,hatch,3,,Other,yes,2016,B-Class Electric Drive,front,missing_engine_displacement
+1018,Porsche,117777.0,hatch,9,4.8,Petrol,yes,2014,Panamera,full,exact_duplicate
+1024,Citroen,4150.0,other,320,1.9,Other,yes,1998,Jumpy пасс.,,missing_drive_type
+1027,BMW,2222.0,sedan,268,1.8,Petrol,no,1996,318,,missing_drive_type
+1029,Nissan,13303.0,hatch,33,,Other,yes,2012,Leaf,front,missing_engine_displacement
+1030,Toyota,0.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+1033,Opel,0.0,vagon,158,1.3,Diesel,no,2012,Astra J,front,missing_nonfinite_or_nonpositive_price
+1042,VAZ,1700.0,sedan,80,,Other,yes,1999,2106,,missing_engine_displacement; missing_drive_type
+1052,Citroen,13200.0,hatch,85,,Diesel,yes,2012,C4,front,missing_engine_displacement
+1053,Mercedes-Benz,4700.0,sedan,280,2.8,Petrol,yes,1993,E-Class,,missing_drive_type
+1056,BMW,29999.0,sedan,130,,Petrol,yes,2009,750,,missing_engine_displacement; missing_drive_type
+1065,Smart,14450.0,other,27,,Other,yes,2013,Fortwo,front,missing_engine_displacement
+1076,Dacia,4200.0,sedan,216,,Other,yes,2006,Logan,full,missing_engine_displacement
+1090,Nissan,15500.0,hatch,24,,Other,yes,2012,Leaf,front,missing_engine_displacement
+1106,Lexus,0.0,crossover,0,4.5,Diesel,yes,2016,LX 450,full,missing_nonfinite_or_nonpositive_price
+1114,Mitsubishi,5700.0,other,230,2.0,Petrol,yes,2003,Galant,,missing_drive_type
+1118,Renault,0.0,van,192,99.99,Diesel,yes,2011,Kangoo груз.,front,missing_nonfinite_or_nonpositive_price; engine_outside_0.5_to_10_litres
+1119,BMW,2999.0,sedan,299,,Diesel,no,2000,530,rear,missing_engine_displacement
+1120,Mercedes-Benz,17800.0,van,162,1.8,Diesel,yes,2012,B 180,front,exact_duplicate
+1125,Volkswagen,0.0,other,197,2.0,Diesel,no,2011,T5 (Transporter) пасс.,front,missing_nonfinite_or_nonpositive_price
+1141,Opel,0.0,van,162,2.0,Diesel,yes,2012,Vivaro груз.,front,missing_nonfinite_or_nonpositive_price
+1153,Kia,19300.0,crossover,117,,Gas,yes,2012,Sorento,full,missing_engine_displacement
+1155,Ford,12900.0,van,160,,Diesel,yes,2014,Transit груз.,rear,missing_engine_displacement
+1160,Audi,4000.0,sedan,260,99.99,Diesel,no,2000,A6,full,engine_outside_0.5_to_10_litres
+1161,Mercedes-Benz,31669.0,hatch,2,,Other,yes,2015,B-Class Electric Drive,,missing_engine_displacement; missing_drive_type
+1164,Hyundai,11500.0,crossover,48,,Petrol,yes,2007,Tucson,,missing_engine_displacement; missing_drive_type
+1166,VAZ,3300.0,other,19,,Other,yes,2007,2107,rear,missing_engine_displacement
+1179,Volkswagen,19999.0,other,48,2.0,Diesel,yes,2012,Eos,,missing_drive_type
+1181,Audi,13900.0,sedan,150,,Petrol,yes,2006,A8,full,missing_engine_displacement
+1213,Volkswagen,16500.0,sedan,87,,Other,yes,2012,Passat B7,front,missing_engine_displacement
+1231,Volkswagen,12900.0,vagon,145,1.6,Diesel,yes,2011,Golf Variant,,missing_drive_type
+1238,Volkswagen,9999.0,van,165,1.6,Diesel,yes,2012,Caddy груз.,,missing_drive_type
+1244,Nissan,18999.0,hatch,8,,Other,yes,2013,Leaf,front,missing_engine_displacement
+1252,Mercedes-Benz,0.0,sedan,300,2.6,Petrol,yes,2002,E-Class,rear,missing_nonfinite_or_nonpositive_price
+1260,Mitsubishi,11700.0,sedan,82,1.5,Gas,yes,2010,Lancer X,,missing_drive_type
+1277,Renault,8700.0,hatch,100,1.5,Diesel,yes,2010,Megane,,missing_drive_type
+1291,Mercedes-Benz,6100.0,sedan,280,,Gas,yes,1999,E-Class,rear,missing_engine_displacement
+1297,Daewoo,0.0,hatch,130,0.8,Petrol,yes,2008,Matiz,front,missing_nonfinite_or_nonpositive_price
+1310,Renault,0.0,other,179,2.5,Diesel,yes,2011,Trafic груз.,front,missing_nonfinite_or_nonpositive_price
+1318,Daewoo,3750.0,hatch,160,,Gas,yes,2003,Lanos,front,missing_engine_displacement
+1319,Skoda,13750.0,vagon,155,1.6,Diesel,yes,2012,Octavia A5,,missing_drive_type
+1335,Volkswagen,9400.0,vagon,176,1.9,Diesel,yes,2005,Passat B5,,missing_drive_type
+1336,Mercedes-Benz,0.0,sedan,322,2.7,Diesel,no,2000,E-Class,rear,missing_nonfinite_or_nonpositive_price
+1337,Renault,5800.0,vagon,200,1.46,Diesel,yes,2008,Grand Scenic,,missing_drive_type
+1347,Volkswagen,15900.0,sedan,103,,Petrol,yes,2012,Jetta,front,missing_engine_displacement
+1352,Nissan,4300.0,sedan,152,,Diesel,yes,1997,Primera,front,missing_engine_displacement
+1365,Toyota,13000.0,hatch,42,1.3,Petrol,yes,2013,Auris,,missing_drive_type
+1388,Hyundai,0.0,crossover,39,2.2,Diesel,yes,2012,Santa FE,full,missing_nonfinite_or_nonpositive_price
+1406,Mercedes-Benz,10999.0,other,185,,Diesel,yes,2005,Vito пасс.,rear,missing_engine_displacement
+1409,Skoda,7600.0,vagon,119,1.4,Other,yes,2008,Fabia,,missing_drive_type
+1422,Volkswagen,12500.0,vagon,96,,Petrol,yes,2010,Golf VI,front,missing_engine_displacement
+1424,Subaru,38800.0,crossover,0,,Diesel,yes,2016,Forester,full,missing_engine_displacement
+1433,Mercedes-Benz,39900.0,hatch,2,,Other,yes,2015,B-Class Electric Drive,front,missing_engine_displacement
+1439,Tesla,178500.0,crossover,0,,Other,yes,2016,Model X,full,missing_engine_displacement
+1452,Peugeot,12900.0,van,94,1.6,Diesel,yes,2012,3008,,missing_drive_type
+1455,Hyundai,11999.0,hatch,42,1.6,Petrol,yes,2013,i30,,missing_drive_type
+1460,Mitsubishi,19800.0,crossover,67,2.0,Gas,yes,2013,Outlander,,missing_drive_type
+1461,Hyundai,14800.0,sedan,52,,Petrol,yes,2012,Elantra,front,missing_engine_displacement
+1468,Audi,9500.0,other,0,,Other,yes,2003,A6,,missing_engine_displacement; missing_drive_type
+1469,Hyundai,11200.0,sedan,57,1.4,Gas,yes,2011,Accent,,missing_drive_type
+1471,Toyota,32000.0,sedan,22,2.5,Petrol,yes,2015,Camry,front,exact_duplicate
+1488,Nissan,14500.0,crossover,149,,Other,yes,2010,Qashqai,,missing_engine_displacement; missing_drive_type
+1508,Volkswagen,15900.0,sedan,150,2.0,Diesel,yes,2012,Passat B7,,missing_drive_type
+1510,Chery,2600.0,hatch,110,,Petrol,yes,2008,QQ,front,missing_engine_displacement
+1531,Volkswagen,0.0,vagon,161,1.4,Petrol,yes,2011,Passat B7,front,missing_nonfinite_or_nonpositive_price
+1539,Nissan,16699.0,hatch,24,,Other,yes,2013,Leaf,front,missing_engine_displacement
+1558,Hyundai,10500.0,crossover,106,,Petrol,yes,2008,Tucson,full,missing_engine_displacement
+1561,Ford,9300.0,hatch,182,1.6,Gas,yes,2011,Focus,,missing_drive_type
+1574,Tesla,60000.0,sedan,5,,Other,yes,2014,Model S,rear,missing_engine_displacement
+1589,Tesla,139600.0,sedan,4,,Other,yes,2015,Model S,full,missing_engine_displacement
+1590,Mercedes-Benz,47600.0,van,0,2.2,Diesel,yes,2016,Vito пасс.,rear,exact_duplicate
+1602,Land Rover,0.0,crossover,46,4.4,Diesel,yes,2014,Range Rover,full,missing_nonfinite_or_nonpositive_price
+1606,Toyota,10500.0,sedan,180,3.5,Petrol,yes,2007,Camry,,missing_drive_type
+1609,Toyota,30900.0,sedan,15,2.5,Petrol,yes,2015,Camry,,missing_drive_type
+1626,Volkswagen,12000.0,other,209,,Diesel,yes,2006,T5 (Transporter) груз,front,missing_engine_displacement
+1635,Mercedes-Benz,0.0,van,0,2.2,Diesel,yes,2016,V 250,full,missing_nonfinite_or_nonpositive_price
+1636,Skoda,0.0,vagon,95,1.6,Diesel,yes,2012,Octavia A5,front,missing_nonfinite_or_nonpositive_price
+1649,Volkswagen,11350.0,van,190,75.0,Diesel,yes,2011,T5 (Transporter) груз,front,engine_outside_0.5_to_10_litres
+1674,ZAZ,1800.0,hatch,150,99.99,Gas,yes,2004,1102 Таврия,front,engine_outside_0.5_to_10_litres
+1684,Land Rover,39700.0,crossover,87,,Petrol,yes,2010,Range Rover,full,missing_engine_displacement
+1685,Renault,8250.0,sedan,148,,Other,yes,2011,Kangoo пасс.,,missing_engine_displacement; missing_drive_type
+1689,Nissan,16800.0,crossover,52,1.6,Petrol,yes,2013,Qashqai,,missing_drive_type
+1691,Nissan,16800.0,crossover,52,1.6,Petrol,yes,2013,Qashqai,,exact_duplicate; missing_drive_type
+1701,Mercedes-Benz,0.0,crossover,0,3.0,Petrol,yes,2016,GLE-Class,full,missing_nonfinite_or_nonpositive_price
+1721,Nissan,14200.0,hatch,23,,Other,yes,2014,Leaf,front,missing_engine_displacement
+1724,Mercedes-Benz,28000.0,other,12,1.8,Petrol,yes,2013,C-Class,,missing_drive_type
+1725,Land Rover,52900.0,crossover,25,,Petrol,yes,2012,Range Rover Sport,full,missing_engine_displacement
+1731,Audi,0.0,sedan,62,3.0,Petrol,yes,2013,A8,full,missing_nonfinite_or_nonpositive_price
+1741,Toyota,10500.0,sedan,82,,Petrol,yes,2010,Corolla,front,missing_engine_displacement
+1742,Toyota,28900.0,crossover,83,,Petrol,yes,2012,Highlander,full,missing_engine_displacement
+1754,Mazda,12850.0,crossover,125,99.99,Other,yes,2009,CX-7,full,engine_outside_0.5_to_10_litres
+1757,Volkswagen,0.0,sedan,381,2.5,Diesel,yes,2000,T4 (Transporter) груз,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+1792,Skoda,0.0,vagon,98,1.6,Diesel,yes,2012,Octavia A5,front,missing_nonfinite_or_nonpositive_price
+1795,Honda,13000.0,sedan,116,,Petrol,yes,2007,Accord,front,missing_engine_displacement
+1798,Hyundai,26900.0,crossover,59,2.4,Petrol,yes,2013,Santa FE,,missing_drive_type
+1801,Peugeot,3900.0,van,220,1.9,Diesel,yes,2007,Partner груз.,,missing_drive_type
+1824,Mercedes-Benz,6800.0,sedan,286,,Other,yes,2000,E-Class,,missing_engine_displacement; missing_drive_type
+1833,Mercedes-Benz,43500.0,other,51,3.0,Diesel,yes,2014,E-Class,rear,exact_duplicate
+1834,Mitsubishi,20300.0,other,30,,Diesel,yes,2014,L 200,full,missing_engine_displacement
+1838,Toyota,0.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+1904,Mercedes-Benz,33500.0,van,0,,Diesel,yes,2015,Sprinter 316 пасс.,rear,missing_engine_displacement
+1918,Opel,3000.0,sedan,276,17.0,Diesel,yes,1993,Vectra A,,missing_drive_type; engine_outside_0.5_to_10_litres
+1922,Opel,11700.0,van,137,2.0,Diesel,yes,2012,Vivaro груз.,,missing_drive_type
+1938,Toyota,25800.0,sedan,58,2.5,Petrol,yes,2015,Camry,,missing_drive_type
+1943,Audi,18500.0,sedan,137,,Petrol,yes,2009,A6,front,missing_engine_displacement
+1956,Kia,11500.0,sedan,47,,Petrol,yes,2013,Rio,front,missing_engine_displacement
+1962,Audi,27000.0,other,222,,Diesel,yes,2007,Q7,full,missing_engine_displacement
+1969,Kia,10700.0,sedan,160,2.0,Gas,yes,2009,Magentis,,missing_drive_type
+1981,Volkswagen,17999.0,sedan,80,1.8,Petrol,yes,2012,Passat B7,,missing_drive_type
+1987,Toyota,10900.0,sedan,156,,Gas,yes,2005,Camry,front,missing_engine_displacement
+1989,Lexus,15500.0,sedan,139,3.5,Petrol,yes,2007,ES 350,,missing_drive_type
+1991,Audi,49500.0,crossover,44,3.0,Diesel,yes,2013,Q7,,missing_drive_type
+1997,Mazda,2900.0,hatch,245,,Petrol,yes,1996,323,front,missing_engine_displacement
+2006,Mercedes-Benz,0.0,crossover,0,4.7,Petrol,yes,2016,GLS 500,full,missing_nonfinite_or_nonpositive_price
+2013,BMW,19990.0,other,164,,Gas,yes,2004,645,,missing_engine_displacement; missing_drive_type
+2019,Land Rover,0.0,crossover,56,3.0,Diesel,no,2014,Range Rover Sport,full,missing_nonfinite_or_nonpositive_price
+2024,Mercedes-Benz,199999.0,crossover,0,5.5,Petrol,yes,2016,GLS 63,full,exact_duplicate
+2032,BMW,47900.0,crossover,178,4.0,Diesel,yes,2012,X5,,missing_drive_type
+2046,Volkswagen,23999.0,sedan,80,1.8,Petrol,yes,2012,Passat CC,,missing_drive_type
+2050,Ford,16400.0,crossover,87,2.5,Petrol,yes,2010,Kuga,full,exact_duplicate
+2052,Volkswagen,4700.0,hatch,160,2.0,Diesel,no,2006,Golf VI,,missing_drive_type
+2059,Mercedes-Benz,16800.0,van,116,,Other,yes,2013,Vito груз.,,missing_engine_displacement; missing_drive_type
+2067,Ford,2300.0,sedan,229,2.0,Diesel,no,2003,Mondeo,,missing_drive_type
+2071,Land Rover,0.0,crossover,1,4.4,Diesel,yes,2016,Range Rover,full,missing_nonfinite_or_nonpositive_price
+2076,BMW,0.0,crossover,0,3.0,Diesel,yes,2016,X5,full,missing_nonfinite_or_nonpositive_price
+2077,Land Rover,0.0,crossover,0,3.0,Diesel,yes,2016,Range Rover Sport,full,missing_nonfinite_or_nonpositive_price
+2089,Opel,8100.0,van,290,1.9,Diesel,yes,2005,Vivaro пасс.,,missing_drive_type
+2092,Ford,15300.0,vagon,78,,Petrol,yes,2014,Focus,front,missing_engine_displacement
+2109,Volkswagen,0.0,hatch,100,2.0,Petrol,yes,2013,Golf GTI,front,missing_nonfinite_or_nonpositive_price
+2116,Tesla,61900.0,sedan,22,,Other,yes,2013,Model S,rear,missing_engine_displacement
+2117,Toyota,15700.0,sedan,108,,Petrol,yes,2008,Camry,front,missing_engine_displacement
+2136,Mitsubishi,19400.0,crossover,78,,Petrol,yes,2012,Outlander XL,full,missing_engine_displacement
+2137,Skoda,10950.0,vagon,137,2.0,Petrol,yes,2008,Octavia Scout,,missing_drive_type
+2143,Honda,0.0,other,116,2.4,Petrol,yes,2008,Accord,front,missing_nonfinite_or_nonpositive_price
+2157,VAZ,2100.0,sedan,85,,Other,yes,2016,2103,,missing_engine_displacement; missing_drive_type
+2159,Audi,0.0,sedan,300,2.5,Diesel,no,2001,A8,front,missing_nonfinite_or_nonpositive_price
+2162,Mitsubishi,0.0,crossover,120,2.0,Gas,yes,2008,Outlander,full,missing_nonfinite_or_nonpositive_price
+2165,Volkswagen,8757.0,sedan,32,,Other,no,2015,Jetta,,missing_engine_displacement; missing_drive_type
+2179,Volkswagen,10500.0,van,246,2.5,Diesel,yes,2006,T5 (Transporter) пасс.,,missing_drive_type
+2191,Nissan,9200.0,crossover,126,,Other,yes,2005,X-Trail,full,missing_engine_displacement
+2201,Mercedes-Benz,12800.0,other,116,2.2,Diesel,yes,2013,Vito груз.,,missing_drive_type
+2211,Mercedes-Benz,0.0,van,0,2.2,Diesel,yes,2016,V 250,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+2212,Mercedes-Benz,12800.0,van,116,2.2,Diesel,yes,2012,Vito пасс.,,missing_drive_type
+2219,BMW,6800.0,crossover,242,99.99,Diesel,no,2005,X3,,missing_drive_type; engine_outside_0.5_to_10_litres
+2231,Volkswagen,0.0,vagon,160,1.9,Diesel,yes,2003,Passat B5,front,missing_nonfinite_or_nonpositive_price
+2237,Hyundai,6300.0,sedan,1,1.4,Petrol,yes,2008,Accent,,missing_drive_type
+2239,Lexus,17500.0,crossover,150,,Gas,yes,2007,RX 350,full,missing_engine_displacement
+2242,Land Rover,0.0,crossover,1,4.4,Diesel,yes,2016,Range Rover,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+2244,Volkswagen,23000.0,sedan,80,2.0,Other,yes,2011,Passat CC,,missing_drive_type
+2269,Skoda,11900.0,other,120,,Petrol,yes,2010,Octavia A5,front,missing_engine_displacement
+2272,Mercedes-Benz,5500.0,sedan,199,,Petrol,yes,2000,E-Class,front,missing_engine_displacement
+2279,Peugeot,13300.0,crossover,58,1.6,Other,yes,2013,3008,,missing_drive_type
+2280,Mercedes-Benz,24950.0,other,60,1.8,Petrol,yes,2013,C-Class,,missing_drive_type
+2300,Kia,11700.0,crossover,95,2.0,Gas,yes,2010,Sportage,,missing_drive_type
+2313,VAZ,0.0,hatch,12,1.3,Gas,yes,1986,2108,front,missing_nonfinite_or_nonpositive_price
+2323,VAZ,1250.0,sedan,150,99.99,Gas,yes,1987,2105,rear,engine_outside_0.5_to_10_litres
+2324,Mercedes-Benz,12950.0,other,199,2.2,Diesel,yes,2012,Vito груз.,,missing_drive_type
+2325,Mercedes-Benz,12700.0,other,199,2.2,Diesel,yes,2011,Vito пасс.,,missing_drive_type
+2331,Mercedes-Benz,0.0,sedan,245,2.2,Diesel,yes,2002,E-Class,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+2339,Volkswagen,3950.0,hatch,280,,Gas,yes,1996,Golf III,front,missing_engine_displacement
+2346,Peugeot,5390.0,sedan,83,1.4,Petrol,yes,2009,206,,missing_drive_type
+2347,Volkswagen,2350.0,sedan,11,1.9,Other,no,2000,Passat B5,,missing_drive_type
+2349,Skoda,3000.0,other,0,,Other,yes,2008,Octavia Tour,,missing_engine_displacement; missing_drive_type
+2354,Nissan,14700.0,crossover,65,2.0,Petrol,yes,2011,Qashqai,,missing_drive_type
+2363,Mercedes-Benz,0.0,crossover,0,4.6,Petrol,yes,2016,GLS 500,full,missing_nonfinite_or_nonpositive_price
+2367,Mercedes-Benz,109999.0,crossover,0,2.98,Diesel,yes,2016,GLS 350,full,exact_duplicate
+2376,BMW,86999.0,crossover,0,3.0,Diesel,yes,2016,X6,full,exact_duplicate
+2378,BMW,8200.0,sedan,250,4.4,Petrol,yes,1997,540,,missing_drive_type
+2381,BMW,67500.0,crossover,1,2.0,Diesel,yes,2016,X5,full,exact_duplicate
+2392,Ford,2000.0,hatch,100,2.0,Petrol,yes,1988,Sierra,,missing_drive_type
+2403,Volkswagen,24900.0,sedan,1,1.6,Diesel,yes,2016,Jetta,front,exact_duplicate
+2405,BMW,8900.0,sedan,256,2.2,Petrol,yes,2002,5 Series,,missing_drive_type
+2410,Lexus,22700.0,crossover,68,,Other,yes,2008,RX 400,full,missing_engine_displacement
+2419,Mercedes-Benz,0.0,sedan,23,5.5,Petrol,yes,2011,S 550,full,missing_nonfinite_or_nonpositive_price
+2421,Daewoo,3700.0,sedan,135,,Gas,yes,2004,Lanos,front,missing_engine_displacement
+2426,Ford,9200.0,hatch,108,1.4,Diesel,yes,2012,Fiesta,,missing_drive_type
+2434,Mazda,7999.0,sedan,122,,Gas,yes,2007,3,front,missing_engine_displacement
+2459,BMW,9500.0,crossover,110,3.0,Diesel,no,2008,X6,,missing_drive_type
+2465,Renault,0.0,van,153,2.0,Diesel,yes,2012,Trafic груз.,front,missing_nonfinite_or_nonpositive_price
+2469,Mercedes-Benz,13995.0,van,126,2.2,Diesel,yes,2013,Vito пасс.,,missing_drive_type
+2470,Volkswagen,8200.0,sedan,180,,Petrol,yes,2007,Jetta,front,missing_engine_displacement
+2475,BMW,13000.0,sedan,304,4.4,Other,yes,2002,745,,missing_drive_type
+2486,Tesla,89000.0,sedan,1,,Other,yes,2016,Model S,rear,missing_engine_displacement
+2488,Tesla,185000.0,crossover,1,,Other,yes,2016,Model X,full,missing_engine_displacement
+2489,Tesla,56000.0,sedan,9,,Other,yes,2014,Model S,rear,missing_engine_displacement
+2491,Tesla,60500.0,sedan,5,,Other,yes,2015,Model S,rear,missing_engine_displacement
+2496,Mercedes-Benz,19700.0,sedan,220,2.2,Diesel,yes,2009,E-Class,,missing_drive_type
+2504,Toyota,0.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+2516,Skoda,8500.0,hatch,144,,Other,yes,2006,Octavia Tour,,missing_engine_displacement; missing_drive_type
+2518,Geely,6700.0,crossover,18,,Gas,yes,2014,MK Cross,full,missing_engine_displacement
+2547,Mercedes-Benz,0.0,crossover,1,3.0,Diesel,yes,2016,GLS 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+2548,Mercedes-Benz,0.0,sedan,29,6.0,Petrol,yes,2011,S-Guard,rear,missing_nonfinite_or_nonpositive_price
+2554,Hyundai,8700.0,other,62,1.25,Petrol,yes,2013,i20,,missing_drive_type
+2556,Mitsubishi,8000.0,sedan,119,,Petrol,yes,2007,Lancer,front,missing_engine_displacement
+2557,BMW,0.0,sedan,259,3.0,Diesel,yes,2001,330,rear,missing_nonfinite_or_nonpositive_price
+2560,Volkswagen,18950.0,crossover,149,3.0,Diesel,yes,2008,Touareg,,missing_drive_type
+2575,Subaru,11700.0,crossover,170,3.0,Petrol,yes,2006,Tribeca,,missing_drive_type
+2619,Hyundai,6300.0,sedan,76,,Petrol,yes,2010,Accent,front,missing_engine_displacement
+2622,Volkswagen,0.0,sedan,118,1.6,Gas,yes,2008,Jetta,front,missing_nonfinite_or_nonpositive_price
+2639,Bentley,0.0,crossover,1,6.0,Petrol,yes,2016,Bentayga,full,missing_nonfinite_or_nonpositive_price
+2646,Mercedes-Benz,24500.0,other,77,1.8,Petrol,yes,2011,C-Class,,missing_drive_type
+2671,Tesla,162900.0,sedan,0,,Other,yes,2016,Model S,full,missing_engine_displacement
+2673,Ford,4100.0,sedan,205,2.0,Petrol,yes,1995,Scorpio,,missing_drive_type
+2686,Mazda,12899.0,crossover,112,,Gas,yes,2008,CX-7,front,missing_engine_displacement
+2692,Lexus,17600.0,crossover,157,,Petrol,yes,2006,RX 350,full,missing_engine_displacement
+2696,Volkswagen,0.0,other,67,1.8,Other,yes,2008,Passat B6,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+2702,Mercedes-Benz,14200.0,van,180,2.2,Diesel,yes,2007,Vito пасс.,,missing_drive_type
+2714,Skoda,6000.0,hatch,100,1.2,Petrol,yes,2008,Fabia,,missing_drive_type
+2720,Seat,7350.0,hatch,205,,Gas,yes,2005,Leon,front,missing_engine_displacement
+2732,Chrysler,12500.0,sedan,27,2.4,Petrol,yes,2006,PT Cruiser,,missing_drive_type
+2734,Tesla,82300.0,sedan,17,,Other,yes,2014,Model S,rear,missing_engine_displacement
+2736,Honda,15200.0,sedan,159,2.4,Gas,yes,2008,Accord,,missing_drive_type
+2737,Skoda,7900.0,hatch,132,1.4,Gas,yes,2008,Fabia,,missing_drive_type
+2740,Opel,3230.0,sedan,280,1.6,Other,yes,1994,Astra F,,missing_drive_type
+2741,Citroen,13600.0,hatch,128,1.6,Diesel,yes,2012,C4,,missing_drive_type
+2744,Toyota,0.0,crossover,43,2.2,Diesel,yes,2013,Rav 4,full,missing_nonfinite_or_nonpositive_price
+2750,Hyundai,18200.0,sedan,35,2.4,Petrol,yes,2011,Sonata,,missing_drive_type
+2754,Mercedes-Benz,0.0,other,24,4.7,Petrol,yes,2014,S 500,full,missing_nonfinite_or_nonpositive_price
+2756,Mercedes-Benz,8000.0,van,293,,Diesel,yes,1999,Vito пасс.,front,missing_engine_displacement
+2762,Toyota,0.0,hatch,28,1.6,Petrol,yes,2014,Auris,front,missing_nonfinite_or_nonpositive_price
+2763,Mitsubishi,8500.0,other,135,1.5,Gas,yes,2008,Lancer X,,missing_drive_type
+2776,Chevrolet,35000.0,other,15,3.6,Petrol,yes,2012,Camaro,,missing_drive_type
+2790,Lexus,6000.0,sedan,350,3.0,Petrol,yes,1996,GS 300,rear,exact_duplicate
+2798,Toyota,0.0,crossover,33,2.7,Gas,yes,2012,Venza,full,missing_nonfinite_or_nonpositive_price
+2829,Kia,7500.0,sedan,118,2.0,Gas,yes,2008,Cerato,,missing_drive_type
+2833,Mitsubishi,9700.0,crossover,45,,Other,yes,2001,Pajero Sport,,missing_engine_displacement; missing_drive_type
+2835,Volkswagen,0.0,van,158,1.6,Diesel,yes,2012,Caddy груз.,front,missing_nonfinite_or_nonpositive_price
+2840,Hyundai,9200.0,sedan,100,,Gas,yes,2011,Accent,front,missing_engine_displacement
+2867,Volkswagen,8499.0,sedan,101,1.6,Petrol,yes,2012,Polo,,missing_drive_type
+2870,Hyundai,6999.0,sedan,91,1.4,Petrol,yes,2008,Accent,,missing_drive_type
+2876,Mitsubishi,12500.0,other,48,1.6,Petrol,yes,2012,Lancer X,,missing_drive_type
+2894,Renault,6100.0,vagon,130,,Diesel,yes,2009,Kangoo пасс.,front,missing_engine_displacement
+2895,Renault,10499.0,other,160,,Diesel,yes,2013,Trafic груз.,front,missing_engine_displacement
+2908,Opel,8500.0,van,230,1.9,Diesel,yes,2004,Vivaro пасс.,,missing_drive_type
+2920,Daewoo,1350.0,sedan,225,,Gas,no,1998,Lanos,front,missing_engine_displacement
+2925,Kia,11500.0,hatch,93,,Petrol,yes,2011,Soul,front,missing_engine_displacement
+2926,Volkswagen,11990.0,sedan,245,2.0,Diesel,yes,2007,Passat B6,,missing_drive_type
+2938,Fiat,1950.0,hatch,215,1.4,Petrol,yes,1991,Tipo,,missing_drive_type
+2939,Volkswagen,2500.0,hatch,111,1.6,Gas,yes,1999,Golf IV,,missing_drive_type
+2943,Mitsubishi,18600.0,crossover,52,2.0,Petrol,yes,2013,Outlander,,missing_drive_type
+2945,Chevrolet,11000.0,sedan,60,1.8,Petrol,yes,2010,Cruze,,missing_drive_type
+2955,Audi,15000.0,sedan,38,,Diesel,no,2015,A5,full,missing_engine_displacement
+2962,Mercedes-Benz,47600.0,van,0,2.2,Diesel,yes,2016,Vito пасс.,rear,exact_duplicate
+2963,Mercedes-Benz,47600.0,van,0,2.2,Diesel,yes,2016,Vito пасс.,rear,exact_duplicate
+2967,Peugeot,5800.0,van,180,1.9,Diesel,yes,2007,Partner пасс.,,missing_drive_type
+2974,Mitsubishi,9200.0,other,0,,Other,yes,2007,Lancer X,,missing_engine_displacement; missing_drive_type
+2975,Hyundai,11999.0,crossover,56,,Petrol,yes,2009,Tucson,full,missing_engine_displacement
+2985,Geely,7800.0,sedan,32,,Gas,yes,2014,Emgrand 7 (EC7),front,missing_engine_displacement
+3004,Hyundai,5900.0,hatch,86,1.4,Petrol,yes,2007,Getz,,missing_drive_type
+3020,BMW,7500.0,sedan,425,,Gas,yes,1996,535,rear,missing_engine_displacement
+3021,Volkswagen,20700.0,vagon,74,2.0,Diesel,yes,2013,Passat B7,,missing_drive_type
+3039,Daewoo,3950.0,hatch,66,,Other,yes,2013,Matiz,front,missing_engine_displacement
+3048,BMW,0.0,crossover,200,3.0,Diesel,yes,2009,X5,full,missing_nonfinite_or_nonpositive_price
+3067,Renault,0.0,van,220,2.0,Diesel,yes,2008,Trafic пасс.,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+3068,Audi,3000.0,van,11,1.9,Diesel,no,1999,A6,,missing_drive_type
+3070,Renault,7750.0,van,70,1.5,Diesel,yes,2014,Kangoo груз.,,missing_drive_type
+3076,Volkswagen,11500.0,sedan,70,,Other,yes,2014,Polo,front,missing_engine_displacement
+3081,Skoda,7600.0,sedan,160,,Other,no,2011,Octavia A5,,missing_engine_displacement; missing_drive_type
+3088,Kia,10500.0,vagon,39,1.6,Petrol,yes,2011,Soul,,missing_drive_type
+3093,Ford,16400.0,crossover,87,2.5,Petrol,yes,2010,Kuga,full,exact_duplicate
+3096,Volkswagen,14800.0,other,177,2.0,Diesel,yes,2012,T5 (Transporter) груз,,missing_drive_type
+3098,Mercedes-Benz,23999.0,other,150,,Diesel,yes,2010,Vito пасс.,,missing_engine_displacement; missing_drive_type
+3102,Audi,64400.0,other,41,,Other,yes,2014,A8,,missing_engine_displacement; missing_drive_type
+3109,Opel,6950.0,hatch,127,1.6,Petrol,yes,2008,Astra H,,missing_drive_type
+3111,Daewoo,3999.0,sedan,227,1.6,Gas,yes,2004,Nubira,,missing_drive_type
+3114,Subaru,38900.0,crossover,0,2.0,Diesel,yes,2016,Forester,full,exact_duplicate
+3125,Mercedes-Benz,7700.0,sedan,340,2.2,Diesel,yes,2002,Vito пасс.,,missing_drive_type
+3137,BMW,0.0,crossover,1,3.0,Diesel,yes,2016,X6,full,missing_nonfinite_or_nonpositive_price
+3150,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLS 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+3151,Volkswagen,0.0,crossover,90,3.6,Petrol,yes,2008,Touareg,full,missing_nonfinite_or_nonpositive_price
+3153,Land Rover,0.0,crossover,0,3.0,Other,yes,2016,Range Rover Sport,full,missing_nonfinite_or_nonpositive_price
+3155,Lexus,0.0,crossover,0,4.5,Diesel,yes,2016,LX 450,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+3184,BMW,4100.0,hatch,160,1.6,Petrol,yes,2004,1 Series,,missing_drive_type
+3186,Skoda,7300.0,other,0,,Other,yes,2012,Fabia,,missing_engine_displacement; missing_drive_type
+3203,Daewoo,3850.0,sedan,45,1.3,Petrol,yes,2011,Sens,,missing_drive_type
+3208,Audi,4649.0,vagon,350,,Diesel,yes,2000,A6,full,missing_engine_displacement
+3215,Audi,0.0,vagon,156,3.0,Diesel,yes,2009,A6,full,missing_nonfinite_or_nonpositive_price
+3223,BMW,16500.0,sedan,150,2.5,Petrol,yes,2005,325,,missing_drive_type
+3230,Renault,0.0,vagon,117,1.5,Diesel,yes,2007,Grand Scenic,front,missing_nonfinite_or_nonpositive_price
+3233,Opel,4700.0,sedan,278,1.8,Gas,yes,1996,Vectra B,,missing_drive_type
+3241,Suzuki,10300.0,other,122,2.0,Petrol,yes,2007,Grand Vitara,,missing_drive_type
+3256,Renault,6100.0,van,280,90.0,Diesel,yes,2008,Kangoo пасс.,front,engine_outside_0.5_to_10_litres
+3273,Chevrolet,5999.0,other,113,,Petrol,yes,2008,Aveo,front,missing_engine_displacement
+3277,Mazda,7200.0,sedan,185,2.0,Petrol,yes,2006,6,,missing_drive_type
+3282,Hyundai,0.0,sedan,27,5.0,Petrol,yes,2013,Genesis,rear,missing_nonfinite_or_nonpositive_price
+3283,Mercedes-Benz,199999.0,crossover,0,5.5,Petrol,yes,2016,GLS 63,full,exact_duplicate
+3306,Opel,5500.0,van,298,,Diesel,yes,2005,Combo пасс.,front,missing_engine_displacement
+3309,Renault,7245.0,sedan,87,1.4,Petrol,yes,2008,Megane,,missing_drive_type
+3316,Volkswagen,10800.0,sedan,63,20.0,Petrol,yes,2007,Passat B6,front,engine_outside_0.5_to_10_litres
+3320,Subaru,12803.0,crossover,150,,Gas,yes,2006,Tribeca,full,missing_engine_displacement
+3332,Opel,5700.0,sedan,135,14.0,Petrol,yes,2005,Astra G,front,engine_outside_0.5_to_10_litres
+3333,Citroen,9950.0,van,196,99.99,Diesel,yes,2008,Jumpy пасс.,front,engine_outside_0.5_to_10_litres
+3337,ЛUAZ,0.0,other,10,1.5,Petrol,yes,1991,969 Волынь,full,missing_nonfinite_or_nonpositive_price
+3339,VAZ,0.0,crossover,263,1.6,Petrol,yes,1989,2121,full,missing_nonfinite_or_nonpositive_price
+3347,Daewoo,5000.0,sedan,37,1.5,Petrol,yes,2009,Lanos,,missing_drive_type
+3351,Mazda,12000.0,crossover,130,,Other,yes,2008,CX-7,,missing_engine_displacement; missing_drive_type
+3352,Volkswagen,12500.0,sedan,177,,Petrol,yes,2008,Passat B6,front,missing_engine_displacement
+3403,Ford,13266.0,hatch,19,,Other,yes,2013,Focus Electric,front,missing_engine_displacement
+3409,Ford,11737.0,other,62,,Other,yes,2012,Focus Electric,,missing_engine_displacement; missing_drive_type
+3414,Mercedes-Benz,0.0,sedan,20,3.0,Diesel,yes,2015,S 350,full,missing_nonfinite_or_nonpositive_price
+3417,Opel,6750.0,van,94,1.3,Diesel,yes,2012,Combo груз.,,missing_drive_type
+3427,VAZ,1420.0,sedan,450,99.99,Petrol,yes,1998,2107,rear,engine_outside_0.5_to_10_litres
+3428,Fiat,0.0,van,124,1.3,Diesel,yes,2013,Fiorino груз.,front,missing_nonfinite_or_nonpositive_price
+3443,Mercedes-Benz,0.0,crossover,1,3.0,Diesel,yes,2016,GL 350,full,missing_nonfinite_or_nonpositive_price
+3444,Volkswagen,0.0,van,160,2.0,Diesel,yes,2011,T6 (Transporter) груз,front,missing_nonfinite_or_nonpositive_price
+3455,Volkswagen,37900.0,crossover,73,3.0,Diesel,yes,2012,Touareg,full,exact_duplicate
+3458,Volkswagen,51900.0,crossover,30,3.0,Diesel,yes,2015,Touareg,full,exact_duplicate
+3473,Ford,9400.0,van,187,2.2,Other,yes,2010,Transit груз.,,missing_drive_type
+3474,Opel,1900.0,sedan,120,,Petrol,yes,1987,Kadett,,missing_engine_displacement; missing_drive_type
+3483,Ford,8800.0,hatch,16,1.25,Petrol,yes,2014,Fiesta,,missing_drive_type
+3503,VAZ,1299.0,vagon,1,1.5,Other,yes,2002,2104,,missing_drive_type
+3508,Opel,9100.0,sedan,147,11.5,Petrol,yes,2008,Vectra C,front,engine_outside_0.5_to_10_litres
+3510,Peugeot,0.0,van,56,1.6,Petrol,yes,2011,Partner груз.,front,missing_nonfinite_or_nonpositive_price
+3513,VAZ,460.0,sedan,1,,Petrol,yes,1981,2101,rear,missing_engine_displacement
+3521,VAZ,4000.0,sedan,145,,Other,yes,2007,2110,,missing_engine_displacement; missing_drive_type
+3526,BMW,1550.0,sedan,300,,Gas,no,1994,316,rear,missing_engine_displacement
+3539,VAZ,2800.0,hatch,140,,Gas,yes,2002,21093,front,missing_engine_displacement
+3553,ZAZ,0.0,hatch,130,7.0,Gas,yes,2005,1102 Таврия,front,missing_nonfinite_or_nonpositive_price
+3559,Chrysler,13800.0,sedan,167,3.5,Petrol,yes,2005,300 C,,missing_drive_type
+3574,Citroen,6300.0,van,179,1.4,Petrol,yes,2009,Berlingo пасс.,,missing_drive_type
+3588,Daewoo,3200.0,sedan,172,,Gas,yes,2007,Sens,front,missing_engine_displacement
+3589,Mitsubishi,6300.0,sedan,128,,Petrol,yes,2007,Colt,front,missing_engine_displacement
+3590,Mercedes-Benz,0.0,sedan,0,2.2,Diesel,yes,2016,V 250,full,missing_nonfinite_or_nonpositive_price
+3592,ZAZ,7000.0,hatch,48,1.6,Gas,yes,2014,Vida,,missing_drive_type
+3596,Kia,4000.0,hatch,130,,Petrol,yes,2011,Rio,front,missing_engine_displacement
+3603,VAZ,2800.0,sedan,1,1.6,Petrol,yes,2005,2110,,missing_drive_type
+3627,Daewoo,0.0,sedan,39,1.6,Gas,yes,2012,Nexia,front,missing_nonfinite_or_nonpositive_price
+3640,BMW,77500.0,crossover,1,3.0,Petrol,yes,2016,X6,,missing_drive_type
+3642,BMW,56500.0,crossover,1,2.0,Diesel,yes,2016,X5,,missing_drive_type
+3643,ZAZ,4600.0,sedan,88,,Gas,yes,2014,Sens,,missing_engine_displacement; missing_drive_type
+3652,Toyota,8700.0,hatch,140,,Petrol,yes,2008,Auris,front,missing_engine_displacement
+3662,Citroen,7000.0,hatch,127,,Gas,yes,2005,C4,front,missing_engine_displacement
+3669,Mitsubishi,7300.0,hatch,126,,Other,yes,2004,Colt,,missing_engine_displacement; missing_drive_type
+3673,Nissan,8000.0,crossover,90,,Petrol,yes,2012,Juke,front,missing_engine_displacement
+3674,Opel,7200.0,other,212,2.2,Other,yes,2004,Vectra C,,missing_drive_type
+3675,Mazda,1800.0,hatch,1,,Other,no,2009,3,front,missing_engine_displacement
+3703,Toyota,0.0,vagon,160,2.4,Gas,yes,2007,Rav 4,full,missing_nonfinite_or_nonpositive_price
+3713,Volkswagen,0.0,van,1,,Diesel,yes,2005,Caddy пасс.,,missing_engine_displacement; missing_drive_type; missing_nonfinite_or_nonpositive_price
+3716,Subaru,7000.0,vagon,189,20.0,Petrol,yes,2004,Impreza,full,engine_outside_0.5_to_10_litres
+3718,BMW,57777.0,other,40,4.0,Diesel,yes,2012,X6,,missing_drive_type
+3720,Ford,7300.0,other,177,,Diesel,yes,2006,Transit Connect пасс.,front,missing_engine_displacement
+3727,Nissan,0.0,sedan,200,1.8,Petrol,yes,2000,Primera,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+3738,Renault,7500.0,vagon,98,1.4,Petrol,yes,2007,Kangoo пасс.,,missing_drive_type
+3749,VAZ,2900.0,sedan,32,,Petrol,yes,2008,2107,rear,missing_engine_displacement
+3750,Hyundai,7700.0,other,265,99.99,Diesel,yes,2003,H1 пасс.,rear,engine_outside_0.5_to_10_litres
+3759,Mercedes-Benz,25000.0,van,156,,Other,yes,2012,Viano пасс.,rear,missing_engine_displacement
+3761,Volkswagen,4400.0,other,145,2.4,Diesel,yes,1993,T4 (Transporter) пасс.,,missing_drive_type
+3762,Mazda,8900.0,hatch,90,,Gas,yes,2008,3,front,missing_engine_displacement
+3776,VAZ,2900.0,sedan,140,1.6,Gas,yes,2006,21099,,missing_drive_type
+3797,VAZ,3000.0,hatch,112,,Petrol,yes,2003,21093,front,missing_engine_displacement
+3800,BMW,0.0,crossover,5,4.4,Petrol,yes,2015,X5 M,full,missing_nonfinite_or_nonpositive_price
+3801,Toyota,0.0,crossover,0,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+3814,Land Rover,0.0,crossover,25,5.0,Petrol,yes,2013,Range Rover,full,missing_nonfinite_or_nonpositive_price
+3834,Peugeot,5400.0,van,208,1.9,Diesel,yes,2005,Expert пасс.,,missing_drive_type
+3851,Opel,3600.0,vagon,162,1.7,Diesel,no,2007,Astra H,,missing_drive_type
+3852,Chevrolet,2550.0,vagon,176,1.6,Petrol,no,2006,Lacetti,,missing_drive_type
+3854,Hyundai,8650.0,crossover,147,2.0,Gas,yes,2007,Tucson,,missing_drive_type
+3871,Ford,6200.0,vagon,170,1.4,Petrol,yes,2008,Fusion,,missing_drive_type
+3880,Kia,21999.0,crossover,120,2.2,Diesel,yes,2013,Sorento,,missing_drive_type
+3881,Opel,0.0,van,245,,Diesel,yes,1996,Combo груз.,front,missing_engine_displacement; missing_nonfinite_or_nonpositive_price
+3887,Toyota,7500.0,hatch,135,1.0,Petrol,yes,2008,Yaris,,missing_drive_type
+3892,Nissan,18500.0,crossover,111,,Diesel,yes,2005,Patrol,full,missing_engine_displacement
+3905,Ford,6200.0,hatch,150,1.6,Petrol,yes,2007,Focus,,missing_drive_type
+3909,Kia,10000.0,crossover,198,2.5,Diesel,yes,2006,Sorento,,missing_drive_type
+3922,Bentley,85000.0,other,20,6.0,Petrol,yes,2008,Continental,full,exact_duplicate
+3935,Daewoo,3450.0,sedan,230,,Gas,yes,2003,Lanos,front,missing_engine_displacement
+3938,Peugeot,26000.0,sedan,6,2.0,Diesel,yes,2014,508,,missing_drive_type
+3942,Chevrolet,28777.0,hatch,49,,Other,yes,2014,Volt,front,missing_engine_displacement
+3953,Volkswagen,6450.0,van,220,,Other,yes,2004,Caddy пасс.,,missing_engine_displacement; missing_drive_type
+3957,BMW,7300.0,sedan,350,,Petrol,yes,1997,520,rear,missing_engine_displacement
+3965,Audi,0.0,hatch,243,2.0,Gas,yes,1987,100,front,missing_nonfinite_or_nonpositive_price
+3967,ZAZ,0.0,hatch,72,,Petrol,yes,2003,1102 Таврия,front,missing_engine_displacement; missing_nonfinite_or_nonpositive_price
+3977,BMW,0.0,other,35,3.0,Petrol,yes,2008,630,rear,missing_nonfinite_or_nonpositive_price
+3994,Renault,4800.0,van,113,15.0,Diesel,yes,2006,Kangoo пасс.,front,engine_outside_0.5_to_10_litres
+4000,VAZ,3000.0,sedan,160,,Petrol,yes,2008,2113,front,missing_engine_displacement
+4004,Mercedes-Benz,0.0,crossover,0,4.6,Petrol,yes,2016,GLS 500,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+4008,Toyota,9700.0,sedan,130,,Petrol,yes,2008,Corolla,front,missing_engine_displacement
+4011,Mitsubishi,2400.0,hatch,350,2.0,Gas,yes,1989,Galant,,missing_drive_type
+4016,Nissan,2600.0,sedan,270,,Other,yes,1991,Primera,,missing_engine_displacement; missing_drive_type
+4020,Mercedes-Benz,199999.0,crossover,0,5.5,Petrol,yes,2016,GLS 63,full,exact_duplicate
+4022,Nissan,7800.0,crossover,282,4.2,Gas,yes,1998,Patrol,,missing_drive_type
+4035,Nissan,1499.0,sedan,16,2.0,Gas,yes,1991,Primera,,missing_drive_type
+4039,Ford,0.0,other,222,2.5,Diesel,yes,1996,Transit груз.,rear,missing_nonfinite_or_nonpositive_price
+4040,GAZ,0.0,other,1,,Other,yes,1958,69,,missing_engine_displacement; missing_drive_type; missing_nonfinite_or_nonpositive_price
+4046,Volkswagen,10200.0,van,105,1.6,Diesel,yes,2014,Caddy груз.,,missing_drive_type
+4056,Audi,2850.0,sedan,350,,Gas,yes,1988,80,front,missing_engine_displacement
+4075,Audi,27500.0,sedan,74,2.0,Diesel,yes,2011,A5,,missing_drive_type
+4093,Volkswagen,19999.0,van,152,2.0,Diesel,yes,2012,Sharan,,missing_drive_type
+4096,Chevrolet,6100.0,sedan,117,,Gas,yes,2008,Aveo,front,missing_engine_displacement
+4097,Hyundai,6900.0,hatch,95,1.4,Petrol,yes,2007,Getz,,missing_drive_type
+4100,Mercedes-Benz,7300.0,other,250,2.2,Diesel,yes,2005,Sprinter 311 пасс.,,missing_drive_type
+4103,VAZ,4100.0,hatch,160,1.6,Petrol,yes,2008,2172,,missing_drive_type
+4105,Fiat,8900.0,van,106,,Gas,yes,2013,Doblo пасс.,front,missing_engine_displacement
+4109,VAZ,0.0,vagon,39,1.3,Gas,yes,1988,2104,rear,missing_nonfinite_or_nonpositive_price
+4111,Opel,4800.0,van,128,,Other,yes,2008,Combo груз.,,missing_engine_displacement; missing_drive_type
+4130,Mitsubishi,0.0,crossover,205,2.5,Diesel,yes,2006,Pajero Sport,full,missing_nonfinite_or_nonpositive_price
+4132,ZAZ,407.55,hatch,143,0.9,Petrol,yes,1994,1102 Таврия,,missing_drive_type
+4141,Hyundai,5800.0,sedan,110,,Other,yes,2007,Accent,,missing_engine_displacement; missing_drive_type
+4142,Volkswagen,3700.0,crossover,267,,Diesel,no,2000,Golf IV,full,missing_engine_displacement
+4164,BMW,28000.0,other,100,5.0,Petrol,yes,2005,M5,,missing_drive_type
+4167,GAZ,15000.0,sedan,1,12.0,Petrol,yes,1962,21,rear,engine_outside_0.5_to_10_litres
+4169,Mitsubishi,9350.0,sedan,94,1.5,Gas,yes,2010,Lancer X,,missing_drive_type
+4180,Mitsubishi,800.0,sedan,340,,Other,yes,1986,Galant,,missing_engine_displacement; missing_drive_type
+4194,Audi,0.0,sedan,60,6.3,Petrol,yes,2013,A8,full,missing_nonfinite_or_nonpositive_price
+4196,Nissan,9500.0,sedan,155,99.99,Gas,yes,2007,Teana,front,engine_outside_0.5_to_10_litres
+4197,BMW,3500.0,sedan,280,,Petrol,no,1996,730,rear,missing_engine_displacement
+4198,VAZ,1450.0,sedan,13,,Petrol,yes,1996,2107,rear,missing_engine_displacement
+4199,BMW,17500.0,crossover,210,3.0,Diesel,yes,2005,X5,,missing_drive_type
+4204,Renault,0.0,van,150,2.5,Diesel,yes,2007,Trafic пасс.,front,missing_nonfinite_or_nonpositive_price
+4220,Kia,11700.0,crossover,140,,Diesel,yes,2010,Soul,front,missing_engine_displacement
+4224,Mercedes-Benz,0.0,crossover,154,3.0,Diesel,yes,2009,ML 320,full,missing_nonfinite_or_nonpositive_price
+4256,Porsche,0.0,crossover,68,4.8,Petrol,yes,2007,Cayenne,full,missing_nonfinite_or_nonpositive_price
+4261,BMW,0.0,crossover,4,4.4,Petrol,yes,2016,X5 M,full,missing_nonfinite_or_nonpositive_price
+4276,Ford,800.0,sedan,500,,Other,yes,1991,Sierra,,missing_engine_displacement; missing_drive_type
+4279,Volkswagen,6950.0,other,217,1.9,Diesel,yes,2006,Caddy пасс.,,missing_drive_type
+4287,Nissan,14300.0,hatch,68,,Other,yes,2013,Leaf,front,missing_engine_displacement
+4295,Suzuki,12200.0,hatch,15,1.3,Gas,yes,2014,Splash,,missing_drive_type
+4297,Nissan,17000.0,hatch,22,,Other,yes,2013,Leaf,rear,missing_engine_displacement
+4316,ZAZ,3800.0,other,130,99.99,Gas,yes,2008,110557,,missing_drive_type; engine_outside_0.5_to_10_litres
+4327,Mercedes-Benz,300000.0,sedan,68,6.0,Petrol,yes,2011,S 600,,missing_drive_type
+4330,Nissan,15700.0,crossover,65,2.0,Petrol,yes,2012,Qashqai,,missing_drive_type
+4333,Opel,7300.0,sedan,184,1.8,Petrol,yes,2006,Vectra C,,missing_drive_type
+4339,Skoda,17500.0,sedan,58,,Petrol,yes,2011,Superb,front,missing_engine_displacement
+4354,Audi,7200.0,sedan,300,,Gas,yes,1999,A6,,missing_engine_displacement; missing_drive_type
+4357,Skoda,8600.0,hatch,240,,Petrol,yes,2003,Octavia,front,missing_engine_displacement
+4360,Daewoo,3700.0,sedan,185,,Gas,yes,2007,Nexia,front,missing_engine_displacement
+4366,Volkswagen,23300.0,sedan,115,1.8,Petrol,yes,2012,Passat CC,,missing_drive_type
+4391,Mercedes-Benz,12700.0,other,198,2.2,Diesel,yes,2011,Vito груз.,,missing_drive_type
+4410,Nissan,17500.0,hatch,50,,Other,yes,2014,Leaf,front,missing_engine_displacement
+4412,Toyota,21900.0,crossover,110,4.0,Gas,yes,2006,FJ Cruiser,,missing_drive_type
+4416,Audi,2600.0,sedan,160,2.5,Diesel,no,2002,A6,,missing_drive_type
+4427,Nissan,18500.0,hatch,50,,Other,yes,2014,Leaf,front,missing_engine_displacement
+4428,Mercedes-Benz,0.0,van,0,2.2,Diesel,yes,2016,V 250,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+4434,Chevrolet,6300.0,sedan,150,,Gas,yes,2008,Aveo,front,missing_engine_displacement
+4448,Mitsubishi,18700.0,crossover,52,2.0,Petrol,yes,2013,Outlander XL,,missing_drive_type
+4458,Mercedes-Benz,14200.0,crossover,210,,Gas,yes,2004,ML 350,full,missing_engine_displacement
+4466,Mercedes-Benz,0.0,crossover,0,3.0,Petrol,yes,2016,GLS 400,full,missing_nonfinite_or_nonpositive_price
+4484,Hyundai,7499.0,crossover,100,,Gas,no,2011,IX35,full,missing_engine_displacement
+4487,Mitsubishi,6666.0,sedan,162,,Petrol,yes,2007,Lancer,front,missing_engine_displacement
+4496,VAZ,800.0,sedan,156,,Petrol,yes,1985,2106,front,missing_engine_displacement
+4537,Chevrolet,24000.0,sedan,15,3.0,Other,yes,2013,Malibu,,missing_drive_type
+4542,Mercedes-Benz,2500.0,sedan,111,2.3,Gas,yes,1992,E-Class,,missing_drive_type
+4545,Audi,6100.0,sedan,305,1.6,Other,yes,1996,A4,,missing_drive_type
+4549,Volkswagen,8700.0,sedan,270,,Diesel,yes,2009,Caddy пасс.,,missing_engine_displacement; missing_drive_type
+4557,Smart,6750.0,other,20,1.0,Petrol,yes,2011,Fortwo,,missing_drive_type
+4562,Toyota,9800.0,sedan,123,,Petrol,yes,2008,Corolla,front,missing_engine_displacement
+4587,VAZ,2800.0,sedan,153,,Other,yes,2007,2110,,missing_engine_displacement; missing_drive_type
+4589,Mercedes-Benz,13600.0,sedan,115,,Petrol,yes,2007,C-Class,rear,missing_engine_displacement
+4599,ЛUAZ,1500.0,crossover,31,,Petrol,yes,1987,969М,full,missing_engine_displacement
+4603,Opel,9600.0,van,190,,Diesel,yes,2007,Vivaro пасс.,front,missing_engine_displacement
+4605,VAZ,3400.0,other,133,,Petrol,yes,2007,2115,front,missing_engine_displacement
+4607,Mercedes-Benz,0.0,van,300,2.3,Diesel,yes,1996,Vito пасс.,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+4608,Skoda,23000.0,sedan,32,,Petrol,yes,2013,Superb,front,missing_engine_displacement
+4620,VAZ,4000.0,crossover,80,1.6,Petrol,yes,2006,2121,,missing_drive_type
+4621,Daewoo,3300.0,sedan,176,,Gas,yes,2008,Lanos,front,missing_engine_displacement
+4636,Audi,0.0,sedan,2,3.0,Diesel,yes,2015,A8,full,missing_nonfinite_or_nonpositive_price
+4672,Mercedes-Benz,19600.0,van,127,1.8,Diesel,yes,2013,B 180,front,exact_duplicate
+4707,Mercedes-Benz,6500.0,sedan,215,55.0,Petrol,no,2001,S 55,rear,engine_outside_0.5_to_10_litres
+4709,ZAZ,1050.0,sedan,130,,Gas,yes,2005,1102 Таврия,front,missing_engine_displacement
+4715,Mercedes-Benz,14900.0,van,211,2.2,Other,yes,2012,Vito груз.,,missing_drive_type
+4727,Toyota,33333.0,vagon,73,4.0,Gas,yes,2009,FJ Cruiser,full,exact_duplicate
+4745,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GL 350,full,missing_nonfinite_or_nonpositive_price
+4750,Mercedes-Benz,29999.0,hatch,9,,Other,yes,2015,B-Class Electric Drive,front,missing_engine_displacement
+4757,BMW,0.0,crossover,15,4.39,Petrol,yes,2015,X5 M,full,missing_nonfinite_or_nonpositive_price
+4758,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLS 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+4760,Mazda,0.0,vagon,267,1.7,Diesel,yes,1992,323,front,missing_nonfinite_or_nonpositive_price
+4764,Land Rover,0.0,crossover,40,3.0,Other,yes,2013,Range Rover Sport,full,missing_nonfinite_or_nonpositive_price
+4768,Land Rover,0.0,crossover,18,4.4,Diesel,yes,2015,Range Rover,full,missing_nonfinite_or_nonpositive_price
+4783,Mazda,7200.0,sedan,204,2.0,Other,yes,2005,6,,missing_drive_type
+4786,Rolls-Royce,0.0,sedan,22,6.75,Other,yes,2008,Phantom,rear,missing_nonfinite_or_nonpositive_price
+4788,Mercedes-Benz,0.0,crossover,27,3.0,Diesel,yes,2015,G 350,full,missing_nonfinite_or_nonpositive_price
+4802,Honda,6900.0,sedan,135,,Petrol,no,2007,Accord,,missing_engine_displacement; missing_drive_type
+4814,Fiat,8500.0,vagon,60,1.4,Petrol,yes,2012,Doblo пасс.,,missing_drive_type
+4816,Infiniti,19900.0,other,25,3.7,Petrol,yes,2015,QX70,,missing_drive_type
+4818,Infiniti,19900.0,other,25,3.7,Petrol,yes,2015,FX 37,,missing_drive_type
+4831,Daewoo,4800.0,hatch,450,1.3,Petrol,yes,2013,Sens,,missing_drive_type
+4843,Citroen,0.0,other,185,2.0,Diesel,yes,2006,Berlingo пасс.,front,missing_nonfinite_or_nonpositive_price
+4846,Mercedes-Benz,41900.0,sedan,95,6.3,Other,yes,2011,S 550,,missing_drive_type
+4851,Mercedes-Benz,7900.0,other,197,2.2,Diesel,yes,2003,Vito пасс.,,missing_drive_type
+4866,BMW,0.0,crossover,16,,Other,yes,2016,X5 M,,missing_engine_displacement; missing_drive_type; missing_nonfinite_or_nonpositive_price
+4869,Opel,11000.0,van,160,2.2,Petrol,yes,2006,Zafira,,missing_drive_type
+4877,Volkswagen,3399.0,sedan,201,1.8,Petrol,yes,1991,Passat B3,,missing_drive_type
+4879,Ford,4299.0,van,143,1.8,Diesel,yes,2004,Transit Connect груз.,,missing_drive_type
+4883,BMW,0.0,sedan,1,3.0,Petrol,yes,2010,535,rear,missing_nonfinite_or_nonpositive_price
+4892,BMW,75555.0,sedan,30,4.4,Petrol,yes,2014,550,full,exact_duplicate
+4904,Mercedes-Benz,55000.0,crossover,128,3.0,Diesel,yes,2013,ML 350,,missing_drive_type
+4907,VAZ,389.025,vagon,1,1.3,Petrol,yes,1983,2102,,missing_drive_type
+4917,Daewoo,2800.0,sedan,160,1.5,Other,yes,2006,Lanos,,missing_drive_type
+4935,Peugeot,6300.0,hatch,87,,Petrol,yes,2010,207,front,missing_engine_displacement
+4943,Mercedes-Benz,0.0,sedan,34,3.5,Diesel,yes,2014,S 350,full,missing_nonfinite_or_nonpositive_price
+4950,Audi,2000.0,sedan,360,1.6,Other,no,1996,A4,,missing_drive_type
+4952,Skoda,14800.0,vagon,90,1.8,Petrol,yes,2011,Superb,,missing_drive_type
+4956,VAZ,700.0,vagon,1,,Petrol,yes,1981,2102,rear,missing_engine_displacement
+4969,Mercedes-Benz,0.0,vagon,100,3.0,Diesel,yes,2014,CLS 350,full,missing_nonfinite_or_nonpositive_price
+4973,Skoda,6300.0,hatch,157,,Other,yes,2007,Fabia,,missing_engine_displacement; missing_drive_type
+4976,Mercedes-Benz,0.0,van,261,2.2,Diesel,yes,2007,Vito груз.,rear,missing_nonfinite_or_nonpositive_price
+4986,Opel,17555.0,vagon,191,,Diesel,yes,2009,Insignia,front,missing_engine_displacement
+4994,Daewoo,3250.0,sedan,105,,Petrol,yes,2002,Sens,front,missing_engine_displacement
+5010,VAZ,3000.0,sedan,200,1.6,Petrol,yes,2007,21099,,missing_drive_type
+5030,BMW,14200.0,sedan,135,3.0,Gas,yes,2004,530,,missing_drive_type
+5044,Audi,0.0,sedan,177,1.8,Petrol,yes,1998,A4,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+5051,BMW,3300.0,sedan,233,28.0,Petrol,no,1997,528,rear,engine_outside_0.5_to_10_litres
+5052,Citroen,0.0,hatch,80,1.6,Petrol,yes,2012,DS4,front,missing_nonfinite_or_nonpositive_price
+5057,Ford,15500.0,hatch,27,,Other,yes,2012,Focus Electric,front,missing_engine_displacement
+5069,Smart,6400.0,other,120,,Diesel,yes,2008,Fortwo,rear,missing_engine_displacement
+5071,Audi,39999.0,crossover,45,2.0,Diesel,yes,2014,Q5,full,exact_duplicate
+5073,Lexus,17800.0,other,73,,Petrol,yes,2007,GS 350,full,missing_engine_displacement
+5075,BMW,42900.0,sedan,2,2.0,Petrol,yes,2016,520,rear,exact_duplicate
+5081,GAZ,2000.0,sedan,49,,Petrol,yes,1990,2410,,missing_engine_displacement; missing_drive_type
+5084,Ford,9950.0,hatch,78,,Petrol,yes,2012,Fiesta,front,missing_engine_displacement
+5086,GAZ,0.0,crossover,1,,Petrol,yes,1963,69,full,missing_engine_displacement; missing_nonfinite_or_nonpositive_price
+5088,Volkswagen,7200.0,hatch,159,1.6,Petrol,yes,2007,Golf V,,missing_drive_type
+5102,GAZ,1400.0,van,250,99.99,Gas,yes,1999,2705 GAZель,,missing_drive_type; engine_outside_0.5_to_10_litres
+5125,BMW,4500.0,sedan,28,1.9,Petrol,yes,1995,318,,missing_drive_type
+5134,VAZ,3600.0,sedan,215,,Gas,yes,2008,2115,front,missing_engine_displacement
+5136,VAZ,3400.0,sedan,174,1.5,Gas,yes,2006,21099,,missing_drive_type
+5146,Skoda,12600.0,sedan,108,1.8,Petrol,yes,2012,Octavia A5,,missing_drive_type
+5147,Mercedes-Benz,10000.0,sedan,80,,Diesel,yes,2010,S 350,rear,missing_engine_displacement
+5164,Daewoo,3500.0,hatch,119,,Petrol,yes,2008,Matiz,front,missing_engine_displacement
+5170,Fiat,6800.0,van,125,1.3,Diesel,yes,2011,Doblo груз.,,missing_drive_type
+5172,VAZ,6500.0,hatch,35,,Petrol,yes,2012,2172,front,missing_engine_displacement
+5177,Skoda,12200.0,vagon,137,1.6,Other,yes,2010,Octavia A5,,missing_drive_type
+5182,Opel,5500.0,sedan,120,,Petrol,yes,2007,Astra G,front,missing_engine_displacement
+5200,BMW,14500.0,sedan,215,,Petrol,yes,2006,525,full,missing_engine_displacement
+5202,Ford,3300.0,other,380,2.5,Diesel,yes,1996,Transit пасс.,,missing_drive_type
+5209,Chevrolet,6500.0,sedan,99,,Petrol,yes,2007,Lacetti,front,missing_engine_displacement
+5218,ZAZ,3700.0,sedan,98,,Other,yes,2007,Lanos,,missing_engine_displacement; missing_drive_type
+5227,Kia,0.0,sedan,106,2.0,Petrol,yes,2007,Magentis,front,missing_nonfinite_or_nonpositive_price
+5245,Nissan,19457.5485,hatch,0,,Petrol,yes,2016,Juke,front,missing_engine_displacement
+5250,Volkswagen,0.0,hatch,128,1.6,Petrol,yes,2008,Golf V,front,missing_nonfinite_or_nonpositive_price
+5251,Nissan,13455.4485,hatch,0,,Petrol,yes,2015,Micra,front,missing_engine_displacement
+5258,Audi,0.0,sedan,370,2.6,Other,yes,1997,A6,front,missing_nonfinite_or_nonpositive_price
+5261,Volkswagen,4500.0,vagon,390,1.9,Diesel,yes,1996,Passat B4,,missing_drive_type
+5265,Ford,11000.0,hatch,42,1.4,Petrol,yes,2012,Fiesta,,missing_drive_type
+5286,Volkswagen,6500.0,van,185,,Diesel,yes,2006,Caddy пасс.,front,missing_engine_displacement
+5294,BMW,25000.0,crossover,150,30.0,Petrol,yes,2007,X5,full,engine_outside_0.5_to_10_litres
+5297,Volkswagen,4800.0,sedan,190,99.99,Petrol,yes,1998,Passat B5,front,engine_outside_0.5_to_10_litres
+5303,Volkswagen,6800.0,sedan,178,,Gas,yes,2004,Passat B5,front,missing_engine_displacement
+5307,Mitsubishi,0.0,sedan,90,2.0,Petrol,yes,2007,Lancer Evolution,full,missing_nonfinite_or_nonpositive_price
+5312,Volkswagen,23999.0,sedan,0,1.6,Diesel,yes,2016,Jetta,front,exact_duplicate
+5321,Audi,0.0,sedan,280,4.2,Petrol,yes,2000,A8,full,missing_nonfinite_or_nonpositive_price
+5322,Citroen,2800.0,van,120,1.9,Diesel,yes,2004,Berlingo груз.,,missing_drive_type
+5330,Skoda,12000.0,sedan,145,,Petrol,yes,2008,Octavia A5,front,missing_engine_displacement
+5344,GAZ,1400.0,van,25,,Gas,yes,1999,2705 GAZель,,missing_engine_displacement; missing_drive_type
+5353,GAZ,3800.0,sedan,580,4.25,Gas,yes,1982,24,,missing_drive_type
+5364,Ford,4300.0,sedan,117,,Petrol,yes,2000,Focus,front,missing_engine_displacement
+5371,BMW,25500.0,crossover,210,3.0,Gas,yes,2008,X5,,missing_drive_type
+5379,Subaru,17500.0,crossover,80,,Other,yes,2008,Tribeca,full,missing_engine_displacement
+5403,Smart,4150.0,other,99,,Petrol,yes,2002,Fortwo,rear,missing_engine_displacement
+5425,ZAZ,1450.0,other,172,,Gas,yes,2005,110557,front,missing_engine_displacement
+5435,ZAZ,1800.0,hatch,127,,Petrol,yes,2001,1103 Славута,front,missing_engine_displacement
+5438,Volkswagen,21550.0,crossover,58,1.4,Petrol,yes,2014,Tiguan,,missing_drive_type
+5444,Mercedes-Benz,2000.0,sedan,320,2.2,Diesel,no,1998,E-Class,,missing_drive_type
+5458,Ford,0.0,other,108,1.8,Diesel,yes,2011,Tourneo Connect пасс.,front,missing_nonfinite_or_nonpositive_price
+5468,Volkswagen,0.0,other,201,1.9,Diesel,yes,2007,T5 (Transporter) пасс.,front,missing_nonfinite_or_nonpositive_price
+5470,Chery,6800.0,crossover,72,,Petrol,yes,2011,Tiggo,front,missing_engine_displacement
+5474,Daewoo,3750.0,sedan,102,,Petrol,yes,2008,Lanos,front,missing_engine_displacement
+5488,VAZ,3650.0,vagon,145,1.6,Gas,yes,2006,2111,,missing_drive_type
+5495,Nissan,5700.0,sedan,202,,Petrol,yes,2003,Almera,,missing_engine_displacement; missing_drive_type
+5508,Nissan,2600.0,sedan,280,,Petrol,yes,1990,Sunny,front,missing_engine_displacement
+5518,Mitsubishi,11800.0,sedan,1,1.5,Gas,yes,2010,Lancer X,,missing_drive_type
+5520,Moskvich-Izh,1111.46295,van,1,,Gas,yes,2003,2117,,missing_engine_displacement; missing_drive_type
+5523,Mitsubishi,2199.0,hatch,400,1.8,Other,yes,1991,Galant,,missing_drive_type
+5533,Audi,34419.45,sedan,0,1.4,Petrol,yes,2016,Q3,,missing_drive_type
+5543,Mercedes-Benz,0.0,crossover,1,3.0,Diesel,yes,2016,GLS 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+5546,Mercedes-Benz,14500.0,van,205,2.2,Diesel,yes,2012,Sprinter 313 груз.,,missing_drive_type
+5554,Mazda,12750.0,sedan,110,,Petrol,yes,2010,6,front,missing_engine_displacement
+5565,BMW,0.0,sedan,65,2.0,Petrol,yes,2012,320,rear,missing_nonfinite_or_nonpositive_price
+5569,GAZ,6500.0,sedan,80,,Other,yes,1979,24,,missing_engine_displacement; missing_drive_type
+5582,Renault,0.0,vagon,180,1.5,Diesel,yes,2011,Megane,front,missing_nonfinite_or_nonpositive_price
+5585,Skoda,0.0,vagon,106,1.6,Diesel,yes,2011,Octavia A5,front,missing_nonfinite_or_nonpositive_price
+5587,Volkswagen,65000.0,crossover,24,,Other,yes,2015,Touareg,,missing_engine_displacement; missing_drive_type
+5589,Nissan,17000.0,hatch,25,,Other,yes,2014,Leaf,front,missing_engine_displacement
+5590,Nissan,15300.0,hatch,33,,Other,yes,2014,Leaf,front,missing_engine_displacement
+5593,Lifan,4300.0,hatch,76,1.3,Petrol,yes,2013,320,,missing_drive_type
+5613,Ford,21500.0,other,175,6.0,Other,yes,2004,F-350,,missing_drive_type
+5620,Peugeot,5900.0,hatch,190,,Gas,yes,2008,206,front,missing_engine_displacement
+5629,Mercedes-Benz,13200.0,other,196,2.2,Other,yes,2012,Sprinter 313 груз.,,missing_drive_type
+5634,Nissan,7800.0,sedan,118,1.6,Petrol,yes,2008,TIIDA,,missing_drive_type
+5642,BMW,10600.0,sedan,285,2.0,Diesel,yes,2007,520,,missing_drive_type
+5655,Geely,4900.0,sedan,17,1.5,Petrol,yes,2013,CK-2,,missing_drive_type
+5656,Mercedes-Benz,0.0,sedan,240,2.2,Diesel,yes,2001,E-Class,rear,missing_nonfinite_or_nonpositive_price
+5657,Subaru,8000.0,crossover,142,,Other,yes,2007,Forester,full,missing_engine_displacement
+5662,Nissan,16500.0,sedan,2,,Other,yes,2015,Leaf,front,missing_engine_displacement
+5666,Opel,0.0,van,160,1.4,Gas,yes,2009,Combo пасс.,front,missing_nonfinite_or_nonpositive_price
+5671,Skoda,0.0,vagon,320,1.9,Diesel,no,1999,Octavia,front,missing_nonfinite_or_nonpositive_price
+5677,BMW,57000.0,other,20,3.5,Petrol,yes,2013,X6,,missing_drive_type
+5692,Nissan,0.0,crossover,130,2.0,Petrol,yes,2007,Qashqai,full,missing_nonfinite_or_nonpositive_price
+5694,Opel,1390.0,hatch,270,,Petrol,no,1997,Vectra B,front,missing_engine_displacement
+5695,Nissan,18000.0,hatch,27,,Other,yes,2013,Leaf,front,missing_engine_displacement
+5716,BMW,38000.0,sedan,61,,Petrol,yes,2013,535,rear,missing_engine_displacement
+5721,Volkswagen,9750.0,van,1,1.9,Diesel,yes,2004,T5 (Transporter) пасс.,,missing_drive_type
+5733,VAZ,0.0,sedan,1,1.7,Gas,yes,1973,2106,rear,missing_nonfinite_or_nonpositive_price
+5740,VAZ,2900.0,hatch,188,,Gas,yes,2005,2114,front,missing_engine_displacement
+5743,ZAZ,1250.0,hatch,164,,Petrol,yes,2005,Таврия-Нова,front,missing_engine_displacement
+5748,VAZ,2800.0,sedan,130,85.0,Petrol,yes,2006,1118,,missing_drive_type; engine_outside_0.5_to_10_litres
+5752,Mercedes-Benz,0.0,van,240,2.2,Diesel,yes,2007,Vito пасс.,rear,missing_nonfinite_or_nonpositive_price
+5763,Seat,7900.0,vagon,231,1.6,Petrol,yes,2005,Toledo,,missing_drive_type
+5771,Mercedes-Benz,8700.0,other,280,,Diesel,yes,2001,Vito пасс.,front,missing_engine_displacement
+5785,VAZ,0.0,sedan,198,1.5,Gas,yes,1999,21099,front,missing_nonfinite_or_nonpositive_price
+5789,Toyota,12800.0,sedan,203,,Petrol,yes,2005,Camry,front,missing_engine_displacement
+5792,Mercedes-Benz,0.0,van,173,2.2,Diesel,yes,2011,Vito груз.,rear,missing_nonfinite_or_nonpositive_price
+5801,Mitsubishi,5999.0,van,258,,Diesel,yes,1999,L 400 пасс.,rear,missing_engine_displacement
+5813,VAZ,6100.0,sedan,57,1.6,Petrol,yes,2013,2170,,missing_drive_type
+5818,Kia,2500.0,sedan,180,1.5,Gas,yes,1994,Sephia,,missing_drive_type
+5833,Volkswagen,6400.0,van,305,,Diesel,yes,2004,Caddy пасс.,front,missing_engine_displacement
+5840,GAZ,1650.0,sedan,98,2.5,Gas,yes,1993,31029,,missing_drive_type
+5867,Renault,14999.0,van,54,66.0,Other,yes,2012,Kangoo пасс.,front,engine_outside_0.5_to_10_litres
+5870,Toyota,14699.0,sedan,155,,Petrol,yes,2006,Camry,front,missing_engine_displacement
+5872,Renault,0.0,sedan,100,1.4,Petrol,yes,2009,Symbol,front,missing_nonfinite_or_nonpositive_price
+5876,BMW,28000.0,crossover,116,,Petrol,yes,2008,X5,full,missing_engine_displacement
+5883,Renault,2950.0,vagon,280,19.0,Diesel,yes,2000,Kangoo груз.,front,engine_outside_0.5_to_10_litres
+5884,Audi,3250.0,sedan,285,,Gas,no,1996,A8,full,missing_engine_displacement
+5902,BMW,23000.0,other,100,,Other,yes,2005,630,,missing_engine_displacement; missing_drive_type
+5919,BMW,5500.0,sedan,402,2.0,Petrol,yes,1988,520,,missing_drive_type
+5922,Hummer,19800.0,other,0,,Other,yes,2006,H3,,missing_engine_displacement; missing_drive_type
+5925,Hyundai,11999.0,sedan,108,1.6,Gas,yes,2011,Elantra,,missing_drive_type
+5934,Suzuki,8700.0,crossover,95,,Petrol,yes,2008,Jimny,full,missing_engine_displacement
+5943,Ford,17900.0,hatch,43,,Other,yes,2013,Focus,front,missing_engine_displacement
+5947,Daewoo,2999.0,sedan,151,,Gas,yes,2005,Nexia,front,missing_engine_displacement
+5949,Citroen,1650.0,van,180,14.0,Petrol,no,2006,Berlingo пасс.,front,engine_outside_0.5_to_10_litres
+5963,Audi,2100.0,vagon,230,1.9,Diesel,no,2000,A4,,missing_drive_type
+5971,VAZ,3500.0,vagon,130,,Gas,yes,2007,2111,front,missing_engine_displacement
+5981,VAZ,6700.0,crossover,115,,Gas,yes,2010,2121,full,missing_engine_displacement
+5989,Daewoo,3250.0,sedan,136,1.4,Petrol,yes,2007,Lanos,,missing_drive_type
+5997,Renault,0.0,vagon,177,1.5,Diesel,yes,2007,Megane,front,missing_nonfinite_or_nonpositive_price
+6006,Moskvich-AZLK,11000.0,sedan,1,,Petrol,yes,1953,401,rear,missing_engine_displacement
+6008,Ford,15195.3906,hatch,0,99.99,Petrol,yes,2016,Fiesta,front,engine_outside_0.5_to_10_litres
+6015,Porsche,0.0,crossover,59,3.0,Other,yes,2011,Cayenne,full,missing_nonfinite_or_nonpositive_price
+6020,Nissan,10500.0,crossover,91,1.6,Gas,yes,2007,Qashqai,,missing_drive_type
+6046,Lexus,0.0,crossover,0,4.5,Diesel,yes,2016,LX 450,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+6050,Chevrolet,4700.0,vagon,163,1.6,Petrol,yes,2005,Tacuma,,missing_drive_type
+6062,VAZ,5400.0,vagon,62,,Gas,yes,2013,2111,front,missing_engine_displacement
+6068,Mazda,7500.0,other,215,,Gas,yes,2003,6,front,missing_engine_displacement
+6076,Porsche,0.0,crossover,76,3.0,Diesel,yes,2013,Cayenne,full,missing_nonfinite_or_nonpositive_price
+6080,Mercedes-Benz,5000.0,sedan,240,2.2,Diesel,no,2004,E-Class,,missing_drive_type
+6088,BMW,117000.0,crossover,1,,Other,yes,2016,X6 M,,missing_engine_displacement; missing_drive_type
+6093,UAZ,6800.0,vagon,55,2.69,Other,yes,2007,3163,,missing_drive_type
+6103,GAZ,3500.0,other,60,,Petrol,yes,2006,2705 GAZель,rear,missing_engine_displacement
+6104,Skoda,0.0,hatch,90,2.0,Petrol,yes,2012,Octavia A5,front,missing_nonfinite_or_nonpositive_price
+6105,Jaguar,4500.0,sedan,270,4.0,Petrol,no,1993,XJR-S,,missing_drive_type
+6121,BMW,15299.0,other,136,,Petrol,yes,2008,523,rear,missing_engine_displacement
+6123,Peugeot,8500.0,van,180,1.6,Diesel,yes,2007,Expert пасс.,,missing_drive_type
+6145,Volkswagen,23500.0,crossover,48,2.0,Diesel,yes,2012,Tiguan,,missing_drive_type
+6153,Suzuki,16302.0,crossover,0,1.6,Petrol,yes,2016,SX4,,missing_drive_type
+6171,Nissan,3600.0,van,390,2.3,Diesel,yes,1996,Vanette пасс.,,missing_drive_type
+6193,BMW,7000.0,sedan,338,,Petrol,yes,1997,728,rear,missing_engine_displacement
+6202,Mazda,1200.0,sedan,270,,Other,yes,1988,323,,missing_engine_displacement; missing_drive_type
+6207,Mercedes-Benz,13000.0,other,580,2.2,Diesel,yes,2005,Sprinter 313 пасс.,,missing_drive_type
+6211,BMW,25500.0,crossover,187,4.8,Gas,yes,2007,X5,,missing_drive_type
+6219,Nissan,22500.0,hatch,10,,Other,yes,2015,Leaf,front,missing_engine_displacement
+6220,Nissan,15990.0,hatch,12,,Other,yes,2014,Leaf,front,missing_engine_displacement
+6224,Mercedes-Benz,115000.0,other,35,,Diesel,yes,2015,G 350,full,missing_engine_displacement
+6225,Mercedes-Benz,13900.0,other,225,,Other,yes,2008,Vito пасс.,rear,missing_engine_displacement
+6229,Skoda,8200.0,other,147,1.6,Gas,yes,2007,Octavia Tour,,missing_drive_type
+6250,GMC,0.0,crossover,130,4.3,Petrol,yes,1998,Safari,full,missing_nonfinite_or_nonpositive_price
+6255,VAZ,3000.0,sedan,117,1.6,Petrol,yes,2007,21099,,missing_drive_type
+6260,Honda,11500.0,sedan,99,1.8,Petrol,yes,2007,Civic,,missing_drive_type
+6263,BMW,14300.0,sedan,198,,Petrol,yes,2005,523,rear,missing_engine_displacement
+6284,Chery,3500.0,hatch,47,,Petrol,yes,2012,Kimo,front,missing_engine_displacement
+6293,Mazda,0.0,sedan,102,2.3,Petrol,yes,2007,6 MPS,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+6301,Hyundai,14850.0,sedan,75,18.0,Gas,yes,2012,Elantra,front,engine_outside_0.5_to_10_litres
+6302,Lexus,38700.0,crossover,32,,Petrol,yes,2013,RX 270,,missing_engine_displacement; missing_drive_type
+6323,Mazda,0.0,hatch,165,1.5,Petrol,yes,2008,2,front,missing_nonfinite_or_nonpositive_price
+6324,Renault,8100.0,van,219,2.5,Diesel,yes,2010,Master груз.,,missing_drive_type
+6328,VAZ,2400.0,hatch,174,1.5,Gas,yes,2005,2113,,missing_drive_type
+6341,Chery,3300.0,other,140,,Other,yes,2007,Amulet,front,missing_engine_displacement
+6346,BMW,33000.0,sedan,60,,Petrol,yes,2012,328,rear,missing_engine_displacement
+6376,Volkswagen,35500.0,crossover,112,,Diesel,yes,2011,Touareg,,missing_engine_displacement; missing_drive_type
+6384,Mercedes-Benz,0.0,sedan,9,3.0,Diesel,yes,2014,S 350,full,missing_nonfinite_or_nonpositive_price
+6386,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLE-Class,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+6388,Mercedes-Benz,125000.0,sedan,18,3.0,Diesel,yes,2015,S 350,full,exact_duplicate
+6404,Mercedes-Benz,38800.0,hatch,8,,Other,yes,2015,B-Class Electric Drive,front,missing_engine_displacement
+6433,Moskvich-AZLK,1100.0,hatch,30,1.6,Gas,yes,1990,2141,,missing_drive_type
+6436,Volkswagen,0.0,other,28,2.0,Diesel,yes,2015,Amarok,full,missing_nonfinite_or_nonpositive_price
+6439,Hyundai,18999.0,crossover,48,2.0,Gas,yes,2011,IX35,full,exact_duplicate
+6440,BMW,41000.0,crossover,80,3.0,Petrol,yes,2012,X6,full,exact_duplicate
+6448,Mercedes-Benz,4050.0,sedan,200,,Diesel,yes,2001,S 320,,missing_engine_displacement; missing_drive_type
+6460,Volkswagen,2400.0,sedan,268,99.99,Petrol,yes,1989,Passat B3,front,engine_outside_0.5_to_10_litres
+6462,Renault,6300.0,vagon,202,1.5,Diesel,yes,2005,Scenic,,missing_drive_type
+6483,Mercedes-Benz,0.0,sedan,145,3.2,Diesel,yes,2007,E-Class,rear,missing_nonfinite_or_nonpositive_price
+6488,Renault,0.0,van,85,1.5,Diesel,yes,2012,Kangoo пасс.,front,missing_nonfinite_or_nonpositive_price
+6489,Geely,8300.0,sedan,33,1.8,Gas,yes,2013,Emgrand 7 (EC7),,missing_drive_type
+6509,Chevrolet,0.0,van,6,5.3,Gas,yes,2012,Express пасс.,full,missing_nonfinite_or_nonpositive_price
+6515,Chevrolet,4800.0,crossover,320,,Gas,yes,2004,Niva,full,missing_engine_displacement
+6522,Mazda,7800.0,sedan,148,2.0,Petrol,yes,2007,3,,missing_drive_type
+6526,Mercedes-Benz,0.0,crossover,0,3.0,Diesel,yes,2016,GLE-Class,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+6527,Renault,2750.0,hatch,186,22.0,Diesel,no,2005,Laguna,front,engine_outside_0.5_to_10_litres
+6533,BMW,7777.0,other,375,4.0,Diesel,yes,2000,740,,missing_drive_type
+6541,Mazda,9999.0,sedan,115,1.8,Other,yes,2010,6,,missing_drive_type
+6542,Toyota,30500.0,sedan,7,2.5,Gas,yes,2015,Camry,,missing_drive_type
+6566,ZAZ,1950.0,hatch,120,1.2,Petrol,yes,2007,1103 Славута,,missing_drive_type
+6579,BMW,2200.0,sedan,290,2.5,Gas,yes,1997,525,,missing_drive_type
+6600,Mitsubishi,6999.0,sedan,160,2.0,Petrol,yes,2007,Lancer,,missing_drive_type
+6601,Volkswagen,23999.0,sedan,88,,Other,yes,2012,Passat CC,,missing_engine_displacement; missing_drive_type
+6605,Ford,18500.0,crossover,98,1.6,Petrol,yes,2014,Kuga,,missing_drive_type
+6622,Land Rover,78900.0,crossover,0,3.0,Diesel,yes,2015,Range Rover Sport,full,exact_duplicate
+6623,Chrysler,8521.5,sedan,169,,Petrol,yes,2006,Sebring,,missing_engine_displacement; missing_drive_type
+6657,Lexus,7700.0,other,250,3.0,Petrol,yes,2000,GS 300,,missing_drive_type
+6666,Toyota,0.0,sedan,21,2.5,Petrol,yes,2015,Camry,front,missing_nonfinite_or_nonpositive_price
+6667,Toyota,0.0,sedan,24,2.5,Petrol,yes,2015,Camry,front,missing_nonfinite_or_nonpositive_price
+6682,VAZ,1950.0,sedan,103,,Other,yes,1990,2106,,missing_engine_displacement; missing_drive_type
+6687,Mercedes-Benz,8000.0,crossover,314,99.99,Gas,yes,2000,ML 320,full,engine_outside_0.5_to_10_litres
+6688,Toyota,47500.0,crossover,45,3.0,Diesel,yes,2014,Land Cruiser Prado,full,exact_duplicate
+6702,Mitsubishi,8777.0,sedan,180,20.0,Petrol,yes,2007,Lancer X,front,engine_outside_0.5_to_10_litres
+6719,Mercedes-Benz,0.0,van,30,2.2,Diesel,yes,2014,Viano пасс.,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+6723,VAZ,3400.0,sedan,200,99.99,Gas,yes,2006,2110,front,engine_outside_0.5_to_10_litres
+6724,Mercedes-Benz,0.0,other,0,3.0,Other,yes,2016,S 400,full,missing_nonfinite_or_nonpositive_price
+6725,Land Rover,0.0,crossover,1,5.0,Petrol,yes,2016,Range Rover,full,missing_nonfinite_or_nonpositive_price
+6729,Land Rover,0.0,crossover,40,4.4,Diesel,yes,2014,Range Rover,full,missing_nonfinite_or_nonpositive_price
+6730,Ford,0.0,hatch,62,1.6,Petrol,yes,2012,Focus,front,missing_nonfinite_or_nonpositive_price
+6739,Audi,12800.0,other,0,,Other,yes,2005,A6,,missing_engine_displacement; missing_drive_type
+6740,Porsche,60000.0,other,11,3.8,Petrol,yes,2010,911,rear,exact_duplicate
+6749,BMW,11700.0,sedan,316,,Diesel,yes,2001,730,rear,missing_engine_displacement
+6752,Volkswagen,0.0,sedan,60,2.0,Diesel,yes,2013,Passat CC,front,missing_nonfinite_or_nonpositive_price
+6757,Toyota,5900.0,crossover,180,3.0,Diesel,no,2003,Land Cruiser Prado,,missing_drive_type
+6768,Hyundai,8999.0,hatch,74,1.4,Petrol,yes,2011,i20,,missing_drive_type
+6775,UAZ,3000.0,other,1,,Other,yes,1985,3303,full,missing_engine_displacement
+6779,Chevrolet,0.0,van,7,5.3,Gas,yes,2012,Express пасс.,full,missing_nonfinite_or_nonpositive_price
+6791,Lexus,0.0,crossover,1,2.0,Petrol,yes,2016,RX 200,full,missing_nonfinite_or_nonpositive_price
+6795,Daewoo,2900.0,sedan,138,,Other,yes,2007,Nexia,front,missing_engine_displacement
+6797,Opel,6850.0,other,52,1.4,Petrol,yes,2012,Combo груз.,,missing_drive_type
+6801,Toyota,0.0,sedan,15,2.5,Petrol,yes,2015,Camry,front,missing_nonfinite_or_nonpositive_price
+6815,Volkswagen,0.0,van,270,2.4,Diesel,yes,1993,T4 (Transporter) пасс.,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+6816,Citroen,8200.0,other,29,,Petrol,yes,2012,C1,front,missing_engine_displacement
+6820,BMW,5900.0,hatch,243,2.0,Petrol,no,2006,116,,missing_drive_type
+6843,Mazda,0.0,other,90,,Other,yes,2004,RX-8,,missing_engine_displacement; missing_drive_type; missing_nonfinite_or_nonpositive_price
+6847,Daewoo,3500.0,sedan,95,1.5,Petrol,yes,2006,Lanos,,missing_drive_type
+6851,Hyundai,17999.0,crossover,39,2.0,Petrol,yes,2013,IX35,,missing_drive_type
+6853,Moskvich-Izh,1400.0,van,136,1.6,Gas,yes,2004,2717,,missing_drive_type
+6855,Toyota,13900.0,sedan,102,3.5,Gas,yes,2008,Camry,front,exact_duplicate
+6889,Lancia,1550.0,sedan,250,,Other,yes,1990,Prisma,,missing_engine_displacement; missing_drive_type
+6910,Hyundai,17500.0,crossover,88,,Other,yes,2012,IX35,,missing_engine_displacement; missing_drive_type
+6911,Kia,7250.0,sedan,170,1.6,Diesel,yes,2008,Cerato,,missing_drive_type
+6920,VAZ,1500.0,hatch,60,,Petrol,yes,1991,2109,front,missing_engine_displacement
+6930,Chevrolet,4500.0,sedan,77,1.5,Petrol,yes,2005,Aveo,,missing_drive_type
+6932,Peugeot,3800.0,hatch,322,70.0,Diesel,yes,2000,206,front,engine_outside_0.5_to_10_litres
+6944,Honda,2700.0,sedan,357,1.5,Petrol,yes,1993,Civic,,missing_drive_type
+6951,Peugeot,0.0,other,48,1.6,Diesel,yes,2014,Partner груз.,front,missing_nonfinite_or_nonpositive_price
+6957,Chevrolet,5500.0,sedan,168,,Petrol,yes,2005,Lacetti,front,missing_engine_displacement
+6961,Hyundai,9500.0,crossover,170,2.0,Gas,yes,2008,Tucson,,missing_drive_type
+6963,Audi,23000.0,other,115,1.8,Petrol,yes,2008,S4,,missing_drive_type
+6969,Hyundai,8200.0,hatch,27,1.4,Petrol,yes,2011,i30,,missing_drive_type
+6980,Mercedes-Benz,0.0,other,176,3.0,Diesel,yes,2008,E-Class,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+6986,Ford,20900.0,hatch,3,,Other,yes,2015,Focus Electric,front,missing_engine_displacement
+7004,Kia,22000.0,crossover,70,,Other,yes,2013,Sportage,,missing_engine_displacement; missing_drive_type
+7005,Isuzu,6000.0,crossover,175,2.8,Diesel,yes,1987,Trooper,,missing_drive_type
+7021,Seat,1550.0,hatch,100,,Other,yes,1991,Ibiza,,missing_engine_displacement; missing_drive_type
+7023,Chevrolet,7400.0,sedan,126,1.8,Gas,yes,2007,Lacetti,,missing_drive_type
+7027,Audi,2650.0,vagon,268,2.5,Diesel,no,2000,A6,,missing_drive_type
+7055,Nissan,14999.0,crossover,70,2.0,Petrol,yes,2010,Qashqai,front,exact_duplicate
+7057,BMW,0.0,crossover,6,4.4,Petrol,yes,2016,X5 M,full,missing_nonfinite_or_nonpositive_price
+7074,Mazda,26800.0,sedan,31,,Petrol,yes,2015,6,front,missing_engine_displacement
+7091,Mazda,7500.0,sedan,170,2.0,Petrol,yes,2005,3,,missing_drive_type
+7097,Hyundai,12900.0,sedan,143,2.0,Petrol,yes,2010,Sonata,,missing_drive_type
+7106,Kia,9850.0,van,82,2.0,Petrol,yes,2009,Carens,,missing_drive_type
+7117,Volkswagen,0.0,van,277,2.5,Diesel,yes,2001,T4 (Transporter) пасс.,front,missing_nonfinite_or_nonpositive_price
+7136,Renault,5899.0,vagon,189,,Diesel,no,2012,Megane,front,missing_engine_displacement
+7141,Chery,4700.0,sedan,106,2.0,Gas,yes,2008,Elara,,missing_drive_type
+7158,VAZ,2000.0,sedan,42,1.5,Petrol,yes,1987,2108,,missing_drive_type
+7165,Nissan,14700.0,hatch,21,,Other,yes,2013,Leaf,front,missing_engine_displacement
+7169,BMW,47000.0,other,5,2.0,Petrol,yes,2014,Z4,rear,exact_duplicate
+7177,Chevrolet,5800.0,sedan,172,,Other,yes,2008,Aveo,front,missing_engine_displacement
+7197,Skoda,3650.0,sedan,210,,Diesel,no,2007,Octavia A5,front,missing_engine_displacement
+7206,Mazda,9300.0,hatch,130,,Other,yes,2008,3,,missing_engine_displacement; missing_drive_type
+7215,Opel,0.0,vagon,255,1.6,Petrol,yes,1994,Astra F,front,missing_nonfinite_or_nonpositive_price
+7222,VAZ,0.0,hatch,1,1.5,Gas,yes,1998,2109 (Балтика),front,missing_nonfinite_or_nonpositive_price
+7228,BMW,31000.0,vagon,15,,Other,yes,2015,I3,front,missing_engine_displacement
+7252,Renault,2900.0,hatch,280,,Diesel,no,2005,Scenic,front,missing_engine_displacement
+7260,Mercedes-Benz,8000.0,van,40,2.9,Diesel,yes,1999,Sprinter 212 пасс.,,missing_drive_type
+7265,Mercedes-Benz,11800.0,sedan,150,2.2,Diesel,yes,2004,E-Class,,missing_drive_type
+7277,Land Rover,83000.0,crossover,16,3.0,Petrol,yes,2015,Range Rover Sport,,missing_drive_type
+7278,Volkswagen,7800.0,vagon,289,,Diesel,yes,2003,Passat B5,front,missing_engine_displacement
+7294,Toyota,26200.0,crossover,156,4.0,Gas,yes,2007,Land Cruiser Prado,,missing_drive_type
+7304,BMW,6499.0,other,230,3.0,Diesel,no,2002,X5,,missing_drive_type
+7307,Audi,0.0,sedan,166,3.0,Gas,yes,2005,A6,full,missing_nonfinite_or_nonpositive_price
+7310,VAZ,6500.0,crossover,7,,Gas,yes,2015,2121,full,missing_engine_displacement
+7311,Nissan,16600.0,hatch,13,,Other,yes,2014,Leaf,front,missing_engine_displacement
+7320,Audi,15000.0,sedan,168,,Other,yes,2007,A6,,missing_engine_displacement; missing_drive_type
+7329,BMW,0.0,sedan,145,2.0,Diesel,yes,2007,320,rear,missing_nonfinite_or_nonpositive_price
+7340,Volkswagen,12800.0,other,298,,Diesel,yes,2005,T5 (Transporter) пасс.,,missing_engine_displacement; missing_drive_type
+7352,Land Rover,95555.0,crossover,60,4.4,Diesel,yes,2014,Range Rover,full,exact_duplicate
+7356,Dodge,47000.0,other,14,6.4,Petrol,yes,2009,Challenger,,missing_drive_type
+7360,Mercedes-Benz,6999.0,other,168,2.3,Petrol,yes,2001,CLK 230,,missing_drive_type
+7363,Mercedes-Benz,7500.0,sedan,187,2.0,Gas,yes,2001,C-Class,,missing_drive_type
+7366,Renault,6900.0,sedan,68,1.5,Diesel,yes,2013,Logan,,missing_drive_type
+7367,Mitsubishi,6800.0,sedan,82,2.0,Petrol,yes,2007,Lancer,,missing_drive_type
+7369,Honda,7999.0,sedan,118,1.8,Petrol,yes,2007,Civic,,missing_drive_type
+7387,Nissan,13900.0,hatch,45,,Other,yes,2012,Leaf,front,missing_engine_displacement
+7389,Volkswagen,51900.0,crossover,30,3.0,Diesel,yes,2015,Touareg,full,exact_duplicate
+7393,Mitsubishi,11100.0,crossover,119,2.4,Gas,yes,2008,Outlander,,missing_drive_type
+7396,Geely,3100.0,sedan,69,1.6,Petrol,yes,2010,CK1,,missing_drive_type
+7399,Other-Retro,12700.0,crossover,60,4.2,Diesel,yes,1987,Классические,,missing_drive_type
+7402,Chevrolet,12500.0,sedan,43,1.8,Petrol,yes,2012,Cruze,front,exact_duplicate
+7412,Mercedes-Benz,41500.0,other,26,,Diesel,yes,2013,E-Class,rear,missing_engine_displacement
+7418,Mercedes-Benz,11800.0,van,148,2.2,Diesel,yes,2010,Vito груз.,,missing_drive_type
+7431,Volkswagen,1800.0,sedan,250,,Petrol,yes,1991,Jetta,front,missing_engine_displacement
+7445,Opel,7800.0,other,140,,Diesel,yes,2008,Astra H,front,missing_engine_displacement
+7453,Audi,44000.0,hatch,1,1.4,Petrol,yes,2016,A5,,missing_drive_type
+7480,Mercedes-Benz,0.0,other,24,4.7,Petrol,yes,2014,S 500,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+7481,Mercedes-Benz,0.0,crossover,35,3.0,Diesel,yes,2015,G 350,full,missing_nonfinite_or_nonpositive_price
+7482,Mercedes-Benz,0.0,crossover,27,3.0,Diesel,yes,2015,G 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+7483,Mercedes-Benz,0.0,van,12,2.2,Diesel,yes,2015,V 250,full,missing_nonfinite_or_nonpositive_price
+7486,Mercedes-Benz,0.0,sedan,25,3.0,Diesel,yes,2014,S 350,full,missing_nonfinite_or_nonpositive_price
+7488,Mercedes-Benz,0.0,sedan,20,3.0,Diesel,yes,2015,S 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+7489,Mercedes-Benz,0.0,sedan,24,3.0,Diesel,yes,2015,S 350,full,missing_nonfinite_or_nonpositive_price
+7491,Mercedes-Benz,0.0,sedan,25,3.0,Diesel,yes,2014,S 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+7494,Mercedes-Benz,0.0,sedan,20,3.0,Diesel,yes,2015,S 350,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+7495,Mercedes-Benz,0.0,other,25,4.7,Petrol,yes,2014,S 500,full,missing_nonfinite_or_nonpositive_price
+7498,Subaru,0.0,crossover,1,2.0,Diesel,yes,2016,Forester,full,missing_nonfinite_or_nonpositive_price
+7499,Mercedes-Benz,0.0,sedan,42,3.0,Diesel,yes,2014,S 350,full,missing_nonfinite_or_nonpositive_price
+7502,Honda,0.0,crossover,1,1.6,Diesel,yes,2016,CR-V,full,missing_nonfinite_or_nonpositive_price
+7504,Toyota,0.0,crossover,1,4.5,Diesel,yes,2016,Land Cruiser 200,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+7513,Honda,26000.0,crossover,68,2.0,Petrol,yes,2012,CR-V,full,exact_duplicate
+7520,Mercedes-Benz,0.0,crossover,131,5.0,Petrol,yes,2008,G 500,full,missing_nonfinite_or_nonpositive_price
+7556,Porsche,69900.0,sedan,40,3.0,Diesel,yes,2013,Panamera,rear,exact_duplicate
+7564,Skoda,8200.0,sedan,1,18.0,Gas,yes,2005,Superb,,missing_drive_type; engine_outside_0.5_to_10_litres
+7568,Moskvich-AZLK,350.0,sedan,100,,Other,yes,1985,2140,,missing_engine_displacement; missing_drive_type
+7579,Renault,7450.0,other,190,,Diesel,yes,2004,Grand Scenic,front,missing_engine_displacement
+7582,Mercedes-Benz,0.0,sedan,0,3.0,Petrol,yes,2016,S 400,full,missing_nonfinite_or_nonpositive_price
+7585,Porsche,0.0,sedan,5,4.8,Petrol,yes,2015,Panamera,full,missing_nonfinite_or_nonpositive_price
+7586,Mercedes-Benz,0.0,sedan,6,3.0,Diesel,yes,2014,S 350,full,missing_nonfinite_or_nonpositive_price
+7589,Mercedes-Benz,57000.0,sedan,43,4.7,Petrol,yes,2012,CLS 500,,missing_drive_type
+7590,ZAZ,400.0,sedan,20,,Petrol,yes,1990,968,rear,missing_engine_displacement
+7610,Mitsubishi,16000.0,crossover,59,,Petrol,yes,2012,ASX,front,missing_engine_displacement
+7617,Honda,17800.0,sedan,80,2.0,Petrol,yes,2011,Accord,,missing_drive_type
+7655,VAZ,2650.0,hatch,120,1.6,Other,yes,2008,2109,,missing_drive_type
+7668,Moskvich-AZLK,550.0,sedan,30,99.99,Petrol,yes,1971,412,rear,engine_outside_0.5_to_10_litres
+7693,Hyundai,0.0,crossover,0,2.2,Diesel,yes,2016,Santa FE,full,missing_nonfinite_or_nonpositive_price
+7695,Land Rover,39900.0,crossover,120,5.0,Petrol,yes,2012,Range Rover,full,exact_duplicate
+7710,Mitsubishi,15900.0,crossover,180,3.0,Gas,yes,2008,Pajero Wagon,full,exact_duplicate
+7719,VAZ,4500.0,vagon,100,1.6,Gas,yes,2009,2109,,missing_drive_type
+7731,BMW,3000.0,sedan,350,99.99,Other,yes,1992,520,rear,engine_outside_0.5_to_10_litres
+7732,Chevrolet,0.0,van,130,4.3,Petrol,yes,1998,Astro пасс.,full,missing_nonfinite_or_nonpositive_price
+7735,Citroen,9100.0,van,110,2.0,Diesel,yes,2013,Jumpy груз.,,missing_drive_type
+7742,Nissan,24000.0,crossover,161,3.0,Diesel,yes,2006,Patrol,,missing_drive_type
+7763,Honda,24000.0,sedan,68,2.4,Petrol,yes,2013,Accord,,missing_drive_type
+7764,Citroen,7600.0,vagon,78,1.4,Petrol,yes,2012,C3 Picasso,,missing_drive_type
+7770,Volkswagen,7777.0,other,214,2.0,Other,yes,2007,Caddy пасс.,,missing_drive_type
+7774,BMW,0.0,crossover,0,2.0,Diesel,yes,2016,X5,full,missing_nonfinite_or_nonpositive_price
+7778,Mercedes-Benz,10550.0,other,128,,Other,yes,2011,Vito груз.,,missing_engine_displacement; missing_drive_type
+7780,BMW,0.0,hatch,107,2.0,Petrol,yes,2006,118,rear,missing_nonfinite_or_nonpositive_price
+7781,Mercedes-Benz,42000.0,sedan,38,2.2,Diesel,yes,2014,CLA 220,,missing_drive_type
+7786,Land Rover,169900.0,crossover,0,4.4,Diesel,yes,2016,Range Rover,full,exact_duplicate
+7803,Volkswagen,0.0,van,123,1.2,Petrol,yes,2013,Caddy пасс.,front,missing_nonfinite_or_nonpositive_price
+7815,Volkswagen,14900.0,sedan,73,,Petrol,yes,2012,Jetta,front,missing_engine_displacement
+7826,Nissan,15300.0,hatch,25,,Other,yes,2013,Leaf,front,missing_engine_displacement
+7832,Mercedes-Benz,45000.0,sedan,1,1.6,Petrol,yes,2015,C-Class,,missing_drive_type
+7850,Mercedes-Benz,0.0,van,273,2.9,Diesel,yes,2001,Sprinter 310 пасс.,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+7863,Mercedes-Benz,35500.0,sedan,100,3.5,Petrol,yes,2010,S 350,full,exact_duplicate
+7873,Hyundai,18300.0,other,0,,Other,yes,2012,Sonata,,missing_engine_displacement; missing_drive_type
+7916,Bentley,499999.0,crossover,0,6.0,Petrol,yes,2016,Bentayga,full,exact_duplicate
+7921,Nissan,13000.0,hatch,45,1.0,Other,yes,2012,Leaf,,missing_drive_type
+7928,Audi,2800.0,sedan,330,,Other,yes,1989,80,,missing_engine_displacement; missing_drive_type
+7961,Volkswagen,1296.75,sedan,1,1.6,Petrol,yes,1980,Jetta,,missing_drive_type
+7973,Mercedes-Benz,9000.0,sedan,198,4.0,Diesel,yes,2002,S 400,,missing_drive_type
+7976,SsangYong,16500.0,crossover,73,2.0,Diesel,yes,2013,Korando,,missing_drive_type
+8006,Mercedes-Benz,41900.0,sedan,95,6.3,Petrol,yes,2011,S 63 AMG,,missing_drive_type
+8011,Mercedes-Benz,0.0,sedan,16,3.0,Diesel,yes,2014,S 350,front,missing_nonfinite_or_nonpositive_price
+8017,Mercedes-Benz,0.0,sedan,16,3.0,Diesel,yes,2014,S 350,full,missing_nonfinite_or_nonpositive_price
+8019,Tesla,64900.0,sedan,23,,Other,yes,2013,Model S,rear,missing_engine_displacement
+8025,Mercedes-Benz,0.0,crossover,0,2.2,Diesel,yes,2016,GLC-Class,full,missing_nonfinite_or_nonpositive_price
+8026,Smart,7700.0,crossover,50,1.0,Petrol,yes,2011,Forfour,,missing_drive_type
+8028,Toyota,0.0,crossover,1,2.2,Diesel,yes,2016,Rav 4,full,missing_nonfinite_or_nonpositive_price
+8036,BMW,27000.0,sedan,137,5.0,Other,yes,2005,M5,,missing_drive_type
+8044,VAZ,4100.0,sedan,87,1.6,Gas,yes,2008,2170,,missing_drive_type
+8067,Audi,7900.0,sedan,242,2.0,Petrol,yes,2002,A4,,missing_drive_type
+8082,Hyundai,12900.0,crossover,49,2.7,Petrol,yes,2008,Tucson,full,exact_duplicate
+8087,VAZ,0.0,vagon,105,1.6,Petrol,yes,2006,2111,front,missing_nonfinite_or_nonpositive_price
+8090,Peugeot,600.0,vagon,274,,Other,no,1990,405,,missing_engine_displacement; missing_drive_type
+8097,Mercedes-Benz,1600.0,hatch,180,,Petrol,no,2000,A 160,front,missing_engine_displacement
+8124,Chery,7300.0,crossover,48,2.4,Petrol,yes,2008,Tiggo,,missing_drive_type
+8132,Smart,8350.0,other,46,1.0,Petrol,yes,2012,Fortwo,,missing_drive_type
+8149,BMW,0.0,sedan,43,3.0,Petrol,yes,2011,535,,missing_drive_type; missing_nonfinite_or_nonpositive_price
+8172,VAZ,1900.0,sedan,1,,Other,yes,2003,2107,,missing_engine_displacement; missing_drive_type
+8181,Daewoo,3200.0,sedan,107,,Gas,yes,2009,Sens,front,missing_engine_displacement
+8192,GAZ,980.0,sedan,80,2.5,Gas,yes,2004,3110,,missing_drive_type
+8205,Mercedes-Benz,5500.0,sedan,100,99.99,Petrol,yes,2007,S 550,full,engine_outside_0.5_to_10_litres
+8214,Suzuki,4800.0,vagon,178,99.99,Gas,yes,2001,Ignis,front,engine_outside_0.5_to_10_litres
+8215,Mercedes-Benz,0.0,other,0,4.7,Petrol,yes,2016,S 500,full,missing_nonfinite_or_nonpositive_price
+8216,Daewoo,3700.0,sedan,190,,Gas,yes,2007,Lanos,front,missing_engine_displacement
+8243,Hyundai,30900.0,crossover,0,2.0,Petrol,yes,2016,Tucson,full,exact_duplicate
+8247,Geely,8900.0,hatch,35,1.8,Gas,yes,2014,Emgrand 7 (EC7),,missing_drive_type
+8262,Honda,18500.0,sedan,1,,Other,yes,2016,City,,missing_engine_displacement; missing_drive_type
+8266,Hyundai,0.0,crossover,0,2.2,Diesel,yes,2016,Santa FE,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+8271,Hyundai,0.0,crossover,0,2.0,Diesel,yes,2016,Tucson,full,missing_nonfinite_or_nonpositive_price
+8278,Smart,4300.0,hatch,80,0.6,Petrol,yes,2000,City,,missing_drive_type
+8286,Mercedes-Benz,34999.0,sedan,150,2.8,Petrol,yes,1969,S 280,,missing_drive_type
+8307,Dacia,2850.0,hatch,127,,Petrol,yes,2003,SuperNova,front,missing_engine_displacement
+8318,Nissan,16200.0,hatch,35,,Other,yes,2015,Leaf,front,missing_engine_displacement
+8346,Chrysler,8900.0,sedan,236,2.4,Gas,yes,2008,Sebring,,missing_drive_type
+8354,Ford,16600.0,hatch,30,,Other,yes,2013,Focus Electric,front,missing_engine_displacement
+8362,Daewoo,0.0,sedan,375,2.0,Petrol,yes,1996,Espero,front,missing_nonfinite_or_nonpositive_price
+8391,Skoda,6700.0,hatch,2,1.4,Gas,yes,2006,Fabia,,missing_drive_type
+8393,Chrysler,0.0,van,257,3.3,Gas,yes,2003,Grand Voyager,front,missing_nonfinite_or_nonpositive_price
+8395,Hyundai,8800.0,hatch,122,1.6,Diesel,yes,2008,i30,,missing_drive_type
+8397,Smart,19999.0,other,1,,Other,yes,2014,Fortwo,rear,missing_engine_displacement
+8398,Toyota,17999.0,crossover,35,2.0,Petrol,yes,2009,Rav 4,,missing_drive_type
+8399,Opel,8400.0,other,124,1.6,Petrol,yes,2008,Astra H,,missing_drive_type
+8420,BMW,0.0,crossover,0,3.0,Diesel,yes,2016,X5,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+8425,Fiat,5999.0,van,260,,Other,yes,2004,Scudo пасс.,,missing_engine_displacement; missing_drive_type
+8429,Smart,7500.0,other,150,0.7,Petrol,yes,2006,Fortwo,,missing_drive_type
+8431,Kia,20633.886,crossover,0,1.7,Diesel,yes,2016,Sportage,front,exact_duplicate
+8432,Nissan,16500.0,hatch,40,,Other,yes,2014,Leaf,front,missing_engine_displacement
+8435,Volkswagen,11200.0,van,178,,Diesel,yes,2008,T5 (Transporter) пасс.,front,missing_engine_displacement
+8437,VAZ,1670.0,sedan,65,1.5,Petrol,yes,2003,2107,,missing_drive_type
+8450,Daewoo,3300.0,sedan,173,,Other,yes,2005,Sens,,missing_engine_displacement; missing_drive_type
+8467,Volkswagen,40000.0,sedan,1,1.4,Petrol,yes,2015,Passat B8,,missing_drive_type
+8477,Renault,11999.0,van,107,2.0,Diesel,yes,2013,Trafic груз.,,missing_drive_type
+8489,Mitsubishi,0.0,van,138,2.4,Petrol,yes,2007,Grandis,front,missing_nonfinite_or_nonpositive_price
+8490,BMW,0.0,crossover,0,3.0,Diesel,yes,2016,X5,full,exact_duplicate; missing_nonfinite_or_nonpositive_price
+8503,Volkswagen,6000.0,other,1,2.5,Diesel,yes,1999,LT пасс.,,missing_drive_type
+8514,GAZ,0.0,sedan,1,2.4,Petrol,yes,1969,21,front,missing_nonfinite_or_nonpositive_price
+8522,Mitsubishi,10600.0,crossover,85,,Gas,yes,2006,Outlander,full,missing_engine_displacement
+8535,BMW,24500.0,sedan,114,,Petrol,yes,2005,M5,rear,missing_engine_displacement
+8537,Volkswagen,0.0,van,320,1.6,Diesel,yes,1985,T3 (Transporter),rear,missing_nonfinite_or_nonpositive_price
+8539,VAZ,0.0,hatch,210,1.5,Petrol,yes,1998,21093,front,missing_nonfinite_or_nonpositive_price
+8540,Nissan,6500.0,sedan,383,,Other,yes,2008,Almera,,missing_engine_displacement; missing_drive_type
+8541,Kia,6300.0,sedan,138,1.6,Petrol,yes,2006,Cerato,,missing_drive_type
+8567,Nissan,16800.0,hatch,13,,Other,yes,2014,Leaf,front,missing_engine_displacement
+8571,Tesla,176900.0,crossover,0,,Other,yes,2016,Model X,full,missing_engine_displacement
+8573,Daewoo,3200.0,sedan,200,1.5,Gas,yes,2004,Lanos,front,exact_duplicate
+8579,VAZ,2850.0,sedan,230,1.6,Petrol,yes,2007,2110,,missing_drive_type
+8599,Lifan,3750.0,sedan,30,1.3,Petrol,yes,2007,520,,missing_drive_type
+8605,Ford,58915.0,crossover,0,,Other,yes,2016,Edge,,missing_engine_displacement; missing_drive_type
+8619,Nissan,8700.0,sedan,122,,Gas,yes,2005,Primera,front,missing_engine_displacement
+8624,Toyota,0.0,crossover,140,4.2,Diesel,yes,1993,Land Cruiser 80,full,missing_nonfinite_or_nonpositive_price
+8625,BMW,7998.0,sedan,253,,Petrol,yes,1998,323,rear,missing_engine_displacement
+8626,Smart,5500.0,other,115,0.6,Petrol,yes,2001,Fortwo,,missing_drive_type
+8637,Smart,6200.0,other,1,1.0,Petrol,yes,2003,Fortwo,,missing_drive_type
+8649,Citroen,7999.0,vagon,158,2.0,Petrol,yes,2008,C4 Picasso,,missing_drive_type
+8650,Mercedes-Benz,10900.0,van,360,2.2,Other,yes,2006,Vito пасс.,,missing_drive_type
+8662,GAZ,1100.0,sedan,35,,Gas,yes,1962,21,,missing_engine_displacement; missing_drive_type
+8663,Opel,11100.0,other,126,2.0,Diesel,yes,2011,Vivaro груз.,,missing_drive_type
+8672,Hyundai,9700.0,sedan,12,1.4,Petrol,yes,2011,Accent,,missing_drive_type
+8674,Fiat,0.0,other,201,1.9,Diesel,yes,2006,Doblo пасс.,front,missing_nonfinite_or_nonpositive_price
+8684,Mercedes-Benz,6800.0,sedan,186,,Petrol,yes,1998,C-Class,rear,missing_engine_displacement
+8692,Hyundai,6000.0,other,275,,Petrol,yes,2002,Coupe,front,missing_engine_displacement
+8700,Mercedes-Benz,43500.0,other,51,3.0,Diesel,yes,2014,E-Class,rear,exact_duplicate
+8713,Subaru,0.0,crossover,114,3.0,Petrol,yes,2009,Outback,full,missing_nonfinite_or_nonpositive_price
+8721,VAZ,507.585,sedan,165,,Other,yes,1977,2101,,missing_engine_displacement; missing_drive_type
+8723,Volkswagen,6300.0,crossover,213,2.5,Diesel,no,2004,Touareg,,missing_drive_type
+8729,GAZ,2000.0,sedan,70,70.0,Petrol,yes,1968,21,rear,engine_outside_0.5_to_10_litres
+8749,Peugeot,9900.0,hatch,63,1.6,Diesel,yes,2012,308,,missing_drive_type
+8754,Infiniti,26300.0,crossover,120,,Other,yes,2009,FX 35,,missing_engine_displacement; missing_drive_type
+8768,Volkswagen,5000.0,hatch,190,,Petrol,yes,1998,Golf IV,front,missing_engine_displacement
+8771,Volkswagen,4000.0,crossover,137,2.5,Diesel,no,2004,Touareg,,missing_drive_type
+8774,BMW,0.0,sedan,99,4.4,Petrol,yes,2013,Alpina,full,missing_nonfinite_or_nonpositive_price
+8801,Volkswagen,7700.0,van,157,1.9,Diesel,yes,2006,Caddy пасс.,,missing_drive_type
+8803,Volvo,40300.0,crossover,2,2.0,Diesel,yes,2016,XC60,,missing_drive_type
+8804,Renault,7850.0,van,187,1.5,Diesel,yes,2010,Kangoo пасс.,,missing_drive_type
+8826,Fisker,0.0,other,100,,Other,yes,2001,Karma,,missing_engine_displacement; missing_drive_type; missing_nonfinite_or_nonpositive_price
+8832,Honda,40900.0,crossover,0,1.6,Diesel,yes,2016,CR-V,full,exact_duplicate
+8833,Volkswagen,55555.0,van,53,2.0,Diesel,yes,2013,Multivan,full,exact_duplicate
+8835,Volkswagen,55555.0,van,50,2.0,Diesel,yes,2013,Multivan,full,exact_duplicate
+8836,Volkswagen,55555.0,van,63,2.0,Diesel,yes,2013,Multivan,full,exact_duplicate
+8851,Volkswagen,5000.0,sedan,81,,Other,no,2013,Passat B7,,missing_engine_displacement; missing_drive_type
+8852,Audi,12000.0,sedan,9,,Petrol,no,2015,A4,,missing_engine_displacement; missing_drive_type
+8856,Daewoo,3900.0,sedan,123,,Gas,yes,2007,Lanos,front,missing_engine_displacement
+8858,Mazda,7500.0,hatch,144,,Petrol,yes,2006,3,front,missing_engine_displacement
+8860,Renault,0.0,van,195,1.5,Diesel,yes,2013,Grand Scenic,front,missing_nonfinite_or_nonpositive_price
+8864,Mitsubishi,2020.0,other,90,,Other,no,2008,L 200,,missing_engine_displacement; missing_drive_type
+8873,Nissan,4000.0,hatch,18,,Other,no,2015,Leaf,,missing_engine_displacement; missing_drive_type
+8875,Nissan,3800.0,hatch,21,,Other,no,2013,Leaf,,missing_engine_displacement; missing_drive_type
+8891,Skoda,12555.0,sedan,116,1.8,Petrol,yes,2009,Superb,,missing_drive_type
+8892,Daewoo,3500.0,sedan,341,99.99,Petrol,yes,1996,Espero,front,engine_outside_0.5_to_10_litres
+8901,Toyota,14200.0,sedan,31,,Petrol,yes,2014,Corolla,,missing_engine_displacement; missing_drive_type
+8907,Changan,6028.0,crossover,101,,Other,yes,2005,Ideal,,missing_engine_displacement; missing_drive_type
+8971,Opel,510.0,vagon,200,,Petrol,no,1997,Vectra B,front,missing_engine_displacement
+8979,Volkswagen,7800.0,van,226,1.9,Diesel,yes,2005,T5 (Transporter) груз,,missing_drive_type
+8983,Audi,3800.0,sedan,257,2.0,Petrol,yes,1993,80,,missing_drive_type
+8987,GAZ,2350.0,sedan,1,1.8,Petrol,yes,1969,21,,missing_drive_type
+9000,Mercedes-Benz,33900.0,other,102,5.0,Petrol,yes,2008,CL 55 AMG,,missing_drive_type
+9004,VAZ,1600.0,sedan,1,,Petrol,yes,1985,2106,rear,missing_engine_displacement
+9008,Opel,1950.0,vagon,200,2.0,Diesel,no,2001,Vectra B,,missing_drive_type
+9020,Subaru,4800.0,sedan,170,2.0,Other,yes,2003,Legacy,,missing_drive_type
+9021,Toyota,0.0,hatch,76,1.0,Petrol,yes,2007,Aygo,front,missing_nonfinite_or_nonpositive_price
+9023,Mercedes-Benz,29900.0,crossover,86,3.0,Gas,yes,2010,GLK 300,,missing_drive_type
+9027,Mercedes-Benz,0.0,crossover,1,3.0,Petrol,yes,2016,GLE-Class,full,missing_nonfinite_or_nonpositive_price
+9029,Ford,16699.0,other,133,4.0,Petrol,yes,2008,Mustang,rear,exact_duplicate
+9038,Ford,0.0,other,1,5.0,Petrol,yes,2014,Mustang,rear,missing_nonfinite_or_nonpositive_price
+9044,Infiniti,20800.0,crossover,52,,Other,yes,2008,EX 35,,missing_engine_displacement; missing_drive_type
+9057,Nissan,15700.0,other,0,,Other,yes,2012,Juke,,missing_engine_displacement; missing_drive_type
+9083,VAZ,1900.0,sedan,60,1.5,Petrol,yes,2004,2107,,missing_drive_type
+9098,Nissan,14200.0,sedan,18,,Other,yes,2014,Leaf,front,missing_engine_displacement
+9099,Nissan,14200.0,sedan,35,,Other,yes,2014,Leaf,,missing_engine_displacement; missing_drive_type
+9100,Skoda,8500.0,sedan,80,,Petrol,yes,2013,Roomster,,missing_engine_displacement; missing_drive_type
+9101,Opel,1600.0,other,570,99.99,Gas,yes,1986,Kadett,,missing_drive_type; engine_outside_0.5_to_10_litres
+9120,Land Rover,20500.0,crossover,119,,Diesel,yes,2006,Range Rover Sport,full,missing_engine_displacement
+9134,Mazda,21900.0,sedan,50,2.5,Petrol,yes,2013,6,,missing_drive_type
+9137,Volkswagen,14899.0,van,165,2.0,Diesel,yes,2013,Caddy груз.,,missing_drive_type
+9156,Opel,11700.0,hatch,30,1.6,Gas,yes,2014,Astra H,front,exact_duplicate
+9158,Volkswagen,15700.0,sedan,110,1.8,Petrol,yes,2011,Passat B7,front,exact_duplicate
+9165,Mercedes-Benz,20500.0,sedan,222,5.5,Petrol,yes,2006,S 500,rear,exact_duplicate
+9166,VAZ,3900.0,hatch,121,1.4,Petrol,yes,2008,1119,front,exact_duplicate
+9171,Hyundai,12900.0,crossover,49,2.7,Petrol,yes,2008,Tucson,full,exact_duplicate
+9180,Ford,17999.0,sedan,32,,Other,yes,2014,Focus Electric,front,missing_engine_displacement
+9182,Renault,6700.0,van,1,,Diesel,yes,2012,Kangoo груз.,front,missing_engine_displacement
+9198,Renault,6200.0,van,322,,Diesel,yes,2001,Trafic пасс.,front,missing_engine_displacement
+9238,BMW,77000.0,other,64,4.4,Petrol,yes,2012,M6,,missing_drive_type
+9240,Skoda,22999.0,other,1,1.6,Diesel,yes,2015,Octavia A7,,missing_drive_type
+9242,Volkswagen,10700.0,hatch,60,1.4,Petrol,yes,2010,Polo,,missing_drive_type
+9243,Mercedes-Benz,9500.0,sedan,246,6.0,Petrol,yes,1997,S 600,,missing_drive_type
+9244,Mercedes-Benz,8300.0,sedan,175,2.0,Petrol,yes,2001,E-Class,,missing_drive_type
+9247,Citroen,9900.0,vagon,177,1.6,Diesel,yes,2013,C5,,missing_drive_type
+9249,Ford,24300.0,hatch,25,0.14,Other,yes,2013,Focus,front,engine_outside_0.5_to_10_litres
+9252,Nissan,15700.0,hatch,42,,Other,yes,2013,Leaf,front,missing_engine_displacement
+9253,Tesla,54000.0,sedan,49,0.1,Other,yes,2013,Model S,rear,engine_outside_0.5_to_10_litres
+9256,Volkswagen,18100.0,other,64,2.0,Petrol,yes,2011,Scirocco,,missing_drive_type
+9271,Daewoo,4650.0,sedan,8,1.3,Petrol,yes,2012,Sens,,missing_drive_type
+9291,Ford,5700.0,other,100,,Other,yes,1985,Thunderbird,,missing_engine_displacement; missing_drive_type
+9305,Renault,7500.0,van,240,74.0,Diesel,yes,2005,Grand Scenic,front,engine_outside_0.5_to_10_litres
+9311,Kia,10900.0,sedan,28,,Petrol,yes,2013,Rio,front,missing_engine_displacement
+9322,Toyota,13900.0,hatch,90,1.6,Petrol,yes,2012,Auris,,missing_drive_type
+9325,Mitsubishi,10200.0,sedan,104,,Gas,yes,2008,Lancer X,front,missing_engine_displacement
+9340,Mitsubishi,9000.0,sedan,158,,Other,yes,2007,Lancer,,missing_engine_displacement; missing_drive_type
+9344,Lexus,8100.0,sedan,258,99.99,Other,yes,2001,ES 300,front,engine_outside_0.5_to_10_litres
+9346,VAZ,4500.0,vagon,40,,Petrol,yes,2009,2111,front,missing_engine_displacement
+9362,Barkas,5500.0,van,80,,Petrol,yes,2015,B1000,,missing_engine_displacement; missing_drive_type
+9385,BMW,5500.0,sedan,249,,Other,yes,1995,530,rear,missing_engine_displacement
+9398,Volkswagen,7700.0,other,290,,Diesel,yes,2000,T4 (Transporter) пасс.,front,missing_engine_displacement
+9400,ЛUAZ,1296.75,other,30,1.2,Petrol,yes,1990,969М,,missing_drive_type
+9405,Mercedes-Benz,2600.0,hatch,111,1.4,Petrol,no,1999,A 140,,missing_drive_type
+9421,BMW,6800.0,sedan,325,,Other,no,2005,525,,missing_engine_displacement; missing_drive_type
+9427,Nissan,14999.0,hatch,21,,Other,yes,2013,Leaf,front,missing_engine_displacement
+9428,VAZ,3550.0,sedan,120,1.6,Petrol,yes,2006,2110,,missing_drive_type
+9442,Mercedes-Benz,10000.0,van,450,,Diesel,yes,1998,Sprinter 312 пасс.,rear,missing_engine_displacement
+9444,Renault,0.0,vagon,137,1.9,Diesel,yes,2008,Kangoo пасс.,front,missing_nonfinite_or_nonpositive_price
+9447,Nissan,5000.0,sedan,260,3.0,Gas,yes,2000,Maxima,,missing_drive_type
+9452,VAZ,750.0,sedan,123,1.2,Petrol,yes,1990,2105,,missing_drive_type
+9471,Renault,5650.0,hatch,175,99.99,Other,yes,2002,Laguna,,missing_drive_type; engine_outside_0.5_to_10_litres
+9472,Chrysler,0.0,vagon,198,,Petrol,yes,2001,PT Cruiser,front,missing_engine_displacement; missing_nonfinite_or_nonpositive_price
+9479,BMW,77777.0,sedan,8,4.4,Petrol,yes,2014,750,full,exact_duplicate
+9482,Renault,8100.0,van,135,,Diesel,yes,2008,Kangoo пасс.,front,missing_engine_displacement
+9510,Volvo,2900.0,vagon,185,19.0,Diesel,yes,2001,V40,front,engine_outside_0.5_to_10_litres
+9517,Renault,5000.0,vagon,150,,Other,yes,2006,Kangoo пасс.,front,missing_engine_displacement
+9539,Volkswagen,11500.0,other,51,1.6,Petrol,yes,2013,Polo,,missing_drive_type
+9548,VAZ,907.725,sedan,1,,Other,yes,1986,2106,rear,missing_engine_displacement
+9568,UAZ,850.0,van,255,,Other,yes,1981,3962,,missing_engine_displacement; missing_drive_type

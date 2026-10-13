@@ -1,0 +1,18 @@
+{
+  "lambda": 0.01,
+  "sklearn_alpha": 58.550000000000004,
+  "MAPE_percent": 24.954447580037396,
+  "MAE_USD": 4309.121327055098,
+  "median_absolute_percentage_error": 16.83997927658601,
+  "negative_predictions": 0,
+  "model": "Ridge on natural log of advertised price in USD",
+  "prediction": "exp(intercept + X @ weights); no clipping or bias correction",
+  "training_objective": "Mean squared log-price error + lambda * sum(weight^2); unpenalized intercept",
+  "selection": "Minimum validation MAPE across three fixed lambda candidates",
+  "training_rows": 5855,
+  "validation_rows": 1250,
+  "input_columns": 143,
+  "prepared_arrays_sha256": "5735023ad28425e03865dcec7eb05063c5e424a3e4678179ee2f6151ae5f1930",
+  "test_evaluated": false,
+  "checks": "Positive finite predictions; reload and explicit formula agree; prepared arrays unchanged"
+}

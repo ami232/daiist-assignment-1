@@ -1,0 +1,3 @@
+model,split,MAPE_percent,MAE_USD
+Training-median baseline,validation,100.63228379145943,10380.223639759999
+scikit-learn Ridge,validation,86.59859521916357,7987.706293874294

@@ -4,3 +4,14 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
+
+# Unused starter notebooks retained locally
+/templates/
+
+# Local editor, environment and generated exploration files
+.vscode/
+.env
+.env.*
+!.env.example
+/exploration/
+*.log

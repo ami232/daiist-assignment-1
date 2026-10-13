@@ -1,0 +1,19 @@
+{
+  "lambda": 1.0,
+  "sklearn_alpha": 5855.0,
+  "validation_MAPE_percent": 86.59859521916357,
+  "validation_MAE_USD": 7987.706293874294,
+  "negative_validation_predictions": 35,
+  "model": "Ridge linear regression",
+  "target": "Untransformed advertised price in USD",
+  "intercept": 15930.582952490546,
+  "training_rows": 5855,
+  "validation_rows": 1250,
+  "input_columns": 143,
+  "training_objective": "Mean squared error in USD + lambda * sum(weight^2); unpenalized intercept",
+  "selection_metric": "Lowest validation MAPE among three fixed candidates",
+  "prediction_postprocessing": "None; negative predictions are retained and reported",
+  "test_evaluated": false,
+  "prepared_arrays_sha256": "5735023ad28425e03865dcec7eb05063c5e424a3e4678179ee2f6151ae5f1930",
+  "preprocessor_sha256": "c2656d7ab412ae56acc485cd3943facc80fe2e88c542c00242f8d59156e6ef4c"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "Training-median baseline",
+  "constant_price_USD": 9500.0,
+  "training_rows": 5855,
+  "evaluation_split": "validation",
+  "evaluation_rows": 1250,
+  "MAPE_percent": 100.63228379145943,
+  "MAE_USD": 10380.223639759999,
+  "test_evaluated": false,
+  "note": "Median baseline is a simple MAE-oriented reference, not a MAPE-optimal constant."
+}

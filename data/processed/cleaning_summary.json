@@ -1,0 +1,16 @@
+{
+  "raw_rows": 9576,
+  "clean_rows": 8364,
+  "removed_rows": 1212,
+  "counts_by_rule_overlaps_possible": {
+    "missing_drive_type": 511,
+    "missing_engine_displacement": 434,
+    "missing_nonfinite_or_nonpositive_price": 267,
+    "exact_duplicate": 113,
+    "engine_outside_0.5_to_10_litres": 57
+  },
+  "raw_sha256": "8e213d737420e5f864a2b2a50705a0a405b2447e70deae18a1f8a2b4a66b0de5",
+  "output_encoding": "utf-8",
+  "missing_engine_or_drive_rows_removed": true,
+  "engine_range_note": "Scope heuristic; 0.5 through 10 litres, inclusive."
+}

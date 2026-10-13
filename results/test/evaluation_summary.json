@@ -1,0 +1,52 @@
+{
+  "test_rows": 1259,
+  "training_rows": 5855,
+  "lambda": 0.01,
+  "target_transform": "natural_log",
+  "selection": "Target transform and lambda selected on validation before test evaluation",
+  "refit_on_validation": false,
+  "test_used_for_tuning": false,
+  "prepared_arrays_sha256": "5735023ad28425e03865dcec7eb05063c5e424a3e4678179ee2f6151ae5f1930",
+  "max_pytorch_difference_from_sklearn_USD": {
+    "PyTorch manual": 0.0012690321746049449,
+    "PyTorch standard": 0.001269032305572182
+  },
+  "metrics": [
+    {
+      "model": "Training-median baseline",
+      "split": "test",
+      "rows": 1259,
+      "MAPE_percent": 101.69552779686919,
+      "MAE_USD": 9845.965084074664,
+      "median_absolute_percentage_error": 52.26130653266332,
+      "negative_predictions": 0
+    },
+    {
+      "model": "scikit-learn log-price Ridge",
+      "split": "test",
+      "rows": 1259,
+      "MAPE_percent": 25.647276667381536,
+      "MAE_USD": 4124.514957952031,
+      "median_absolute_percentage_error": 17.279212968065423,
+      "negative_predictions": 0
+    },
+    {
+      "model": "PyTorch manual",
+      "split": "test",
+      "rows": 1259,
+      "MAPE_percent": 25.647276887949722,
+      "MAE_USD": 4124.514969768393,
+      "median_absolute_percentage_error": 17.27921191409406,
+      "negative_predictions": 0
+    },
+    {
+      "model": "PyTorch standard",
+      "split": "test",
+      "rows": 1259,
+      "MAPE_percent": 25.647276887949733,
+      "MAE_USD": 4124.514969768393,
+      "median_absolute_percentage_error": 17.27921191409406,
+      "negative_predictions": 0
+    }
+  ]
+}

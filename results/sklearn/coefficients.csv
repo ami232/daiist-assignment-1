@@ -1,0 +1,144 @@
+feature,coefficient
+numeric__age,-3747.926533095517
+numeric__mileage,-2860.561100341923
+numeric__engV,5091.772392543271
+numeric__mileage_per_year,-432.076309497181
+categorical__car_Audi,130.0658611899244
+categorical__car_BMW,306.81831516475194
+categorical__car_Chery,-47.598315010057085
+categorical__car_Chevrolet,-114.96794118548462
+categorical__car_Citroen,-53.741276944359704
+categorical__car_Daewoo,-174.2068529952385
+categorical__car_Fiat,-57.956592540360106
+categorical__car_Ford,-89.57035932172056
+categorical__car_Geely,-57.88019438405175
+categorical__car_Honda,-47.50998023017161
+categorical__car_Hyundai,-190.52020354190444
+categorical__car_Infiniti,6.148294960893052
+categorical__car_Kia,-92.97023022603967
+categorical__car_Land Rover,309.0419997708004
+categorical__car_Lexus,65.13061908416731
+categorical__car_Mazda,-69.63335257401621
+categorical__car_Mercedes-Benz,964.1804065651886
+categorical__car_Mitsubishi,-156.57250364386584
+categorical__car_Nissan,-94.73115446390358
+categorical__car_Opel,-89.31616101024179
+categorical__car_Peugeot,-75.89768551484785
+categorical__car_Porsche,178.66121026578398
+categorical__car_Renault,-208.9587044865518
+categorical__car_Seat,-10.725573750403665
+categorical__car_Skoda,-72.14296524803383
+categorical__car_Smart,-21.172983069013775
+categorical__car_SsangYong,-46.86937454720924
+categorical__car_Subaru,-74.00953976609861
+categorical__car_Suzuki,-39.699478821721115
+categorical__car_Toyota,95.22373642250703
+categorical__car_VAZ,-320.05511373401845
+categorical__car_Volkswagen,19.883396738366642
+categorical__car_Volvo,9.657721858128069
+categorical__car_ZAZ,-81.0780017088772
+categorical__car_infrequent_sklearn,202.97297669768574
+categorical__brand_model_Audi / A4,1.184146112339103
+categorical__brand_model_Audi / A6,-25.02397810322667
+categorical__brand_model_Audi / A8,16.54945012228329
+categorical__brand_model_Audi / Q7,62.77320689619676
+categorical__brand_model_BMW / 318,-3.8094263163405744
+categorical__brand_model_BMW / 320,-7.135398751227969
+categorical__brand_model_BMW / 520,51.75330138239884
+categorical__brand_model_BMW / 525,-13.351424037459397
+categorical__brand_model_BMW / 530,-26.883670075145822
+categorical__brand_model_BMW / 730,11.28768023481387
+categorical__brand_model_BMW / X5,125.27809942481298
+categorical__brand_model_BMW / X6,73.58789281319565
+categorical__brand_model_Chevrolet / Aveo,-51.6144444463296
+categorical__brand_model_Chevrolet / Lacetti,-36.39234142016019
+categorical__brand_model_Daewoo / Lanos,-78.87914243370084
+categorical__brand_model_Daewoo / Matiz,-40.90034429795825
+categorical__brand_model_Daewoo / Sens,-24.359756036594167
+categorical__brand_model_Ford / Fiesta,-23.653646034609572
+categorical__brand_model_Ford / Focus,-21.654358394215322
+categorical__brand_model_Ford / Kuga,-9.196369901597507
+categorical__brand_model_Ford / Mondeo,-9.300687810685893
+categorical__brand_model_Honda / Accord,-9.1886079836254
+categorical__brand_model_Honda / CR-V,-16.195958270898466
+categorical__brand_model_Honda / Civic,-12.058748262530282
+categorical__brand_model_Hyundai / Accent,-37.84449701214643
+categorical__brand_model_Hyundai / Getz,-15.523982421796038
+categorical__brand_model_Hyundai / Santa FE,-20.7691978890358
+categorical__brand_model_Hyundai / Tucson,-42.46540163295347
+categorical__brand_model_Hyundai / i30,-18.69423893061551
+categorical__brand_model_Kia / Sorento,-21.74066409739686
+categorical__brand_model_Kia / Sportage,-10.398325341117381
+categorical__brand_model_Land Rover / Range Rover,186.08349988354485
+categorical__brand_model_Land Rover / Range Rover Sport,103.18052572495336
+categorical__brand_model_Lexus / RX 350,11.460129078323773
+categorical__brand_model_Mazda / 3,-11.725579042654271
+categorical__brand_model_Mazda / 6,-11.814593240835325
+categorical__brand_model_Mercedes-Benz / C-Class,15.69488759600467
+categorical__brand_model_Mercedes-Benz / E-Class,-17.26495844144489
+categorical__brand_model_Mercedes-Benz / S 500,135.37646627019927
+categorical__brand_model_Mercedes-Benz / Vito пасс.,-41.647152170162784
+categorical__brand_model_Mitsubishi / Lancer,-14.047506103861167
+categorical__brand_model_Mitsubishi / Lancer X,-24.076584753499716
+categorical__brand_model_Mitsubishi / Pajero Sport,-15.22754548913408
+categorical__brand_model_Mitsubishi / Pajero Wagon,-39.46892498559611
+categorical__brand_model_Nissan / Qashqai,-9.952677939564005
+categorical__brand_model_Nissan / X-Trail,-15.810608618513186
+categorical__brand_model_Opel / Astra G,-11.476134876787498
+categorical__brand_model_Opel / Astra H,-9.87088783060813
+categorical__brand_model_Opel / Omega,-18.10793716174559
+categorical__brand_model_Opel / Vectra B,-0.5279132532259245
+categorical__brand_model_Opel / Vectra C,-22.53633135892403
+categorical__brand_model_Opel / Vivaro пасс.,-6.40353720078266
+categorical__brand_model_Porsche / Cayenne,72.66827883798528
+categorical__brand_model_Renault / Kangoo груз.,-46.83313234952974
+categorical__brand_model_Renault / Kangoo пасс.,-34.204813066411525
+categorical__brand_model_Renault / Laguna,-12.160017934797203
+categorical__brand_model_Renault / Megane,-26.7979058642145
+categorical__brand_model_Renault / Trafic груз.,-19.252241777816764
+categorical__brand_model_Renault / Trafic пасс.,-7.015418514726776
+categorical__brand_model_Skoda / Fabia,-31.13617516028185
+categorical__brand_model_Skoda / Octavia,-3.9104960264982465
+categorical__brand_model_Skoda / Octavia A5,-26.21725385862903
+categorical__brand_model_Skoda / Octavia Tour,-12.939284032414882
+categorical__brand_model_Skoda / Superb,8.835864620750215
+categorical__brand_model_Smart / Fortwo,-19.719271142784145
+categorical__brand_model_Subaru / Forester,-28.67340294566703
+categorical__brand_model_Toyota / Avensis,-3.788395666609592
+categorical__brand_model_Toyota / Camry,-28.461424273325555
+categorical__brand_model_Toyota / Corolla,-2.0454551128466605
+categorical__brand_model_Toyota / Land Cruiser 200,152.49850895141043
+categorical__brand_model_Toyota / Land Cruiser Prado,13.291901049919325
+categorical__brand_model_Toyota / Rav 4,-12.26906730358084
+categorical__brand_model_VAZ / 2106,-5.273807124216486
+categorical__brand_model_VAZ / 2107,-40.59441421471537
+categorical__brand_model_VAZ / 21099,-33.502015902959904
+categorical__brand_model_VAZ / 2110,-24.806181357631893
+categorical__brand_model_VAZ / 2121,-35.13903365915239
+categorical__brand_model_Volkswagen / Caddy груз.,-27.995984245497414
+categorical__brand_model_Volkswagen / Caddy пасс.,-15.143370921065273
+categorical__brand_model_Volkswagen / Jetta,6.54264410570855
+categorical__brand_model_Volkswagen / Passat B5,-9.50881851077425
+categorical__brand_model_Volkswagen / Passat B6,-28.25044275139391
+categorical__brand_model_Volkswagen / Passat B7,18.585430999540804
+categorical__brand_model_Volkswagen / Polo,-24.455089272112396
+categorical__brand_model_Volkswagen / T4 (Transporter) пасс.,1.9368211950818124
+categorical__brand_model_Volkswagen / T5 (Transporter) груз,-5.904153540215513
+categorical__brand_model_Volkswagen / T5 (Transporter) пасс.,-9.703240798196395
+categorical__brand_model_Volkswagen / Touareg,44.014319425948365
+categorical__brand_model_infrequent_sklearn,310.1107349713648
+categorical__body_crossover,1148.691618404078
+categorical__body_hatch,-371.4995485265197
+categorical__body_other,186.11191860439797
+categorical__body_sedan,-510.41472542711074
+categorical__body_vagon,-258.0592797558331
+categorical__body_van,-194.82998329901153
+categorical__engType_Diesel,802.7502527347996
+categorical__engType_Gas,-712.4705875839745
+categorical__engType_Petrol,-63.89634553844225
+categorical__engType_Unknown,-26.383319612382092
+categorical__registration_no,-361.2833579667051
+categorical__registration_yes,361.2833579667051
+categorical__drive_front,-1793.5010120684647
+categorical__drive_full,1831.8556327479791
+categorical__drive_rear,-38.354620679513225

@@ -1,0 +1,42 @@
+{
+  "lambda": 0.01,
+  "learning_rate": 0.13912182877949206,
+  "learning_rate_rule": "0.9 / largest training Hessian eigenvalue",
+  "dtype": "float64",
+  "batch": "Full training set",
+  "training_rows": 5855,
+  "validation_rows": 1250,
+  "gradient_tolerance": 1e-08,
+  "maximum_updates": 20000,
+  "prepared_arrays_sha256": "5735023ad28425e03865dcec7eb05063c5e424a3e4678179ee2f6151ae5f1930",
+  "test_evaluated": false,
+  "implementations": {
+    "manual": {
+      "model": "PyTorch manual",
+      "MAPE_percent": 24.95444793550409,
+      "MAE_USD": 4309.121347735885,
+      "median_absolute_percentage_error": 16.839977696665603,
+      "negative_predictions": 0,
+      "updates": 10325,
+      "seconds": 4.535151999996742,
+      "final_training_objective": 0.13623886636585836,
+      "max_absolute_gradient": 9.993870329710018e-09,
+      "max_prediction_difference_from_sklearn_USD": 0.0013436532171908766,
+      "max_coefficient_difference_from_sklearn": 4.5693888733877586e-07
+    },
+    "standard": {
+      "model": "PyTorch standard",
+      "MAPE_percent": 24.954447935504096,
+      "MAE_USD": 4309.121347735885,
+      "median_absolute_percentage_error": 16.839977696665603,
+      "negative_predictions": 0,
+      "updates": 10325,
+      "seconds": 4.284869249997428,
+      "final_training_objective": 0.13623886636585836,
+      "max_absolute_gradient": 9.993870421650362e-09,
+      "max_prediction_difference_from_sklearn_USD": 0.0013436532171908766,
+      "max_coefficient_difference_from_sklearn": 4.5693888733877586e-07
+    }
+  },
+  "checks": "Converged training gradients; positive finite predictions; saved-model reload; sklearn prediction agreement (rtol=1e-5, atol=0.01 USD); unchanged prepared arrays"
+}
