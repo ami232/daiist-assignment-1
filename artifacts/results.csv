@@ -1,0 +1,6 @@
+model,AUC,log_loss,threshold,cost_per_applicant
+sklearn,0.8829,0.3075,0.15,551.1745
+manual_torch,0.8829,0.3075,0.15,551.1745
+nn_torch,0.8829,0.3075,0.15,551.1745
+baseline: approve all,0.5,0.4999,,1996.6443
+baseline: reject all,0.5,0.4999,,1200.5034
