@@ -1,0 +1,72 @@
+{
+  "features": [
+    "diff_elo",
+    "diff_goals_for_last5",
+    "diff_goals_against_last5",
+    "diff_points_last5",
+    "diff_sot_for_last5",
+    "diff_sot_against_last5",
+    "diff_shots_for_last5",
+    "diff_shots_against_last5",
+    "diff_corners_for_last5",
+    "diff_corners_against_last5"
+  ],
+  "feature_groups": {
+    "strength": [
+      "diff_elo"
+    ],
+    "form": [
+      "diff_goals_for_last5",
+      "diff_goals_against_last5",
+      "diff_points_last5",
+      "diff_sot_for_last5",
+      "diff_sot_against_last5"
+    ],
+    "context": [
+      "diff_rest_days"
+    ],
+    "volume": [
+      "diff_shots_for_last5",
+      "diff_shots_against_last5",
+      "diff_corners_for_last5",
+      "diff_corners_against_last5"
+    ],
+    "discipline": [
+      "diff_fouls_for_last5",
+      "diff_fouls_against_last5",
+      "diff_yellow_for_last5",
+      "diff_yellow_against_last5",
+      "diff_red_for_last5",
+      "diff_red_against_last5"
+    ]
+  },
+  "final_groups": [
+    "strength",
+    "form",
+    "volume"
+  ],
+  "best_C": 0.1,
+  "lambda": 0.0008399126490844951,
+  "lr_manual": 0.5,
+  "lr_standard": 0.01,
+  "n_epochs": 2000,
+  "t_final": 0.05,
+  "train_rate": 0.4513690576180077,
+  "train_seasons": [
+    "2014-15",
+    "2015-16",
+    "2016-17",
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+  ],
+  "val_seasons": [
+    "2023-24"
+  ],
+  "test_seasons": [
+    "2024-25"
+  ]
+}
