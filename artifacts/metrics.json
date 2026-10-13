@@ -1,0 +1,147 @@
+{
+  "results": {
+    "scikit-learn": {
+      "test": {
+        "threshold": 0.26,
+        "roc_auc": 0.7659254344934932,
+        "pr_auc": 0.5353938197147805,
+        "log_loss": 0.43869430774256185,
+        "brier": 0.13764086735537426,
+        "accuracy": 0.7826666666666666,
+        "precision": 0.5079805690492714,
+        "recall": 0.5516201959306707,
+        "tn": 3964,
+        "fp": 709,
+        "fn": 595,
+        "tp": 732,
+        "cost_total": 2494.0,
+        "cost_per_client": 0.4156666666666667
+      },
+      "val": {
+        "threshold": 0.26,
+        "roc_auc": 0.7720155921452923,
+        "pr_auc": 0.5321753380383927,
+        "log_loss": 0.4367452726325496,
+        "brier": 0.13685786301649114,
+        "accuracy": 0.7873333333333333,
+        "precision": 0.51772063933287,
+        "recall": 0.5614167294649586,
+        "tn": 3979,
+        "fp": 694,
+        "fn": 582,
+        "tp": 745,
+        "cost_total": 2440.0,
+        "cost_per_client": 0.4066666666666667
+      }
+    },
+    "manual PyTorch": {
+      "test": {
+        "threshold": 0.26,
+        "roc_auc": 0.765913178546093,
+        "pr_auc": 0.5353888052830573,
+        "log_loss": 0.43871166789454763,
+        "brier": 0.13764599772687014,
+        "accuracy": 0.7826666666666666,
+        "precision": 0.5079916608756081,
+        "recall": 0.5508666164280331,
+        "tn": 3965,
+        "fp": 708,
+        "fn": 596,
+        "tp": 731,
+        "cost_total": 2496.0,
+        "cost_per_client": 0.416
+      },
+      "val": {
+        "threshold": 0.26,
+        "roc_auc": 0.772034298591324,
+        "pr_auc": 0.5322080621922741,
+        "log_loss": 0.4367399627129486,
+        "brier": 0.1368538638836054,
+        "accuracy": 0.787,
+        "precision": 0.5170020818875781,
+        "recall": 0.5614167294649586,
+        "tn": 3977,
+        "fp": 696,
+        "fn": 582,
+        "tp": 745,
+        "cost_total": 2442.0,
+        "cost_per_client": 0.407
+      }
+    },
+    "nn.Module + optim": {
+      "test": {
+        "threshold": 0.27,
+        "roc_auc": 0.7660434786184516,
+        "pr_auc": 0.5360246817042367,
+        "log_loss": 0.4384472295639719,
+        "brier": 0.13756387669833867,
+        "accuracy": 0.7875,
+        "precision": 0.5191458026509573,
+        "recall": 0.5312735493594575,
+        "tn": 4020,
+        "fp": 653,
+        "fn": 622,
+        "tp": 705,
+        "cost_total": 2519.0,
+        "cost_per_client": 0.41983333333333334
+      },
+      "val": {
+        "threshold": 0.27,
+        "roc_auc": 0.7725495321695236,
+        "pr_auc": 0.5331175406326435,
+        "log_loss": 0.43646290183008934,
+        "brier": 0.1368148496278724,
+        "accuracy": 0.7948333333333333,
+        "precision": 0.5355029585798816,
+        "recall": 0.5455915599095704,
+        "tn": 4045,
+        "fp": 628,
+        "fn": 603,
+        "tp": 724,
+        "cost_total": 2437.0,
+        "cost_per_client": 0.4061666666666667
+      }
+    },
+    "naive baseline": {
+      "test": {
+        "threshold": null,
+        "policy": "approve everyone",
+        "roc_auc": 0.5,
+        "pr_auc": 0.22116666666666668,
+        "log_loss": 0.5283806202351554,
+        "brier": 0.172251975308642,
+        "accuracy": 0.7788333333333333,
+        "cost_total": 3981.0,
+        "cost_per_client": 0.6635
+      }
+    }
+  },
+  "agreement": {
+    "scikit-learn": {
+      "objective": 0.4312768991505611,
+      "objective_gap_vs_sklearn": 0.0,
+      "max_abs_coef_diff_vs_sklearn": 0.0,
+      "max_abs_test_proba_diff_vs_sklearn": 0.0,
+      "test_proba_correlation_vs_sklearn": 1.0
+    },
+    "manual PyTorch": {
+      "objective": 0.4312765281199348,
+      "objective_gap_vs_sklearn": -3.7103062633381256e-07,
+      "max_abs_coef_diff_vs_sklearn": 0.0069529460839590496,
+      "max_abs_test_proba_diff_vs_sklearn": 0.008166666548715507,
+      "test_proba_correlation_vs_sklearn": 0.999998748828285
+    },
+    "nn.Module + optim": {
+      "objective": 0.43139632529878735,
+      "objective_gap_vs_sklearn": 0.00011942614822624265,
+      "max_abs_coef_diff_vs_sklearn": 0.05445329857043757,
+      "max_abs_test_proba_diff_vs_sklearn": 0.040166129534437545,
+      "test_proba_correlation_vs_sklearn": 0.9996207753097197
+    }
+  },
+  "bias": {
+    "scikit-learn": -1.429644951251576,
+    "manual PyTorch": -1.428912513702969,
+    "nn.Module + optim": -1.434454874489066
+  }
+}
