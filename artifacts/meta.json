@@ -1,0 +1,102 @@
+{
+  "features": [
+    "dow_1",
+    "dow_2",
+    "dow_3",
+    "dow_4",
+    "dow_5",
+    "dow_6",
+    "month_2",
+    "month_3",
+    "month_4",
+    "month_5",
+    "month_6",
+    "month_7",
+    "month_8",
+    "month_9",
+    "month_10",
+    "month_11",
+    "month_12",
+    "lag7",
+    "roll4",
+    "public_holiday",
+    "school_holiday",
+    "weekend_summer"
+  ],
+  "alpha": 30.0,
+  "lr": 0.03,
+  "y_mean": 853.5665893554688,
+  "y_std": 413.1611328125,
+  "val_start": "2022-04-01",
+  "test_start": "2022-06-01",
+  "test_metrics": {
+    "naive_mean": {
+      "MAE": 515.1696,
+      "RMSE": 695.5614,
+      "R2": -0.4132,
+      "under_forecast_share": 0.6333
+    },
+    "seasonal_naive": {
+      "MAE": 282.0596,
+      "RMSE": 405.3048,
+      "R2": 0.5201,
+      "under_forecast_share": 0.4833
+    },
+    "sklearn": {
+      "MAE": 198.0409,
+      "RMSE": 275.0576,
+      "R2": 0.779,
+      "under_forecast_share": 0.5917
+    },
+    "torch_manual": {
+      "MAE": 198.041,
+      "RMSE": 275.0577,
+      "R2": 0.779,
+      "under_forecast_share": 0.5917
+    },
+    "torch_module": {
+      "MAE": 198.041,
+      "RMSE": 275.0577,
+      "R2": 0.779,
+      "under_forecast_share": 0.5917
+    }
+  },
+  "ablation": {
+    "+ calendar": {
+      "alpha": 300.0,
+      "val_MAE": 254.4167,
+      "test_MAE": 325.9943,
+      "test_R2": 0.3829
+    },
+    "+ lag7": {
+      "alpha": 300.0,
+      "val_MAE": 244.9903,
+      "test_MAE": 262.1604,
+      "test_R2": 0.5884
+    },
+    "+ roll4": {
+      "alpha": 300.0,
+      "val_MAE": 242.6692,
+      "test_MAE": 255.0517,
+      "test_R2": 0.621
+    },
+    "+ holidays": {
+      "alpha": 30.0,
+      "val_MAE": 194.7686,
+      "test_MAE": 202.1175,
+      "test_R2": 0.7678
+    },
+    "+ weekend_summer": {
+      "alpha": 30.0,
+      "val_MAE": 194.6406,
+      "test_MAE": 198.041,
+      "test_R2": 0.779
+    },
+    "+ weather": {
+      "alpha": 0.0,
+      "val_MAE": 201.4253,
+      "test_MAE": 191.4416,
+      "test_R2": 0.7918
+    }
+  }
+}
