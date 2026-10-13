@@ -1,0 +1,46 @@
+[
+  {
+    "model":"baseline (grid <= 10)",
+    "threshold":0.5,
+    "auc":0.8318,
+    "log_loss":null,
+    "accuracy@0.5":0.7712,
+    "recall@thr":0.7691,
+    "precision@thr":0.7725,
+    "cost@0.5":0.3444,
+    "cost@thr":0.3444
+  },
+  {
+    "model":"sklearn LogisticRegression",
+    "threshold":0.28,
+    "auc":0.8686,
+    "log_loss":0.4571,
+    "accuracy@0.5":0.7962,
+    "recall@thr":0.9279,
+    "precision@thr":0.6822,
+    "cost@0.5":0.3068,
+    "cost@thr":0.2884
+  },
+  {
+    "model":"PyTorch manual loop",
+    "threshold":0.28,
+    "auc":0.8686,
+    "log_loss":0.4571,
+    "accuracy@0.5":0.7962,
+    "recall@thr":0.9294,
+    "precision@thr":0.6825,
+    "cost@0.5":0.3068,
+    "cost@thr":0.287
+  },
+  {
+    "model":"PyTorch nn.Module + optim",
+    "threshold":0.28,
+    "auc":0.8686,
+    "log_loss":0.4571,
+    "accuracy@0.5":0.7962,
+    "recall@thr":0.9294,
+    "precision@thr":0.6825,
+    "cost@0.5":0.3068,
+    "cost@thr":0.287
+  }
+]

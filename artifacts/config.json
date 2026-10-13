@@ -1,0 +1,13 @@
+{
+  "start_year": 2014,
+  "end_year": 2024,
+  "train_end": 2019,
+  "val_end": 2021,
+  "form_window": 5,
+  "reliability_window": 10,
+  "cost_fp": 1,
+  "cost_fn": 2,
+  "best_C": 0.03,
+  "epochs": 3000,
+  "lr": 0.5
+}
