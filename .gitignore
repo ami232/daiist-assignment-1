@@ -4,3 +4,6 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
+
+# Produced by `main.py train` - regenerated every run
+artifacts/
