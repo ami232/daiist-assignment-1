@@ -1,0 +1,31 @@
+column,type,description
+event_id,int,Speed-dating event id
+male_id,string,Male participant id
+female_id,string,Female participant id
+male_age,int,Male age
+female_age,int,Female age
+age_gap,int,Absolute age difference
+same_race,int,1 if both same race group
+same_field,int,1 if same field of study/work
+shared_interests,float,Shared-interests rating (0-10)
+attr_of_female,float,Attractiveness the male gave the female (0-10)
+sinc_of_female,float,Sincerity rating given to the female
+intel_of_female,float,Intelligence rating given to the female
+fun_of_female,float,Fun rating given to the female
+amb_of_female,float,Ambition rating given to the female
+attr_of_male,float,Attractiveness the female gave the male (0-10)
+sinc_of_male,float,Sincerity rating given to the male
+intel_of_male,float,Intelligence rating given to the male
+fun_of_male,float,Fun rating given to the male
+amb_of_male,float,Ambition rating given to the male
+male_pref_attr,float,How much the male says he values attractiveness (0-100 pts)
+male_pref_intel,float,How much the male says he values intelligence
+female_pref_attr,float,How much the female says she values attractiveness
+female_pref_intel,float,How much the female says she values intelligence
+male_self_attr,float,Male self-rated attractiveness (0-10)
+female_self_attr,float,Female self-rated attractiveness (0-10)
+male_goes_out,string,How often the male goes out
+female_goes_out,string,How often the female goes out
+male_decision,int,1 if the male wanted a second date (LEAKS match — exclude when predicting match)
+female_decision,int,1 if the female wanted a second date (LEAKS match — exclude when predicting match)
+match,int,TARGET: 1 if BOTH said yes (mutual match)
