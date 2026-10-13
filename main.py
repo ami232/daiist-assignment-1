@@ -1,67 +1,43 @@
 """
-Single entrypoint for Assignment 1. Run:
+Entry point required by the assignment: `uv run python main.py train` runs
+the training pipeline, `uv run python main.py app` launches the Gradio
+dashboard. Looks for <stage>.py first, then <stage>.ipynb, at the repo root.
 
-    uv run python main.py train    # runs train.py, or train.ipynb if you used a notebook
-    uv run python main.py app      # runs app.py, or app.ipynb if you used a notebook
-
-Whichever format you used (script or notebook) for a stage, this looks for
-`<stage>.py` first, then `<stage>.ipynb`, and runs it the same way every time:
-a notebook is first converted to a plain script (`jupyter nbconvert --to
-script`) and then executed exactly like a .py file would be. This matters for
-`app`: your Gradio app calls `demo.launch()`, which blocks and opens a
-browser tab — running it as a real script (not inside a Jupyter kernel) is
-what makes that work whether you wrote app.py or app.ipynb.
-
-Do not rename this file or its two subcommands — grading runs exactly these
-two commands against your submission.
+NOTE: check whether your forked repo's template already provides a
+main.py that does this -- if so, keep whichever one you actually use,
+don't run two dispatchers. This is here in case you need one.
 """
 
-import argparse
-import subprocess
+import runpy
 import sys
-import tempfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+VALID_STAGES = ["train", "app"]
 
 
-def run_entrypoint(name: str) -> None:
-    py_path = ROOT / f"{name}.py"
-    nb_path = ROOT / f"{name}.ipynb"
+def main():
+    if len(sys.argv) != 2 or sys.argv[1] not in VALID_STAGES:
+        print(f"Usage: python main.py {{{'|'.join(VALID_STAGES)}}}")
+        sys.exit(1)
 
-    if py_path.exists() and nb_path.exists():
-        raise SystemExit(
-            f"Found both {py_path.name} and {nb_path.name} — main.py won't guess which "
-            f"one you want. Delete whichever one you're not using, then try again."
-        )
+    stage = sys.argv[1]
+    py_path = Path(f"{stage}.py")
+    ipynb_path = Path(f"{stage}.ipynb")
 
     if py_path.exists():
-        subprocess.run([sys.executable, str(py_path)], cwd=ROOT, check=True)
-        return
+        runpy.run_path(str(py_path), run_name="__main__")
+    elif ipynb_path.exists():
+        # Running a notebook end-to-end without manual steps.
+        import nbformat
+        from nbclient import NotebookClient
 
-    if nb_path.exists():
-        with tempfile.NamedTemporaryFile(
-            suffix=".py", dir=ROOT, delete=False
-        ) as tmp:
-            tmp_path = Path(tmp.name)
-        try:
-            with tmp_path.open("w") as tmp_file:
-                subprocess.run(
-                    ["jupyter", "nbconvert", "--to", "script", "--stdout", str(nb_path)],
-                    cwd=ROOT, check=True, stdout=tmp_file,
-                )
-            subprocess.run([sys.executable, str(tmp_path)], cwd=ROOT, check=True)
-        finally:
-            tmp_path.unlink(missing_ok=True)
-        return
-
-    raise FileNotFoundError(
-        f"Expected {py_path.name} or {nb_path.name} in {ROOT} — create one of them."
-    )
+        nb = nbformat.read(str(ipynb_path), as_version=4)
+        client = NotebookClient(nb)
+        client.execute()
+    else:
+        print(f"Neither {py_path} nor {ipynb_path} found.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("stage", choices=["train", "app"])
-    args = parser.parse_args()
-    run_entrypoint(args.stage)
+    main()
