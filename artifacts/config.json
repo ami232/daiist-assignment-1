@@ -1,0 +1,72 @@
+{
+  "seed": 42,
+  "split_sizes": {
+    "train": 18000,
+    "val": 6000,
+    "test": 6000
+  },
+  "raw_target": "default payment next month",
+  "cost_fn": 3.0,
+  "cost_fp": 1.0,
+  "best_C": 1.0,
+  "lambda": 5.555555555555556e-05,
+  "manual_lr": 1.0,
+  "manual_epochs": 5000,
+  "nn_lr": 0.01,
+  "nn_epochs": 60,
+  "nn_batch_size": 512,
+  "thresholds": {
+    "scikit-learn": 0.26,
+    "manual PyTorch": 0.26,
+    "nn.Module + optim": 0.27
+  },
+  "feature_names": [
+    "LIMIT_BAL",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6",
+    "max_delay",
+    "n_months_delayed",
+    "severe_delay_last",
+    "log_limit",
+    "EDUCATION_1",
+    "EDUCATION_3",
+    "EDUCATION_4"
+  ],
+  "sweeps": {
+    "sklearn_C_val_logloss": {
+      "0.001": 0.4400246265662589,
+      "0.01": 0.4374498819783136,
+      "0.1": 0.436854991892986,
+      "1.0": 0.4367452726325496,
+      "10.0": 0.43674340315610377,
+      "100.0": 0.4367462073307972
+    },
+    "manual_lr_val_logloss": {
+      "0.1": 0.4369664775798237,
+      "0.3": 0.43677544885123204,
+      "1.0": 0.4367399627129486
+    },
+    "nn_lr_val_logloss": {
+      "0.003": 0.43669511344370154,
+      "0.01": 0.43646290183008934,
+      "0.03": 0.4405426287172868
+    }
+  }
+}
