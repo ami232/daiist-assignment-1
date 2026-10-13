@@ -1,0 +1,745 @@
+state,category,acquired,split,name,founded_year_raw
+CA,music,1,val,Bandsintown,2007
+CA,enterprise,1,train,TriCipher,2000
+CA,web,1,test,Plixi,2009
+CA,software,1,train,Solidcore Systems,2002
+CA,network_hosting,0,train,Matisse Networks,2002
+CA,software,1,train,RingCube Technologies,2005
+CA,finance,1,train,ClairMail,2004
+MA,mobile,1,train,VoodooVox,2002
+CA,web,1,train,Doostang,2005
+CA,mobile,1,train,Zong,2000
+other,web,0,train,Resonant Vibes,2004
+NY,education,1,test,drop.io,2007
+other,software,1,train,Stratavia,2001
+other,public_relations,0,train,Invicta Networks,1999
+CA,security,0,train,QSecure,2003
+CA,enterprise,0,val,Bling Nation,2007
+TX,software,1,train,Metreos Corporation,2001
+other,other,0,train,Hidden City Games,2004
+CA,web,0,train,Neopolitan Networks,2002
+other,public_relations,0,val,EventVue,2007
+other,software,1,train,BridgePort Networks,2002
+CA,public_relations,1,train,Scalent Systems,2003
+CA,photo_video,1,test,IQ Engines,2008
+TX,web,1,val,"RetailMeNot, Inc.",2007
+CA,hardware,1,train,Mophie,2005
+CA,other,0,val,Airship Ventures,2007
+other,public_relations,1,train,Lockdown Networks,2001
+other,security,0,test,Zipano,2009
+NY,software,0,train,Entertainment Media Works,2004
+CA,software,0,val,Elastra,2007
+CA,hardware,0,train,RPO,2005
+CA,ecommerce,1,test,Fotomoto,2008
+NY,advertising,1,val,Peer39,2006
+other,enterprise,1,val,Vitrue,2006
+CA,travel,0,test,PublicEarth,2008
+other,enterprise,1,train,Azaleos,2004
+CA,advertising,1,train,Efficient Frontier,2002
+CA,software,1,train,NetDevices,2003
+NY,fashion,1,test,Go Try It On,2009
+MA,software,1,test,Performable,2009
+CA,software,1,train,Fortify Software,2002
+CA,web,1,train,iCurrent,2006
+MA,mobile,1,test,AisleBuyer,2009
+TX,web,1,train,Indeed,2004
+MA,public_relations,1,train,Colubris Networks,2000
+CA,enterprise,1,val,Mashery,2006
+CA,software,0,train,Transparency Software,2004
+CA,analytics,1,val,Viewdle,2006
+CA,consulting,1,train,Enclarity,2005
+CA,software,1,val,Virsto Software,2007
+other,mobile,1,train,Handmark,2000
+CA,cleantech,0,train,Carbonetworks,2005
+other,enterprise,1,train,SchemaLogic,2001
+other,software,0,train,Skyway Software,2001
+MA,software,1,test,CardStar,2008
+CA,cleantech,1,train,Makani Power,2006
+other,software,0,train,Myrio,1999
+other,advertising,1,val,Intela,2006
+CA,security,1,train,Sana Security,2000
+CA,advertising,1,train,Sportgenic,2005
+CA,web,1,test,Lolapps,2008
+other,web,1,train,Infinity Box,2006
+CA,advertising,1,train,adBrite,2003
+TX,software,0,val,Texert,2007
+CA,software,0,train,Mendocino Software,2003
+CA,software,0,train,QuikCycle,1998
+NY,games_video,1,train,Motionbox,2006
+other,cleantech,0,test,DNP Green Technology,2008
+other,cleantech,0,val,Abound Solar,2007
+CA,search,1,train,Trovix,2002
+NY,music,1,train,Thumbplay,2004
+other,software,0,train,Plethora Technology,2000
+CA,web,1,val,DailyStrength,2006
+other,cleantech,0,train,Danotek Motion Technologies,2001
+other,software,1,train,SNAPin Software,2003
+CA,semiconductor,1,train,Azuro,2002
+other,advertising,0,train,ARPU,2005
+CA,web,1,val,BookFresh,2007
+NY,finance,1,train,TxVia,2006
+CA,public_relations,0,train,Blue Vector Systems,2002
+other,software,1,train,Open Kernel Labs,2006
+other,software,0,val,Elanti Systems,2007
+CA,social,1,test,Astrid,2008
+CA,cleantech,0,val,Nordic Windpower,2007
+other,software,0,train,Visiprise,1985
+other,software,1,train,Hubspan,2000
+other,software,1,train,iConclude,2005
+CA,security,1,train,41st Parameter,2004
+other,web,0,val,Hotelicopter,2006
+other,software,1,train,Anystream,2000
+CA,web,1,val,Fluther,2007
+other,mobile,0,train,Pocket Communications Northeast,2006
+CA,web,1,val,Goodreads,2007
+CA,network_hosting,1,train,Woven Systems,2003
+CA,semiconductor,0,train,Kolorific,2003
+CA,search,1,train,Krugle,2006
+CA,mobile,1,test,Chomp,2009
+CA,biotech,0,train,Origen Therapeutics,1997
+other,network_hosting,1,train,Inlet Technologies,2003
+NY,ecommerce,1,train,ShopWiki,2005
+MA,web,0,test,Loudcaster,2009
+CA,ecommerce,1,train,TwoFish,2006
+CA,cleantech,1,test,Redwood Systems,2008
+MA,biotech,1,val,Artisan Pharma,2006
+other,web,1,train,Bill Me Later,2000
+CA,semiconductor,1,train,Silicon Clocks,2004
+NY,web,1,train,TheMarkets,2000
+CA,network_hosting,1,train,Netli,2000
+other,mobile,1,train,Firethorn,2001
+CA,hardware,0,val,Wellcore,2007
+MA,biotech,1,train,Taligen Therapeutics,2004
+CA,advertising,1,val,Adap.tv,2006
+CA,network_hosting,0,train,Current Media,2005
+CA,analytics,1,val,ParAccel,2007
+CA,software,1,train,Arch Rock Corporation,2005
+NY,games_video,0,train,SpiralFrog,2004
+CA,mobile,1,val,Plusmo,2006
+CA,software,1,val,Involver,2007
+CA,games_video,1,test,Lionside,2009
+NY,software,1,train,Game Trust,2002
+CA,web,1,train,Visible Path,2002
+other,semiconductor,0,train,VT Silicon,2002
+CA,web,0,val,GetBack,2007
+CA,mobile,1,train,HipLogic,2005
+CA,mobile,0,train,Dilithium Networks,2001
+other,software,1,train,Brickfish,2005
+MA,web,1,val,MyEnergy,2007
+CA,web,0,test,LikeList,2008
+other,web,0,test,Social Collective,2009
+other,network_hosting,1,train,Pure Networks,2002
+other,finance,0,test,Internet Pawn,2009
+other,biotech,0,val,NeuroTherapeutics Pharma,2006
+CA,enterprise,1,train,Provade,2004
+CA,software,0,test,Infineta Systems,2008
+TX,network_hosting,1,train,Challenge Games,2006
+CA,advertising,1,test,Crowd Factory,2009
+NY,mobile,1,test,Vizibility,2009
+CA,games_video,1,test,OpenFeint,2008
+NY,web,1,val,Tumblr,2007
+NY,social,0,test,Hotlist,2008
+other,medical,1,train,BridgePoint Medical,2005
+CA,software,1,train,Recurve,2005
+TX,enterprise,0,val,Conformity,2007
+MA,software,0,val,RatePoint,2006
+CA,advertising,0,train,Digital Performance,2002
+TX,web,1,val,Gowalla,2007
+other,network_hosting,1,train,Copan Systems,2002
+CA,software,1,train,Replay Solutions,2004
+CA,mobile,0,train,skyrockit,2001
+other,enterprise,1,test,Cartavi,2009
+CA,web,1,train,Cramster,2002
+CA,enterprise,1,train,Certify Data Systems,2004
+MA,software,1,train,CentrePath,2000
+CA,games_video,1,val,VoxPop Network Corporation,2006
+CA,software,0,train,OpVista,2000
+CA,web,1,train,Metaweb Technologies,2005
+CA,web,1,val,DocVerse,2007
+CA,games_video,1,train,Veoh,2004
+MA,advertising,1,train,BzzAgent,2001
+CA,hardware,0,train,Hammerhead Systems,2002
+other,medical,0,val,ThermalTherapeuticSystems,2006
+CA,software,1,train,GuardianEdge Technologies,2002
+other,enterprise,0,train,rPath,2005
+other,enterprise,1,train,Boomi,2000
+CA,advertising,0,train,VoloMedia,2005
+CA,web,1,val,Flixster,2006
+CA,web,0,train,Wesabe,2005
+CA,public_relations,0,test,OfferLounge,2008
+CA,advertising,1,train,NeoEdge Networks,2002
+TX,semiconductor,0,train,SemiSouth Laboratories,2000
+MA,software,1,train,Camiant,2003
+CA,advertising,1,train,NuConomy,2006
+CA,analytics,1,test,Flowtown,2009
+other,software,0,val,GlobalCrypto,2006
+NY,biotech,0,train,Bioenvision,1996
+CA,semiconductor,1,train,Teranetics,2000
+CA,software,0,train,WebVisible,2001
+CA,web,1,test,GoodGuide,2007
+CA,messaging,1,test,ViVu,2009
+NY,advertising,1,train,avVenta,2005
+other,advertising,1,test,DiJiPOP,2008
+other,software,1,train,Layer 7 Technologies,2003
+CA,ecommerce,0,val,DeliveryEdge,2006
+CA,cleantech,0,test,Solmentum,2009
+other,network_hosting,0,train,GridNetworks,2004
+CA,biotech,1,train,MAP Pharmaceuticals,2003
+NY,ecommerce,1,test,"ORCA, Inc.",2008
+CA,advertising,1,train,Amobee,2005
+CA,cleantech,1,train,KOTURA,2004
+TX,semiconductor,0,train,Auvitek International,2004
+CA,enterprise,1,test,Outright,2008
+TX,software,1,val,Phurnace Software,2007
+CA,software,1,train,FastSoft,2006
+other,advertising,0,train,Speedshape,2003
+CA,advertising,1,train,BlueLithium,2004
+other,web,0,test,Media Chaperone,2009
+NY,web,1,val,Giant Realm,2007
+other,advertising,1,val,Invite Media,2007
+CA,software,0,train,Appscio,2006
+MA,network_hosting,0,train,Eons,2005
+MA,advertising,1,val,LocaModa,2007
+CA,network_hosting,1,val,Meraki,2006
+TX,mobile,0,train,MPOWER Mobile,2005
+other,security,1,train,Haute Secure,2006
+other,enterprise,1,train,Intelliworks,2004
+NY,web,1,test,Kluster,2008
+other,cleantech,0,test,International Battery,2008
+NY,mobile,1,train,Jingle Networks,2005
+MA,semiconductor,1,train,SemEquip,2000
+other,mobile,1,train,mSnap,2005
+other,biotech,0,train,Biofisica,2000
+CA,biotech,1,train,Ardian,2003
+CA,finance,0,train,Canopy Financial,2004
+CA,games_video,1,val,Kyte,2006
+MA,software,1,train,Ounce Labs,2002
+MA,security,1,train,Crossbeam Systems,2000
+CA,public_relations,0,train,PacketHop,2002
+TX,cleantech,0,train,DynaPump,1992
+CA,software,1,test,Immunet Corporation,2008
+CA,search,1,train,Wink,2004
+CA,advertising,1,train,PopularMedia,2003
+CA,mobile,1,train,Miyowa,2003
+MA,software,0,train,Intrusic,2001
+other,mobile,1,val,Dashwire,2006
+CA,web,1,train,Reddit,2005
+CA,hardware,1,train,Pure Digital Technologies,2001
+CA,enterprise,1,train,Voxify,2001
+other,analytics,0,test,EvoApp,2009
+CA,biotech,1,train,Calibra Medical,2004
+MA,software,1,train,HiWired,2004
+CA,software,1,train,Hyperic,2004
+CA,advertising,1,test,Optimal,2008
+CA,games_video,0,test,SendMeHome.com,2008
+CA,mobile,0,test,Geodelic Systems,2008
+CA,web,1,train,PostPath,2003
+CA,hardware,0,train,Attune Systems,1999
+CA,messaging,1,val,TokBox,2007
+CA,hardware,0,train,Avega Systems,2005
+other,biotech,1,train,Heartscape,2000
+CA,games_video,0,train,PeerMe,2004
+other,hardware,0,val,Pacinian,2007
+MA,web,0,val,neoSaej,2006
+other,software,0,test,Kiha Software,2008
+MA,mobile,1,val,Vlingo,2006
+MA,enterprise,1,train,Tizor Systems,2002
+other,public_relations,0,train,Cerona Networks,2002
+CA,cleantech,0,train,Oorja Protonics,2004
+CA,web,0,train,Minekey,2005
+NY,games_video,1,train,Blip,2005
+CA,mobile,1,train,Avaak,2004
+other,manufacturing,0,test,Newfield Design,2008
+CA,news,1,train,Digg,2004
+NY,music,1,val,Songza,2007
+CA,hardware,1,train,Bigfoot Networks,2006
+CA,games_video,1,val,Kongregate,2006
+CA,advertising,1,train,Kiptronic,2005
+other,web,0,train,Cozi Group,2005
+other,software,1,train,Likewise Software,2004
+CA,mobile,1,train,Jaxtr,2005
+other,security,1,train,MX Logic,2002
+CA,games_video,1,val,Metaplace,2006
+NY,web,1,val,TravelMuse,2007
+CA,finance,1,val,Jambool,2006
+other,transportation,1,train,Zipcar,2000
+CA,sports,1,test,Hitpost,2009
+CA,finance,1,test,Home-Account,2008
+other,games_video,0,val,PayParade Pictures,2007
+CA,cleantech,0,val,Planet Metrics,2007
+CA,mobile,0,train,kwiry,2006
+CA,music,1,train,imeem,2003
+other,software,0,train,Amadesa,2005
+CA,enterprise,1,train,Cast Iron Systems,2001
+CA,automotive,0,train,Aptera,2003
+CA,real_estate,1,test,RentJuice,2008
+CA,hardware,0,train,Verari Systems,1996
+CA,network_hosting,1,train,Parascale,2005
+CA,web,1,val,Geni,2006
+CA,network_hosting,0,test,Zentact,2008
+NY,web,1,val,Outside.in,2006
+NY,enterprise,1,val,Salesforce Buddy Media,2007
+CA,advertising,1,train,Vizu Corporation,2005
+MA,enterprise,1,test,DynamicOps,2008
+TX,enterprise,1,train,Movero Technology,2003
+CA,biotech,1,val,Elevation Pharmaceuticals,2007
+CA,software,0,train,Punch Entertainment,2005
+NY,web,0,test,Stickybits,2009
+CA,games_video,0,train,Ecast,1999
+NY,web,0,val,lifeIO,2006
+CA,network_hosting,1,val,EdgeCast Networks,2006
+TX,semiconductor,1,train,Sirific Wireless,2000
+other,mobile,1,test,ZoomSafer,2009
+other,biotech,1,train,AkaRx,2005
+other,enterprise,0,test,Lama Lab,2009
+CA,advertising,1,test,Buysight,2008
+CA,travel,1,val,TripIt,2006
+NY,software,1,test,Pinch Media,2008
+other,enterprise,1,test,Enstratius,2009
+MA,mobile,1,train,Jumptap,2005
+CA,mobile,1,train,WiChorus,2005
+other,software,1,train,Hatteras Networks,2000
+CA,enterprise,0,train,Focus,2005
+NY,software,1,train,easy2comply (Dynasec),2002
+other,mobile,1,train,Clearwire,2003
+TX,security,1,train,CREDANT Technologies,2001
+CA,advertising,1,train,Avidia,2003
+MA,software,0,train,Octavian,2003
+NY,enterprise,1,train,KickApps,2004
+MA,web,1,test,Localocracy,2009
+NY,social,1,test,Pixable,2009
+CA,mobile,1,train,mFoundry,2004
+other,education,1,val,Livemocha,2007
+CA,hardware,1,train,IronPort Systems,2000
+CA,software,1,val,Crowdcast,2007
+NY,advertising,1,test,Pictela,2008
+CA,network_hosting,1,val,Grouply,2006
+CA,semiconductor,1,train,Axiom Microdevices,2002
+CA,fashion,1,test,ShoeDazzle,2009
+NY,advertising,1,test,LiftDNA,2009
+MA,software,0,train,Pyxis Mobile,1998
+CA,semiconductor,0,train,Link_A_Media Devices,2004
+MA,search,1,train,Guardium,2002
+other,analytics,0,test,Trooval,2008
+MA,consulting,1,train,Compete,2000
+other,software,1,train,Rollstream,2005
+CA,biotech,1,train,NeoGuide Systems,2000
+CA,software,1,train,Accept Software,2002
+CA,web,1,test,Milo,2008
+CA,software,1,train,Mimosa Systems,2003
+CA,enterprise,1,val,Cloudmeter,2007
+CA,network_hosting,1,val,Zecter,2007
+MA,web,1,train,Dimdim,2006
+CA,mobile,0,train,TeleFlip,2004
+other,software,0,train,MessageGate,2001
+NY,public_relations,1,train,Cloverleaf Communications,2001
+CA,mobile,1,train,SkyPilot Networks,2000
+CA,software,1,val,Zencoder,2007
+NY,enterprise,0,val,Storm Exchange,2006
+CA,security,1,train,Exaprotect,2004
+MA,software,1,train,Akorri Networks,2005
+CA,messaging,0,test,Giiv,2009
+CA,ecommerce,0,train,MyShape,2003
+other,web,1,train,FeedBurner,2004
+NY,web,1,val,DailyBurn,2007
+CA,games_video,1,val,CastTV,2006
+NY,mobile,1,test,Venmo,2009
+NY,games_video,0,val,WeShow,2007
+CA,security,1,train,SenSage,2004
+MA,other,1,train,Luminus Devices,2002
+other,software,1,train,ColdSpark,2001
+CA,web,0,train,Etology,2005
+other,mobile,1,test,CrowdCompass,2009
+NY,advertising,1,train,Right Media,2003
+TX,web,1,train,FiveRuns,2005
+other,software,1,train,TrenStar,2001
+other,biotech,0,train,Zymetis,2006
+CA,fashion,1,test,HauteLook,2007
+TX,software,0,train,Semantra,2003
+NY,network_hosting,1,train,Genesis Networks,2002
+CA,network_hosting,1,val,Mogad,2007
+CA,web,1,train,Meebo,2005
+other,security,1,val,Accertify,2007
+MA,ecommerce,1,train,N2N Commerce,2006
+MA,software,1,train,StreamBase Systems,2003
+CA,semiconductor,1,train,Provigent,2000
+MA,advertising,1,train,Navic Networks,2000
+CA,enterprise,1,train,Integrien,2001
+CA,software,0,train,Generic Media,2000
+other,software,1,train,Persystent Technologies,2002
+NY,games_video,1,train,WireImage,2001
+CA,mobile,0,train,Hello Chair,2006
+CA,software,1,train,Encentuate,2001
+CA,web,1,train,Consorte Media,2005
+NY,music,1,val,RightsFlow,2007
+other,web,1,train,thePlatform,2000
+CA,web,1,val,Docstoc,2007
+CA,web,0,test,TwtBks,2009
+CA,mobile,1,train,Zenprise,2003
+CA,web,0,train,Picateers,2005
+CA,software,1,train,Vontu,2001
+TX,hardware,0,train,NextIO,2003
+CA,games_video,1,train,Emergent Game Technologies,2000
+MA,hardware,1,train,Kiva Systems,2003
+other,advertising,0,test,Transactiv,2009
+CA,social,1,val,Brightkite,2007
+CA,enterprise,1,train,Peanut Labs,2005
+MA,web,1,val,FlipKey,2007
+TX,public_relations,1,train,AppTrigger,2002
+other,web,1,val,Footnote,2006
+CA,software,0,train,NextMedium,2004
+other,cleantech,0,val,iosil Energy,2007
+other,software,0,train,Kurani Interactive,2000
+CA,software,1,train,Kapow Software,2005
+MA,software,1,test,Locately,2008
+CA,security,1,train,TrustedID,2005
+other,semiconductor,1,train,Ciclon Semiconductor Device Corporation,2004
+CA,mobile,0,train,Azingo,2005
+CA,hardware,1,train,Vudu,2004
+other,network_hosting,0,val,"ITOG, Inc.",2006
+CA,games_video,1,train,YouTube,2005
+NY,ecommerce,0,test,MyNines,2009
+TX,search,0,val,itzbig,2006
+other,biotech,1,train,Avid Radiopharmaceuticals,2005
+other,software,1,train,ExactTarget,2000
+MA,medical,1,train,Rhythmia Medical,2004
+CA,web,0,test,Factery,2009
+other,web,1,train,"MeetMe, Inc.",2005
+other,web,1,train,WildBlue,2004
+CA,software,0,val,HeadCase Humanufacturing,2006
+CA,network_hosting,0,train,bluepulse,1990
+NY,advertising,1,train,Mr. Youth,2002
+CA,semiconductor,1,train,Teknovus,2001
+CA,mobile,1,val,Qik,2006
+CA,web,1,test,EQAL,2008
+TX,software,0,test,IonLogix Systems,2007
+CA,public_relations,0,train,Atrica,2000
+other,network_hosting,1,val,Socialthing,2007
+CA,advertising,1,train,AdECN,2003
+other,search,0,train,Cuil,2005
+CA,web,1,train,Sensory Networks,2003
+CA,web,1,train,Flock,2005
+other,ecommerce,1,test,FeeFighters,2009
+CA,web,1,train,TimeBridge,2005
+other,biotech,0,val,Lazarus Therapeutics,2006
+CA,software,1,train,Loyalty Lab,2003
+CA,software,1,train,ZManda,2005
+MA,hardware,0,train,Sionex,2001
+CA,games_video,1,val,sezmi,2007
+other,photo_video,1,val,StudioNow,2007
+CA,web,1,test,PicApp,2008
+CA,software,1,train,Composite Software,2002
+CA,software,1,train,Terracotta,2003
+MA,software,0,train,FireStar Software,2001
+CA,hardware,0,train,Aquest Systems,2004
+CA,games_video,1,train,Generate,2004
+CA,software,1,train,Attributor,2005
+CA,software,1,train,Greenplum Software,2003
+CA,games_video,1,val,PlaySpan,2006
+other,software,1,train,JackBe,2002
+CA,enterprise,1,train,Zimbra,2003
+other,games_video,0,val,Smith & Tinker,2007
+CA,network_hosting,1,train,Mu Dynamics,2005
+CA,semiconductor,1,train,Fulcrum Microsystems,2000
+CA,analytics,1,val,ReTel Technologies,2007
+CA,biotech,0,train,Roxro Pharma,1999
+CA,software,1,train,Intelliden,2000
+NY,analytics,1,test,XGraph,2008
+CA,games_video,1,test,Playdom,2008
+MA,enterprise,1,train,Digital Reef,2006
+CA,analytics,1,test,Servio,2009
+other,software,1,val,Vocalocity,2007
+CA,advertising,1,val,Dapper,2006
+CA,advertising,0,train,SeeSaw Networks,2005
+MA,enterprise,1,test,oneforty,2009
+CA,web,0,train,Smalltown,2005
+CA,software,0,train,Skyrider,2003
+NY,web,1,test,SkillSlate,2009
+other,software,0,val,Fortisphere,2006
+MA,software,1,train,Aveksa,2004
+CA,software,0,train,PANTA Systems,2002
+CA,semiconductor,1,train,Beceem Communications,2003
+other,mobile,1,train,Trust Digital,2003
+other,software,1,train,Sabrix,2002
+NY,games_video,1,train,Panther Express,2005
+other,public_relations,0,train,T-Networks,2000
+other,software,1,train,BlueNote Networks,2005
+CA,advertising,0,val,Predictify,2007
+CA,biotech,1,train,OptiMedica,2004
+MA,enterprise,1,train,Metatomix,2000
+CA,public_relations,1,train,Neterion,2001
+CA,enterprise,1,val,Schooner Information Technology,2007
+other,ecommerce,1,train,Quidsi,2005
+other,network_hosting,1,train,Netcordia,2000
+CA,search,0,train,SearchMe,2005
+CA,enterprise,1,test,Yammer,2008
+CA,web,1,test,Clever Sense,2008
+TX,software,1,train,AlterPoint,2001
+CA,hardware,0,train,Shocking Technologies,2006
+CA,mobile,1,train,Ribbit,2005
+CA,enterprise,1,test,StorSimple,2009
+CA,biotech,1,train,Sadra Medical,2003
+MA,software,1,val,expressor software,2007
+CA,software,0,train,Azaire Networks,2003
+NY,advertising,1,train,Quigo,2000
+TX,public_relations,1,train,Navini Networks,2000
+CA,software,1,train,VirtualLogix,2002
+MA,software,0,train,Exit41,1999
+CA,web,1,val,SezWho,2006
+other,web,1,train,Jobs2Web,2003
+CA,web,1,train,MerchantCircle,2005
+CA,network_hosting,0,train,Helicomm,2002
+CA,software,1,train,Kace networks,2003
+NY,photo_video,0,val,Thwapr,2007
+CA,web,1,val,Zinch,2007
+CA,enterprise,1,test,Cloud.com,2008
+CA,enterprise,1,test,"Wildfire, a division of Google",2008
+CA,search,0,train,Authenticlick,2005
+CA,biotech,1,train,BioSeek,2000
+MA,software,0,train,xkoto,2005
+MA,public_relations,1,train,Coradiant,2000
+CA,biotech,1,test,QuantaLife,2008
+CA,software,1,train,BroadLight,2000
+NY,advertising,1,train,BBE,2004
+CA,public_relations,0,train,TelASIC Communications,2001
+other,messaging,0,train,LegiTime Technologies,2005
+NY,games_video,1,train,Boonty,2001
+NY,games_video,0,train,B-Side Entertainment,2005
+CA,messaging,0,test,Taggstr,2009
+NY,fashion,0,test,Fashism,2009
+CA,security,0,train,Goodmail Systems,2003
+CA,enterprise,0,val,Nirvanix,2007
+other,ecommerce,0,test,LookStat,2008
+CA,software,0,test,Sweepery,2008
+TX,semiconductor,1,train,Luminary Micro,2004
+other,semiconductor,0,train,ZettaCore,1999
+CA,games_video,1,test,Clicker,2009
+CA,semiconductor,0,train,iKoa,2006
+CA,software,1,test,SocialShield,2009
+other,software,0,val,LeisureLogix,2006
+MA,other,1,train,Storwize,2004
+other,software,0,val,AutoVirt,2007
+CA,mobile,1,train,Loopt,2005
+CA,public_relations,1,train,Blue Lane Technologies,2002
+CA,enterprise,1,train,Socialcast,2005
+other,enterprise,1,train,Collective Intellect,2005
+other,web,1,test,Wavii,2009
+CA,web,1,val,Seesmic,2007
+other,medical,0,train,Apnex Medical,2006
+CA,network_hosting,1,train,Echopass Corporation,2000
+CA,web,1,train,ID Analytics,2002
+MA,software,1,train,Vela Systems,2005
+CA,biotech,1,train,FlowCardia,2002
+CA,security,1,train,Bizanga,2003
+CA,advertising,1,val,Transpond,2007
+other,social,0,test,Caterva,2008
+CA,other,0,train,Innovative Silicon,2002
+other,enterprise,0,train,Kardia Health Systems,2006
+other,biotech,0,train,Biolex Therapeutics,1997
+MA,biotech,1,train,Foldrx Pharmaceuticals,2003
+other,network_hosting,0,train,Klir Technologies,2000
+MA,mobile,1,train,MetaCarta,2001
+MA,software,1,test,Viridity Software,2008
+CA,search,0,test,Devtap,2008
+CA,web,1,train,Bebo,2005
+CA,biotech,1,val,SARcode Bioscience,2006
+other,mobile,1,train,Pelago,2005
+CA,enterprise,1,test,Desk,2009
+CA,biotech,0,train,Trinity Biosystems,2002
+MA,software,1,val,Virtual Computer,2007
+other,software,0,train,Oasys Mobile,1984
+CA,games_video,0,test,Gamook,2008
+MA,advertising,1,val,Quattro Wireless,2006
+CA,web,1,test,ShopWell,2008
+CA,public_relations,0,test,NewsBasis,2009
+MA,semiconductor,1,train,Nexx Systems,2001
+NY,games_video,1,val,5min Media,2007
+MA,web,1,train,Gotuit,2000
+CA,semiconductor,1,train,TeleCIS Wireless,2000
+CA,hardware,0,train,EmSense,2004
+NY,hardware,1,test,MakerBot,2009
+NY,advertising,1,test,Image Space Media,2008
+NY,travel,1,test,Wanderfly,2009
+TX,games_video,0,val,FameCast,2007
+CA,software,1,train,Cassatt,2003
+CA,enterprise,1,train,VirtuOz,2002
+CA,cleantech,0,train,SolFocus,2005
+CA,enterprise,1,test,Nimbula,2008
+CA,social,1,test,Giftiki,2009
+TX,software,0,val,Storspeed,2007
+NY,software,1,val,SpaBooker,2007
+CA,mobile,1,train,Jajah,2005
+CA,medical,1,train,Baxano,2005
+TX,software,0,val,RipCode,2006
+CA,medical,0,test,CV Ingenuity,2008
+MA,software,0,train,Certeon,2003
+CA,advertising,0,train,Applied Identity,2002
+other,cleantech,1,train,Prenova,2002
+CA,web,1,train,WooMe,2000
+CA,web,0,train,Mail.com Media Corporation,2004
+other,mobile,0,test,DubMeNow,2008
+TX,cleantech,0,test,Smooth-Stone,2008
+CA,network_hosting,1,train,ONStor,2000
+other,enterprise,1,test,JouleX,2009
+CA,enterprise,0,train,Etelos,1999
+CA,hardware,0,train,Make It Work,1995
+CA,web,0,val,What They Like,2007
+other,advertising,1,val,FetchBack,2007
+MA,health,1,val,Sermo,2006
+other,semiconductor,0,test,Wi-Chi,2008
+MA,biotech,1,test,Alnara Pharmaceuticals,2008
+CA,software,1,val,Braintree,2007
+CA,enterprise,1,train,Virident Systems,2006
+CA,biotech,1,train,Pearl Therapeutics,2006
+CA,enterprise,1,test,Lexity,2009
+MA,security,1,train,Diligent Technologies,2002
+NY,ecommerce,0,train,eBillme,2004
+other,photo_video,1,train,Smilebox,2000
+CA,software,1,train,B-hive Networks,2005
+NY,social,1,test,Hot Potato,2009
+other,games_video,0,test,Three Screen Games,2009
+CA,ecommerce,0,val,BrightQube,2006
+CA,enterprise,1,test,ServiceMesh,2008
+CA,web,1,val,Lookery,2007
+CA,cleantech,1,test,Zep Solar,2009
+CA,music,1,train,MOG,2005
+CA,web,0,val,Loud3r,2007
+NY,travel,1,test,Oyster.com,2008
+CA,security,1,train,LogLogic,2002
+CA,semiconductor,0,train,Sequoia Communications,2000
+other,network_hosting,1,train,SnapNames,2000
+CA,web,1,train,Simple Star,2001
+MA,ecommerce,1,val,StyleFeeder,2006
+CA,software,1,test,FlashSoft,2009
+CA,semiconductor,1,train,Symwave,2001
+CA,software,1,train,Clearwell Systems,2004
+CA,software,0,train,Impeva,2004
+CA,enterprise,1,test,CubeTree,2008
+TX,enterprise,1,test,Infochimps,2009
+CA,mobile,0,val,Songbird,2006
+CA,advertising,1,test,SimpleGeo,2009
+TX,enterprise,1,train,SensorLogic,2002
+NY,games_video,1,train,Oberon Media,2003
+CA,games_video,1,train,Arroyo Video Solutions,2002
+CA,biotech,1,test,Aragon Pharmaceuticals,2009
+other,other,0,train,Five Star Technologies,1999
+other,public_relations,0,train,Vontoo,2005
+MA,web,1,train,Allurent,2005
+CA,analytics,1,train,Quantivo,2005
+CA,semiconductor,1,train,Crossing Automation,2003
+CA,web,1,train,Scrapblog,2006
+CA,advertising,1,val,Yield Software,2007
+other,mobile,0,val,FlyCast,2006
+other,travel,1,test,Off & Away,2009
+CA,hardware,0,train,CypherMax,2000
+CA,hardware,1,train,Nexsan,2000
+CA,other,0,train,Qlusters,2001
+NY,software,1,test,Producteev,2008
+CA,semiconductor,1,train,Amalfi Semiconductor,2003
+CA,web,1,train,HotPads,2005
+CA,games_video,0,val,DanceJam,2007
+CA,software,1,train,Right90,2003
+CA,advertising,1,val,SocialMedia.com,2007
+NY,ecommerce,1,test,BuyWithMe,2009
+other,web,1,train,Photobucket,2003
+CA,enterprise,1,test,XtremIO,2009
+CA,semiconductor,1,train,Level 5 Networks,2002
+CA,web,1,test,Votizen,2009
+CA,hardware,1,train,Siimpel Corporation,2000
+CA,web,0,train,TalkPlus,2004
+CA,advertising,0,train,NebuAd,2006
+CA,biotech,1,train,Tercica,2002
+NY,games_video,0,train,Robotgalaxy,2006
+CA,software,1,test,PasswordBank,2008
+CA,software,1,val,SnapTell,2006
+CA,manufacturing,0,test,Gigi Hill,2009
+CA,software,1,train,CloudShield Technologies,2000
+NY,mobile,1,val,Instinctiv,2007
+CA,transportation,1,val,Waze,2007
+CA,analytics,1,train,Aster Data Systems,2005
+CA,software,1,train,Codesion,2002
+CA,web,1,train,Xoopit,2004
+CA,cleantech,1,test,One Block Off the Grid (1BOG),2008
+other,enterprise,1,val,Appature,2007
+other,mobile,1,train,Action Engine,2000
+MA,network_hosting,1,train,Blackwave,2006
+TX,network_hosting,1,train,SoftLayer,2005
+CA,games_video,1,val,Mytopia,2007
+other,semiconductor,0,train,Andigilog,1996
+CA,medical,1,train,BARRX Medical,2003
+CA,hardware,0,train,Power Analog Microelectronics,2004
+other,ecommerce,0,test,Classiphix,2009
+other,news,1,test,StartupDigest,2009
+CA,semiconductor,0,train,WiLinx,2003
+CA,cleantech,1,test,Redwood Systems,2008
+TX,messaging,1,test,OtherInbox,2008
+CA,software,1,train,M-Factor,2003
+CA,software,0,train,Athena Design Systems,2003
+CA,software,1,test,Servo Software,2008
+CA,software,0,train,Levanta,1998
+CA,public_relations,0,val,DotSpots,2007
+CA,advertising,1,test,Republic Project,2008
+other,enterprise,0,test,Hit Systems,2008
+CA,web,1,train,EchoSign,2005
+other,network_hosting,1,train,PI Corporation,2003
+NY,enterprise,1,val,Daylife,2006
+MA,network_hosting,1,train,Desktone,2006
+other,enterprise,1,test,Standing Cloud,2009
+CA,messaging,1,test,HipChat,2009
+CA,software,0,train,Kickfire,2006
+TX,public_relations,1,train,"LifeSize, a Division of Logitech",2003
+CA,semiconductor,1,train,CHiL Semiconductor,2006
+other,semiconductor,1,train,Enpirion,2001
+other,mobile,0,test,RFinity,2008
+CA,cleantech,1,test,ecoATM,2008
+CA,cleantech,1,test,Adura Technologies,2008
+CA,advertising,1,train,Rhythm NewMedia,2005
+CA,analytics,1,val,Topsy Labs,2007
+MA,public_relations,0,train,Digit Wireless,2000
+CA,analytics,1,test,Silver Tail Systems,2008
+MA,mobile,1,train,Tatara Systems,2001
+CA,biotech,1,train,Reliant Technologies,2001
+CA,mobile,1,train,Atrua Technologies,2000
+CA,mobile,1,train,Casabi,2004
+NY,mobile,0,val,Peek & Co,2007
+CA,hardware,0,train,C2 Microsystems,2004
+CA,semiconductor,1,train,Multigig,2003
+CA,mobile,1,train,Ortiva Wireless,2004
+CA,games_video,1,val,Sometrics,2007
+TX,consulting,0,val,Chronicity,2006
+CA,web,1,val,Whiskey Media,2007
+other,web,1,train,Jobfox,2004
+other,other,0,train,Natural Cleaners Colorado,2005
+CA,games_video,1,test,Gaikai,2008
+CA,news,0,val,Blue Buzz Network,2006
+other,hardware,1,train,Max-Viz,2001
+CA,software,1,test,Cotendo,2008
+CA,web,0,val,Flowgram,2007
+other,software,0,train,JavaJobs,1997
+NY,web,1,val,Behance,2006
+MA,software,1,train,dynaTrace software,2005
+NY,games_video,1,test,Socialbomb,2008
+CA,software,1,train,Imagine Communications,2005
+other,software,1,train,Univa UD,2004
+other,advertising,1,val,OneRiot,2006
+CA,web,0,val,Moonshoot,2007
+CA,software,1,train,ArcSight,2000
+CA,semiconductor,1,train,AGEIA Technologies,2002
+TX,other,0,train,U.S. Fiduciary,2003
+CA,semiconductor,1,train,Xelerated,2000
+CA,social,1,train,Oodle,2004
+CA,cleantech,1,train,The Climate Corporation,2006
+CA,web,1,train,Kosmix,2005
+NY,mobile,1,test,Xtify Inc.,2009
+CA,biotech,0,train,Limerick BioPharma,2004
+CA,mobile,1,train,iSkoot,2005
+TX,web,0,val,Rudder,2006
+NY,games_video,1,val,Panvidea,2007
+other,advertising,0,train,Sway,2004
+NY,advertising,1,val,TRAFFIQ,2006
+other,mobile,1,train,Dexterra,2000
+CA,advertising,1,test,CoTweet,2009
+MA,security,0,train,Reef Point Systems,1998
+CA,biotech,0,train,Paracor Medical,1999
+CA,software,1,test,Causata,2009
+CA,security,1,train,Asempra Technologies,2003

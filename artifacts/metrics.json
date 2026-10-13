@@ -1,0 +1,126 @@
+{
+  "config": {
+    "meeting_stage": "pre_funding",
+    "split": "time",
+    "max_founded_year": 2009,
+    "negative_age": "drop",
+    "cost_wasted_meeting": 1.0,
+    "cost_missed_winner": 5.0,
+    "features": {
+      "group_rare_categories": true,
+      "founded_year": false,
+      "log_funding": true,
+      "funding_per_round": true,
+      "milestone_missing_flag": true
+    },
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "lr_grid": [
+      0.1,
+      0.5,
+      1.0
+    ],
+    "epochs": 4000,
+    "seed": 42
+  },
+  "C": 1.0,
+  "lr": 1.0,
+  "n": {
+    "train": 446,
+    "val": 149,
+    "test": 149
+  },
+  "val_log_loss_by_C": {
+    "0.01": 0.6448008660445114,
+    "0.1": 0.6310522883879621,
+    "1.0": 0.6262859451905236,
+    "10.0": 0.6274309557022228
+  },
+  "final_train_objective_by_lr": {
+    "0.1": 0.600916673173411,
+    "0.5": 0.600868730054406,
+    "1.0": 0.6008685338433969
+  },
+  "results": {
+    "sklearn": {
+      "roc_auc": 0.691559829059829,
+      "pr_auc": 0.8156539650336795,
+      "log_loss": 0.5714702433978356,
+      "brier": 0.19356194773901036,
+      "threshold": 0.44,
+      "accuracy": 0.697986577181208,
+      "precision": 0.697986577181208,
+      "recall": 1.0,
+      "meetings_taken": 149,
+      "cost": 45.0,
+      "cost_per_100": 30.201342281879196,
+      "tp": 104,
+      "fp": 45,
+      "fn": 0,
+      "tn": 0
+    },
+    "manual_torch": {
+      "roc_auc": 0.691559829059829,
+      "pr_auc": 0.8156539650336795,
+      "log_loss": 0.5714702904140205,
+      "brier": 0.19356195967165923,
+      "threshold": 0.44,
+      "accuracy": 0.697986577181208,
+      "precision": 0.697986577181208,
+      "recall": 1.0,
+      "meetings_taken": 149,
+      "cost": 45.0,
+      "cost_per_100": 30.201342281879196,
+      "tp": 104,
+      "fp": 45,
+      "fn": 0,
+      "tn": 0
+    },
+    "standard_torch": {
+      "roc_auc": 0.691559829059829,
+      "pr_auc": 0.8156539650336795,
+      "log_loss": 0.5714702904140206,
+      "brier": 0.1935619596716592,
+      "threshold": 0.44,
+      "accuracy": 0.697986577181208,
+      "precision": 0.697986577181208,
+      "recall": 1.0,
+      "meetings_taken": 149,
+      "cost": 45.0,
+      "cost_per_100": 30.201342281879196,
+      "tp": 104,
+      "fp": 45,
+      "fn": 0,
+      "tn": 0
+    },
+    "baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.697986577181208,
+      "log_loss": 0.6130262014550413,
+      "brier": 0.21100097427385284,
+      "threshold": 0.0,
+      "accuracy": 0.697986577181208,
+      "precision": 0.697986577181208,
+      "recall": 1.0,
+      "meetings_taken": 149,
+      "cost": 45.0,
+      "cost_per_100": 30.201342281879196,
+      "tp": 104,
+      "fp": 45,
+      "fn": 0,
+      "tn": 0
+    }
+  },
+  "agreement": {
+    "max_abs_prob_diff_manual_vs_sklearn": 2.5085699333349254e-06,
+    "max_abs_prob_diff_standard_vs_sklearn": 2.508569933223903e-06,
+    "max_abs_coef_diff_manual_vs_sklearn": 0.0002378821527688757,
+    "max_abs_coef_diff_standard_vs_sklearn": 0.00023788215276876468
+  },
+  "n_features": 15,
+  "baseline_rate": 0.6838565022421524
+}
