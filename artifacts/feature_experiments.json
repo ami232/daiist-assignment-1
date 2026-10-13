@@ -1,0 +1,62 @@
+{
+  "final pipeline": {
+    "columns": 201,
+    "rmse": 18847.886137614685,
+    "mae": 13254.029157304565
+  },
+  "ordered fields as integer codes": {
+    "columns": 155,
+    "rmse": 19241.58121528924,
+    "mae": 13534.261564149909
+  },
+  "keep Bldg Type, drop only Bldg Type_Duplex": {
+    "columns": 204,
+    "rmse": 18805.751469841183,
+    "mae": 13211.592978740737
+  },
+  "raw years instead of ages": {
+    "columns": 201,
+    "rmse": 18850.28775775136,
+    "mae": 13255.911034860168
+  },
+  "month as a number 1-12": {
+    "columns": 191,
+    "rmse": 18774.98299966827,
+    "mae": 13129.766624681706
+  },
+  "restore Garage Cars and Exterior 2nd": {
+    "columns": 213,
+    "rmse": 18795.355892513744,
+    "mae": 13269.523484903932
+  },
+  "restore near-constant fields": {
+    "columns": 208,
+    "rmse": 19092.681113764123,
+    "mae": 13318.139515338149
+  },
+  "+ TotalSF": {
+    "columns": 202,
+    "rmse": 18846.46261242768,
+    "mae": 13248.57487269702
+  },
+  "+ TotalBaths": {
+    "columns": 202,
+    "rmse": 18848.85583340378,
+    "mae": 13258.3413319347
+  },
+  "log Lot Area and Gr Liv Area": {
+    "columns": 201,
+    "rmse": 19135.31535910848,
+    "mae": 13046.978157714895
+  },
+  "+ Overall Qual x Gr Liv Area": {
+    "columns": 202,
+    "rmse": 18858.86315397911,
+    "mae": 13271.199875990653
+  },
+  "all four candidates": {
+    "columns": 204,
+    "rmse": 18877.358194427932,
+    "mae": 12942.61926442814
+  }
+}
