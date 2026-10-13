@@ -1,0 +1,57 @@
+{
+  "features": [
+    "hour_sin1",
+    "hour_cos1",
+    "hour_sin2",
+    "hour_cos2",
+    "weekend",
+    "weekend_x_hour_sin1",
+    "weekend_x_hour_cos1",
+    "weekend_x_hour_sin2",
+    "weekend_x_hour_cos2",
+    "holiday",
+    "temp",
+    "solar",
+    "rain",
+    "snow",
+    "season_spring",
+    "season_summer",
+    "season_winter"
+  ],
+  "target": "log",
+  "alpha": 0.01,
+  "manual_lr": 0.3,
+  "standard_lr": 0.3,
+  "epochs": 3000,
+  "target_check_val_mae": {
+    "raw": 271.1985908410864,
+    "log": 232.75862051900634
+  },
+  "alpha_val_mae": {
+    "0.01": 232.7586794756195,
+    "0.1": 232.75921008616388,
+    "1": 232.76451629292313,
+    "10": 232.8185963460709,
+    "100": 233.52309570035905,
+    "1000": 246.8314997818897
+  },
+  "manual_lr_val_mae": {
+    "0.01": 232.76118931403528,
+    "0.03": 232.75923218941077,
+    "0.1": 232.75880909730228,
+    "0.3": 232.75866721226618
+  },
+  "standard_lr_val_mae": {
+    "0.01": 232.76105322593298,
+    "0.03": 232.75898074033933,
+    "0.1": 232.7586557437212,
+    "0.3": 232.75863692699335
+  },
+  "agreement": {
+    "max |coef diff| manual PyTorch vs scikit-learn": 1.105046933957965e-07,
+    "max |coef diff| standard PyTorch vs scikit-learn": 3.663324648073285e-07,
+    "max |prediction diff| manual PyTorch vs scikit-learn (bikes)": 0.0007953658621318027,
+    "max |prediction diff| standard PyTorch vs scikit-learn (bikes)": 0.0026807513950188877,
+    "max |coef diff| manual vs standard PyTorch": 4.76837158203125e-07
+  }
+}

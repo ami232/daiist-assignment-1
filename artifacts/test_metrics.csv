@@ -1,0 +1,6 @@
+model,MAE,RMSE,R2
+baseline: median,505.088,652.1,-0.033
+baseline: hour x weekend median,423.008,544.105,0.281
+scikit-learn,241.737,367.558,0.672
+manual PyTorch,241.737,367.558,0.672
+standard PyTorch,241.737,367.558,0.672
