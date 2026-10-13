@@ -1,0 +1,101 @@
+{
+  "feature_names": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "n_services",
+    "is_month_to_month",
+    "autopay",
+    "price_vs_avg_paid",
+    "gender_Male",
+    "Partner_Yes",
+    "Dependents_Yes",
+    "PhoneService_Yes",
+    "MultipleLines_No phone service",
+    "MultipleLines_Yes",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "OnlineSecurity_No internet service",
+    "OnlineSecurity_Yes",
+    "OnlineBackup_No internet service",
+    "OnlineBackup_Yes",
+    "DeviceProtection_No internet service",
+    "DeviceProtection_Yes",
+    "TechSupport_No internet service",
+    "TechSupport_Yes",
+    "StreamingTV_No internet service",
+    "StreamingTV_Yes",
+    "StreamingMovies_No internet service",
+    "StreamingMovies_Yes",
+    "Contract_One year",
+    "Contract_Two year",
+    "PaperlessBilling_Yes",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check",
+    "tenure_group_13-24",
+    "tenure_group_25-48",
+    "tenure_group_49-72"
+  ],
+  "metrics": {
+    "baseline": {
+      "accuracy": 0.7345635202271115,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "log_loss": 0.5786668716736688
+    },
+    "sklearn": {
+      "accuracy": 0.7863733144073811,
+      "f1": 0.5567010309278351,
+      "roc_auc": 0.8339481774264383,
+      "log_loss": 0.4289623498916626
+    },
+    "manual_torch": {
+      "accuracy": 0.7877927608232789,
+      "f1": 0.5596465390279823,
+      "roc_auc": 0.832829574517554,
+      "log_loss": 0.43022552132606506
+    },
+    "nn_torch": {
+      "accuracy": 0.7877927608232789,
+      "f1": 0.5596465390279823,
+      "roc_auc": 0.832829574517554,
+      "log_loss": 0.43022552132606506
+    }
+  },
+  "best_C": 10,
+  "lr_manual": 0.5,
+  "lr_nn": 0.5,
+  "lam": 2.3668639053254438e-05,
+  "ablation": {
+    "all features (full model)": {
+      "roc_auc": 0.8599679661060735,
+      "log_loss": 0.4008364677429199
+    },
+    "without n_services": {
+      "roc_auc": 0.8600118835412953,
+      "log_loss": 0.4007837772369385
+    },
+    "without tenure_group": {
+      "roc_auc": 0.8602779715311685,
+      "log_loss": 0.40115639567375183
+    },
+    "without is_month_to_month": {
+      "roc_auc": 0.8599808829987858,
+      "log_loss": 0.40086257457733154
+    },
+    "without autopay": {
+      "roc_auc": 0.8600248004340078,
+      "log_loss": 0.4008086323738098
+    },
+    "without price_vs_avg_paid": {
+      "roc_auc": 0.8598852979927148,
+      "log_loss": 0.4009546637535095
+    },
+    "without ALL 5 engineered": {
+      "roc_auc": 0.86018496990364,
+      "log_loss": 0.40132400393486023
+    }
+  }
+}
