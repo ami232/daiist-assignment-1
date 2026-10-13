@@ -1,0 +1,36 @@
+{
+  "numeric_features": [
+    "ipca15",
+    "ipca_12m",
+    "usdbrl_chg_3m",
+    "icbr_chg_3m",
+    "real_rate_ex_post",
+    "ibcbr_growth_3m"
+  ],
+  "seasonal_features": [
+    "tm_2",
+    "tm_3",
+    "tm_4",
+    "tm_5",
+    "tm_6",
+    "tm_7",
+    "tm_8",
+    "tm_9",
+    "tm_10",
+    "tm_11",
+    "tm_12"
+  ],
+  "threshold": 0.25,
+  "cost_fp": 1.0,
+  "cost_fn": 3.0,
+  "high_inflation_threshold_pct": 0.5,
+  "C": 0.003,
+  "lambda": 0.9523809523809523,
+  "lr_manual": 0.5,
+  "lr_module": 0.5,
+  "epochs": 3000,
+  "splits": {
+    "train_end": "2017-12-01",
+    "val_end": "2020-12-01"
+  }
+}
