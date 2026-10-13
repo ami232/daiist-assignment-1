@@ -1,0 +1,87 @@
+{
+  "best_C": 0.003,
+  "best_lr_manual": 0.1,
+  "best_lr_module": 0.1,
+  "epochs": 3000,
+  "weight_gap_manual_vs_sklearn": 5.885958671569824e-06,
+  "weight_gap_module_vs_sklearn": 5.543231964111328e-06,
+  "lgd": 0.65,
+  "margin": 0.1,
+  "n_features": 27,
+  "feature_names": [
+    "fico_mid",
+    "loan_to_income",
+    "log_annual_inc",
+    "log_loan_amnt",
+    "credit_history_years",
+    "emp_length_num",
+    "emp_length_missing",
+    "has_delinq_history",
+    "mths_since_delinq",
+    "log_revol_bal",
+    "revol_util",
+    "dti",
+    "delinq_2yrs",
+    "inq_last_6mths",
+    "pub_rec_any",
+    "home_ownership=RENT",
+    "home_ownership=OWN",
+    "home_ownership=rare",
+    "verification_status=Verified",
+    "verification_status=Source Verified",
+    "verification_status=rare",
+    "purpose=credit_card",
+    "purpose=home_improvement",
+    "purpose=other",
+    "purpose=major_purchase",
+    "purpose=small_business",
+    "purpose=rare"
+  ],
+  "results": {
+    "baseline_approve_all": {
+      "threshold": null,
+      "val_auc": 0.5,
+      "test_auc": 0.5,
+      "test_pr_auc": 0.1433175355450237,
+      "val_cost": 4384185.0,
+      "test_cost": 6299865.0,
+      "test_cost_approve_all": 6299865.0
+    },
+    "baseline_fico": {
+      "threshold": -684.5,
+      "val_auc": 0.5779336381953224,
+      "test_auc": 0.5861689503811655,
+      "test_pr_auc": 0.17507712500081027,
+      "val_cost": 3877528.75,
+      "test_cost": 5168810.0,
+      "test_cost_approve_all": 6299865.0
+    },
+    "sklearn": {
+      "threshold": 0.13408196531236172,
+      "val_auc": 0.6246725861251581,
+      "test_auc": 0.6379749054843102,
+      "test_pr_auc": 0.22095891286210195,
+      "val_cost": 3656351.25,
+      "test_cost": 4801418.75,
+      "test_cost_approve_all": 6299865.0
+    },
+    "pytorch_manual": {
+      "threshold": 0.13408222049474716,
+      "val_auc": 0.6246720922882428,
+      "test_auc": 0.6379749054843102,
+      "test_pr_auc": 0.22095635733447988,
+      "val_cost": 3656351.25,
+      "test_cost": 4801418.75,
+      "test_cost_approve_all": 6299865.0
+    },
+    "pytorch_module": {
+      "threshold": 0.13408228754997253,
+      "val_auc": 0.6246720922882428,
+      "test_auc": 0.6379747591298819,
+      "test_pr_auc": 0.22095635733447988,
+      "val_cost": 3656351.25,
+      "test_cost": 4801418.75,
+      "test_cost_approve_all": 6299865.0
+    }
+  }
+}
