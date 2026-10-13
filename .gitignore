@@ -4,3 +4,6 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
+data_raw/
+out.txt
+__pycache__/
