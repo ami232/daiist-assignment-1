@@ -101,7 +101,7 @@ Xt = torch.tensor(Xtr, dtype=torch.float32)
 yt = torch.tensor(y_train.values, dtype=torch.float32)
 Xv = torch.tensor(Xva, dtype=torch.float32)
 
-C = 1.0          # same regularization strength as sklearn, so the comparison is fair
+C = 1.0          
 lr = 0.5
 w = torch.zeros(Xt.shape[1], requires_grad=True)
 b = torch.zeros(1, requires_grad=True)
@@ -133,7 +133,6 @@ torch.save({"w": w.detach(), "b": b.detach()}, "models/torch_manual.pt")
 
 
 #Model 3
-
 
 import torch.nn as nn
 

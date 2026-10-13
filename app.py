@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 from sklearn.metrics import roc_auc_score
 
-# ---------- Load what train.py saved (nothing is trained here) ----------
+# ---------- Load saved train.py (no training) ----------
 with open("artifacts/config.json") as f:
     cfg = json.load(f)
 COSTE_FN, COSTE_FP = cfg["coste_fn"], cfg["coste_fp"]
@@ -24,7 +24,7 @@ sk_model = joblib.load("models/sklearn_logreg.joblib")
 manual = torch.load("models/torch_manual.pt")
 
 
-class LogReg(nn.Module):  # same class as in train.py, needed to load the weights
+class LogReg(nn.Module): 
     def __init__(self, n_in):
         super().__init__()
         self.linear = nn.Linear(n_in, 1)
@@ -76,7 +76,7 @@ def update(model_name, thr):
         })
     table = pd.DataFrame(rows)
 
-    # Confusion matrix for the selected model
+    # Confusion matrix 
     prob = PROBS[model_name]
     tn, fp, fn, tp = confusion(y_test, prob, thr)
     cm = go.Figure(go.Heatmap(
