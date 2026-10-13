@@ -1,9 +1,4 @@
 # Assignment 1 Report
-
-*Delete this italic guidance as you fill in each section. You'll be asked to
-defend any of this without your code in front of you — write only what you
-can actually explain.*
-
 - **Name**: Marta Bermejo
 - **Student ID**: 18748
 - **Email**: mbermejo.ieu2022@student.ie.edu
@@ -11,8 +6,12 @@ can actually explain.*
 
 ## Dataset
 
-*What is it, where did you get it, what does one row represent, how many
-rows/columns, and why did you pick it.*
+I picked a dataset from Kaggle for this assignment. I went into kaggle and filtered to ensure I picked a tabular dataset, and once I had that I wanted to choose a topic I felt was relevant.
+The dataset is called Car Insurance Data, and its author is called Sagnik Roy. Each row represents a client, and it has 10 thousand rows and 19 columns. 
+
+It shows information about customer behaviour, from demographics such as age and gender, to relevant topics like driving experience and income. It also includes details about their credit score, the year of the vehicle they own, whether they have had accidents or speeding violations in the past, and all of these give relevant information about what clients they have and how reliable they are. 
+
+I liked this dataset because I often discuss with my family the prices of insurance companies, whether they actually should charge as much as they do, and how they work. Understanding customer behaviour for a company of this sector seems interesting. Also, the dataset seemed to have a good structure for the assignment, with columns to clean and convert, a claims variable that I can use as objective, and classification purposes. 
 
 ## Business / real-life framing
 
