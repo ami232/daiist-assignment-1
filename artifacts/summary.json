@@ -1,0 +1,34 @@
+{
+  "split": {
+    "val_start": "2012-07-01",
+    "test_start": "2012-10-01",
+    "rows_train": 13003,
+    "rows_val": 2208,
+    "rows_test": 2168
+  },
+  "chosen": {
+    "alpha": 0.0,
+    "learning_rate": 0.3,
+    "epochs": 3000,
+    "selected_by": "validation MAE"
+  },
+  "intercepts": {
+    "sklearn": 4.552426759289931,
+    "manual_torch": 4.552426815032959,
+    "standard_torch": 4.552427291870117
+  },
+  "agreement": {
+    "manual_torch": {
+      "max_abs_coef_diff_vs_sklearn": 8.953694630164932e-07,
+      "intercept_diff_vs_sklearn": 5.574302797128894e-08,
+      "max_abs_pred_diff_bikes": 0.00047225463788436173,
+      "final_train_mse_gap_vs_optimum": 7.811776892019395e-09
+    },
+    "standard_torch": {
+      "max_abs_coef_diff_vs_sklearn": 6.590793708571852e-07,
+      "intercept_diff_vs_sklearn": 5.325801861744139e-07,
+      "max_abs_pred_diff_bikes": 0.0007579880718822096,
+      "final_train_mse_gap_vs_optimum": 7.811776892019395e-09
+    }
+  }
+}
