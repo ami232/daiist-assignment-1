@@ -1,0 +1,285 @@
+{
+  "config": {
+    "universe": "central almond (districts 01-07), <= 400 m2",
+    "target": "log(EUR/m2)",
+    "split": {
+      "selection": "Q1-Q2 -> Q3",
+      "final": "Q1-Q3 -> Q4"
+    },
+    "model": "plain linear regression (Ridge checked, no gain)",
+    "lr_manual": 0.1,
+    "epochs_manual": 4000,
+    "lr_module": 0.01,
+    "epochs_module": 100,
+    "batch_size": 256,
+    "bargain_threshold": 0.2,
+    "bargain_cap": 0.45,
+    "cost_per_visit_eur": 400,
+    "validation_mdape": 11.439168661180926,
+    "n_train": 20777,
+    "n_test": 14973,
+    "n_features": 81
+  },
+  "test_metrics": [
+    {
+      "method": "baseline: global median",
+      "RMSE_log": 0.30828028116439354,
+      "MAE_log": 0.23874577687736184,
+      "R2_log": -0.007796042064238451,
+      "MdAPE_%": 18.779824826336387,
+      "PPE10_%": 27.436051559473718,
+      "PPE20_%": 52.49449008214787,
+      "median_bias_%": -3.381374722838104,
+      "train_time_s": NaN
+    },
+    {
+      "method": "baseline: neighbourhood median",
+      "RMSE_log": 0.2483947169565459,
+      "MAE_log": 0.18733083679683316,
+      "R2_log": 0.345716655490778,
+      "MdAPE_%": 14.69187411526416,
+      "PPE10_%": 35.223402123822886,
+      "PPE20_%": 64.34916182461764,
+      "median_bias_%": -3.0591030591030632,
+      "train_time_s": NaN
+    },
+    {
+      "method": "scikit-learn LinearRegression",
+      "RMSE_log": 0.20272326167141444,
+      "MAE_log": 0.14633504253505317,
+      "R2_log": 0.5641988963404981,
+      "MdAPE_%": 11.437346327121102,
+      "PPE10_%": 44.747211647632405,
+      "PPE20_%": 75.63614506111,
+      "median_bias_%": 0.9635811548705409,
+      "train_time_s": 0.10276027600002635
+    },
+    {
+      "method": "PyTorch manual loop",
+      "RMSE_log": 0.20272309957748558,
+      "MAE_log": 0.14633494608630834,
+      "R2_log": 0.5641995932579044,
+      "MdAPE_%": 11.437556507163027,
+      "PPE10_%": 44.747211647632405,
+      "PPE20_%": 75.63614506111,
+      "median_bias_%": 0.9633422836367478,
+      "train_time_s": 3.1380554719999054
+    },
+    {
+      "method": "PyTorch nn.Module + SGD",
+      "RMSE_log": 0.2029809547129038,
+      "MAE_log": 0.14651702228856378,
+      "R2_log": 0.5630902491308794,
+      "MdAPE_%": 11.398805863954076,
+      "PPE10_%": 44.747211647632405,
+      "PPE20_%": 75.52260735991452,
+      "median_bias_%": 0.8855885172036171,
+      "train_time_s": 28.40472366599988
+    }
+  ],
+  "agreement": [
+    {
+      "method": "PyTorch manual loop",
+      "largest |\u0394 weight|": 4.912169746518202e-07,
+      "|\u0394 intercept|": 2.181256206768012e-06,
+      "median |\u0394 predicted price| %": 0.0002203508490894457,
+      "largest |\u0394 predicted price| %": 0.00035663928270590617,
+      "correlation with sklearn predictions": 0.999999999998769
+    },
+    {
+      "method": "PyTorch nn.Module + SGD",
+      "largest |\u0394 weight|": 0.0032692767391996197,
+      "|\u0394 intercept|": 0.0012080314513127632,
+      "median |\u0394 predicted price| %": 0.5832320090360721,
+      "largest |\u0394 predicted price| %": 3.304034444954951,
+      "correlation with sklearn predictions": 0.9993835978537675
+    }
+  ],
+  "validation_selection": [
+    {
+      "candidate": "baseline: global median",
+      "n_features": 0,
+      "RMSE_log": 0.31373186416135634,
+      "MAE_log": 0.24415543016730862,
+      "R2_log": -0.008093956208245823,
+      "MdAPE_%": 19.451034401577388,
+      "PPE10_%": 25.741399762752078,
+      "PPE20_%": 51.379003558718864,
+      "median_bias_%": -3.3259105534666267
+    },
+    {
+      "candidate": "baseline: neighbourhood median",
+      "n_features": 0,
+      "RMSE_log": 0.2520567773181019,
+      "MAE_log": 0.1910824031114194,
+      "R2_log": 0.34930044533724924,
+      "MdAPE_%": 14.966351353014845,
+      "PPE10_%": 34.47508896797153,
+      "PPE20_%": 63.43416370106761,
+      "median_bias_%": -3.856034718487744
+    },
+    {
+      "candidate": "linear regression, raw columns",
+      "n_features": 34,
+      "RMSE_log": 0.24148563985026877,
+      "MAE_log": 0.18311909371393592,
+      "R2_log": 0.40273595489880964,
+      "MdAPE_%": 14.416356494658933,
+      "PPE10_%": 35.5723606168446,
+      "PPE20_%": 64.48695136417555,
+      "median_bias_%": -0.924562689283237
+    },
+    {
+      "candidate": "linear regression, engineered features",
+      "n_features": 81,
+      "RMSE_log": 0.20612641885379446,
+      "MAE_log": 0.14953646344142338,
+      "R2_log": 0.5648378967423628,
+      "MdAPE_%": 11.439168661180926,
+      "PPE10_%": 44.676749703440095,
+      "PPE20_%": 74.62930011862396,
+      "median_bias_%": -0.2343609157307247
+    }
+  ],
+  "validation_ablation": [
+    {
+      "block removed": "location",
+      "n_features": 37,
+      "RMSE_log": 0.25807073055102075,
+      "MdAPE_%": 15.930067005177662,
+      "\u0394RMSE_log": 0.0519443116972263,
+      "\u0394MdAPE_pp": 4.4908983439967365,
+      "median_bias_%": -1.4195489803798589
+    },
+    {
+      "block removed": "size_extras",
+      "n_features": 66,
+      "RMSE_log": 0.22681470661108624,
+      "MdAPE_%": 13.604473470142553,
+      "\u0394RMSE_log": 0.020688287757291784,
+      "\u0394MdAPE_pp": 2.1653048089616274,
+      "median_bias_%": -0.07743430236218929
+    },
+    {
+      "block removed": "floor",
+      "n_features": 71,
+      "RMSE_log": 0.22264928429464484,
+      "MdAPE_%": 12.615603855665364,
+      "\u0394RMSE_log": 0.01652286544085038,
+      "\u0394MdAPE_pp": 1.176435194484439,
+      "median_bias_%": -0.631674099994628
+    },
+    {
+      "block removed": "building",
+      "n_features": 70,
+      "RMSE_log": 0.21053551107889326,
+      "MdAPE_%": 11.766485919665397,
+      "\u0394RMSE_log": 0.004409092225098804,
+      "\u0394MdAPE_pp": 0.3273172584844719,
+      "median_bias_%": -0.1782775955571858
+    },
+    {
+      "block removed": "trend",
+      "n_features": 80,
+      "RMSE_log": 0.20856718790190698,
+      "MdAPE_%": 11.534725877040037,
+      "\u0394RMSE_log": 0.0024407690481125233,
+      "\u0394MdAPE_pp": 0.09555721585911137,
+      "median_bias_%": -3.4297327358596696
+    }
+  ],
+  "validation_alpha": [
+    {
+      "alpha": 0,
+      "RMSE_log": 0.20612641885379446,
+      "MAE_log": 0.14953646344142338,
+      "R2_log": 0.5648378967423628,
+      "MdAPE_%": 11.439168661180926,
+      "PPE10_%": 44.676749703440095,
+      "PPE20_%": 74.62930011862396,
+      "median_bias_%": -0.2343609157307247
+    },
+    {
+      "alpha": 1,
+      "RMSE_log": 0.20612528247830897,
+      "MAE_log": 0.14953716586475696,
+      "R2_log": 0.5648426948287604,
+      "MdAPE_%": 11.440023378021547,
+      "PPE10_%": 44.72123368920522,
+      "PPE20_%": 74.65895610913404,
+      "median_bias_%": -0.237485275714322
+    },
+    {
+      "alpha": 10,
+      "RMSE_log": 0.2061169502219287,
+      "MAE_log": 0.14954536439085153,
+      "R2_log": 0.5648778750735578,
+      "MdAPE_%": 11.44850493137779,
+      "PPE10_%": 44.72123368920522,
+      "PPE20_%": 74.644128113879,
+      "median_bias_%": -0.23444508061808422
+    },
+    {
+      "alpha": 100,
+      "RMSE_log": 0.20614284472813293,
+      "MAE_log": 0.14970113926276385,
+      "R2_log": 0.5647685392784567,
+      "MdAPE_%": 11.480563032453151,
+      "PPE10_%": 44.72123368920522,
+      "PPE20_%": 74.56998813760379,
+      "median_bias_%": -0.34420552999786524
+    },
+    {
+      "alpha": 1000,
+      "RMSE_log": 0.20750189708548428,
+      "MAE_log": 0.1513798279864273,
+      "R2_log": 0.559010860297046,
+      "MdAPE_%": 11.69108690668661,
+      "PPE10_%": 44.380189798339266,
+      "PPE20_%": 73.6061684460261,
+      "median_bias_%": -0.7131019445227316
+    },
+    {
+      "alpha": 10000,
+      "RMSE_log": 0.2282621988862431,
+      "MAE_log": 0.17192214479751478,
+      "R2_log": 0.4663558607768844,
+      "MdAPE_%": 13.477067860696357,
+      "PPE10_%": 37.88552787663108,
+      "PPE20_%": 68.16429418742585,
+      "median_bias_%": -2.4066532787010098
+    }
+  ],
+  "cleaning_log": [
+    {
+      "step": "Coordinates outside Madrid",
+      "rows_before": 94815,
+      "rows_after": 94721,
+      "reason": "Fall in no neighbourhood polygon: broken coordinates (some are 400 km away)"
+    },
+    {
+      "step": "Universe: central almond",
+      "rows_before": 94721,
+      "rows_after": 45245,
+      "reason": "The investor's target market: districts 01-07"
+    },
+    {
+      "step": "One flat = one row",
+      "rows_before": 45245,
+      "rows_after": 36203,
+      "reason": "Same flat advertised by several agencies at different prices in the same quarter: keep the cheapest, the price a buyer could actually get"
+    },
+    {
+      "step": "Zero bathrooms",
+      "rows_before": 36203,
+      "rows_after": 36163,
+      "reason": "A flat for sale without a bathroom is a data-entry error"
+    },
+    {
+      "step": "Over 400 m2",
+      "rows_before": 36163,
+      "rows_after": 35750,
+      "reason": "Whole buildings and mansions: a different product, outside a buy-to-let mandate"
+    }
+  ]
+}
