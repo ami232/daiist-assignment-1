@@ -1,0 +1,164 @@
+{
+  "evaluation": {
+    "train": {
+      "scikit-learn": {
+        "RMSE": 93.4725333116649,
+        "MAE": 66.47544753060431,
+        "R2": 0.662006981888573,
+        "mean_error": 2.070371696722193e-14,
+        "negative_predictions": 976
+      },
+      "Manual PyTorch": {
+        "RMSE": 93.47253603108754,
+        "MAE": 66.47545081158337,
+        "R2": 0.6620069622219213,
+        "mean_error": 4.5604133319691546e-14,
+        "negative_predictions": 976
+      },
+      "Standard PyTorch": {
+        "RMSE": 93.47253603108754,
+        "MAE": 66.47545081158337,
+        "R2": 0.6620069622219213,
+        "mean_error": 3.469271491804756e-14,
+        "negative_predictions": 976
+      },
+      "Training-mean baseline": {
+        "RMSE": 160.77930558620048,
+        "MAE": 126.07792497722161,
+        "R2": 0.0,
+        "mean_error": -2.0144157049188904e-14,
+        "negative_predictions": 0
+      }
+    },
+    "validation": {
+      "scikit-learn": {
+        "RMSE": 143.45759106840313,
+        "MAE": 107.52707770261367,
+        "R2": 0.6144944236388971,
+        "mean_error": -14.464601841452504,
+        "negative_predictions": 0
+      },
+      "Manual PyTorch": {
+        "RMSE": 143.45759175306932,
+        "MAE": 107.5270767257211,
+        "R2": 0.6144944199591664,
+        "mean_error": -14.46460855020666,
+        "negative_predictions": 0
+      },
+      "Standard PyTorch": {
+        "RMSE": 143.45759175306932,
+        "MAE": 107.5270767257211,
+        "R2": 0.6144944199591664,
+        "mean_error": -14.46460855020666,
+        "negative_predictions": 0
+      },
+      "Training-mean baseline": {
+        "RMSE": 260.65015815946236,
+        "MAE": 197.82937894348797,
+        "R2": -0.27262245596338075,
+        "mean_error": -120.63935722887808,
+        "negative_predictions": 0
+      }
+    },
+    "test": {
+      "scikit-learn": {
+        "RMSE": 134.92762482225976,
+        "MAE": 103.36178184148518,
+        "R2": 0.5519967492364335,
+        "mean_error": 14.894361029958906,
+        "negative_predictions": 0
+      },
+      "Manual PyTorch": {
+        "RMSE": 134.9276254776283,
+        "MAE": 103.36178105045472,
+        "R2": 0.5519967448843635,
+        "mean_error": 14.894355717693232,
+        "negative_predictions": 0
+      },
+      "Standard PyTorch": {
+        "RMSE": 134.92762547762834,
+        "MAE": 103.36178105045474,
+        "R2": 0.5519967448843633,
+        "mean_error": 14.894355717693227,
+        "negative_predictions": 0
+      },
+      "Training-mean baseline": {
+        "RMSE": 208.05625493551065,
+        "MAE": 156.56524998630744,
+        "R2": -0.06522406231531486,
+        "mean_error": -51.48304372280824,
+        "negative_predictions": 0
+      }
+    }
+  },
+  "feature_experiment_validation": {
+    "Separate hour and season": {
+      "features": 35,
+      "RMSE": 150.0702806690874,
+      "MAE": 115.29360566759301,
+      "R2": 0.5781354948251163,
+      "mean_error": -13.315308087906057,
+      "negative_predictions": 0
+    },
+    "Season \u00d7 hour": {
+      "features": 104,
+      "RMSE": 143.45759106840313,
+      "MAE": 107.52707770261367,
+      "R2": 0.6144944236388971,
+      "mean_error": -14.464601841452504,
+      "negative_predictions": 0
+    }
+  },
+  "test_prediction_max_difference": {
+    "scikit-learn / Manual PyTorch": 0.00029071011908854416,
+    "scikit-learn / Standard PyTorch": 0.00029071011911696587,
+    "Manual PyTorch / Standard PyTorch": 1.1368683772161603e-13
+  },
+  "training_objective": {
+    "scikit-learn": 0.34755157996203057,
+    "Manual PyTorch": 0.3475515799621067,
+    "Standard PyTorch": 0.3475515799621067
+  },
+  "training_seconds": {
+    "scikit-learn": 0.02581787499366328,
+    "Manual PyTorch": 3.1265178750036284,
+    "Standard PyTorch": 5.763106583006447
+  },
+  "split": {
+    "train": {
+      "rows": 13003,
+      "start": "2011-01-01 00:00:00",
+      "end": "2012-06-30 23:00:00"
+    },
+    "validation": {
+      "rows": 2208,
+      "start": "2012-07-01 00:00:00",
+      "end": "2012-09-30 23:00:00"
+    },
+    "test": {
+      "rows": 2168,
+      "start": "2012-10-01 00:00:00",
+      "end": "2012-12-31 23:00:00"
+    }
+  },
+  "data_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "settings": {
+    "regularization_lambda": 0.01,
+    "sklearn_alpha": 130.03,
+    "learning_rate": 0.05,
+    "feature_count": 104
+  },
+  "data_quality": {
+    "rows": 17379,
+    "missing_cells": 0,
+    "duplicate_hours": 0,
+    "unrecorded_hours": 165
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "torch": "2.11.0",
+    "scikit-learn": "1.9.1",
+    "gradio": "6.28.0"
+  }
+}
