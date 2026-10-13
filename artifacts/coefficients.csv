@@ -1,0 +1,41 @@
+feature,group,description,sklearn,manual,module
+age_W,profile,Age in years (woman),-0.0455985727004886,-0.045598551630973816,-0.045598551630973816
+date_freq_W,profile,"How often they go on dates (1 = several times a week, 7 = almost never) (woman)",-0.0328874020401279,-0.03288739174604416,-0.032887380570173264
+go_out_W,profile,"How often they go out at all (1 = several times a week, 7 = almost never) (woman)",-0.04215842100752928,-0.04215840995311737,-0.042158398777246475
+exp_happy_W,profile,Expected happiness with the people they will meet (1-10) (woman),0.08558914194625239,0.08558912575244904,0.08558914065361023
+goal_serious_W,profile,Main goal: a serious relationship (woman),-0.03175790823107276,-0.03175788372755051,-0.031757891178131104
+goal_get_date_W,profile,Main goal: to get a date (woman),-0.04937904917116264,-0.04937902092933655,-0.049379024654626846
+goal_fun_night_W,profile,Main goal: a fun night out (woman),0.053017863742151734,0.05301784723997116,0.05301782116293907
+self_attr_W,profile,Self-rated attractiveness (1-10) (woman),0.055621408955270096,0.05562140420079231,0.05562141165137291
+self_sinc_W,profile,Self-rated sincerity (1-10) (woman),-0.016693723225052932,-0.016693728044629097,-0.016693737357854843
+self_intel_W,profile,Self-rated intelligence (1-10) (woman),-0.016645718218304698,-0.01664569228887558,-0.01664569042623043
+self_fun_W,profile,Self-rated fun (1-10) (woman),0.01087979113019926,0.01087979320436716,0.010879795998334885
+self_amb_W,profile,Self-rated ambition (1-10) (woman),-0.06773300549700653,-0.06773301213979721,-0.06773301959037781
+wants_looks_W,profile,Share of the 100 preference points given to 'attractive' (woman),-0.021769442797785286,-0.021769458428025246,-0.021769460290670395
+survey_missing_W,profile,Did not fill in the sign-up survey (answers imputed) (woman),0.0012578521729874558,0.0012578609166666865,0.0012578732566908002
+age_M,profile,Age in years (man),-0.0676841332563577,-0.06768414378166199,-0.06768415868282318
+date_freq_M,profile,"How often they go on dates (1 = several times a week, 7 = almost never) (man)",-0.09440899589247609,-0.09440898150205612,-0.09440898150205612
+go_out_M,profile,"How often they go out at all (1 = several times a week, 7 = almost never) (man)",-0.1065995846340369,-0.10659955441951752,-0.10659956932067871
+exp_happy_M,profile,Expected happiness with the people they will meet (1-10) (man),-0.0009752908824901487,-0.0009752984624356031,-0.0009753017220646143
+goal_serious_M,profile,Main goal: a serious relationship (man),0.005928802309899618,0.0059288181364536285,0.005928815342485905
+goal_get_date_M,profile,Main goal: to get a date (man),1.012213497374432e-05,1.0119309081346728e-05,1.0101756743097212e-05
+goal_fun_night_M,profile,Main goal: a fun night out (man),-0.02102348551896913,-0.021023480221629143,-0.021023493260145187
+self_attr_M,profile,Self-rated attractiveness (1-10) (man),0.014552211757664068,0.01455218717455864,0.014552203007042408
+self_sinc_M,profile,Self-rated sincerity (1-10) (man),0.006754284462695998,0.006754260044544935,0.006754255387932062
+self_intel_M,profile,Self-rated intelligence (1-10) (man),-0.020071198998447077,-0.020071180537343025,-0.02007119543850422
+self_fun_M,profile,Self-rated fun (1-10) (man),0.11120651989219324,0.11120650172233582,0.11120650172233582
+self_amb_M,profile,Self-rated ambition (1-10) (man),0.020983920275912588,0.020983897149562836,0.020983895286917686
+wants_looks_M,profile,Share of the 100 preference points given to 'attractive' (man),0.02869761918103915,0.02869761362671852,0.028697608038783073
+survey_missing_M,profile,Did not fill in the sign-up survey (answers imputed) (man),0.017765445164071636,0.017765436321496964,0.01776542142033577
+interest_corr,pair,Correlation of the two people's 12 interest ratings,0.03395195831521618,0.033951885998249054,0.03395188972353935
+interest_gap,pair,Mean absolute difference of the 12 interest ratings,-0.0007383395947984856,-0.0007383493357338011,-0.0007383355987258255
+age_gap,pair,His age minus her age,-0.023656997510133528,-0.023656968027353287,-0.02365698106586933
+age_gap_abs,pair,Absolute age difference,-0.08093704967414658,-0.08093701303005219,-0.08093702048063278
+same_field,pair,Same field of study,0.08368618083675419,0.08368620276451111,0.08368618786334991
+looks_gap,pair,His self-rated looks minus hers,-0.033488404379570035,-0.03348841518163681,-0.03348841145634651
+pref_fit_W,pair,Partner's self-ratings weighted by what this person says matters (1-10) (woman),0.053632988898340984,0.0536329448223114,0.0536329559981823
+pref_fit_M,pair,Partner's self-ratings weighted by what this person says matters (1-10) (man),0.04151428537494303,0.041514262557029724,0.04151424765586853
+same_race,pair,Same race/ethnicity,-0.05493237451756225,-0.05493241548538208,-0.05493241548538208
+race_mismatch_W,pair,Different race x how much this person says same race matters (0-10) (woman),-0.07652018364380375,-0.07652018964290619,-0.07652019709348679
+race_mismatch_M,pair,Different race x how much this person says same race matters (0-10) (man),-0.07769967088940169,-0.0776997059583664,-0.0776997059583664
+event_size,event,Number of men at the event (partners each woman meets),-0.04180353265669152,-0.041803501546382904,-0.0418035089969635

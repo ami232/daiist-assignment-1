@@ -1,5 +1,8 @@
 # Assignment 1
 
+For this project's file layout, notebook dashboard, run commands and submission
+steps, see [START_HERE.md](START_HERE.md). The assignment brief follows below.
+
 Pick a tabular dataset, frame a realistic business problem it would serve,
 and train the **same** simple model (linear regression for a continuous
 target, logistic regression for a binary one) three ways: scikit-learn, a
