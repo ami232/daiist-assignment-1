@@ -1,0 +1,42 @@
+{
+  "test_results": [
+    {
+      "model": "baseline",
+      "accuracy@0.5": 0.5899497487437186,
+      "roc_auc": 0.5,
+      "log_loss": 0.6768907064298859,
+      "threshold": 0.05,
+      "cost@0.5": 61200,
+      "cost@threshold": 44025
+    },
+    {
+      "model": "sklearn",
+      "accuracy@0.5": 0.7279731993299833,
+      "roc_auc": 0.8094960064283143,
+      "log_loss": 0.5226233861085008,
+      "threshold": 0.29,
+      "cost@0.5": 29400,
+      "cost@threshold": 29950
+    },
+    {
+      "model": "manual_torch",
+      "accuracy@0.5": 0.7273031825795645,
+      "roc_auc": 0.8093487063574246,
+      "log_loss": 0.5228763818740845,
+      "threshold": 0.3,
+      "cost@0.5": 29525,
+      "cost@threshold": 29825
+    },
+    {
+      "model": "standard_torch",
+      "accuracy@0.5": 0.7273031825795645,
+      "roc_auc": 0.8093489383260403,
+      "log_loss": 0.5228763818740845,
+      "threshold": 0.3,
+      "cost@0.5": 29525,
+      "cost@threshold": 29825
+    }
+  ],
+  "never_ask_cost": 61200,
+  "always_ask_cost": 44025
+}
