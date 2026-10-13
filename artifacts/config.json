@@ -1,0 +1,66 @@
+{
+  "feature_cols": [
+    "AGE",
+    "DRIVING_EXPERIENCE",
+    "EDUCATION",
+    "INCOME",
+    "CREDIT_SCORE",
+    "VEHICLE_OWNERSHIP",
+    "VEHICLE_YEAR",
+    "MARRIED",
+    "CHILDREN",
+    "ANNUAL_MILEAGE",
+    "VEHICLE_TYPE",
+    "SPEEDING_VIOLATIONS",
+    "DUIS",
+    "PAST_ACCIDENTS",
+    "POSTAL_CODE_21217",
+    "POSTAL_CODE_32765",
+    "POSTAL_CODE_92101",
+    "ANY_INCIDENT"
+  ],
+  "medians": {
+    "CREDIT_SCORE": 0.5236933675457349,
+    "ANNUAL_MILEAGE": 12000.0
+  },
+  "ordinal_maps": {
+    "AGE": {
+      "16-25": 0,
+      "26-39": 1,
+      "40-64": 2,
+      "65+": 3
+    },
+    "DRIVING_EXPERIENCE": {
+      "0-9y": 0,
+      "10-19y": 1,
+      "20-29y": 2,
+      "30y+": 3
+    },
+    "EDUCATION": {
+      "none": 0,
+      "high school": 1,
+      "university": 2
+    },
+    "INCOME": {
+      "poverty": 0,
+      "working class": 1,
+      "middle class": 2,
+      "upper class": 3
+    }
+  },
+  "binary_maps": {
+    "VEHICLE_YEAR": {
+      "before 2015": 0,
+      "after 2015": 1
+    },
+    "VEHICLE_TYPE": {
+      "sedan": 0,
+      "sports car": 1
+    }
+  },
+  "train_claim_rate": 0.31333333253860474,
+  "cost_fn": 500,
+  "cost_fp": 100,
+  "threshold_theory": 0.16666666666666666,
+  "threshold_best_val": 0.255
+}
