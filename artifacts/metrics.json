@@ -1,0 +1,112 @@
+{
+  "features": [
+    "featured",
+    "update_anchor",
+    "joined_mid_season",
+    "prior_seasons",
+    "stuck_featured",
+    "apps_relative",
+    "apps_relative_change",
+    "cold_open_per_episode",
+    "update_per_episode",
+    "second_half_share",
+    "log_characters",
+    "log_impressions",
+    "cast_size",
+    "recent_renewal_rate"
+  ],
+  "target": "renewed",
+  "baseline_rate": 0.7622222222222222,
+  "chosen_C": 10.0,
+  "chosen_lr": 0.5,
+  "chosen_threshold": 0.66,
+  "final_model_trained_on": "train + val (seasons 1-37)",
+  "cost_missed_departure": 3.0,
+  "cost_false_alarm": 1.0,
+  "val_log_loss_by_C": {
+    "0.01": 0.4123564487780739,
+    "0.1": 0.37266353204422936,
+    "1.0": 0.36164784480766865,
+    "10.0": 0.36044475832352335
+  },
+  "metrics": {
+    "test": {
+      "threshold_0.5": {
+        "baseline": {
+          "accuracy": 0.8661,
+          "balanced_accuracy": 0.5,
+          "recall_departures": 0.0,
+          "precision_departures": 0.0,
+          "log_loss": 0.4274,
+          "cost": 51.0,
+          "roc_auc": 0.5
+        },
+        "sklearn": {
+          "accuracy": 0.8031,
+          "balanced_accuracy": 0.4636,
+          "recall_departures": 0.0,
+          "precision_departures": 0.0,
+          "log_loss": 0.4692,
+          "cost": 59.0,
+          "roc_auc": 0.623
+        },
+        "manual_torch": {
+          "accuracy": 0.8031,
+          "balanced_accuracy": 0.4636,
+          "recall_departures": 0.0,
+          "precision_departures": 0.0,
+          "log_loss": 0.4692,
+          "cost": 59.0,
+          "roc_auc": 0.623
+        },
+        "torch_module": {
+          "accuracy": 0.8031,
+          "balanced_accuracy": 0.4636,
+          "recall_departures": 0.0,
+          "precision_departures": 0.0,
+          "log_loss": 0.4692,
+          "cost": 59.0,
+          "roc_auc": 0.623
+        }
+      },
+      "chosen_threshold": {
+        "baseline": {
+          "accuracy": 0.8661,
+          "balanced_accuracy": 0.5,
+          "recall_departures": 0.0,
+          "precision_departures": 0.0,
+          "log_loss": 0.4274,
+          "cost": 51.0,
+          "roc_auc": 0.5
+        },
+        "sklearn": {
+          "accuracy": 0.6772,
+          "balanced_accuracy": 0.6644,
+          "recall_departures": 0.6471,
+          "precision_departures": 0.2391,
+          "log_loss": 0.4692,
+          "cost": 53.0,
+          "roc_auc": 0.623
+        },
+        "manual_torch": {
+          "accuracy": 0.6693,
+          "balanced_accuracy": 0.6599,
+          "recall_departures": 0.6471,
+          "precision_departures": 0.234,
+          "log_loss": 0.4692,
+          "cost": 54.0,
+          "roc_auc": 0.623
+        },
+        "torch_module": {
+          "accuracy": 0.6693,
+          "balanced_accuracy": 0.6599,
+          "recall_departures": 0.6471,
+          "precision_departures": 0.234,
+          "log_loss": 0.4692,
+          "cost": 54.0,
+          "roc_auc": 0.623
+        }
+      }
+    }
+  }
+}
