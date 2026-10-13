@@ -1,0 +1,191 @@
+{
+  "n_features": 67,
+  "feature_names": [
+    "num__Overall Qual",
+    "num__Overall Cond",
+    "num__log_TotalSF",
+    "num__log_GrLivArea",
+    "num__log_LotArea",
+    "num__log_TotalPorchSF",
+    "num__log_MasVnrArea",
+    "num__BsmtFinType1SF",
+    "num__Lot Frontage",
+    "num__frontage_missing",
+    "num__TotalBaths",
+    "num__Bedroom AbvGr",
+    "num__Fireplaces",
+    "num__Garage Cars",
+    "num__HouseAge",
+    "num__YearsSinceRemod",
+    "num__Exter Qual_ord",
+    "num__Kitchen Qual_ord",
+    "num__Bsmt Qual_ord",
+    "num__Heating QC_ord",
+    "num__Fireplace Qu_ord",
+    "num__Garage Qual_ord",
+    "num__has_garage",
+    "num__has_basement",
+    "num__has_fireplace",
+    "num__has_2nd_floor",
+    "num__Qual_x_logSF",
+    "cat__Neighborhood_Blmngtn",
+    "cat__Neighborhood_BrDale",
+    "cat__Neighborhood_BrkSide",
+    "cat__Neighborhood_ClearCr",
+    "cat__Neighborhood_CollgCr",
+    "cat__Neighborhood_Crawfor",
+    "cat__Neighborhood_Edwards",
+    "cat__Neighborhood_Gilbert",
+    "cat__Neighborhood_IDOTRR",
+    "cat__Neighborhood_MeadowV",
+    "cat__Neighborhood_Mitchel",
+    "cat__Neighborhood_NAmes",
+    "cat__Neighborhood_NWAmes",
+    "cat__Neighborhood_NoRidge",
+    "cat__Neighborhood_NridgHt",
+    "cat__Neighborhood_OldTown",
+    "cat__Neighborhood_SWISU",
+    "cat__Neighborhood_Sawyer",
+    "cat__Neighborhood_SawyerW",
+    "cat__Neighborhood_Somerst",
+    "cat__Neighborhood_StoneBr",
+    "cat__Neighborhood_Timber",
+    "cat__Neighborhood_Veenker",
+    "cat__Neighborhood_infrequent_sklearn",
+    "cat__Bldg Type_1Fam",
+    "cat__Bldg Type_2fmCon",
+    "cat__Bldg Type_Duplex",
+    "cat__Bldg Type_Twnhs",
+    "cat__Bldg Type_TwnhsE",
+    "cat__MS Zoning_FV",
+    "cat__MS Zoning_RH",
+    "cat__MS Zoning_RL",
+    "cat__MS Zoning_RM",
+    "cat__Central Air_N",
+    "cat__Central Air_Y",
+    "cat__Foundation_BrkTil",
+    "cat__Foundation_CBlock",
+    "cat__Foundation_PConc",
+    "cat__Foundation_Slab",
+    "cat__Foundation_infrequent_sklearn"
+  ],
+  "split_sizes": {
+    "train": 1538,
+    "val": 558,
+    "test": 301
+  },
+  "alpha": 3,
+  "lambda": 0.0019505851755526658,
+  "epochs": 50000,
+  "lr": {
+    "manual_torch": 0.1,
+    "module_torch": 0.1
+  },
+  "tuning": {
+    "alpha_val_mae": {
+      "0.1": 11970.074030285481,
+      "0.3": 11970.453169642711,
+      "1": 11974.196870826549,
+      "3": 11965.42528258012,
+      "10": 11974.598089296665,
+      "30": 12114.881681178424,
+      "100": 12582.421787490144
+    },
+    "manual_lr_val_mae": {
+      "0.003": 11978.039480367612,
+      "0.01": 11971.70589760718,
+      "0.03": 11966.083762970473,
+      "0.1": 11965.615349815827,
+      "0.3": null
+    },
+    "module_lr_val_mae": {
+      "0.003": 11978.03626232079,
+      "0.01": 11971.702025929659,
+      "0.03": 11966.084215389785,
+      "0.1": 11965.6189656138,
+      "0.3": null
+    }
+  },
+  "baseline_price": 157950.0,
+  "metrics": {
+    "val": {
+      "sklearn": {
+        "MAE ($)": 11965.42528258012,
+        "RMSE ($)": 16956.027336560113,
+        "MAPE (%)": 6.94923821409294,
+        "Within 10% (%)": 78.49462365591397,
+        "Bias ($)": 1208.028168481679
+      },
+      "manual_torch": {
+        "MAE ($)": 11965.617572524641,
+        "RMSE ($)": 16956.11679591659,
+        "MAPE (%)": 6.949336224818148,
+        "Within 10% (%)": 78.49462365591397,
+        "Bias ($)": 1208.361832157258
+      },
+      "module_torch": {
+        "MAE ($)": 11965.6189656138,
+        "RMSE ($)": 16956.12009796274,
+        "MAPE (%)": 6.949337475319288,
+        "Within 10% (%)": 78.49462365591397,
+        "Bias ($)": 1208.358184923835
+      },
+      "baseline": {
+        "MAE ($)": 53831.32616487454,
+        "RMSE ($)": 78177.40421653712,
+        "MAPE (%)": 29.260747952886017,
+        "Within 10% (%)": 22.043010752688172,
+        "Bias ($)": -23009.939068100266
+      }
+    },
+    "test": {
+      "sklearn": {
+        "MAE ($)": 12421.521647449088,
+        "RMSE ($)": 17696.397931259984,
+        "MAPE (%)": 7.466718473583132,
+        "Within 10% (%)": 75.74750830564784,
+        "Bias ($)": -1484.3521958599804
+      },
+      "manual_torch": {
+        "MAE ($)": 12421.601354858803,
+        "RMSE ($)": 17696.468555881875,
+        "MAPE (%)": 7.46684022025991,
+        "Within 10% (%)": 75.74750830564784,
+        "Bias ($)": -1483.6290749584718
+      },
+      "module_torch": {
+        "MAE ($)": 12421.604287790698,
+        "RMSE ($)": 17696.470723321992,
+        "MAPE (%)": 7.46684156728725,
+        "Within 10% (%)": 75.74750830564784,
+        "Bias ($)": -1483.6307101328903
+      },
+      "baseline": {
+        "MAE ($)": 47916.33887043189,
+        "RMSE ($)": 68365.32070883058,
+        "MAPE (%)": 28.147235058047016,
+        "Within 10% (%)": 22.591362126245848,
+        "Bias ($)": -14945.063122923499
+      }
+    }
+  },
+  "agreement_test": {
+    "manual_torch vs sklearn": {
+      "max prediction gap (%)": 0.010328755554689373,
+      "max coefficient gap": 0.0015343531133034105
+    },
+    "module_torch vs sklearn": {
+      "max prediction gap (%)": 0.010328755554689373,
+      "max coefficient gap": 0.0015372141362526293
+    },
+    "manual_torch vs module_torch": {
+      "max prediction gap (%)": 9.5367431640625e-05,
+      "max coefficient gap": 2.86102294921875e-06
+    }
+  },
+  "train_objective": {
+    "sklearn": 0.007695731616518636,
+    "manual_torch": 0.00769573526867952,
+    "module_torch": 0.007695735282376592
+  }
+}
