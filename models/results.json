@@ -1,0 +1,37 @@
+{
+  "C": 0.1,
+  "lambda": 0.001774937877174299,
+  "lr": 1.0,
+  "epochs": 5000,
+  "n_features": 27,
+  "results": {
+    "baseline": {
+      "roc_auc": 0.5,
+      "log_loss": null,
+      "accuracy@0.5": 0.7346,
+      "threshold": null,
+      "test_cost": 68816
+    },
+    "sklearn": {
+      "roc_auc": 0.8422,
+      "log_loss": 0.4199,
+      "accuracy@0.5": 0.8006,
+      "threshold": 0.23,
+      "test_cost": 27742
+    },
+    "manual_pytorch": {
+      "roc_auc": 0.8422,
+      "log_loss": 0.4199,
+      "accuracy@0.5": 0.7999,
+      "threshold": 0.23,
+      "test_cost": 27558
+    },
+    "nn_pytorch": {
+      "roc_auc": 0.8422,
+      "log_loss": 0.4199,
+      "accuracy@0.5": 0.7999,
+      "threshold": 0.23,
+      "test_cost": 27558
+    }
+  }
+}
