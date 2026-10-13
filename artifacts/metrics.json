@@ -1,0 +1,50 @@
+{
+  "best_lambda": 0.001,
+  "validation_log_loss": {
+    "0.0001": 0.46877537013417975,
+    "0.001": 0.4679537220387729,
+    "0.01": 0.4684649274175737,
+    "0.1": 0.4754702768103764
+  },
+  "best_threshold": 0.17,
+  "learning_rate": 0.5,
+  "epochs": 30000,
+  "loss_if_default": 0.6,
+  "profit_if_repaid": 0.15,
+  "test_results": {
+    "baseline_approve_all": {
+      "roc_auc": 0.5,
+      "log_loss": 0.5034135919403685,
+      "accuracy_at_0.5": 0.7992946457197819,
+      "cost_usd": 17301165.0,
+      "rejection_rate": 0.0
+    },
+    "sklearn": {
+      "roc_auc": 0.6656073284928007,
+      "log_loss": 0.4749216630520528,
+      "accuracy_at_0.5": 0.7988671582772257,
+      "cost_usd": 12527550.0,
+      "rejection_rate": 0.48081650101528267
+    },
+    "torch_manual": {
+      "roc_auc": 0.6656073996896671,
+      "log_loss": 0.47492166194000196,
+      "accuracy_at_0.5": 0.7988671582772257,
+      "cost_usd": 12527550.0,
+      "rejection_rate": 0.48081650101528267
+    },
+    "torch_module": {
+      "roc_auc": 0.6656073996896671,
+      "log_loss": 0.47492166194000207,
+      "accuracy_at_0.5": 0.7988671582772257,
+      "cost_usd": 12527550.0,
+      "rejection_rate": 0.48081650101528267
+    }
+  },
+  "agreement": {
+    "max_abs_prob_diff_manual_vs_sklearn": 7.777625975480262e-07,
+    "max_abs_prob_diff_module_vs_sklearn": 7.777625976590485e-07,
+    "max_abs_prob_diff_manual_vs_module": 2.220446049250313e-16,
+    "max_abs_coef_diff_manual_vs_sklearn": 9.867151626208326e-06
+  }
+}
