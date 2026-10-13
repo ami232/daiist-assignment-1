@@ -2,7 +2,7 @@
 
 - **Name**: Javier Comin
 - **Student ID**: 20106
-- **Email**: jcomin.ieu2022@student
+- **Email**: jcomin.ieu2022@student.ie.edu
 - **Group**: BBADBA 5A
 
 ## Dataset
@@ -68,5 +68,4 @@ At first they did not agree: coefficients differed by up to 0.28 (manual) and 2.
 - **Fairness only partly handled.** AGE and EDUCATION can still act as proxies; I would audit flag and error rates by group.
 
 ## Generative AI use disclosure
-
-*Per the syllabus AI Policy: what you used and how, or "no AI content used."*
+I used AI to help explain the project and track errors. I also used it to fix some mistakes when I didn't know what was going wrong, and to check that the entire project was complete before submitting it.
