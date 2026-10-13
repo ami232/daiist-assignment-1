@@ -1,0 +1,163 @@
+{
+  "best_C": 100.0,
+  "lambda": 2.3668639053254436e-06,
+  "best_manual_lr": 1.0,
+  "best_standard_lr": 0.01,
+  "manual_epochs": 3000,
+  "standard_epochs": 200,
+  "batch_size": 256,
+  "offer_cost": 100.0,
+  "churn_cost": 500.0,
+  "train_prevalence": 0.26532544378698225,
+  "n_features": 26,
+  "feature_names": [
+    "tenure",
+    "log_tenure",
+    "MonthlyCharges",
+    "log_total_charges",
+    "price_change",
+    "n_addons",
+    "n_protection",
+    "SeniorCitizen",
+    "has_partner",
+    "has_dependents",
+    "paperless",
+    "is_new_customer",
+    "fiber_month_to_month",
+    "single_service",
+    "Contract_One year",
+    "Contract_Two year",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check",
+    "MultipleLines_Yes",
+    "tenure_band_13-24m",
+    "tenure_band_25-48m",
+    "tenure_band_49-72m",
+    "tenure_band_7-12m"
+  ],
+  "tuning_val_log_loss": {
+    "C": {
+      "0.01": 0.41061679013819297,
+      "0.03": 0.40500037741425404,
+      "0.1": 0.40149332859991643,
+      "0.3": 0.39961487077954494,
+      "1.0": 0.39865331351355354,
+      "3.0": 0.39836596669053975,
+      "10.0": 0.3982798988858735,
+      "30.0": 0.3982588086600239,
+      "100.0": 0.39825204076683324
+    },
+    "manual_lr": {
+      "0.05": 0.40429553389549255,
+      "0.2": 0.4002680480480194,
+      "0.5": 0.39877697825431824,
+      "1.0": 0.3983437120914459
+    },
+    "standard_lr": {
+      "0.001": 0.4126754701137543,
+      "0.003": 0.4043228328227997,
+      "0.01": 0.4002281725406647
+    }
+  },
+  "test_metrics": {
+    "sklearn": {
+      "roc_auc": 0.8347283577462605,
+      "pr_auc": 0.6463471017204474,
+      "log_loss": 0.42674577254566265,
+      "threshold": 0.17,
+      "accuracy": 0.6855926188786373,
+      "precision": 0.4521497919556172,
+      "recall": 0.8716577540106952,
+      "f1": 0.5954337899543379,
+      "offers_sent": 721,
+      "business_cost": 96100.0,
+      "cost_per_customer": 68.20440028388929
+    },
+    "manual_torch": {
+      "roc_auc": 0.83476969180294,
+      "pr_auc": 0.6464264436678725,
+      "log_loss": 0.4267362356185913,
+      "threshold": 0.17,
+      "accuracy": 0.6863023420865862,
+      "precision": 0.4527777777777778,
+      "recall": 0.8716577540106952,
+      "f1": 0.5959780621572212,
+      "offers_sent": 720,
+      "business_cost": 96000.0,
+      "cost_per_customer": 68.13342796309439
+    },
+    "standard_torch": {
+      "roc_auc": 0.8341574310883775,
+      "pr_auc": 0.6455766684960109,
+      "log_loss": 0.42683327198028564,
+      "threshold": 0.17,
+      "accuracy": 0.6891412349183819,
+      "precision": 0.4554317548746518,
+      "recall": 0.8743315508021391,
+      "f1": 0.5989010989010989,
+      "offers_sent": 718,
+      "business_cost": 95300.0,
+      "cost_per_customer": 67.63662171753016
+    },
+    "baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654364797728886,
+      "log_loss": 0.5786668716736688,
+      "threshold": 0.0,
+      "accuracy": 0.2654364797728886,
+      "precision": 0.2654364797728886,
+      "recall": 1.0,
+      "f1": 0.4195176668536175,
+      "offers_sent": 1409,
+      "business_cost": 140900.0,
+      "cost_per_customer": 100.0
+    },
+    "baseline_contact_none": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654364797728886,
+      "log_loss": 0.5786668716736688,
+      "threshold": 1.0,
+      "accuracy": 0.7345635202271115,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "offers_sent": 0,
+      "business_cost": 187000.0,
+      "cost_per_customer": 132.71823988644428
+    },
+    "rule_month_to_month": {
+      "roc_auc": 0.7099666744168023,
+      "pr_auc": 0.39259111202417485,
+      "log_loss": 5.856965978164545,
+      "threshold": 0.5,
+      "accuracy": 0.6366217175301633,
+      "precision": 0.4122137404580153,
+      "recall": 0.8663101604278075,
+      "f1": 0.5586206896551724,
+      "offers_sent": 786,
+      "business_cost": 103600.0,
+      "cost_per_customer": 73.52732434350604
+    }
+  },
+  "agreement": {
+    "max_abs_prob_diff_sklearn_vs_manual": 0.03338306508990785,
+    "max_abs_prob_diff_sklearn_vs_standard": 0.07444741688701173,
+    "max_abs_coef_diff_sklearn_vs_manual": 0.07974579945310395,
+    "max_abs_coef_diff_sklearn_vs_standard": 0.5229331051815895,
+    "coef_corr_sklearn_vs_manual": 0.9989395406809748,
+    "coef_corr_sklearn_vs_standard": 0.9455108810004684,
+    "intercepts": {
+      "sklearn": -1.6198877689785647,
+      "manual_torch": -1.5998891592025757,
+      "standard_torch": -1.228328824043274
+    },
+    "train_objective": {
+      "sklearn": 0.40815444057043265,
+      "manual_torch": 0.40815868973731995,
+      "standard_torch": 0.4085145592689514
+    }
+  }
+}
