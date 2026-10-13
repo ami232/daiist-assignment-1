@@ -1,0 +1,149 @@
+{
+  "test_metrics": {
+    "sklearn": {
+      "roc_auc": 0.8400410757188251,
+      "pr_auc": 0.6545597004651172,
+      "threshold": 0.28,
+      "precision": 0.5203539823008849,
+      "recall": 0.786096256684492,
+      "f1": 0.6261980830670927,
+      "n_contacted": 565,
+      "net_gain": 53450.38,
+      "net_gain_at_0.5": 39188.86
+    },
+    "torch_manual": {
+      "roc_auc": 0.8400410757188251,
+      "pr_auc": 0.6545597004651172,
+      "threshold": 0.28,
+      "precision": 0.5203539823008849,
+      "recall": 0.786096256684492,
+      "f1": 0.6261980830670927,
+      "n_contacted": 565,
+      "net_gain": 53450.38,
+      "net_gain_at_0.5": 39188.86
+    },
+    "torch_nn": {
+      "roc_auc": 0.8400410757188251,
+      "pr_auc": 0.6545597004651172,
+      "threshold": 0.28,
+      "precision": 0.5203539823008849,
+      "recall": 0.786096256684492,
+      "f1": 0.6261980830670927,
+      "n_contacted": 565,
+      "net_gain": 53450.38,
+      "net_gain_at_0.5": 39188.86
+    },
+    "baseline_contact_nobody": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654364797728886,
+      "threshold": null,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_contacted": 0,
+      "net_gain": 0.0,
+      "net_gain_at_0.5": null
+    },
+    "baseline_contact_everyone": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654364797728886,
+      "threshold": null,
+      "precision": 0.2654364797728886,
+      "recall": 1.0,
+      "f1": 0.4195176668536175,
+      "n_contacted": 1409,
+      "net_gain": 30941.299999999996,
+      "net_gain_at_0.5": null
+    }
+  },
+  "agreement": {
+    "sklearn_vs_torch_manual": {
+      "max_abs_coef_diff": 4.6626376772884726e-06,
+      "max_abs_test_proba_diff": 3.9581555261181123e-07,
+      "roc_auc_diff": 0.0
+    },
+    "sklearn_vs_torch_nn": {
+      "max_abs_coef_diff": 4.492933184829795e-06,
+      "max_abs_test_proba_diff": 4.175942965312096e-07,
+      "roc_auc_diff": 0.0
+    },
+    "torch_manual_vs_torch_nn": {
+      "max_abs_coef_diff": 3.23610456431922e-07,
+      "max_abs_test_proba_diff": 1.1980093655994395e-07,
+      "roc_auc_diff": 0.0
+    }
+  },
+  "final_penalised_train_loss": {
+    "sklearn": 0.40811998164772645,
+    "torch_manual": 0.40811998164769175,
+    "torch_nn": 0.40811998164769414
+  },
+  "coefficients": {
+    "sklearn": {
+      "intercept": -0.1217876070029581,
+      "SeniorCitizen": 0.058595075387530754,
+      "log_tenure": -0.7900666711360937,
+      "MonthlyCharges": 1.2344796205362356,
+      "n_addons": -0.30802830818368754,
+      "gender_Male": 0.040629575309574076,
+      "Partner_Yes": 0.03609991709688801,
+      "Dependents_Yes": -0.2500373676415352,
+      "PhoneService_Yes": -1.2789094302765944,
+      "MultipleLines_Yes": 0.18204985235635085,
+      "InternetService_Fiber optic": -0.12729875941028884,
+      "InternetService_No": 0.17743445096057217,
+      "OnlineSecurity_Yes": -0.3958434258936546,
+      "TechSupport_Yes": -0.36217300661501106,
+      "Contract_One year": -0.7104838063249875,
+      "Contract_Two year": -1.6443614812696827,
+      "PaperlessBilling_Yes": 0.41633311836900805,
+      "PaymentMethod_Credit card (automatic)": -0.008574424401909997,
+      "PaymentMethod_Electronic check": 0.3667697419730253,
+      "PaymentMethod_Mailed check": 0.0372013347901778
+    },
+    "torch_manual": {
+      "intercept": -0.12179216470364589,
+      "SeniorCitizen": 0.058595100101134306,
+      "log_tenure": -0.7900665333940959,
+      "MonthlyCharges": 1.2344749578985583,
+      "n_addons": -0.30802631492357985,
+      "gender_Male": 0.04062947869587761,
+      "Partner_Yes": 0.036099400558777264,
+      "Dependents_Yes": -0.2500368861453038,
+      "PhoneService_Yes": -1.2789066969664886,
+      "MultipleLines_Yes": 0.18205072122730145,
+      "InternetService_Fiber optic": -0.12729416356979095,
+      "InternetService_No": 0.1774314578196544,
+      "OnlineSecurity_Yes": -0.3958438759692654,
+      "TechSupport_Yes": -0.36217354593576107,
+      "Contract_One year": -0.7104834798368014,
+      "Contract_Two year": -1.6443601869432403,
+      "PaperlessBilling_Yes": 0.4163332519203383,
+      "PaymentMethod_Credit card (automatic)": -0.008573679438386474,
+      "PaymentMethod_Electronic check": 0.3667704533109275,
+      "PaymentMethod_Mailed check": 0.037202586370427435
+    },
+    "torch_nn": {
+      "intercept": -0.12179188094526439,
+      "SeniorCitizen": 0.05859510246262877,
+      "log_tenure": -0.7900665111159809,
+      "MonthlyCharges": 1.2344751276030508,
+      "n_addons": -0.3080262821956475,
+      "gender_Male": 0.04062954122368331,
+      "Partner_Yes": 0.0360994760019797,
+      "Dependents_Yes": -0.2500370250150008,
+      "PhoneService_Yes": -1.2789067134848109,
+      "MultipleLines_Yes": 0.18205068579115252,
+      "InternetService_Fiber optic": -0.1272943497190207,
+      "InternetService_No": 0.17743167498114024,
+      "OnlineSecurity_Yes": -0.3958439204569983,
+      "TechSupport_Yes": -0.3621738163385273,
+      "Contract_One year": -0.7104837671530807,
+      "Contract_Two year": -1.6443598633327838,
+      "PaperlessBilling_Yes": 0.41633307462232394,
+      "PaymentMethod_Credit card (automatic)": -0.008573608114454378,
+      "PaymentMethod_Electronic check": 0.36677041882247635,
+      "PaymentMethod_Mailed check": 0.03720258631390101
+    }
+  }
+}
