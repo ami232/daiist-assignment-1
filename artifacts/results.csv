@@ -1,0 +1,5 @@
+model,accuracy,auc
+baseline (majority),0.6049,0.5
+sklearn,0.7592,0.8368
+manual pytorch,0.7574,0.8363
+standard pytorch,0.7592,0.8367
