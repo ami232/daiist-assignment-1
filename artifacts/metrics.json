@@ -1,0 +1,164 @@
+{
+  "cost_fn": 3000,
+  "cost_fp": 300,
+  "best_C": 0.03,
+  "lambda": 0.014423770373575654,
+  "best_lr": 1.0,
+  "epochs": 4000,
+  "baseline_prevalence": 0.42276070964950235,
+  "val_log_loss_by_C": {
+    "0.01": 0.36242626769558717,
+    "0.03": 0.35261471943029,
+    "0.1": 0.3528946549733298,
+    "0.3": 0.3577130426590174,
+    "1.0": 0.3630815652092128,
+    "3.0": 0.3676480900121757,
+    "10.0": 0.3722714513001051
+  },
+  "final_train_objective_by_lr": {
+    "0.05": 0.33884957432746887,
+    "0.1": 0.33884572982788086,
+    "0.5": 0.3388456106185913,
+    "1.0": 0.33884555101394653
+  },
+  "sklearn_train_objective": 0.3388459476626547,
+  "intercepts": {
+    "sklearn": -0.185086852442216,
+    "torch_manual": -0.1878698766231537,
+    "torch_module": -0.1878698468208313
+  },
+  "results_test": {
+    "baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.3432601880877743,
+      "log_loss": 0.656406966558655,
+      "threshold": 0.01,
+      "recall": 1.0,
+      "precision": 0.3432601880877743,
+      "flagged_share": 1.0,
+      "cost_eur": 125700,
+      "cost_per_student_eur": 197.0219435736677,
+      "tp": 219,
+      "fp": 419,
+      "fn": 0,
+      "tn": 0
+    },
+    "sklearn": {
+      "roc_auc": 0.8949335774457557,
+      "pr_auc": 0.8788991502123933,
+      "log_loss": 0.3459471582127167,
+      "threshold": 0.11,
+      "recall": 0.9041095890410958,
+      "precision": 0.5380434782608695,
+      "flagged_share": 0.5768025078369906,
+      "cost_eur": 114000,
+      "cost_per_student_eur": 178.6833855799373,
+      "tp": 198,
+      "fp": 170,
+      "fn": 21,
+      "tn": 249
+    },
+    "torch_manual": {
+      "roc_auc": 0.8949444753217598,
+      "pr_auc": 0.8789179947209206,
+      "log_loss": 0.3459611237049103,
+      "threshold": 0.13,
+      "recall": 0.8904109589041096,
+      "precision": 0.5803571428571429,
+      "flagged_share": 0.5266457680250783,
+      "cost_eur": 114300,
+      "cost_per_student_eur": 179.15360501567397,
+      "tp": 195,
+      "fp": 141,
+      "fn": 24,
+      "tn": 278
+    },
+    "torch_module": {
+      "roc_auc": 0.8949444753217598,
+      "pr_auc": 0.8789179947209206,
+      "log_loss": 0.3459611237049103,
+      "threshold": 0.13,
+      "recall": 0.8904109589041096,
+      "precision": 0.5803571428571429,
+      "flagged_share": 0.5266457680250783,
+      "cost_eur": 114300,
+      "cost_per_student_eur": 179.15360501567397,
+      "tp": 195,
+      "fp": 141,
+      "fn": 24,
+      "tn": 278
+    },
+    "mentor_nobody": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.3432601880877743,
+      "log_loss": 5.532700610438676,
+      "threshold": 0.5,
+      "recall": 0.0,
+      "precision": 0.0,
+      "flagged_share": 0.0,
+      "cost_eur": 657000,
+      "cost_per_student_eur": 1029.780564263323,
+      "tp": 0,
+      "fp": 0,
+      "fn": 219,
+      "tn": 419
+    },
+    "mentor_everybody": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.3432601880877743,
+      "log_loss": 10.58539514086533,
+      "threshold": 0.5,
+      "recall": 1.0,
+      "precision": 0.3432601880877743,
+      "flagged_share": 1.0,
+      "cost_eur": 125700,
+      "cost_per_student_eur": 197.0219435736677,
+      "tp": 219,
+      "fp": 419,
+      "fn": 0,
+      "tn": 0
+    }
+  },
+  "agreement": {
+    "torch_manual": {
+      "max_abs_proba_diff_vs_sklearn": 0.0009349176623772437,
+      "max_abs_coef_diff_vs_sklearn": 0.001843156751259123,
+      "same_decision_share": 0.9498432601880877,
+      "same_decision_share_at_sklearn_threshold": 1.0
+    },
+    "torch_module": {
+      "max_abs_proba_diff_vs_sklearn": 0.000934887860054856,
+      "max_abs_coef_diff_vs_sklearn": 0.001843156751259123,
+      "same_decision_share": 0.9498432601880877,
+      "same_decision_share_at_sklearn_threshold": 1.0
+    },
+    "val_cost_by_threshold_near_optimum": {
+      "sklearn": {
+        "0.1": 128400,
+        "0.11": 120900,
+        "0.12": 128100,
+        "0.13": 122100,
+        "0.14": 122100
+      },
+      "torch_manual": {
+        "0.1": 128400,
+        "0.11": 123900,
+        "0.12": 128100,
+        "0.13": 121800,
+        "0.14": 122100
+      },
+      "torch_module": {
+        "0.1": 128400,
+        "0.11": 123900,
+        "0.12": 128100,
+        "0.13": 121800,
+        "0.14": 122100
+      }
+    }
+  },
+  "rows": {
+    "train": 2311,
+    "val": 681,
+    "test": 638
+  }
+}
