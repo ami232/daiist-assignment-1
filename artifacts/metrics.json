@@ -1,0 +1,66 @@
+{
+  "features": [
+    "ret_1",
+    "ret_5",
+    "ret_10",
+    "volatility_5",
+    "volatility_20",
+    "sma_5",
+    "sma_20",
+    "intraday",
+    "range",
+    "volume_20",
+    "monday",
+    "friday"
+  ],
+  "threshold": 0.61,
+  "L2": 0.01,
+  "learning_rate": 0.2,
+  "epochs": 800,
+  "test_metrics": {
+    "scikit-learn": {
+      "accuracy": 0.4622,
+      "roc_auc": 0.5062,
+      "cost_per_100": 53.78,
+      "false_positives": 0,
+      "false_negatives": 519
+    },
+    "manual PyTorch": {
+      "accuracy": 0.4622,
+      "roc_auc": 0.5064,
+      "cost_per_100": 53.78,
+      "false_positives": 0,
+      "false_negatives": 519
+    },
+    "standard PyTorch": {
+      "accuracy": 0.4622,
+      "roc_auc": 0.5064,
+      "cost_per_100": 53.78,
+      "false_positives": 0,
+      "false_negatives": 519
+    },
+    "majority baseline": {
+      "accuracy": 0.5389,
+      "roc_auc": 0.5,
+      "cost_per_100": 138.34,
+      "false_positives": 445,
+      "false_negatives": 0
+    }
+  },
+  "date_ranges": {
+    "train": [
+      "2000-02-01",
+      "2017-12-20"
+    ],
+    "validation": [
+      "2017-12-22",
+      "2021-10-21"
+    ],
+    "test": [
+      "2021-10-25",
+      "2025-08-28"
+    ]
+  },
+  "max_gap_sklearn_manual": 0.0010434476790339708,
+  "max_gap_manual_standard": 1.1102230246251565e-16
+}
