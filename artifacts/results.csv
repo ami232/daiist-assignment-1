@@ -1,0 +1,5 @@
+Model,Log loss,AUC,Total cost ($)
+Naive baseline,0.4311,0.5,3820.0
+scikit-learn,0.3674,0.7648,3465.0
+Manual PyTorch loop,0.3673,0.7648,3465.0
+nn.Module + torch.optim,0.3673,0.7648,3465.0
