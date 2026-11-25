@@ -1,0 +1,3472 @@
+{
+ "split": {
+  "train": {
+   "studies": [
+    3505,
+    3510,
+    3514,
+    3517,
+    3524,
+    3528,
+    3530,
+    3536,
+    3540
+   ],
+   "rows": 8741,
+   "churn_rate": 0.23658620295160737
+  },
+  "val": {
+   "studies": [
+    3544,
+    3546,
+    3557
+   ],
+   "rows": 3081,
+   "churn_rate": 0.24472573839662448
+  },
+  "test": {
+   "studies": [
+    3562,
+    3567,
+    3571,
+    3577
+   ],
+   "rows": 4172,
+   "churn_rate": 0.24880153403643337
+  }
+ },
+ "undecided_rows": 2509,
+ "selected_blocks": [
+  "core",
+  "competitive_gap",
+  "closest_party",
+  "problem_themes",
+  "sociodemographics"
+ ],
+ "ablation": [
+  {
+   "block": "core",
+   "val_logloss": 0.35528369998868303,
+   "val_auc": 0.8700966283246264,
+   "n_features": 8,
+   "gain": null,
+   "kept": true
+  },
+  {
+   "block": "dont_know_flags",
+   "val_logloss": 0.35541695698307785,
+   "val_auc": 0.8697116310774565,
+   "n_features": 14,
+   "gain": -0.00013325699439481475,
+   "kept": false
+  },
+  {
+   "block": "competitive_gap",
+   "val_logloss": 0.3415727199435055,
+   "val_auc": 0.8820343927074511,
+   "n_features": 10,
+   "gain": 0.013710980045177512,
+   "kept": true
+  },
+  {
+   "block": "closest_party",
+   "val_logloss": 0.3041831303673623,
+   "val_auc": 0.9141373496914893,
+   "n_features": 17,
+   "gain": 0.037389589576143245,
+   "kept": true
+  },
+  {
+   "block": "ideology_turnout_shape",
+   "val_logloss": 0.3039963068624871,
+   "val_auc": 0.9146463097828628,
+   "n_features": 24,
+   "gain": 0.00018682350487519983,
+   "kept": false
+  },
+  {
+   "block": "problem_themes",
+   "val_logloss": 0.3036393443818799,
+   "val_auc": 0.9140809252244725,
+   "n_features": 27,
+   "gain": 0.0005437859854823812,
+   "kept": true
+  },
+  {
+   "block": "sociodemographics",
+   "val_logloss": 0.30211930972457246,
+   "val_auc": 0.9154248534388718,
+   "n_features": 81,
+   "gain": 0.0015200346573074341,
+   "kept": true
+  },
+  {
+   "block": "segment",
+   "val_logloss": 0.30206915147498903,
+   "val_auc": 0.9156864577859496,
+   "n_features": 84,
+   "gain": 5.0158249583431846e-05,
+   "kept": false
+  }
+ ],
+ "min_logloss_gain": 0.0005,
+ "ablation_check": [
+  {
+   "block": "dont_know_flags",
+   "in_final": false,
+   "check": "added to final",
+   "gain": 5.192196822471065e-06,
+   "ci_low": -0.001130733932655239,
+   "ci_high": 0.0011803392869489165,
+   "ci_excludes_0": false
+  },
+  {
+   "block": "competitive_gap",
+   "in_final": true,
+   "check": "dropped from final",
+   "gain": 0.007645446813129244,
+   "ci_low": 0.0034788443518945365,
+   "ci_high": 0.011626063085598019,
+   "ci_excludes_0": true
+  },
+  {
+   "block": "closest_party",
+   "in_final": true,
+   "check": "dropped from final",
+   "gain": 0.03175359592306178,
+   "ci_low": 0.023267097739698792,
+   "ci_high": 0.04076871178964909,
+   "ci_excludes_0": true
+  },
+  {
+   "block": "ideology_turnout_shape",
+   "in_final": false,
+   "check": "added to final",
+   "gain": 0.0001062302880148815,
+   "ci_low": -0.002419586105604157,
+   "ci_high": 0.002617719714645156,
+   "ci_excludes_0": false
+  },
+  {
+   "block": "problem_themes",
+   "in_final": true,
+   "check": "dropped from final",
+   "gain": -3.175018243690393e-05,
+   "ci_low": -0.002242720752786818,
+   "ci_high": 0.0022612181192760367,
+   "ci_excludes_0": false
+  },
+  {
+   "block": "sociodemographics",
+   "in_final": true,
+   "check": "dropped from final",
+   "gain": 0.0015200346573074502,
+   "ci_low": -0.0023889387748576717,
+   "ci_high": 0.005407441241824775,
+   "ci_excludes_0": false
+  },
+  {
+   "block": "segment",
+   "in_final": false,
+   "check": "added to final",
+   "gain": 5.0158249583435736e-05,
+   "ci_low": -0.0010818224234430361,
+   "ci_high": 0.00109296715475222,
+   "ci_excludes_0": false
+  }
+ ],
+ "segments": {
+  "k": 3,
+  "silhouettes": {
+   "3": 0.2786325026801598,
+   "4": 0.2104996258842634,
+   "5": 0.19244498804190915,
+   "6": 0.17659472602569104,
+   "7": 0.18059081150322576,
+   "8": 0.17747497596057185
+  },
+  "inputs": [
+   "rate_sanchez",
+   "rate_feijoo",
+   "rate_diaz",
+   "rate_abascal",
+   "ideology",
+   "probvoto",
+   "eco_spain",
+   "eco_personal"
+  ],
+  "profile": [
+   {
+    "segment": "S0",
+    "size": 730,
+    "churn": 0.5958904109589042,
+    "rate_sanchez": 4.671232876712328,
+    "rate_feijoo": 5.183844011142061,
+    "rate_diaz": 4.394109396914446,
+    "rate_abascal": 5.325997248968363,
+    "ideology": 5.28067700987306,
+    "probvoto": 9.228021978021978,
+    "eco_spain": 2.580332409972299,
+    "eco_personal": 3.37414030261348
+   },
+   {
+    "segment": "S1",
+    "size": 6015,
+    "churn": 0.09476309226932668,
+    "rate_sanchez": 7.905094905094905,
+    "rate_feijoo": 2.7502102607232968,
+    "rate_diaz": 6.722324878212666,
+    "rate_abascal": 1.1389687235841082,
+    "ideology": 2.839779005524862,
+    "probvoto": 9.867965367965368,
+    "eco_spain": 3.8216924110141033,
+    "eco_personal": 3.8571666944768896
+   },
+   {
+    "segment": "S2",
+    "size": 1996,
+    "churn": 0.532565130260521,
+    "rate_sanchez": 4.1289513296537885,
+    "rate_feijoo": 2.622019279553526,
+    "rate_diaz": 3.380224260958206,
+    "rate_abascal": 1.220356234096692,
+    "ideology": 3.993384223918575,
+    "probvoto": 7.7322953289804115,
+    "eco_spain": 2.512367491166078,
+    "eco_personal": 3.396387355745108
+   }
+  ]
+ },
+ "hyperparameters": {
+  "C": 0.1,
+  "C_val_logloss": {
+   "0.001": 0.3411971466743479,
+   "0.01": 0.3033019936267599,
+   "0.1": 0.3003618923987469,
+   "1.0": 0.30211930972457246,
+   "10.0": 0.3026069035460166
+  },
+  "lambda": 0.0005720169317011783,
+  "learning_rate": 2.0,
+  "lr_train_objective": {
+   "0.1": 0.28796653016346596,
+   "0.5": 0.28795258676490315,
+   "1.0": 0.28795226051488043,
+   "2.0": 0.28795225506468125,
+   "4.0": 0.30093910256213846
+  },
+  "sklearn_train_objective": 0.28795225506324434,
+  "gd_stable_lr_bound": 1.6591331169019745,
+  "epochs": 10000
+ },
+ "thresholds": {
+  "sklearn": 0.29,
+  "manual_pytorch": 0.29,
+  "nn_module": 0.29
+ },
+ "threshold_check": {
+  "val_deciles": [
+   {
+    "mean_pred": 0.006402390624691563,
+    "actual": 0.012944983818770227,
+    "n": 309
+   },
+   {
+    "mean_pred": 0.012069821603433256,
+    "actual": 0.003246753246753247,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.02114000277750658,
+    "actual": 0.016233766233766232,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.034312730749400194,
+    "actual": 0.04220779220779221,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.053964816308200464,
+    "actual": 0.07142857142857142,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.09188911449062805,
+    "actual": 0.10064935064935066,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.15749474616022985,
+    "actual": 0.2532467532467532,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.2919330952861545,
+    "actual": 0.36363636363636365,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.5827620709177574,
+    "actual": 0.6266233766233766,
+    "n": 308
+   },
+   {
+    "mean_pred": 0.943702776300914,
+    "actual": 0.9577922077922078,
+    "n": 308
+   }
+  ],
+  "by_threshold": [
+   {
+    "threshold": 0.29,
+    "false_pos": 221,
+    "false_neg": 206,
+    "accuracy": 0.8614086335605323,
+    "monthly_abs_error_pp": 1.7678572288614802
+   },
+   {
+    "threshold": 0.5,
+    "false_pos": 76,
+    "false_neg": 318,
+    "accuracy": 0.8721194417396949,
+    "monthly_abs_error_pp": 7.626854314971641
+   }
+  ],
+  "expected_val_monthly_abs_error_pp": 2.910405566464208
+ },
+ "train_churn_rate": 0.2294639323813352,
+ "comparison_test": {
+  "sklearn": {
+   "threshold": 0.29,
+   "auc": 0.9140319425334422,
+   "logloss": 0.29870686673581376,
+   "brier": 0.09019415908036271,
+   "estimated_churn": 0.25558259988868814,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": 1.7700243916748681,
+   "monthly_abs_error_pp": 1.7605208901931937,
+   "false_pos": 312.0,
+   "false_neg": 249.0,
+   "accuracy": 0.8655321188878236
+  },
+  "manual_pytorch": {
+   "threshold": 0.29,
+   "auc": 0.9140319425334422,
+   "logloss": 0.2987068610426535,
+   "brier": 0.09019415742725428,
+   "estimated_churn": 0.25558259988868814,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": 1.7700243916748681,
+   "monthly_abs_error_pp": 1.7605208901931937,
+   "false_pos": 312.0,
+   "false_neg": 249.0,
+   "accuracy": 0.8655321188878236
+  },
+  "nn_module": {
+   "threshold": 0.29,
+   "auc": 0.9140319425334422,
+   "logloss": 0.2987068610425205,
+   "brier": 0.09019415742723835,
+   "estimated_churn": 0.25558259988868814,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": 1.7700243916748681,
+   "monthly_abs_error_pp": 1.7605208901931937,
+   "false_pos": 312.0,
+   "false_neg": 249.0,
+   "accuracy": 0.8655321188878236
+  },
+  "sklearn_expected": {
+   "threshold": NaN,
+   "auc": 0.9140319425334422,
+   "logloss": 0.29870686673581376,
+   "brier": 0.09019415908036271,
+   "estimated_churn": 0.23161626046143213,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": -0.626609551050733,
+   "monthly_abs_error_pp": 1.02317264206608,
+   "false_pos": NaN,
+   "false_neg": NaN,
+   "accuracy": NaN
+  },
+  "naive_constant": {
+   "threshold": NaN,
+   "auc": 0.5,
+   "logloss": 0.5620522153062768,
+   "brier": 0.1872732735353221,
+   "estimated_churn": 0.22946393238133517,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": -0.8418423590604296,
+   "monthly_abs_error_pp": 2.5757846606075163,
+   "false_pos": NaN,
+   "false_neg": NaN,
+   "accuracy": NaN
+  },
+  "all_return": {
+   "threshold": NaN,
+   "auc": NaN,
+   "logloss": NaN,
+   "brier": NaN,
+   "estimated_churn": 0.0,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": -23.788235597193946,
+   "monthly_abs_error_pp": 23.83545721025286,
+   "false_pos": 0.0,
+   "false_neg": 1038.0,
+   "accuracy": 0.7511984659635667
+  },
+  "closest_party_rule": {
+   "threshold": NaN,
+   "auc": NaN,
+   "logloss": NaN,
+   "brier": NaN,
+   "estimated_churn": 0.322403839635529,
+   "actual_churn": 0.23788235597193946,
+   "error_pp": 8.452148366358953,
+   "monthly_abs_error_pp": 8.471447859982216,
+   "false_pos": 663.0,
+   "false_neg": 329.0,
+   "accuracy": 0.7622243528283796
+  }
+ },
+ "test_ci": {
+  "auc": 0.9140319425334422,
+  "auc_ci": [
+   0.9034943275249885,
+   0.9241895197732165
+  ],
+  "model_error_pp": 1.7605208901931937,
+  "model_error_ci": [
+   0.8847891620835919,
+   3.2173041662585233
+  ],
+  "rule_error_pp": 8.471447859982216,
+  "rule_error_ci": [
+   6.588928488679891,
+   10.309810466243801
+  ],
+  "rule_minus_model_ci": [
+   4.69715774339725,
+   8.43784646887681
+  ]
+ },
+ "agreement_test": {
+  "sklearn_vs_manual_pytorch": {
+   "max_abs_dprob": 2.5554659944249103e-06,
+   "mean_abs_dprob": 1.3827636293816695e-07,
+   "max_abs_dcoef": 7.18597877962801e-05,
+   "same_assignment": 1.0
+  },
+  "sklearn_vs_nn_module": {
+   "max_abs_dprob": 2.555465289266756e-06,
+   "mean_abs_dprob": 1.382763367436006e-07,
+   "max_abs_dcoef": 7.18597960224221e-05,
+   "same_assignment": 1.0
+  },
+  "manual_pytorch_vs_nn_module": {
+   "max_abs_dprob": 5.689781978901465e-12,
+   "mean_abs_dprob": 1.0005872175204e-12,
+   "max_abs_dcoef": 1.1010525824417527e-11,
+   "same_assignment": 1.0
+  }
+ },
+ "per_month_test": [
+  {
+   "study": 3562,
+   "rows": 1078,
+   "actual_churn": 0.19572951861157165,
+   "auc": 0.9180032836574892,
+   "model": 0.20926777510812833,
+   "model_expected": 0.20330827181063615,
+   "rule": 0.2816625510055072,
+   "naive": 0.2294639323813352
+  },
+  {
+   "study": 3567,
+   "rows": 1023,
+   "actual_churn": 0.24953470432132369,
+   "auc": 0.9253731343283582,
+   "model": 0.2725221356180981,
+   "model_expected": 0.23969278266884364,
+   "rule": 0.3326573935834596,
+   "naive": 0.2294639323813352
+  },
+  {
+   "study": 3571,
+   "rows": 1098,
+   "actual_churn": 0.2496145178938093,
+   "auc": 0.8893754019020543,
+   "model": 0.2749394966444276,
+   "model_expected": 0.24066082582266551,
+   "rule": 0.3214351606832602,
+   "naive": 0.2294639323813352
+  },
+  {
+   "study": 3577,
+   "rows": 973,
+   "actual_churn": 0.25853954758340975,
+   "auc": 0.9216486152026546,
+   "model": 0.267109716647188,
+   "model_expected": 0.24398700882345478,
+   "rule": 0.35652109753717603,
+   "naive": 0.2294639323813352
+  }
+ ],
+ "allocation": [
+  {
+   "study": 3505,
+   "undecided": 150,
+   "undecided_share": 0.1291543678601322,
+   "return_model": 0.5090770421211269,
+   "return_model_expected": 0.6434785518908916,
+   "return_rule": 0.6636214331589683,
+   "retention_declared_only": 0.822965674831342,
+   "retention_model": 0.7824255868951729,
+   "retention_rule": 0.8023856700259945,
+   "retention_all_return": 0.845830431188045
+  },
+  {
+   "study": 3510,
+   "undecided": 143,
+   "undecided_share": 0.14595102933165746,
+   "return_model": 0.580372858415608,
+   "return_model_expected": 0.6857301088718069,
+   "return_rule": 0.6517057999135785,
+   "retention_declared_only": 0.8154837427925675,
+   "retention_model": 0.7811690672106739,
+   "retention_rule": 0.7915801834475577,
+   "retention_all_return": 0.8424140804604171
+  },
+  {
+   "study": 3514,
+   "undecided": 148,
+   "undecided_share": 0.1465117086377835,
+   "return_model": 0.4150890723922551,
+   "return_model_expected": 0.5807010143133787,
+   "return_rule": 0.5183348799172547,
+   "retention_declared_only": 0.790621420396344,
+   "retention_model": 0.7356015344415062,
+   "retention_rule": 0.7507282541116818,
+   "retention_all_return": 0.8212978338462278
+  },
+  {
+   "study": 3517,
+   "undecided": 202,
+   "undecided_share": 0.1876594263110081,
+   "return_model": 0.3827435691897295,
+   "return_model_expected": 0.5482156397191176,
+   "return_rule": 0.600207932206213,
+   "retention_declared_only": 0.6812480240099219,
+   "retention_model": 0.6252308492670844,
+   "retention_rule": 0.6660400868738465,
+   "retention_all_return": 0.7410648369597203
+  },
+  {
+   "study": 3524,
+   "undecided": 178,
+   "undecided_share": 0.14971477353930718,
+   "return_model": 0.3752276855734956,
+   "return_model_expected": 0.5472441156784624,
+   "return_rule": 0.594135043970494,
+   "retention_declared_only": 0.7922982364063617,
+   "retention_model": 0.729856613338505,
+   "retention_rule": 0.7626302789269996,
+   "retention_all_return": 0.823394258906498
+  },
+  {
+   "study": 3528,
+   "undecided": 155,
+   "undecided_share": 0.13118841669543607,
+   "return_model": 0.3999699580823125,
+   "return_model_expected": 0.5144941363936428,
+   "return_rule": 0.5573294626565819,
+   "retention_declared_only": 0.7312493355493779,
+   "retention_model": 0.6877893185356239,
+   "retention_rule": 0.7084330627927006,
+   "retention_all_return": 0.7665063097045014
+  },
+  {
+   "study": 3530,
+   "undecided": 160,
+   "undecided_share": 0.13731727505623606,
+   "return_model": 0.42162608359017695,
+   "return_model_expected": 0.5652948965703593,
+   "return_rule": 0.5066778458098649,
+   "retention_declared_only": 0.7853644471336428,
+   "retention_model": 0.7354168862184395,
+   "retention_rule": 0.747095962445178,
+   "retention_all_return": 0.8148376163834397
+  },
+  {
+   "study": 3536,
+   "undecided": 161,
+   "undecided_share": 0.1396933940414099,
+   "return_model": 0.34397996461552394,
+   "return_model_expected": 0.4925995155086753,
+   "return_rule": 0.6070758376382053,
+   "retention_declared_only": 0.7688189984454266,
+   "retention_model": 0.709471791888454,
+   "retention_rule": 0.7462245473492802,
+   "retention_all_return": 0.8011134571904774
+  },
+  {
+   "study": 3540,
+   "undecided": 185,
+   "undecided_share": 0.13988834446454015,
+   "return_model": 0.4616213106147671,
+   "return_model_expected": 0.5972278887924258,
+   "return_rule": 0.6236764069464444,
+   "retention_declared_only": 0.7436641204230229,
+   "retention_model": 0.7042096186908189,
+   "retention_rule": 0.7268792378286988,
+   "retention_all_return": 0.779522522243908
+  },
+  {
+   "study": 3544,
+   "undecided": 143,
+   "undecided_share": 0.12892453735736814,
+   "return_model": 0.4001687924514463,
+   "return_model_expected": 0.5631913710675287,
+   "return_rule": 0.5646464623969354,
+   "retention_declared_only": 0.7345675369090265,
+   "retention_model": 0.6914553334869483,
+   "retention_rule": 0.7126605409902883,
+   "retention_all_return": 0.768788294412657
+  },
+  {
+   "study": 3546,
+   "undecided": 149,
+   "undecided_share": 0.12224879717607308,
+   "return_model": 0.4245830609327189,
+   "return_model_expected": 0.5751487837263167,
+   "return_rule": 0.5278626262025017,
+   "retention_declared_only": 0.7183785849573917,
+   "retention_model": 0.6824624355296613,
+   "retention_rule": 0.6950882381567601,
+   "retention_all_return": 0.7528064642053742
+  },
+  {
+   "study": 3557,
+   "undecided": 137,
+   "undecided_share": 0.11428017775781828,
+   "return_model": 0.4575962707522181,
+   "return_model_expected": 0.5823246208968331,
+   "return_rule": 0.50129356562524,
+   "retention_declared_only": 0.7837630144060027,
+   "retention_model": 0.7464886209625595,
+   "retention_rule": 0.7514823555881843,
+   "retention_all_return": 0.8084746155574996
+  },
+  {
+   "study": 3562,
+   "undecided": 139,
+   "undecided_share": 0.11000756523048927,
+   "return_model": 0.34769008069629737,
+   "return_model_expected": 0.49079411948804585,
+   "return_rule": 0.47624861905353333,
+   "retention_declared_only": 0.8042704813884283,
+   "retention_model": 0.7540431831763259,
+   "retention_rule": 0.7681855949705958,
+   "retention_all_return": 0.825802209174623
+  },
+  {
+   "study": 3567,
+   "undecided": 183,
+   "undecided_share": 0.15201022819133506,
+   "return_model": 0.4496701724621749,
+   "return_model_expected": 0.5588813264460097,
+   "return_rule": 0.5334147791175035,
+   "retention_declared_only": 0.7504652956786764,
+   "retention_model": 0.7047413603596953,
+   "retention_rule": 0.7174713971271655,
+   "retention_all_return": 0.788397123024218
+  },
+  {
+   "study": 3571,
+   "undecided": 142,
+   "undecided_share": 0.1305602970859046,
+   "return_model": 0.31815902913066607,
+   "return_model_expected": 0.5281863614441918,
+   "return_rule": 0.45130346913178654,
+   "retention_declared_only": 0.7503854821061907,
+   "retention_model": 0.6939538679973194,
+   "retention_rule": 0.7113372456392021,
+   "retention_all_return": 0.7829752277193613
+  },
+  {
+   "study": 3577,
+   "undecided": 134,
+   "undecided_share": 0.15158621922190174,
+   "return_model": 0.38557209539403137,
+   "return_model_expected": 0.494063878738745,
+   "return_rule": 0.3929600344318135,
+   "retention_declared_only": 0.7414604524165902,
+   "retention_model": 0.6875126819104462,
+   "retention_rule": 0.6886325916570255,
+   "retention_all_return": 0.7806514849541004
+  }
+ ],
+ "undecided_profile": {
+  "rate_sanchez": {
+   "declared": 6.8651305491202805,
+   "undecided": 4.818619582664526
+  },
+  "gap_best_rival": {
+   "declared": 0.69570128647631,
+   "undecided": -0.12570735650767986
+  },
+  "rate_feijoo": {
+   "declared": 2.9035870184095653,
+   "undecided": 3.147936248467511
+  },
+  "ideology": {
+   "declared": 3.2730429292929295,
+   "undecided": 3.900122799836267
+  },
+  "probvoto": {
+   "declared": 9.382207475114255,
+   "undecided": 8.802884615384615
+  },
+  "eco_spain": {
+   "declared": 3.4280664099488667,
+   "undecided": 2.9328968903436987
+  },
+  "closest_party_psoe": {
+   "declared": 0.6916968863323747,
+   "undecided": 0.5476285372658429
+  }
+ },
+ "raking": {
+  "3505": {
+   "weight_variable": "PESO",
+   "published": "2025-05-06",
+   "targets_used": {
+    "sexo_edad": "INE 56934 (20250101)",
+    "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4008,
+   "n_ef": 1902.4,
+   "deff": 2.107,
+   "psoe_recall_share_before": 36.546,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.9069,
+   "psoe_factor_range": [
+    0.5868,
+    1.5131
+   ],
+   "identity_check_psoe": [
+    30.7063,
+    30.7063
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 5.222,
+      "bildu": 0.975,
+      "erc": 2.039,
+      "junts": 1.619,
+      "pnv": 0.93,
+      "pp": 28.771,
+      "psoe": 36.546,
+      "sumar": 11.734,
+      "vox": 12.163
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.331,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.787,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.792,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     },
+     "before": {
+      "hombre:18-24": 4.112,
+      "hombre:25-34": 6.3,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 3.951,
+      "mujer:25-34": 5.988,
+      "mujer:35-44": 8.164,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.786,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.793,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     },
+     "before": {
+      "basico": 42.108,
+      "medio": 30.268,
+      "superior": 27.624
+     },
+     "after": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     }
+    }
+   }
+  },
+  "3510": {
+   "weight_variable": "PESO",
+   "published": "2025-06-06",
+   "targets_used": {
+    "sexo_edad": "INE 56934 (20250101)",
+    "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4018,
+   "n_ef": 2009.6,
+   "deff": 1.999,
+   "psoe_recall_share_before": 37.574,
+   "psoe_recall_share_after": 31.68,
+   "psoe_factor_mean": 0.882,
+   "psoe_factor_range": [
+    0.5621,
+    1.3959
+   ],
+   "identity_check_psoe": [
+    28.3546,
+    28.3546
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.746,
+      "bildu": 0.743,
+      "erc": 1.95,
+      "junts": 1.228,
+      "pnv": 0.868,
+      "pp": 29.823,
+      "psoe": 37.574,
+      "sumar": 12.436,
+      "vox": 10.631
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.06,
+      "psoe": 31.68,
+      "sumar": 12.33,
+      "vox": 12.38
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.787,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.792,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     },
+     "before": {
+      "hombre:18-24": 4.303,
+      "hombre:25-34": 6.11,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 4.084,
+      "mujer:25-34": 5.854,
+      "mujer:35-44": 8.164,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.786,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.793,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     },
+     "before": {
+      "basico": 42.383,
+      "medio": 30.611,
+      "superior": 27.006
+     },
+     "after": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     }
+    }
+   }
+  },
+  "3514": {
+   "weight_variable": "PESO",
+   "published": "2025-06-20",
+   "targets_used": {
+    "sexo_edad": "INE 56934 (20250101)",
+    "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+   },
+   "sweeps": 3,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4013,
+   "n_ef": 1929.7,
+   "deff": 2.08,
+   "psoe_recall_share_before": 40.335,
+   "psoe_recall_share_after": 31.68,
+   "psoe_factor_mean": 0.8288,
+   "psoe_factor_range": [
+    0.5175,
+    1.379
+   ],
+   "identity_check_psoe": [
+    29.2168,
+    29.2168
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 3.899,
+      "bildu": 1.128,
+      "erc": 2.438,
+      "junts": 1.773,
+      "pnv": 1.22,
+      "pp": 25.928,
+      "psoe": 40.335,
+      "sumar": 13.083,
+      "vox": 10.195
+     },
+     "after": {
+      "_otros": 4.579,
+      "bildu": 1.361,
+      "erc": 1.89,
+      "junts": 1.599,
+      "pnv": 1.12,
+      "pp": 33.061,
+      "psoe": 31.68,
+      "sumar": 12.33,
+      "vox": 12.38
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.787,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.792,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     },
+     "before": {
+      "hombre:18-24": 4.303,
+      "hombre:25-34": 6.11,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 3.951,
+      "mujer:25-34": 5.988,
+      "mujer:35-44": 8.164,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.736,
+      "hombre:25-34": 6.901,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.787,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.792,
+      "mujer:18-24": 4.427,
+      "mujer:25-34": 6.636,
+      "mujer:35-44": 8.03,
+      "mujer:45-54": 9.724,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.931
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     },
+     "before": {
+      "basico": 42.543,
+      "medio": 30.636,
+      "superior": 26.822
+     },
+     "after": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     }
+    }
+   }
+  },
+  "3517": {
+   "weight_variable": "PESO",
+   "published": "2025-07-22",
+   "targets_used": {
+    "sexo_edad": "INE 56934 (20250101)",
+    "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4018,
+   "n_ef": 1623.3,
+   "deff": 2.475,
+   "psoe_recall_share_before": 37.647,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.893,
+   "psoe_factor_range": [
+    0.5588,
+    1.363
+   ],
+   "identity_check_psoe": [
+    23.1213,
+    23.1213
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 3.34,
+      "bildu": 1.214,
+      "erc": 1.908,
+      "junts": 1.622,
+      "pnv": 0.74,
+      "pp": 27.176,
+      "psoe": 37.647,
+      "sumar": 13.843,
+      "vox": 12.51
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.33,
+      "vox": 12.382
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.787,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.792,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     },
+     "before": {
+      "hombre:18-24": 4.303,
+      "hombre:25-34": 6.11,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 4.084,
+      "mujer:25-34": 5.697,
+      "mujer:35-44": 8.322,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.738,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.025,
+      "hombre:45-54": 9.786,
+      "hombre:55-64": 8.32,
+      "hombre:65+": 10.793,
+      "mujer:18-24": 4.429,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.029,
+      "mujer:45-54": 9.722,
+      "mujer:55-64": 8.69,
+      "mujer:65+": 13.933
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     },
+     "before": {
+      "basico": 42.398,
+      "medio": 29.984,
+      "superior": 27.618
+     },
+     "after": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     }
+    }
+   }
+  },
+  "3524": {
+   "weight_variable": "PESO",
+   "published": "2025-09-25",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20250701)",
+    "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4122,
+   "n_ef": 1712.8,
+   "deff": 2.407,
+   "psoe_recall_share_before": 39.066,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.8443,
+   "psoe_factor_range": [
+    0.5196,
+    1.3889
+   ],
+   "identity_check_psoe": [
+    28.1001,
+    28.1001
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 3.642,
+      "bildu": 0.983,
+      "erc": 1.907,
+      "junts": 1.683,
+      "pnv": 0.62,
+      "pp": 25.346,
+      "psoe": 39.066,
+      "sumar": 13.924,
+      "vox": 12.829
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.33,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.78,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.928,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.869,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     },
+     "before": {
+      "hombre:18-24": 4.112,
+      "hombre:25-34": 5.865,
+      "hombre:35-44": 8.698,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 4.084,
+      "mujer:25-34": 5.854,
+      "mujer:35-44": 8.164,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.779,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.927,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.87,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.642,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.001
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     },
+     "before": {
+      "basico": 41.834,
+      "medio": 30.736,
+      "superior": 27.43
+     },
+     "after": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     }
+    }
+   }
+  },
+  "3528": {
+   "weight_variable": "PESO_V2",
+   "published": "2025-10-27",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20250701)",
+    "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4029,
+   "n_ef": 1833.4,
+   "deff": 2.198,
+   "psoe_recall_share_before": 44.446,
+   "psoe_recall_share_after": 31.68,
+   "psoe_factor_mean": 0.7361,
+   "psoe_factor_range": [
+    0.449,
+    1.2816
+   ],
+   "identity_check_psoe": [
+    28.6838,
+    28.6838
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.143,
+      "bildu": 1.098,
+      "erc": 2.235,
+      "junts": 1.344,
+      "pnv": 0.894,
+      "pp": 21.815,
+      "psoe": 44.446,
+      "sumar": 13.616,
+      "vox": 10.41
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.06,
+      "psoe": 31.68,
+      "sumar": 12.33,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.78,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.928,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.869,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     },
+     "before": {
+      "hombre:18-24": 4.303,
+      "hombre:25-34": 6.11,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 3.951,
+      "mujer:25-34": 5.988,
+      "mujer:35-44": 8.164,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.78,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.927,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.87,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     },
+     "before": {
+      "basico": 42.051,
+      "medio": 30.892,
+      "superior": 27.058
+     },
+     "after": {
+      "basico": 42.365,
+      "medio": 22.369,
+      "superior": 35.266
+     }
+    }
+   }
+  },
+  "3530": {
+   "weight_variable": "PESO",
+   "published": "2025-12-01",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20250701)",
+    "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+   },
+   "sweeps": 3,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4027,
+   "n_ef": 2015.7,
+   "deff": 1.998,
+   "psoe_recall_share_before": 40.305,
+   "psoe_recall_share_after": 31.684,
+   "psoe_factor_mean": 0.829,
+   "psoe_factor_range": [
+    0.5028,
+    1.4236
+   ],
+   "identity_check_psoe": [
+    27.4887,
+    27.4887
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 5.029,
+      "bildu": 1.223,
+      "erc": 1.961,
+      "junts": 1.638,
+      "pnv": 0.853,
+      "pp": 25.571,
+      "psoe": 40.305,
+      "sumar": 13.413,
+      "vox": 10.008
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.359,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.119,
+      "pp": 33.058,
+      "psoe": 31.684,
+      "sumar": 12.331,
+      "vox": 12.379
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.78,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.928,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.869,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     },
+     "before": {
+      "hombre:18-24": 4.303,
+      "hombre:25-34": 6.11,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 3.951,
+      "mujer:25-34": 5.988,
+      "mujer:35-44": 7.978,
+      "mujer:45-54": 10.02,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.777,
+      "hombre:25-34": 6.949,
+      "hombre:35-44": 7.928,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.87,
+      "mujer:18-24": 4.445,
+      "mujer:25-34": 6.644,
+      "mujer:35-44": 7.922,
+      "mujer:45-54": 9.687,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     },
+     "before": {
+      "basico": 41.846,
+      "medio": 31.204,
+      "superior": 26.95
+     },
+     "after": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     }
+    }
+   }
+  },
+  "3536": {
+   "weight_variable": "PESO",
+   "published": "2025-12-17",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20250701)",
+    "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4017,
+   "n_ef": 1813.1,
+   "deff": 2.216,
+   "psoe_recall_share_before": 39.733,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.8418,
+   "psoe_factor_range": [
+    0.49,
+    1.4429
+   ],
+   "identity_check_psoe": [
+    27.7019,
+    27.7019
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 5.168,
+      "bildu": 1.331,
+      "erc": 1.852,
+      "junts": 1.232,
+      "pnv": 1.152,
+      "pp": 24.423,
+      "psoe": 39.733,
+      "sumar": 14.559,
+      "vox": 10.55
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.331,
+      "vox": 12.382
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.78,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.928,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.869,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     },
+     "before": {
+      "hombre:18-24": 4.303,
+      "hombre:25-34": 6.11,
+      "hombre:35-44": 8.263,
+      "hombre:45-54": 9.865,
+      "hombre:55-64": 8.559,
+      "hombre:65+": 11.256,
+      "mujer:18-24": 3.951,
+      "mujer:25-34": 5.697,
+      "mujer:35-44": 8.455,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 8.944,
+      "mujer:65+": 14.765
+     },
+     "after": {
+      "hombre:18-24": 4.779,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.927,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.87,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.001
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     },
+     "before": {
+      "basico": 41.841,
+      "medio": 31.555,
+      "superior": 26.604
+     },
+     "after": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     }
+    }
+   }
+  },
+  "3540": {
+   "weight_variable": "PESO",
+   "published": "2026-01-28",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20250701)",
+    "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+   },
+   "sweeps": 3,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4006,
+   "n_ef": 1853.5,
+   "deff": 2.161,
+   "psoe_recall_share_before": 41.111,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.7982,
+   "psoe_factor_range": [
+    0.5167,
+    1.2672
+   ],
+   "identity_check_psoe": [
+    26.6368,
+    26.6368
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.613,
+      "bildu": 1.397,
+      "erc": 1.99,
+      "junts": 1.612,
+      "pnv": 0.889,
+      "pp": 23.476,
+      "psoe": 41.111,
+      "sumar": 12.739,
+      "vox": 12.173
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.359,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.061,
+      "psoe": 31.679,
+      "sumar": 12.329,
+      "vox": 12.382
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.78,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.928,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.869,
+      "mujer:18-24": 4.446,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.92,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.0
+     },
+     "before": {
+      "hombre:18-24": 4.198,
+      "hombre:25-34": 6.24,
+      "hombre:35-44": 7.704,
+      "hombre:45-54": 10.085,
+      "hombre:55-64": 8.676,
+      "hombre:65+": 11.445,
+      "mujer:18-24": 4.036,
+      "mujer:25-34": 5.932,
+      "mujer:35-44": 7.835,
+      "mujer:45-54": 9.837,
+      "mujer:55-64": 9.058,
+      "mujer:65+": 14.954
+     },
+     "after": {
+      "hombre:18-24": 4.778,
+      "hombre:25-34": 6.948,
+      "hombre:35-44": 7.927,
+      "hombre:45-54": 9.739,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.871,
+      "mujer:18-24": 4.444,
+      "mujer:25-34": 6.643,
+      "mujer:35-44": 7.921,
+      "mujer:45-54": 9.686,
+      "mujer:55-64": 8.703,
+      "mujer:65+": 14.002
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     },
+     "before": {
+      "basico": 41.323,
+      "medio": 30.665,
+      "superior": 28.012
+     },
+     "after": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     }
+    }
+   }
+  },
+  "3544": {
+   "weight_variable": "PESO",
+   "published": "2026-03-02",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260101)",
+    "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4027,
+   "n_ef": 2071.1,
+   "deff": 1.944,
+   "psoe_recall_share_before": 39.94,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.8161,
+   "psoe_factor_range": [
+    0.51,
+    1.3072
+   ],
+   "identity_check_psoe": [
+    27.0022,
+    27.0022
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 5.049,
+      "bildu": 1.057,
+      "erc": 2.025,
+      "junts": 1.455,
+      "pnv": 0.985,
+      "pp": 24.992,
+      "psoe": 39.94,
+      "sumar": 13.392,
+      "vox": 11.105
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.331,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.822,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     },
+     "before": {
+      "hombre:18-24": 4.388,
+      "hombre:25-34": 6.05,
+      "hombre:35-44": 7.911,
+      "hombre:45-54": 9.878,
+      "hombre:55-64": 8.676,
+      "hombre:65+": 11.445,
+      "mujer:18-24": 4.165,
+      "mujer:25-34": 5.804,
+      "mujer:35-44": 7.835,
+      "mujer:45-54": 9.837,
+      "mujer:55-64": 9.058,
+      "mujer:65+": 14.954
+     },
+     "after": {
+      "hombre:18-24": 4.821,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.647,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.071
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     },
+     "before": {
+      "basico": 41.104,
+      "medio": 31.006,
+      "superior": 27.889
+     },
+     "after": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     }
+    }
+   }
+  },
+  "3546": {
+   "weight_variable": "PESO",
+   "published": "2026-03-27",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260101)",
+    "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4016,
+   "n_ef": 1917.0,
+   "deff": 2.095,
+   "psoe_recall_share_before": 38.0,
+   "psoe_recall_share_after": 31.68,
+   "psoe_factor_mean": 0.8691,
+   "psoe_factor_range": [
+    0.5435,
+    1.4903
+   ],
+   "identity_check_psoe": [
+    27.857,
+    27.857
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.372,
+      "bildu": 1.225,
+      "erc": 2.657,
+      "junts": 0.926,
+      "pnv": 0.767,
+      "pp": 26.069,
+      "psoe": 38.0,
+      "sumar": 15.062,
+      "vox": 10.923
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.06,
+      "psoe": 31.68,
+      "sumar": 12.33,
+      "vox": 12.38
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.822,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     },
+     "before": {
+      "hombre:18-24": 4.198,
+      "hombre:25-34": 6.24,
+      "hombre:35-44": 7.911,
+      "hombre:45-54": 9.878,
+      "hombre:55-64": 8.676,
+      "hombre:65+": 11.445,
+      "mujer:18-24": 4.165,
+      "mujer:25-34": 5.804,
+      "mujer:35-44": 7.835,
+      "mujer:45-54": 9.837,
+      "mujer:55-64": 9.058,
+      "mujer:65+": 14.954
+     },
+     "after": {
+      "hombre:18-24": 4.821,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     },
+     "before": {
+      "basico": 41.113,
+      "medio": 31.306,
+      "superior": 27.58
+     },
+     "after": {
+      "basico": 41.707,
+      "medio": 22.615,
+      "superior": 35.678
+     }
+    }
+   }
+  },
+  "3557": {
+   "weight_variable": "PESO",
+   "published": "2026-05-07",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260101)",
+    "estudios": "INE EPA 1T2026 (microdatos) (20260101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4020,
+   "n_ef": 1853.7,
+   "deff": 2.169,
+   "psoe_recall_share_before": 44.475,
+   "psoe_recall_share_after": 31.68,
+   "psoe_factor_mean": 0.7423,
+   "psoe_factor_range": [
+    0.4709,
+    1.2553
+   ],
+   "identity_check_psoe": [
+    29.4405,
+    29.4405
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 3.834,
+      "bildu": 1.325,
+      "erc": 2.707,
+      "junts": 1.484,
+      "pnv": 0.937,
+      "pp": 22.694,
+      "psoe": 44.475,
+      "sumar": 12.938,
+      "vox": 9.606
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.06,
+      "psoe": 31.68,
+      "sumar": 12.33,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.822,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     },
+     "before": {
+      "hombre:18-24": 4.198,
+      "hombre:25-34": 6.24,
+      "hombre:35-44": 7.911,
+      "hombre:45-54": 9.878,
+      "hombre:55-64": 8.676,
+      "hombre:65+": 11.445,
+      "mujer:18-24": 4.036,
+      "mujer:25-34": 5.932,
+      "mujer:35-44": 7.835,
+      "mujer:45-54": 9.837,
+      "mujer:55-64": 9.058,
+      "mujer:65+": 14.954
+     },
+     "after": {
+      "hombre:18-24": 4.821,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.117,
+      "medio": 22.805,
+      "superior": 36.078
+     },
+     "before": {
+      "basico": 41.528,
+      "medio": 30.581,
+      "superior": 27.891
+     },
+     "after": {
+      "basico": 41.117,
+      "medio": 22.805,
+      "superior": 36.078
+     }
+    }
+   }
+  },
+  "3562": {
+   "weight_variable": "PESO",
+   "published": "2026-06-26",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260101)",
+    "estudios": "INE EPA 1T2026 (microdatos) (20260101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4015,
+   "n_ef": 1942.5,
+   "deff": 2.067,
+   "psoe_recall_share_before": 42.009,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.7845,
+   "psoe_factor_range": [
+    0.4901,
+    1.2297
+   ],
+   "identity_check_psoe": [
+    30.3477,
+    30.3477
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.36,
+      "bildu": 1.099,
+      "erc": 2.688,
+      "junts": 1.269,
+      "pnv": 0.738,
+      "pp": 24.544,
+      "psoe": 42.009,
+      "sumar": 13.038,
+      "vox": 10.255
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.33,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.822,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     },
+     "before": {
+      "hombre:18-24": 4.388,
+      "hombre:25-34": 5.816,
+      "hombre:35-44": 8.145,
+      "hombre:45-54": 9.878,
+      "hombre:55-64": 8.676,
+      "hombre:65+": 11.445,
+      "mujer:18-24": 4.165,
+      "mujer:25-34": 5.804,
+      "mujer:35-44": 7.835,
+      "mujer:45-54": 9.837,
+      "mujer:55-64": 9.058,
+      "mujer:65+": 14.954
+     },
+     "after": {
+      "hombre:18-24": 4.821,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.117,
+      "medio": 22.805,
+      "superior": 36.078
+     },
+     "before": {
+      "basico": 40.628,
+      "medio": 31.587,
+      "superior": 27.785
+     },
+     "after": {
+      "basico": 41.117,
+      "medio": 22.805,
+      "superior": 36.078
+     }
+    }
+   }
+  },
+  "3567": {
+   "weight_variable": "PESO",
+   "published": "2026-06-26",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260101)",
+    "estudios": "INE EPA 1T2026 (microdatos) (20260101)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4024,
+   "n_ef": 1985.8,
+   "deff": 2.026,
+   "psoe_recall_share_before": 39.62,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.8216,
+   "psoe_factor_range": [
+    0.487,
+    1.2329
+   ],
+   "identity_check_psoe": [
+    26.6071,
+    26.6071
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.088,
+      "bildu": 1.062,
+      "erc": 2.201,
+      "junts": 1.637,
+      "pnv": 0.61,
+      "pp": 27.165,
+      "psoe": 39.62,
+      "sumar": 12.594,
+      "vox": 11.023
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.057,
+      "psoe": 31.679,
+      "sumar": 12.331,
+      "vox": 12.382
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.822,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.648,
+      "mujer:35-44": 7.812,
+      "mujer:45-54": 9.649,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.07
+     },
+     "before": {
+      "hombre:18-24": 4.541,
+      "hombre:25-34": 5.862,
+      "hombre:35-44": 7.503,
+      "hombre:45-54": 9.725,
+      "hombre:55-64": 8.768,
+      "hombre:65+": 12.23,
+      "mujer:18-24": 4.171,
+      "mujer:25-34": 5.444,
+      "mujer:35-44": 7.449,
+      "mujer:45-54": 9.475,
+      "mujer:55-64": 8.998,
+      "mujer:65+": 15.834
+     },
+     "after": {
+      "hombre:18-24": 4.821,
+      "hombre:25-34": 6.99,
+      "hombre:35-44": 7.829,
+      "hombre:45-54": 9.694,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.946,
+      "mujer:18-24": 4.474,
+      "mujer:25-34": 6.647,
+      "mujer:35-44": 7.811,
+      "mujer:45-54": 9.648,
+      "mujer:55-64": 8.712,
+      "mujer:65+": 14.072
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.117,
+      "medio": 22.805,
+      "superior": 36.078
+     },
+     "before": {
+      "basico": 40.12,
+      "medio": 30.961,
+      "superior": 28.918
+     },
+     "after": {
+      "basico": 41.117,
+      "medio": 22.805,
+      "superior": 36.078
+     }
+    }
+   }
+  },
+  "3571": {
+   "weight_variable": "PESO",
+   "published": "2026-09-07",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260701)",
+    "estudios": "INE EPA 2T2026 (microdatos) (20260401)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4020,
+   "n_ef": 2056.2,
+   "deff": 1.955,
+   "psoe_recall_share_before": 42.33,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.7663,
+   "psoe_factor_range": [
+    0.4911,
+    1.156
+   ],
+   "identity_check_psoe": [
+    27.0235,
+    27.0235
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.467,
+      "bildu": 0.777,
+      "erc": 2.439,
+      "junts": 0.873,
+      "pnv": 1.627,
+      "pp": 25.182,
+      "psoe": 42.33,
+      "sumar": 10.78,
+      "vox": 11.524
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.33,
+      "vox": 12.381
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.87,
+      "hombre:25-34": 7.038,
+      "hombre:35-44": 7.757,
+      "hombre:45-54": 9.623,
+      "hombre:55-64": 8.381,
+      "hombre:65+": 11.012,
+      "mujer:18-24": 4.502,
+      "mujer:25-34": 6.658,
+      "mujer:35-44": 7.716,
+      "mujer:45-54": 9.586,
+      "mujer:55-64": 8.728,
+      "mujer:65+": 14.128
+     },
+     "before": {
+      "hombre:18-24": 4.472,
+      "hombre:25-34": 6.006,
+      "hombre:35-44": 7.582,
+      "hombre:45-54": 9.871,
+      "hombre:55-64": 8.748,
+      "hombre:65+": 11.652,
+      "mujer:18-24": 4.256,
+      "mujer:25-34": 5.632,
+      "mujer:35-44": 7.67,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 9.123,
+      "mujer:65+": 15.156
+     },
+     "after": {
+      "hombre:18-24": 4.87,
+      "hombre:25-34": 7.038,
+      "hombre:35-44": 7.757,
+      "hombre:45-54": 9.623,
+      "hombre:55-64": 8.381,
+      "hombre:65+": 11.012,
+      "mujer:18-24": 4.502,
+      "mujer:25-34": 6.658,
+      "mujer:35-44": 7.716,
+      "mujer:45-54": 9.586,
+      "mujer:55-64": 8.728,
+      "mujer:65+": 14.128
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.007,
+      "medio": 22.949,
+      "superior": 36.044
+     },
+     "before": {
+      "basico": 40.137,
+      "medio": 31.721,
+      "superior": 28.142
+     },
+     "after": {
+      "basico": 41.007,
+      "medio": 22.949,
+      "superior": 36.044
+     }
+    }
+   }
+  },
+  "3577": {
+   "weight_variable": "PESO",
+   "published": "2026-09-23",
+   "targets_used": {
+    "sexo_edad": "INE 59238 (20260701)",
+    "estudios": "INE EPA 2T2026 (microdatos) (20260401)"
+   },
+   "sweeps": 4,
+   "converged": true,
+   "trimmed": 0,
+   "n": 4042,
+   "n_ef": 2019.2,
+   "deff": 2.002,
+   "psoe_recall_share_before": 40.162,
+   "psoe_recall_share_after": 31.679,
+   "psoe_factor_mean": 0.8012,
+   "psoe_factor_range": [
+    0.4846,
+    1.2834
+   ],
+   "identity_check_psoe": [
+    25.9508,
+    25.9508
+   ],
+   "axes": {
+    "recuerdo": {
+     "target": {
+      "vox": 12.38,
+      "junts": 1.6,
+      "pp": 33.06,
+      "erc": 1.89,
+      "pnv": 1.12,
+      "sumar": 12.33,
+      "psoe": 31.68,
+      "bildu": 1.36,
+      "_otros": 4.58
+     },
+     "before": {
+      "_otros": 4.543,
+      "bildu": 1.385,
+      "erc": 2.308,
+      "junts": 1.207,
+      "pnv": 0.807,
+      "pp": 25.132,
+      "psoe": 40.162,
+      "sumar": 13.752,
+      "vox": 10.704
+     },
+     "after": {
+      "_otros": 4.58,
+      "bildu": 1.36,
+      "erc": 1.89,
+      "junts": 1.6,
+      "pnv": 1.12,
+      "pp": 33.059,
+      "psoe": 31.679,
+      "sumar": 12.331,
+      "vox": 12.382
+     }
+    },
+    "sexo_edad": {
+     "target": {
+      "hombre:18-24": 4.87,
+      "hombre:25-34": 7.038,
+      "hombre:35-44": 7.757,
+      "hombre:45-54": 9.623,
+      "hombre:55-64": 8.381,
+      "hombre:65+": 11.012,
+      "mujer:18-24": 4.502,
+      "mujer:25-34": 6.658,
+      "mujer:35-44": 7.716,
+      "mujer:45-54": 9.586,
+      "mujer:55-64": 8.728,
+      "mujer:65+": 14.128
+     },
+     "before": {
+      "hombre:18-24": 4.472,
+      "hombre:25-34": 6.006,
+      "hombre:35-44": 7.376,
+      "hombre:45-54": 10.077,
+      "hombre:55-64": 8.748,
+      "hombre:65+": 11.652,
+      "mujer:18-24": 4.126,
+      "mujer:25-34": 5.903,
+      "mujer:35-44": 7.528,
+      "mujer:45-54": 9.833,
+      "mujer:55-64": 9.123,
+      "mujer:65+": 15.156
+     },
+     "after": {
+      "hombre:18-24": 4.87,
+      "hombre:25-34": 7.038,
+      "hombre:35-44": 7.757,
+      "hombre:45-54": 9.623,
+      "hombre:55-64": 8.381,
+      "hombre:65+": 11.013,
+      "mujer:18-24": 4.502,
+      "mujer:25-34": 6.658,
+      "mujer:35-44": 7.716,
+      "mujer:45-54": 9.586,
+      "mujer:55-64": 8.728,
+      "mujer:65+": 14.129
+     }
+    },
+    "estudios": {
+     "target": {
+      "basico": 41.007,
+      "medio": 22.949,
+      "superior": 36.044
+     },
+     "before": {
+      "basico": 40.103,
+      "medio": 32.221,
+      "superior": 27.675
+     },
+     "after": {
+      "basico": 41.007,
+      "medio": 22.949,
+      "superior": 36.044
+     }
+    }
+   }
+  }
+ },
+ "weighted_fit_check": {
+  "unweighted (used)": {
+   "val_logloss_weighted": 0.27921674820987297,
+   "test_auc": 0.9140319425334422,
+   "threshold": 0.29,
+   "val_monthly_abs_error_pp": 1.7678572288614802,
+   "val_monthly_abs_error_expected_pp": 2.910405566464208,
+   "test_monthly_abs_error_pp": 1.7605208901931937,
+   "test_monthly_abs_error_expected_pp": 1.02317264206608
+  },
+  "weighted": {
+   "val_logloss_weighted": 0.28232694018331544,
+   "test_auc": 0.9126640131911424,
+   "threshold": 0.3,
+   "val_monthly_abs_error_pp": 1.499844316411912,
+   "val_monthly_abs_error_expected_pp": 2.9774153050161907,
+   "test_monthly_abs_error_pp": 1.4489608876699966,
+   "test_monthly_abs_error_expected_pp": 0.8584957209833572
+  }
+ },
+ "feature_names": [
+  "numeric__rate_sanchez",
+  "numeric__rate_feijoo",
+  "numeric__rate_diaz",
+  "numeric__rate_abascal",
+  "numeric__probvoto",
+  "numeric__ideology",
+  "numeric__eco_spain",
+  "numeric__eco_personal",
+  "numeric__gap_best_rival",
+  "numeric__town_size",
+  "numeric__income_rank",
+  "binary__sanchez_top",
+  "binary__problem_none_dk",
+  "binary__problem_security_immigration",
+  "binary__problem_housing",
+  "binary__problem_extremism",
+  "binary__problem_politics",
+  "binary__problem_economy_jobs",
+  "binary__problem_public_services",
+  "binary__problem_social_equality",
+  "binary__problem_territorial",
+  "binary__problem_other",
+  "binary__income_dk",
+  "binary__female",
+  "categorical__closest_group_left",
+  "categorical__closest_group_no_answer",
+  "categorical__closest_group_none",
+  "categorical__closest_group_other",
+  "categorical__closest_group_psoe",
+  "categorical__closest_group_regional",
+  "categorical__closest_group_right",
+  "categorical__age_band_18-29",
+  "categorical__age_band_30-44",
+  "categorical__age_band_45-64",
+  "categorical__age_band_65+",
+  "categorical__education_F.P.",
+  "categorical__education_Primaria",
+  "categorical__education_Secundaria 1\u00aa etapa",
+  "categorical__education_Secundaria 2\u00aa etapa",
+  "categorical__education_Sin estudios",
+  "categorical__education_Superiores",
+  "categorical__education_infrequent_sklearn",
+  "categorical__religion_non_believer",
+  "categorical__religion_nonpractising_catholic",
+  "categorical__religion_other",
+  "categorical__religion_other_religion",
+  "categorical__religion_practising_catholic",
+  "categorical__work_status_other",
+  "categorical__work_status_retired",
+  "categorical__work_status_student",
+  "categorical__work_status_unemployed",
+  "categorical__work_status_working",
+  "categorical__social_class_lower_middle",
+  "categorical__social_class_middle",
+  "categorical__social_class_other",
+  "categorical__social_class_upper",
+  "categorical__social_class_working_low",
+  "categorical__region_Andaluc\u00eda",
+  "categorical__region_Arag\u00f3n",
+  "categorical__region_Asturias (Principado de)",
+  "categorical__region_Balears (Illes)",
+  "categorical__region_Canarias",
+  "categorical__region_Cantabria",
+  "categorical__region_Castilla y Le\u00f3n",
+  "categorical__region_Castilla-La Mancha",
+  "categorical__region_Catalu\u00f1a",
+  "categorical__region_Comunitat Valenciana",
+  "categorical__region_Extremadura",
+  "categorical__region_Galicia",
+  "categorical__region_Madrid (Comunidad de)",
+  "categorical__region_Murcia (Regi\u00f3n de)",
+  "categorical__region_Navarra (Comunidad Foral de)",
+  "categorical__region_Pa\u00eds Vasco",
+  "categorical__region_Rioja (La)",
+  "categorical__region_infrequent_sklearn",
+  "categorical__marital_status_Casado/a",
+  "categorical__marital_status_Divorciado/a",
+  "categorical__marital_status_Separado/a",
+  "categorical__marital_status_Soltero/a",
+  "categorical__marital_status_Viudo/a",
+  "categorical__marital_status_infrequent_sklearn"
+ ],
+ "coefficients": {
+  "sklearn": [
+   -0.4443696078163506,
+   -0.7468498344647134,
+   0.13131193064381005,
+   -0.5534778672580973,
+   0.13665653702418745,
+   -0.47368834439846086,
+   0.039600184843275564,
+   -0.1802777918833125,
+   -0.05310053048793633,
+   -0.6239531605469067,
+   -0.06450498404854857,
+   -0.05219078320645481,
+   -0.5575584722480859,
+   -0.1410105309340157,
+   0.1867111048697177,
+   -0.12485097494023929,
+   0.07209108414523131,
+   -0.0688822799161645,
+   -0.23030874163125326,
+   0.056058235821797545,
+   -0.17871159523162636,
+   0.06469302585059407,
+   -0.27117069695599993,
+   -0.013225077620256253,
+   -0.019759800902992057,
+   0.28801805327237573,
+   0.2193302331509358,
+   -0.26792406881830433,
+   0.4488056017177965,
+   -1.3803419526408967,
+   0.4223205937710932,
+   0.2697926908288322,
+   0.2097128012265678,
+   0.014118127879880558,
+   -0.09761797224364291,
+   -0.1262118055809746,
+   0.07215130398831242,
+   -0.2862951064456666,
+   0.01560340920132469,
+   0.10971870306921779,
+   -0.1895679749307387,
+   0.15272767784692365,
+   0.12566313855245825,
+   0.09587654417442769,
+   0.15288971275163843,
+   0.2323465743555906,
+   -0.17314638282078132,
+   -0.3079652971790443,
+   -0.14347653133147487,
+   -0.11121873385256242,
+   0.04362392442218699,
+   0.07951843134566022,
+   0.13155406069801942,
+   -0.0686603000033895,
+   -0.08244004853522521,
+   0.1995138526482737,
+   -0.24058146210249515,
+   0.19216910927466893,
+   -0.055670313358624074,
+   -0.08315928824741364,
+   0.1257990870224951,
+   -0.19039269264566241,
+   0.15862039419763965,
+   0.036432320114292864,
+   -0.1620940294452368,
+   -0.11414472073149337,
+   -0.0598862442806845,
+   0.0886662311516811,
+   0.08542367130406311,
+   0.28559050894521887,
+   0.18790811626471784,
+   -0.054926457495097905,
+   -0.13362705777476466,
+   0.11839153055834623,
+   -0.30896027145792737,
+   0.07603036716028168,
+   -0.04082638102637322,
+   -0.14688348827226036,
+   0.15426703012004972,
+   -0.04327757661581595,
+   0.08093137727234923,
+   -0.004209810196118382
+  ],
+  "manual_pytorch": [
+   -0.4442977480285543,
+   -0.746849774367838,
+   0.1313117715628995,
+   -0.5534780988481335,
+   0.13665637584581694,
+   -0.4736883839547697,
+   0.03960015988743527,
+   -0.1802777786925542,
+   -0.05310039419477833,
+   -0.623952102184418,
+   -0.0645049684737127,
+   -0.05219054558116305,
+   -0.5575606964768373,
+   -0.14101379718945414,
+   0.18670862471678246,
+   -0.12485308384240805,
+   0.07208846763489454,
+   -0.06888532466313524,
+   -0.23031175545547744,
+   0.05605571367457959,
+   -0.17871442132567786,
+   0.06469156259398604,
+   -0.2711731139923603,
+   -0.013225412342140063,
+   -0.019760600308060997,
+   0.28801132010918157,
+   0.21932453987393835,
+   -0.2679301281520044,
+   0.44880168289816313,
+   -1.3803486497422919,
+   0.4223145198638926,
+   0.2697876206255015,
+   0.20970320080001162,
+   0.014108320654999458,
+   -0.09762815250765663,
+   -0.12622246347097293,
+   0.07214336936247666,
+   -0.2863008953408339,
+   0.01559566331704955,
+   0.10971097076039356,
+   -0.1895729466594496,
+   0.15271942886726378,
+   0.12566531516948182,
+   0.09586695385173014,
+   0.1528803691061826,
+   0.23234239399033516,
+   -0.17315446029814188,
+   -0.307974351173724,
+   -0.14348384338206657,
+   -0.11122752416983095,
+   0.04361629157103221,
+   0.07951089655926477,
+   0.13154508489798206,
+   -0.06866828729929449,
+   -0.08244831560938476,
+   0.19950578868522797,
+   -0.2405889243998171,
+   0.1921606440996499,
+   -0.0556732823503974,
+   -0.08316121814369236,
+   0.12579699218678272,
+   -0.190394384836625,
+   0.15861788756394257,
+   0.03643015072366404,
+   -0.16209591767335052,
+   -0.11414680597907012,
+   -0.05988908809152143,
+   0.08866376955433061,
+   0.08542124076230664,
+   0.2855873629219808,
+   0.18790510008655628,
+   -0.054928601104649,
+   -0.13362902980465674,
+   0.11838947285433361,
+   -0.30896246709300673,
+   0.07602972389945394,
+   -0.04083517487191287,
+   -0.14689097933798648,
+   0.15426030457980777,
+   -0.04328668432101381,
+   0.08092417496843285,
+   -0.004210735540946151
+  ],
+  "nn_module": [
+   -0.4442977480203282,
+   -0.746849774364982,
+   0.13131177156218476,
+   -0.5534780988411382,
+   0.13665637584413629,
+   -0.47368838395116003,
+   0.039600159887294775,
+   -0.18027777869065223,
+   -0.053100394192937606,
+   -0.6239521021734075,
+   -0.06450496847343094,
+   -0.05219054558459982,
+   -0.5575606964765699,
+   -0.14101379719134868,
+   0.18670862471232372,
+   -0.12485308384284245,
+   0.07208846763338236,
+   -0.06888532466290967,
+   -0.23031175545653576,
+   0.056055713670072074,
+   -0.17871442132804302,
+   0.06469156259303141,
+   -0.27117311399205807,
+   -0.013225412340161847,
+   -0.01976060030588799,
+   0.28801132010697655,
+   0.21932453986739103,
+   -0.2679301281468282,
+   0.4488016828958085,
+   -1.3803486497328723,
+   0.4223145198624395,
+   0.2697876206234689,
+   0.20970320079857796,
+   0.014108320656011527,
+   -0.09762815250487786,
+   -0.1262224634733285,
+   0.0721433693609567,
+   -0.28630089533281844,
+   0.015595663314982496,
+   0.10971097075390247,
+   -0.18957294665447214,
+   0.15271942886404608,
+   0.1256653151697864,
+   0.09586695385066049,
+   0.15288036910283603,
+   0.23234239399779952,
+   -0.17315446030315007,
+   -0.3079743511717626,
+   -0.1434838433849713,
+   -0.11122752416464667,
+   0.04361629157340247,
+   0.0795108965549045,
+   0.1315450848976942,
+   -0.06866828729883587,
+   -0.0824483156072927,
+   0.199505788683046,
+   -0.24058892439870064,
+   0.1921606440981663,
+   -0.055673282345515725,
+   -0.08316121815032035,
+   0.12579699218430282,
+   -0.19039438483507773,
+   0.15861788756349776,
+   0.036430150723007336,
+   -0.16209591766984882,
+   -0.11414680597985202,
+   -0.0598890880892063,
+   0.08866376955474949,
+   0.08542124076193601,
+   0.28558736292050346,
+   0.18790510008595185,
+   -0.05492860110608203,
+   -0.13362902980598043,
+   0.1183894728538139,
+   -0.30896246709024605,
+   0.07602972390075038,
+   -0.04083517486975728,
+   -0.14689097934004558,
+   0.15426030457893877,
+   -0.04328668431978384,
+   0.08092417496798701,
+   -0.00421073554095564
+  ]
+ },
+ "loss_history": {
+  "manual_pytorch": [
+   0.6931471805579453,
+   0.28958905512534394,
+   0.2885343339367348,
+   0.2882183619328694,
+   0.28809193663029126,
+   0.28803293484901693,
+   0.2880025945981904,
+   0.2879858904980579,
+   0.28797617437144546,
+   0.2879702351898569,
+   0.2879664252837146,
+   0.28796386061420026,
+   0.28796204980342593,
+   0.2879607114020101,
+   0.28795967975036385,
+   0.28795885476183075,
+   0.28795817436796417,
+   0.28795759903210705,
+   0.28795710285840065,
+   0.2879566683858302,
+   0.28795628348209096,
+   0.287955939455917,
+   0.2879556298887853,
+   0.2879553498985374,
+   0.2879550956666557,
+   0.2879548641291439,
+   0.2879546527705883,
+   0.28795445948435455,
+   0.28795428247585186,
+   0.2879541201942905,
+   0.2879539712835889,
+   0.2879538345463467,
+   0.28795370891687877,
+   0.2879535934406234,
+   0.2879534872581113,
+   0.2879533895922467,
+   0.287953299738032,
+   0.28795321705412785,
+   0.28795314095581076,
+   0.2879530709090154,
+   0.28795300642523025,
+   0.2879529470570771,
+   0.2879528923944459,
+   0.2879528420610871,
+   0.28795279571158705,
+   0.28795275302866685,
+   0.2879527137207583,
+   0.2879526775198191,
+   0.28795264417935784,
+   0.2879526134726411,
+   0.2879525851910647,
+   0.2879525591426685,
+   0.287952535150781,
+   0.2879525130527817,
+   0.28795249269896595,
+   0.28795247395150747,
+   0.28795245668350566,
+   0.28795244077811205,
+   0.2879524261277278,
+   0.2879524126332676,
+   0.2879524002034814,
+   0.2879523887543329,
+   0.28795237820842684,
+   0.2879523684944823,
+   0.2879523595468486,
+   0.2879523513050592,
+   0.28795234371342165,
+   0.2879523367206404,
+   0.28795233027946854,
+   0.2879523243463882,
+   0.28795231888131595,
+   0.2879523138473314,
+   0.28795230921042747,
+   0.2879523049392803,
+   0.28795230100503755,
+   0.28795229738112305,
+   0.28795229404305744,
+   0.2879522909682925,
+   0.2879522881360589,
+   0.2879522855272256,
+   0.287952283124171,
+   0.28795228091066316,
+   0.28795227887175107,
+   0.2879522769936627,
+   0.28795227526371253,
+   0.2879522736702157,
+   0.28795227220240904,
+   0.2879522708503784,
+   0.28795226960499165,
+   0.28795226845783684,
+   0.28795226740116586,
+   0.2879522664278416,
+   0.28795226553128983,
+   0.287952264705455,
+   0.28795226394475903,
+   0.2879522632440642,
+   0.28795226259863765,
+   0.2879522620041201,
+   0.28795226145649583,
+   0.2879522609520662,
+   0.2879522604874243,
+   0.28795226005943153,
+   0.2879522596651972,
+   0.28795225930205864,
+   0.2879522589675631,
+   0.2879522586594513,
+   0.28795225837564226,
+   0.2879522581142189,
+   0.2879522578734157,
+   0.28795225765160604,
+   0.28795225744729197,
+   0.28795225725909335,
+   0.2879522570857392,
+   0.28795225692605836,
+   0.28795225677897274,
+   0.28795225664348856,
+   0.28795225651869083,
+   0.2879522564037367,
+   0.2879522562978497,
+   0.28795225620031456,
+   0.28795225611047276,
+   0.2879522560277172,
+   0.28795225595148916,
+   0.28795225588127366,
+   0.2879522558165964,
+   0.2879522557570207,
+   0.28795225570214406,
+   0.2879522556515959,
+   0.28795225560503473,
+   0.2879522555621462,
+   0.2879522555226405,
+   0.28795225548625086,
+   0.28795225545273145,
+   0.28795225542185593,
+   0.28795225539341573,
+   0.28795225536721886,
+   0.2879522553430882,
+   0.287952255320861,
+   0.2879522553003869,
+   0.2879522552815276,
+   0.287952255264156,
+   0.2879522552481546,
+   0.28795225523341533,
+   0.28795225521983847,
+   0.28795225520733264,
+   0.2879522551958133,
+   0.2879522551852024,
+   0.28795225517542855,
+   0.28795225516642553,
+   0.28795225515813266,
+   0.28795225515049394,
+   0.2879522551434577,
+   0.2879522551369764,
+   0.2879522551310064,
+   0.28795225512550726,
+   0.28795225512044187,
+   0.287952255115776,
+   0.28795225511147815,
+   0.2879522551075193,
+   0.28795225510387273,
+   0.28795225510051387,
+   0.2879522550974199,
+   0.28795225509456984,
+   0.28795225509194466,
+   0.28795225508952654,
+   0.28795225508729916,
+   0.2879522550852475,
+   0.28795225508335764,
+   0.28795225508161687,
+   0.2879522550800134,
+   0.2879522550785363,
+   0.2879522550771758,
+   0.2879522550759226,
+   0.2879522550747682,
+   0.2879522550737049,
+   0.2879522550727255,
+   0.2879522550718233,
+   0.28795225507099226,
+   0.2879522550702268,
+   0.2879522550695217,
+   0.28795225506887223,
+   0.287952255068274,
+   0.28795225506772293,
+   0.28795225506721533,
+   0.28795225506674776,
+   0.28795225506631705,
+   0.28795225506592037,
+   0.28795225506555494,
+   0.2879522550652184,
+   0.28795225506490835,
+   0.2879522550646227,
+   0.2879522550643597,
+   0.28795225506411737,
+   0.2879522550638941,
+   0.28795225506368854,
+   0.2879522550634992,
+   0.28795225506332467,
+   0.28795225506316396,
+   0.287952255063016,
+   0.2879522550628797
+  ],
+  "nn_module": [
+   0.694519330045283,
+   0.28960023049994793,
+   0.28853956462757885,
+   0.2882215914999603,
+   0.28809405140678856,
+   0.28803436913994274,
+   0.2880035939463771,
+   0.28798660107684804,
+   0.28797668728550063,
+   0.28797060957169723,
+   0.2879667008055661,
+   0.2879640645920441,
+   0.28796220142826684,
+   0.28796082437127885,
+   0.2879597639649086,
+   0.2879589174529444,
+   0.2879582208635982,
+   0.2879576332875832,
+   0.28795712782957394,
+   0.2879566862947399,
+   0.2879562960080522,
+   0.2879559478742139,
+   0.2879556351721257,
+   0.28795535279178724,
+   0.2879550967422404,
+   0.28795486382835567,
+   0.2879546514345528,
+   0.28795445737736114,
+   0.2879542798030151,
+   0.28795411711498153,
+   0.2879539679216928,
+   0.28795383099813066,
+   0.28795370525704955,
+   0.2879535897270108,
+   0.28795348353530204,
+   0.28795338589441355,
+   0.2879532960911452,
+   0.2879532134776888,
+   0.2879531374642149,
+   0.2879530675126277,
+   0.2879530031312358,
+   0.2879529438701554,
+   0.2879528893173068,
+   0.28795283909489755,
+   0.2879527928563113,
+   0.2879527502833386,
+   0.28795271108369763,
+   0.28795267498880645,
+   0.28795264175177293,
+   0.287952611145574,
+   0.2879525829614042,
+   0.2879525570071729,
+   0.2879525331061346,
+   0.28795251109563813,
+   0.2879524908259838,
+   0.2879524721593772,
+   0.28795245496897054,
+   0.2879524391379843,
+   0.2879524245589002,
+   0.2879524111327222,
+   0.2879523987682961,
+   0.2879523873816847,
+   0.28795237689559433,
+   0.2879523672388466,
+   0.28795235834589317,
+   0.2879523501563688,
+   0.2879523426146808,
+   0.28795233566963097,
+   0.28795232927406755,
+   0.287952323384565,
+   0.2879523179611289,
+   0.28795231296692525,
+   0.2879523083680298,
+   0.2879523041331985,
+   0.2879523002336556,
+   0.28795229664289834,
+   0.28795229333651773,
+   0.28795229029203273,
+   0.2879522874887384,
+   0.28795228490756514,
+   0.2879522825309498,
+   0.28795228034271664,
+   0.2879522783279679,
+   0.2879522764729824,
+   0.28795227476512325,
+   0.28795227319275174,
+   0.28795227174514887,
+   0.2879522704124425,
+   0.28795226918554023,
+   0.2879522680560686,
+   0.28795226701631566,
+   0.2879522660591787,
+   0.2879522651781166,
+   0.28795226436710514,
+   0.28795226362059634,
+   0.28795226293348064,
+   0.2879522623010526,
+   0.28795226171897853,
+   0.2879522611832677,
+   0.2879522606902449,
+   0.28795226023652526,
+   0.287952259818992,
+   0.28795225943477465,
+   0.28795225908122984,
+   0.2879522587559235,
+   0.28795225845661393,
+   0.28795225818123693,
+   0.2879522579278918,
+   0.28795225769482796,
+   0.28795225748043385,
+   0.2879522572832252,
+   0.2879522571018355,
+   0.28795225693500615,
+   0.2879522567815786,
+   0.287952256640486,
+   0.287952256510746,
+   0.287952256391454,
+   0.28795225628177734,
+   0.2879522561809494,
+   0.2879522560882641,
+   0.2879522560030715,
+   0.2879522559247733,
+   0.28795225585281886,
+   0.2879522557867008,
+   0.28795225572595234,
+   0.2879522556701437,
+   0.28795225561887944,
+   0.28795225557179516,
+   0.2879522555285559,
+   0.2879522554888529,
+   0.28795225545240216,
+   0.2879522554189424,
+   0.287952255388233,
+   0.2879522553600526,
+   0.2879522553341973,
+   0.28795225531047974,
+   0.28795225528872725,
+   0.28795225526878104,
+   0.28795225525049495,
+   0.28795225523373463,
+   0.28795225521837625,
+   0.2879522552043062,
+   0.28795225519141965,
+   0.28795225517962025,
+   0.28795225516881945,
+   0.2879522551589358,
+   0.2879522551498942,
+   0.2879522551416258,
+   0.28795225513406725,
+   0.2879522551271601,
+   0.28795225512085093,
+   0.2879522551150903,
+   0.2879522551098329,
+   0.28795225510503714,
+   0.2879522551006647,
+   0.28795225509668027,
+   0.28795225509305156,
+   0.28795225508974903,
+   0.28795225508674516,
+   0.28795225508401484,
+   0.28795225508153505,
+   0.2879522550792846,
+   0.2879522550772441,
+   0.28795225507539574,
+   0.2879522550737229,
+   0.2879522550722108,
+   0.2879522550708453,
+   0.287952255069614,
+   0.2879522550685052,
+   0.2879522550675081,
+   0.28795225506661304,
+   0.2879522550658109,
+   0.2879522550650936,
+   0.2879522550644535,
+   0.28795225506388356,
+   0.28795225506337774,
+   0.28795225506293,
+   0.287952255062535,
+   0.2879522550621881,
+   0.2879522550618846,
+   0.2879522550616205,
+   0.2879522550613921,
+   0.2879522550611959,
+   0.287952255061029,
+   0.2879522550608883,
+   0.28795225506077127,
+   0.2879522550606757,
+   0.2879522550605991,
+   0.2879522550605398,
+   0.2879522550604958,
+   0.2879522550604656,
+   0.2879522550604475,
+   0.28795225506044053,
+   0.28795225506044303,
+   0.287952255060454,
+   0.2879522550604725,
+   0.2879522550604976,
+   0.28795225506052835,
+   0.2879522550605641,
+   0.28795225506060407
+  ]
+ }
+}
