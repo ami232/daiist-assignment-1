@@ -1,0 +1,1970 @@
+{
+ "3505": {
+  "weight_variable": "PESO",
+  "published": "2025-05-06",
+  "targets_used": {
+   "sexo_edad": "INE 56934 (20250101)",
+   "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4008,
+  "n_ef": 1902.4,
+  "deff": 2.107,
+  "psoe_recall_share_before": 36.546,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.9069,
+  "psoe_factor_range": [
+   0.5868,
+   1.5131
+  ],
+  "identity_check_psoe": [
+   30.7063,
+   30.7063
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 5.222,
+     "bildu": 0.975,
+     "erc": 2.039,
+     "junts": 1.619,
+     "pnv": 0.93,
+     "pp": 28.771,
+     "psoe": 36.546,
+     "sumar": 11.734,
+     "vox": 12.163
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.331,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.787,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.792,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    },
+    "before": {
+     "hombre:18-24": 4.112,
+     "hombre:25-34": 6.3,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 3.951,
+     "mujer:25-34": 5.988,
+     "mujer:35-44": 8.164,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.786,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.793,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    },
+    "before": {
+     "basico": 42.108,
+     "medio": 30.268,
+     "superior": 27.624
+    },
+    "after": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    }
+   }
+  }
+ },
+ "3510": {
+  "weight_variable": "PESO",
+  "published": "2025-06-06",
+  "targets_used": {
+   "sexo_edad": "INE 56934 (20250101)",
+   "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4018,
+  "n_ef": 2009.6,
+  "deff": 1.999,
+  "psoe_recall_share_before": 37.574,
+  "psoe_recall_share_after": 31.68,
+  "psoe_factor_mean": 0.882,
+  "psoe_factor_range": [
+   0.5621,
+   1.3959
+  ],
+  "identity_check_psoe": [
+   28.3546,
+   28.3546
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.746,
+     "bildu": 0.743,
+     "erc": 1.95,
+     "junts": 1.228,
+     "pnv": 0.868,
+     "pp": 29.823,
+     "psoe": 37.574,
+     "sumar": 12.436,
+     "vox": 10.631
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.06,
+     "psoe": 31.68,
+     "sumar": 12.33,
+     "vox": 12.38
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.787,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.792,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    },
+    "before": {
+     "hombre:18-24": 4.303,
+     "hombre:25-34": 6.11,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 4.084,
+     "mujer:25-34": 5.854,
+     "mujer:35-44": 8.164,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.786,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.793,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    },
+    "before": {
+     "basico": 42.383,
+     "medio": 30.611,
+     "superior": 27.006
+    },
+    "after": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    }
+   }
+  }
+ },
+ "3514": {
+  "weight_variable": "PESO",
+  "published": "2025-06-20",
+  "targets_used": {
+   "sexo_edad": "INE 56934 (20250101)",
+   "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+  },
+  "sweeps": 3,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4013,
+  "n_ef": 1929.7,
+  "deff": 2.08,
+  "psoe_recall_share_before": 40.335,
+  "psoe_recall_share_after": 31.68,
+  "psoe_factor_mean": 0.8288,
+  "psoe_factor_range": [
+   0.5175,
+   1.379
+  ],
+  "identity_check_psoe": [
+   29.2168,
+   29.2168
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 3.899,
+     "bildu": 1.128,
+     "erc": 2.438,
+     "junts": 1.773,
+     "pnv": 1.22,
+     "pp": 25.928,
+     "psoe": 40.335,
+     "sumar": 13.083,
+     "vox": 10.195
+    },
+    "after": {
+     "_otros": 4.579,
+     "bildu": 1.361,
+     "erc": 1.89,
+     "junts": 1.599,
+     "pnv": 1.12,
+     "pp": 33.061,
+     "psoe": 31.68,
+     "sumar": 12.33,
+     "vox": 12.38
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.787,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.792,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    },
+    "before": {
+     "hombre:18-24": 4.303,
+     "hombre:25-34": 6.11,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 3.951,
+     "mujer:25-34": 5.988,
+     "mujer:35-44": 8.164,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.736,
+     "hombre:25-34": 6.901,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.787,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.792,
+     "mujer:18-24": 4.427,
+     "mujer:25-34": 6.636,
+     "mujer:35-44": 8.03,
+     "mujer:45-54": 9.724,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.931
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    },
+    "before": {
+     "basico": 42.543,
+     "medio": 30.636,
+     "superior": 26.822
+    },
+    "after": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    }
+   }
+  }
+ },
+ "3517": {
+  "weight_variable": "PESO",
+  "published": "2025-07-22",
+  "targets_used": {
+   "sexo_edad": "INE 56934 (20250101)",
+   "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4018,
+  "n_ef": 1623.3,
+  "deff": 2.475,
+  "psoe_recall_share_before": 37.647,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.893,
+  "psoe_factor_range": [
+   0.5588,
+   1.363
+  ],
+  "identity_check_psoe": [
+   23.1213,
+   23.1213
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 3.34,
+     "bildu": 1.214,
+     "erc": 1.908,
+     "junts": 1.622,
+     "pnv": 0.74,
+     "pp": 27.176,
+     "psoe": 37.647,
+     "sumar": 13.843,
+     "vox": 12.51
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.33,
+     "vox": 12.382
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.787,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.792,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    },
+    "before": {
+     "hombre:18-24": 4.303,
+     "hombre:25-34": 6.11,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 4.084,
+     "mujer:25-34": 5.697,
+     "mujer:35-44": 8.322,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.738,
+     "hombre:25-34": 6.9,
+     "hombre:35-44": 8.025,
+     "hombre:45-54": 9.786,
+     "hombre:55-64": 8.32,
+     "hombre:65+": 10.793,
+     "mujer:18-24": 4.429,
+     "mujer:25-34": 6.634,
+     "mujer:35-44": 8.029,
+     "mujer:45-54": 9.722,
+     "mujer:55-64": 8.69,
+     "mujer:65+": 13.933
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    },
+    "before": {
+     "basico": 42.398,
+     "medio": 29.984,
+     "superior": 27.618
+    },
+    "after": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    }
+   }
+  }
+ },
+ "3524": {
+  "weight_variable": "PESO",
+  "published": "2025-09-25",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20250701)",
+   "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4122,
+  "n_ef": 1712.8,
+  "deff": 2.407,
+  "psoe_recall_share_before": 39.066,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.8443,
+  "psoe_factor_range": [
+   0.5196,
+   1.3889
+  ],
+  "identity_check_psoe": [
+   28.1001,
+   28.1001
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 3.642,
+     "bildu": 0.983,
+     "erc": 1.907,
+     "junts": 1.683,
+     "pnv": 0.62,
+     "pp": 25.346,
+     "psoe": 39.066,
+     "sumar": 13.924,
+     "vox": 12.829
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.33,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.78,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.928,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.869,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    },
+    "before": {
+     "hombre:18-24": 4.112,
+     "hombre:25-34": 5.865,
+     "hombre:35-44": 8.698,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 4.084,
+     "mujer:25-34": 5.854,
+     "mujer:35-44": 8.164,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.779,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.927,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.87,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.642,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.001
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    },
+    "before": {
+     "basico": 41.834,
+     "medio": 30.736,
+     "superior": 27.43
+    },
+    "after": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    }
+   }
+  }
+ },
+ "3528": {
+  "weight_variable": "PESO_V2",
+  "published": "2025-10-27",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20250701)",
+   "estudios": "INE EPA 1T2025 (microdatos) (20250101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4029,
+  "n_ef": 1833.4,
+  "deff": 2.198,
+  "psoe_recall_share_before": 44.446,
+  "psoe_recall_share_after": 31.68,
+  "psoe_factor_mean": 0.7361,
+  "psoe_factor_range": [
+   0.449,
+   1.2816
+  ],
+  "identity_check_psoe": [
+   28.6838,
+   28.6838
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.143,
+     "bildu": 1.098,
+     "erc": 2.235,
+     "junts": 1.344,
+     "pnv": 0.894,
+     "pp": 21.815,
+     "psoe": 44.446,
+     "sumar": 13.616,
+     "vox": 10.41
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.06,
+     "psoe": 31.68,
+     "sumar": 12.33,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.78,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.928,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.869,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    },
+    "before": {
+     "hombre:18-24": 4.303,
+     "hombre:25-34": 6.11,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 3.951,
+     "mujer:25-34": 5.988,
+     "mujer:35-44": 8.164,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.78,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.927,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.87,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    },
+    "before": {
+     "basico": 42.051,
+     "medio": 30.892,
+     "superior": 27.058
+    },
+    "after": {
+     "basico": 42.365,
+     "medio": 22.369,
+     "superior": 35.266
+    }
+   }
+  }
+ },
+ "3530": {
+  "weight_variable": "PESO",
+  "published": "2025-12-01",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20250701)",
+   "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+  },
+  "sweeps": 3,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4027,
+  "n_ef": 2015.7,
+  "deff": 1.998,
+  "psoe_recall_share_before": 40.305,
+  "psoe_recall_share_after": 31.684,
+  "psoe_factor_mean": 0.829,
+  "psoe_factor_range": [
+   0.5028,
+   1.4236
+  ],
+  "identity_check_psoe": [
+   27.4887,
+   27.4887
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 5.029,
+     "bildu": 1.223,
+     "erc": 1.961,
+     "junts": 1.638,
+     "pnv": 0.853,
+     "pp": 25.571,
+     "psoe": 40.305,
+     "sumar": 13.413,
+     "vox": 10.008
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.359,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.119,
+     "pp": 33.058,
+     "psoe": 31.684,
+     "sumar": 12.331,
+     "vox": 12.379
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.78,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.928,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.869,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    },
+    "before": {
+     "hombre:18-24": 4.303,
+     "hombre:25-34": 6.11,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 3.951,
+     "mujer:25-34": 5.988,
+     "mujer:35-44": 7.978,
+     "mujer:45-54": 10.02,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.777,
+     "hombre:25-34": 6.949,
+     "hombre:35-44": 7.928,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.87,
+     "mujer:18-24": 4.445,
+     "mujer:25-34": 6.644,
+     "mujer:35-44": 7.922,
+     "mujer:45-54": 9.687,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    },
+    "before": {
+     "basico": 41.846,
+     "medio": 31.204,
+     "superior": 26.95
+    },
+    "after": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    }
+   }
+  }
+ },
+ "3536": {
+  "weight_variable": "PESO",
+  "published": "2025-12-17",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20250701)",
+   "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4017,
+  "n_ef": 1813.1,
+  "deff": 2.216,
+  "psoe_recall_share_before": 39.733,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.8418,
+  "psoe_factor_range": [
+   0.49,
+   1.4429
+  ],
+  "identity_check_psoe": [
+   27.7019,
+   27.7019
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 5.168,
+     "bildu": 1.331,
+     "erc": 1.852,
+     "junts": 1.232,
+     "pnv": 1.152,
+     "pp": 24.423,
+     "psoe": 39.733,
+     "sumar": 14.559,
+     "vox": 10.55
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.331,
+     "vox": 12.382
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.78,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.928,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.869,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    },
+    "before": {
+     "hombre:18-24": 4.303,
+     "hombre:25-34": 6.11,
+     "hombre:35-44": 8.263,
+     "hombre:45-54": 9.865,
+     "hombre:55-64": 8.559,
+     "hombre:65+": 11.256,
+     "mujer:18-24": 3.951,
+     "mujer:25-34": 5.697,
+     "mujer:35-44": 8.455,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 8.944,
+     "mujer:65+": 14.765
+    },
+    "after": {
+     "hombre:18-24": 4.779,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.927,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.87,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.001
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    },
+    "before": {
+     "basico": 41.841,
+     "medio": 31.555,
+     "superior": 26.604
+    },
+    "after": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    }
+   }
+  }
+ },
+ "3540": {
+  "weight_variable": "PESO",
+  "published": "2026-01-28",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20250701)",
+   "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+  },
+  "sweeps": 3,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4006,
+  "n_ef": 1853.5,
+  "deff": 2.161,
+  "psoe_recall_share_before": 41.111,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.7982,
+  "psoe_factor_range": [
+   0.5167,
+   1.2672
+  ],
+  "identity_check_psoe": [
+   26.6368,
+   26.6368
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.613,
+     "bildu": 1.397,
+     "erc": 1.99,
+     "junts": 1.612,
+     "pnv": 0.889,
+     "pp": 23.476,
+     "psoe": 41.111,
+     "sumar": 12.739,
+     "vox": 12.173
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.359,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.061,
+     "psoe": 31.679,
+     "sumar": 12.329,
+     "vox": 12.382
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.78,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.928,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.869,
+     "mujer:18-24": 4.446,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.92,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.0
+    },
+    "before": {
+     "hombre:18-24": 4.198,
+     "hombre:25-34": 6.24,
+     "hombre:35-44": 7.704,
+     "hombre:45-54": 10.085,
+     "hombre:55-64": 8.676,
+     "hombre:65+": 11.445,
+     "mujer:18-24": 4.036,
+     "mujer:25-34": 5.932,
+     "mujer:35-44": 7.835,
+     "mujer:45-54": 9.837,
+     "mujer:55-64": 9.058,
+     "mujer:65+": 14.954
+    },
+    "after": {
+     "hombre:18-24": 4.778,
+     "hombre:25-34": 6.948,
+     "hombre:35-44": 7.927,
+     "hombre:45-54": 9.739,
+     "hombre:55-64": 8.338,
+     "hombre:65+": 10.871,
+     "mujer:18-24": 4.444,
+     "mujer:25-34": 6.643,
+     "mujer:35-44": 7.921,
+     "mujer:45-54": 9.686,
+     "mujer:55-64": 8.703,
+     "mujer:65+": 14.002
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    },
+    "before": {
+     "basico": 41.323,
+     "medio": 30.665,
+     "superior": 28.012
+    },
+    "after": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    }
+   }
+  }
+ },
+ "3544": {
+  "weight_variable": "PESO",
+  "published": "2026-03-02",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260101)",
+   "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4027,
+  "n_ef": 2071.1,
+  "deff": 1.944,
+  "psoe_recall_share_before": 39.94,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.8161,
+  "psoe_factor_range": [
+   0.51,
+   1.3072
+  ],
+  "identity_check_psoe": [
+   27.0022,
+   27.0022
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 5.049,
+     "bildu": 1.057,
+     "erc": 2.025,
+     "junts": 1.455,
+     "pnv": 0.985,
+     "pp": 24.992,
+     "psoe": 39.94,
+     "sumar": 13.392,
+     "vox": 11.105
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.331,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.822,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    },
+    "before": {
+     "hombre:18-24": 4.388,
+     "hombre:25-34": 6.05,
+     "hombre:35-44": 7.911,
+     "hombre:45-54": 9.878,
+     "hombre:55-64": 8.676,
+     "hombre:65+": 11.445,
+     "mujer:18-24": 4.165,
+     "mujer:25-34": 5.804,
+     "mujer:35-44": 7.835,
+     "mujer:45-54": 9.837,
+     "mujer:55-64": 9.058,
+     "mujer:65+": 14.954
+    },
+    "after": {
+     "hombre:18-24": 4.821,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.647,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.071
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    },
+    "before": {
+     "basico": 41.104,
+     "medio": 31.006,
+     "superior": 27.889
+    },
+    "after": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    }
+   }
+  }
+ },
+ "3546": {
+  "weight_variable": "PESO",
+  "published": "2026-03-27",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260101)",
+   "estudios": "INE EPA 3T2025 (microdatos) (20250701)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4016,
+  "n_ef": 1917.0,
+  "deff": 2.095,
+  "psoe_recall_share_before": 38.0,
+  "psoe_recall_share_after": 31.68,
+  "psoe_factor_mean": 0.8691,
+  "psoe_factor_range": [
+   0.5435,
+   1.4903
+  ],
+  "identity_check_psoe": [
+   27.857,
+   27.857
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.372,
+     "bildu": 1.225,
+     "erc": 2.657,
+     "junts": 0.926,
+     "pnv": 0.767,
+     "pp": 26.069,
+     "psoe": 38.0,
+     "sumar": 15.062,
+     "vox": 10.923
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.06,
+     "psoe": 31.68,
+     "sumar": 12.33,
+     "vox": 12.38
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.822,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    },
+    "before": {
+     "hombre:18-24": 4.198,
+     "hombre:25-34": 6.24,
+     "hombre:35-44": 7.911,
+     "hombre:45-54": 9.878,
+     "hombre:55-64": 8.676,
+     "hombre:65+": 11.445,
+     "mujer:18-24": 4.165,
+     "mujer:25-34": 5.804,
+     "mujer:35-44": 7.835,
+     "mujer:45-54": 9.837,
+     "mujer:55-64": 9.058,
+     "mujer:65+": 14.954
+    },
+    "after": {
+     "hombre:18-24": 4.821,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    },
+    "before": {
+     "basico": 41.113,
+     "medio": 31.306,
+     "superior": 27.58
+    },
+    "after": {
+     "basico": 41.707,
+     "medio": 22.615,
+     "superior": 35.678
+    }
+   }
+  }
+ },
+ "3557": {
+  "weight_variable": "PESO",
+  "published": "2026-05-07",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260101)",
+   "estudios": "INE EPA 1T2026 (microdatos) (20260101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4020,
+  "n_ef": 1853.7,
+  "deff": 2.169,
+  "psoe_recall_share_before": 44.475,
+  "psoe_recall_share_after": 31.68,
+  "psoe_factor_mean": 0.7423,
+  "psoe_factor_range": [
+   0.4709,
+   1.2553
+  ],
+  "identity_check_psoe": [
+   29.4405,
+   29.4405
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 3.834,
+     "bildu": 1.325,
+     "erc": 2.707,
+     "junts": 1.484,
+     "pnv": 0.937,
+     "pp": 22.694,
+     "psoe": 44.475,
+     "sumar": 12.938,
+     "vox": 9.606
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.06,
+     "psoe": 31.68,
+     "sumar": 12.33,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.822,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    },
+    "before": {
+     "hombre:18-24": 4.198,
+     "hombre:25-34": 6.24,
+     "hombre:35-44": 7.911,
+     "hombre:45-54": 9.878,
+     "hombre:55-64": 8.676,
+     "hombre:65+": 11.445,
+     "mujer:18-24": 4.036,
+     "mujer:25-34": 5.932,
+     "mujer:35-44": 7.835,
+     "mujer:45-54": 9.837,
+     "mujer:55-64": 9.058,
+     "mujer:65+": 14.954
+    },
+    "after": {
+     "hombre:18-24": 4.821,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.117,
+     "medio": 22.805,
+     "superior": 36.078
+    },
+    "before": {
+     "basico": 41.528,
+     "medio": 30.581,
+     "superior": 27.891
+    },
+    "after": {
+     "basico": 41.117,
+     "medio": 22.805,
+     "superior": 36.078
+    }
+   }
+  }
+ },
+ "3562": {
+  "weight_variable": "PESO",
+  "published": "2026-06-26",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260101)",
+   "estudios": "INE EPA 1T2026 (microdatos) (20260101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4015,
+  "n_ef": 1942.5,
+  "deff": 2.067,
+  "psoe_recall_share_before": 42.009,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.7845,
+  "psoe_factor_range": [
+   0.4901,
+   1.2297
+  ],
+  "identity_check_psoe": [
+   30.3477,
+   30.3477
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.36,
+     "bildu": 1.099,
+     "erc": 2.688,
+     "junts": 1.269,
+     "pnv": 0.738,
+     "pp": 24.544,
+     "psoe": 42.009,
+     "sumar": 13.038,
+     "vox": 10.255
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.33,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.822,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    },
+    "before": {
+     "hombre:18-24": 4.388,
+     "hombre:25-34": 5.816,
+     "hombre:35-44": 8.145,
+     "hombre:45-54": 9.878,
+     "hombre:55-64": 8.676,
+     "hombre:65+": 11.445,
+     "mujer:18-24": 4.165,
+     "mujer:25-34": 5.804,
+     "mujer:35-44": 7.835,
+     "mujer:45-54": 9.837,
+     "mujer:55-64": 9.058,
+     "mujer:65+": 14.954
+    },
+    "after": {
+     "hombre:18-24": 4.821,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.117,
+     "medio": 22.805,
+     "superior": 36.078
+    },
+    "before": {
+     "basico": 40.628,
+     "medio": 31.587,
+     "superior": 27.785
+    },
+    "after": {
+     "basico": 41.117,
+     "medio": 22.805,
+     "superior": 36.078
+    }
+   }
+  }
+ },
+ "3567": {
+  "weight_variable": "PESO",
+  "published": "2026-06-26",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260101)",
+   "estudios": "INE EPA 1T2026 (microdatos) (20260101)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4024,
+  "n_ef": 1985.8,
+  "deff": 2.026,
+  "psoe_recall_share_before": 39.62,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.8216,
+  "psoe_factor_range": [
+   0.487,
+   1.2329
+  ],
+  "identity_check_psoe": [
+   26.6071,
+   26.6071
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.088,
+     "bildu": 1.062,
+     "erc": 2.201,
+     "junts": 1.637,
+     "pnv": 0.61,
+     "pp": 27.165,
+     "psoe": 39.62,
+     "sumar": 12.594,
+     "vox": 11.023
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.057,
+     "psoe": 31.679,
+     "sumar": 12.331,
+     "vox": 12.382
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.822,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.648,
+     "mujer:35-44": 7.812,
+     "mujer:45-54": 9.649,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.07
+    },
+    "before": {
+     "hombre:18-24": 4.541,
+     "hombre:25-34": 5.862,
+     "hombre:35-44": 7.503,
+     "hombre:45-54": 9.725,
+     "hombre:55-64": 8.768,
+     "hombre:65+": 12.23,
+     "mujer:18-24": 4.171,
+     "mujer:25-34": 5.444,
+     "mujer:35-44": 7.449,
+     "mujer:45-54": 9.475,
+     "mujer:55-64": 8.998,
+     "mujer:65+": 15.834
+    },
+    "after": {
+     "hombre:18-24": 4.821,
+     "hombre:25-34": 6.99,
+     "hombre:35-44": 7.829,
+     "hombre:45-54": 9.694,
+     "hombre:55-64": 8.356,
+     "hombre:65+": 10.946,
+     "mujer:18-24": 4.474,
+     "mujer:25-34": 6.647,
+     "mujer:35-44": 7.811,
+     "mujer:45-54": 9.648,
+     "mujer:55-64": 8.712,
+     "mujer:65+": 14.072
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.117,
+     "medio": 22.805,
+     "superior": 36.078
+    },
+    "before": {
+     "basico": 40.12,
+     "medio": 30.961,
+     "superior": 28.918
+    },
+    "after": {
+     "basico": 41.117,
+     "medio": 22.805,
+     "superior": 36.078
+    }
+   }
+  }
+ },
+ "3571": {
+  "weight_variable": "PESO",
+  "published": "2026-09-07",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260701)",
+   "estudios": "INE EPA 2T2026 (microdatos) (20260401)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4020,
+  "n_ef": 2056.2,
+  "deff": 1.955,
+  "psoe_recall_share_before": 42.33,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.7663,
+  "psoe_factor_range": [
+   0.4911,
+   1.156
+  ],
+  "identity_check_psoe": [
+   27.0235,
+   27.0235
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.467,
+     "bildu": 0.777,
+     "erc": 2.439,
+     "junts": 0.873,
+     "pnv": 1.627,
+     "pp": 25.182,
+     "psoe": 42.33,
+     "sumar": 10.78,
+     "vox": 11.524
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.33,
+     "vox": 12.381
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.87,
+     "hombre:25-34": 7.038,
+     "hombre:35-44": 7.757,
+     "hombre:45-54": 9.623,
+     "hombre:55-64": 8.381,
+     "hombre:65+": 11.012,
+     "mujer:18-24": 4.502,
+     "mujer:25-34": 6.658,
+     "mujer:35-44": 7.716,
+     "mujer:45-54": 9.586,
+     "mujer:55-64": 8.728,
+     "mujer:65+": 14.128
+    },
+    "before": {
+     "hombre:18-24": 4.472,
+     "hombre:25-34": 6.006,
+     "hombre:35-44": 7.582,
+     "hombre:45-54": 9.871,
+     "hombre:55-64": 8.748,
+     "hombre:65+": 11.652,
+     "mujer:18-24": 4.256,
+     "mujer:25-34": 5.632,
+     "mujer:35-44": 7.67,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 9.123,
+     "mujer:65+": 15.156
+    },
+    "after": {
+     "hombre:18-24": 4.87,
+     "hombre:25-34": 7.038,
+     "hombre:35-44": 7.757,
+     "hombre:45-54": 9.623,
+     "hombre:55-64": 8.381,
+     "hombre:65+": 11.012,
+     "mujer:18-24": 4.502,
+     "mujer:25-34": 6.658,
+     "mujer:35-44": 7.716,
+     "mujer:45-54": 9.586,
+     "mujer:55-64": 8.728,
+     "mujer:65+": 14.128
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.007,
+     "medio": 22.949,
+     "superior": 36.044
+    },
+    "before": {
+     "basico": 40.137,
+     "medio": 31.721,
+     "superior": 28.142
+    },
+    "after": {
+     "basico": 41.007,
+     "medio": 22.949,
+     "superior": 36.044
+    }
+   }
+  }
+ },
+ "3577": {
+  "weight_variable": "PESO",
+  "published": "2026-09-23",
+  "targets_used": {
+   "sexo_edad": "INE 59238 (20260701)",
+   "estudios": "INE EPA 2T2026 (microdatos) (20260401)"
+  },
+  "sweeps": 4,
+  "converged": true,
+  "trimmed": 0,
+  "n": 4042,
+  "n_ef": 2019.2,
+  "deff": 2.002,
+  "psoe_recall_share_before": 40.162,
+  "psoe_recall_share_after": 31.679,
+  "psoe_factor_mean": 0.8012,
+  "psoe_factor_range": [
+   0.4846,
+   1.2834
+  ],
+  "identity_check_psoe": [
+   25.9508,
+   25.9508
+  ],
+  "axes": {
+   "recuerdo": {
+    "target": {
+     "vox": 12.38,
+     "junts": 1.6,
+     "pp": 33.06,
+     "erc": 1.89,
+     "pnv": 1.12,
+     "sumar": 12.33,
+     "psoe": 31.68,
+     "bildu": 1.36,
+     "_otros": 4.58
+    },
+    "before": {
+     "_otros": 4.543,
+     "bildu": 1.385,
+     "erc": 2.308,
+     "junts": 1.207,
+     "pnv": 0.807,
+     "pp": 25.132,
+     "psoe": 40.162,
+     "sumar": 13.752,
+     "vox": 10.704
+    },
+    "after": {
+     "_otros": 4.58,
+     "bildu": 1.36,
+     "erc": 1.89,
+     "junts": 1.6,
+     "pnv": 1.12,
+     "pp": 33.059,
+     "psoe": 31.679,
+     "sumar": 12.331,
+     "vox": 12.382
+    }
+   },
+   "sexo_edad": {
+    "target": {
+     "hombre:18-24": 4.87,
+     "hombre:25-34": 7.038,
+     "hombre:35-44": 7.757,
+     "hombre:45-54": 9.623,
+     "hombre:55-64": 8.381,
+     "hombre:65+": 11.012,
+     "mujer:18-24": 4.502,
+     "mujer:25-34": 6.658,
+     "mujer:35-44": 7.716,
+     "mujer:45-54": 9.586,
+     "mujer:55-64": 8.728,
+     "mujer:65+": 14.128
+    },
+    "before": {
+     "hombre:18-24": 4.472,
+     "hombre:25-34": 6.006,
+     "hombre:35-44": 7.376,
+     "hombre:45-54": 10.077,
+     "hombre:55-64": 8.748,
+     "hombre:65+": 11.652,
+     "mujer:18-24": 4.126,
+     "mujer:25-34": 5.903,
+     "mujer:35-44": 7.528,
+     "mujer:45-54": 9.833,
+     "mujer:55-64": 9.123,
+     "mujer:65+": 15.156
+    },
+    "after": {
+     "hombre:18-24": 4.87,
+     "hombre:25-34": 7.038,
+     "hombre:35-44": 7.757,
+     "hombre:45-54": 9.623,
+     "hombre:55-64": 8.381,
+     "hombre:65+": 11.013,
+     "mujer:18-24": 4.502,
+     "mujer:25-34": 6.658,
+     "mujer:35-44": 7.716,
+     "mujer:45-54": 9.586,
+     "mujer:55-64": 8.728,
+     "mujer:65+": 14.129
+    }
+   },
+   "estudios": {
+    "target": {
+     "basico": 41.007,
+     "medio": 22.949,
+     "superior": 36.044
+    },
+    "before": {
+     "basico": 40.103,
+     "medio": 32.221,
+     "superior": 27.675
+    },
+    "after": {
+     "basico": 41.007,
+     "medio": 22.949,
+     "superior": 36.044
+    }
+   }
+  }
+ }
+}

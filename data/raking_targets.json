@@ -1,0 +1,1103 @@
+{
+ "_what": "Targets of the CIS raking used in the GAD3 observatory / TFG 'Layer 0' (intencion_raking), copied read-only from Observatorio Precision Encuestas: backend/observatorio/config/{tfg-marginales,cis-marginales,tfg-fechas}.json and backend/datos_app/cis.sqlite. Used by data/raking.py.",
+ "recall_2023_official": {
+  "_otros": 4.579999999999998,
+  "bildu": 1.36,
+  "erc": 1.89,
+  "junts": 1.6,
+  "pnv": 1.12,
+  "pp": 33.06,
+  "psoe": 31.68,
+  "sumar": 12.33,
+  "vox": 12.38
+ },
+ "own_party_threshold_pct": 1.0,
+ "education_equivalence": {
+  "sin_estudios": "basico",
+  "primaria": "basico",
+  "secundaria1": "basico",
+  "secundaria2": "medio",
+  "fp": "medio",
+  "superiores": "superior"
+ },
+ "tfg_as_of": {
+  "sexo_edad": {
+   "titulo": "Sexo por banda de edad",
+   "fuente": "INE · Cifras de Población base 2011 (tabla 9663, hasta 2022) y Estadística Continua de Población (desde 2023), población residente por sexo y edad simple",
+   "universo": "Población residente de 18 y más años, total nacional",
+   "tranches": [
+    {
+     "tabla": "INE 9663",
+     "referencia": "20140101",
+     "publicado": "2014-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.3237,
+      "hombre:25-34": 8.1787,
+      "hombre:35-44": 10.5613,
+      "hombre:45-54": 9.2258,
+      "hombre:55-64": 6.8861,
+      "hombre:65+": 9.503,
+      "mujer:18-24": 4.1476,
+      "mujer:25-34": 8.0818,
+      "mujer:35-44": 10.1173,
+      "mujer:45-54": 9.1775,
+      "mujer:55-64": 7.1843,
+      "mujer:65+": 12.6127
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20140701",
+     "publicado": "2015-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.286,
+      "hombre:25-34": 7.9779,
+      "hombre:35-44": 10.5259,
+      "hombre:45-54": 9.288,
+      "hombre:55-64": 6.971,
+      "hombre:65+": 9.6033,
+      "mujer:18-24": 4.1073,
+      "mujer:25-34": 7.9028,
+      "mujer:35-44": 10.1078,
+      "mujer:45-54": 9.2367,
+      "mujer:55-64": 7.2685,
+      "mujer:65+": 12.7248
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20150101",
+     "publicado": "2015-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.2551,
+      "hombre:25-34": 7.7808,
+      "hombre:35-44": 10.4816,
+      "hombre:45-54": 9.3438,
+      "hombre:55-64": 7.0514,
+      "hombre:65+": 9.7086,
+      "mujer:18-24": 4.0768,
+      "mujer:25-34": 7.7305,
+      "mujer:35-44": 10.093,
+      "mujer:45-54": 9.2902,
+      "mujer:55-64": 7.3472,
+      "mujer:65+": 12.8411
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20150701",
+     "publicado": "2016-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.2359,
+      "hombre:25-34": 7.6107,
+      "hombre:35-44": 10.4315,
+      "hombre:45-54": 9.4017,
+      "hombre:55-64": 7.155,
+      "hombre:65+": 9.7693,
+      "mujer:18-24": 4.0539,
+      "mujer:25-34": 7.576,
+      "mujer:35-44": 10.0689,
+      "mujer:45-54": 9.3405,
+      "mujer:55-64": 7.4568,
+      "mujer:65+": 12.8999
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20160101",
+     "publicado": "2016-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.219,
+      "hombre:25-34": 7.4443,
+      "hombre:35-44": 10.3694,
+      "hombre:45-54": 9.4496,
+      "hombre:55-64": 7.2526,
+      "hombre:65+": 9.8463,
+      "mujer:18-24": 4.0361,
+      "mujer:25-34": 7.4261,
+      "mujer:35-44": 10.0381,
+      "mujer:45-54": 9.3831,
+      "mujer:55-64": 7.5583,
+      "mujer:65+": 12.9772
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20160701",
+     "publicado": "2017-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.2063,
+      "hombre:25-34": 7.3093,
+      "hombre:35-44": 10.283,
+      "hombre:45-54": 9.5074,
+      "hombre:55-64": 7.3415,
+      "hombre:65+": 9.9162,
+      "mujer:18-24": 4.0168,
+      "mujer:25-34": 7.2954,
+      "mujer:35-44": 9.9831,
+      "mujer:45-54": 9.4359,
+      "mujer:55-64": 7.6538,
+      "mujer:65+": 13.0513
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20170101",
+     "publicado": "2017-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.1982,
+      "hombre:25-34": 7.1824,
+      "hombre:35-44": 10.1916,
+      "hombre:45-54": 9.5588,
+      "hombre:55-64": 7.4239,
+      "hombre:65+": 9.9864,
+      "mujer:18-24": 4.0073,
+      "mujer:25-34": 7.1759,
+      "mujer:35-44": 9.9251,
+      "mujer:45-54": 9.4825,
+      "mujer:55-64": 7.7427,
+      "mujer:65+": 13.1251
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20170701",
+     "publicado": "2018-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.1999,
+      "hombre:25-34": 7.086,
+      "hombre:35-44": 10.0723,
+      "hombre:45-54": 9.6081,
+      "hombre:55-64": 7.4979,
+      "hombre:65+": 10.0584,
+      "mujer:18-24": 4.0066,
+      "mujer:25-34": 7.0772,
+      "mujer:35-44": 9.8462,
+      "mujer:45-54": 9.5322,
+      "mujer:55-64": 7.8252,
+      "mujer:65+": 13.1901
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20180101",
+     "publicado": "2018-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.2108,
+      "hombre:25-34": 7.0077,
+      "hombre:35-44": 9.9473,
+      "hombre:45-54": 9.6449,
+      "hombre:55-64": 7.5576,
+      "hombre:65+": 10.1289,
+      "mujer:18-24": 4.0173,
+      "mujer:25-34": 6.9997,
+      "mujer:35-44": 9.763,
+      "mujer:45-54": 9.5685,
+      "mujer:55-64": 7.8941,
+      "mujer:65+": 13.2601
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20180701",
+     "publicado": "2019-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.2355,
+      "hombre:25-34": 6.9538,
+      "hombre:35-44": 9.81,
+      "hombre:45-54": 9.6734,
+      "hombre:55-64": 7.6373,
+      "hombre:65+": 10.178,
+      "mujer:18-24": 4.0332,
+      "mujer:25-34": 6.9352,
+      "mujer:35-44": 9.6632,
+      "mujer:45-54": 9.5996,
+      "mujer:55-64": 7.9788,
+      "mujer:65+": 13.3019
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20190101",
+     "publicado": "2019-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.2695,
+      "hombre:25-34": 6.915,
+      "hombre:35-44": 9.6665,
+      "hombre:45-54": 9.6888,
+      "hombre:55-64": 7.7039,
+      "hombre:65+": 10.2349,
+      "mujer:18-24": 4.0573,
+      "mujer:25-34": 6.8847,
+      "mujer:35-44": 9.5586,
+      "mujer:45-54": 9.6171,
+      "mujer:55-64": 8.0495,
+      "mujer:65+": 13.3543
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20190701",
+     "publicado": "2020-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.3085,
+      "hombre:25-34": 6.8838,
+      "hombre:35-44": 9.5135,
+      "hombre:45-54": 9.7017,
+      "hombre:55-64": 7.7978,
+      "hombre:65+": 10.2748,
+      "mujer:18-24": 4.084,
+      "mujer:25-34": 6.8336,
+      "mujer:35-44": 9.4351,
+      "mujer:45-54": 9.6323,
+      "mujer:55-64": 8.1465,
+      "mujer:65+": 13.3884
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20200101",
+     "publicado": "2020-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.3505,
+      "hombre:25-34": 6.8551,
+      "hombre:35-44": 9.354,
+      "hombre:45-54": 9.7045,
+      "hombre:55-64": 7.8831,
+      "hombre:65+": 10.3238,
+      "mujer:18-24": 4.1187,
+      "mujer:25-34": 6.7919,
+      "mujer:35-44": 9.3096,
+      "mujer:45-54": 9.6396,
+      "mujer:55-64": 8.2349,
+      "mujer:65+": 13.4344
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20200701",
+     "publicado": "2021-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.3804,
+      "hombre:25-34": 6.8269,
+      "hombre:35-44": 9.2008,
+      "hombre:45-54": 9.7453,
+      "hombre:55-64": 7.9675,
+      "hombre:65+": 10.3506,
+      "mujer:18-24": 4.1384,
+      "mujer:25-34": 6.745,
+      "mujer:35-44": 9.1839,
+      "mujer:45-54": 9.6796,
+      "mujer:55-64": 8.3244,
+      "mujer:65+": 13.4573
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20210101",
+     "publicado": "2021-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.4009,
+      "hombre:25-34": 6.7873,
+      "hombre:35-44": 9.0371,
+      "hombre:45-54": 9.7816,
+      "hombre:55-64": 8.0526,
+      "hombre:65+": 10.4115,
+      "mujer:18-24": 4.15,
+      "mujer:25-34": 6.6906,
+      "mujer:35-44": 9.0472,
+      "mujer:45-54": 9.7109,
+      "mujer:55-64": 8.41,
+      "mujer:65+": 13.5204
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20210701",
+     "publicado": "2022-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.4306,
+      "hombre:25-34": 6.7403,
+      "hombre:35-44": 8.8507,
+      "hombre:45-54": 9.814,
+      "hombre:55-64": 8.1375,
+      "hombre:65+": 10.4931,
+      "mujer:18-24": 4.1636,
+      "mujer:25-34": 6.626,
+      "mujer:35-44": 8.8863,
+      "mujer:45-54": 9.7483,
+      "mujer:55-64": 8.4929,
+      "mujer:65+": 13.6167
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20220101",
+     "publicado": "2022-07-01",
+     "objetivo": {
+      "hombre:18-24": 4.4732,
+      "hombre:25-34": 6.7166,
+      "hombre:35-44": 8.6685,
+      "hombre:45-54": 9.8345,
+      "hombre:55-64": 8.206,
+      "hombre:65+": 10.559,
+      "mujer:18-24": 4.1975,
+      "mujer:25-34": 6.5879,
+      "mujer:35-44": 8.7329,
+      "mujer:45-54": 9.7771,
+      "mujer:55-64": 8.5618,
+      "mujer:65+": 13.685
+     }
+    },
+    {
+     "tabla": "INE 9663",
+     "referencia": "20220701",
+     "publicado": "2023-01-01",
+     "objetivo": {
+      "hombre:18-24": 4.5274,
+      "hombre:25-34": 6.7191,
+      "hombre:35-44": 8.4934,
+      "hombre:45-54": 9.8218,
+      "hombre:55-64": 8.2464,
+      "hombre:65+": 10.615,
+      "mujer:18-24": 4.2444,
+      "mujer:25-34": 6.5908,
+      "mujer:35-44": 8.6011,
+      "mujer:45-54": 9.786,
+      "mujer:55-64": 8.6121,
+      "mujer:65+": 13.7425
+     }
+    },
+    {
+     "tabla": "INE 56934",
+     "referencia": "20230101",
+     "publicado": "2023-03-01",
+     "objetivo": {
+      "hombre:18-24": 4.5412,
+      "hombre:25-34": 6.7959,
+      "hombre:35-44": 8.5335,
+      "hombre:45-54": 9.8688,
+      "hombre:55-64": 8.2385,
+      "hombre:65+": 10.532,
+      "mujer:18-24": 4.2693,
+      "mujer:25-34": 6.634,
+      "mujer:35-44": 8.5257,
+      "mujer:45-54": 9.7664,
+      "mujer:55-64": 8.6116,
+      "mujer:65+": 13.6831
+     }
+    },
+    {
+     "tabla": "INE 56934",
+     "referencia": "20230701",
+     "publicado": "2023-09-01",
+     "objetivo": {
+      "hombre:18-24": 4.5792,
+      "hombre:25-34": 6.8105,
+      "hombre:35-44": 8.3824,
+      "hombre:45-54": 9.8659,
+      "hombre:55-64": 8.2733,
+      "hombre:65+": 10.605,
+      "mujer:18-24": 4.3067,
+      "mujer:25-34": 6.6295,
+      "mujer:35-44": 8.3879,
+      "mujer:45-54": 9.7714,
+      "mujer:55-64": 8.6406,
+      "mujer:65+": 13.7476
+     }
+    },
+    {
+     "tabla": "INE 56934",
+     "referencia": "20240101",
+     "publicado": "2024-03-01",
+     "objetivo": {
+      "hombre:18-24": 4.6368,
+      "hombre:25-34": 6.8268,
+      "hombre:35-44": 8.2523,
+      "hombre:45-54": 9.8564,
+      "hombre:55-64": 8.2866,
+      "hombre:65+": 10.6578,
+      "mujer:18-24": 4.3615,
+      "mujer:25-34": 6.6283,
+      "mujer:35-44": 8.2691,
+      "mujer:45-54": 9.7679,
+      "mujer:55-64": 8.657,
+      "mujer:65+": 13.7996
+     }
+    },
+    {
+     "tabla": "INE 56934",
+     "referencia": "20240701",
+     "publicado": "2024-09-01",
+     "objetivo": {
+      "hombre:18-24": 4.6777,
+      "hombre:25-34": 6.8561,
+      "hombre:35-44": 8.1335,
+      "hombre:45-54": 9.8333,
+      "hombre:55-64": 8.3125,
+      "hombre:65+": 10.7419,
+      "mujer:18-24": 4.3859,
+      "mujer:25-34": 6.6227,
+      "mujer:35-44": 8.1395,
+      "mujer:45-54": 9.7523,
+      "mujer:55-64": 8.6752,
+      "mujer:65+": 13.8694
+     }
+    },
+    {
+     "tabla": "INE 56934",
+     "referencia": "20250101",
+     "publicado": "2025-03-01",
+     "objetivo": {
+      "hombre:18-24": 4.7383,
+      "hombre:25-34": 6.9,
+      "hombre:35-44": 8.0252,
+      "hombre:45-54": 9.7865,
+      "hombre:55-64": 8.3203,
+      "hombre:65+": 10.7924,
+      "mujer:18-24": 4.4291,
+      "mujer:25-34": 6.6342,
+      "mujer:35-44": 8.0288,
+      "mujer:45-54": 9.7224,
+      "mujer:55-64": 8.6902,
+      "mujer:65+": 13.9325
+     }
+    },
+    {
+     "tabla": "INE 59238",
+     "referencia": "20250701",
+     "publicado": "2025-09-01",
+     "objetivo": {
+      "hombre:18-24": 4.7797,
+      "hombre:25-34": 6.9484,
+      "hombre:35-44": 7.9275,
+      "hombre:45-54": 9.7391,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.8694,
+      "mujer:18-24": 4.4462,
+      "mujer:25-34": 6.6428,
+      "mujer:35-44": 7.9204,
+      "mujer:45-54": 9.6863,
+      "mujer:55-64": 8.7026,
+      "mujer:65+": 13.9995
+     }
+    },
+    {
+     "tabla": "INE 59238",
+     "referencia": "20260101",
+     "publicado": "2026-03-01",
+     "objetivo": {
+      "hombre:18-24": 4.8215,
+      "hombre:25-34": 6.9899,
+      "hombre:35-44": 7.8289,
+      "hombre:45-54": 9.6937,
+      "hombre:55-64": 8.356,
+      "hombre:65+": 10.9455,
+      "mujer:18-24": 4.4741,
+      "mujer:25-34": 6.6476,
+      "mujer:35-44": 7.8117,
+      "mujer:45-54": 9.6488,
+      "mujer:55-64": 8.7123,
+      "mujer:65+": 14.0699
+     }
+    },
+    {
+     "tabla": "INE 59238",
+     "referencia": "20260701",
+     "publicado": "2026-09-01",
+     "objetivo": {
+      "hombre:18-24": 4.8704,
+      "hombre:25-34": 7.0382,
+      "hombre:35-44": 7.7569,
+      "hombre:45-54": 9.6226,
+      "hombre:55-64": 8.3808,
+      "hombre:65+": 11.0121,
+      "mujer:18-24": 4.5022,
+      "mujer:25-34": 6.6584,
+      "mujer:35-44": 7.7163,
+      "mujer:45-54": 9.5864,
+      "mujer:55-64": 8.7282,
+      "mujer:65+": 14.1276
+     }
+    }
+   ]
+  },
+  "estudios": {
+   "titulo": "Nivel de estudios",
+   "fuente": "INE · EPA, microdatos trimestrales con el factor de elevación publicado; nivel de formación alcanzado (CNED-2014)",
+   "universo": "Población de 20 y más años, total nacional, ambos sexos",
+   "tranches": [
+    {
+     "tabla": "INE EPA 1T2014 (microdatos)",
+     "referencia": "20140101",
+     "publicado": "2014-05-01",
+     "objetivo": {
+      "basico": 51.9963,
+      "medio": 19.8216,
+      "superior": 28.1821
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2014 (microdatos)",
+     "referencia": "20140701",
+     "publicado": "2014-11-01",
+     "objetivo": {
+      "basico": 51.4672,
+      "medio": 19.8529,
+      "superior": 28.68
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2015 (microdatos)",
+     "referencia": "20150101",
+     "publicado": "2015-05-01",
+     "objetivo": {
+      "basico": 51.18,
+      "medio": 20.2676,
+      "superior": 28.5525
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2015 (microdatos)",
+     "referencia": "20150701",
+     "publicado": "2015-11-01",
+     "objetivo": {
+      "basico": 50.7678,
+      "medio": 20.2831,
+      "superior": 28.9491
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2016 (microdatos)",
+     "referencia": "20160101",
+     "publicado": "2016-05-01",
+     "objetivo": {
+      "basico": 50.3558,
+      "medio": 20.5496,
+      "superior": 29.0946
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2016 (microdatos)",
+     "referencia": "20160701",
+     "publicado": "2016-11-01",
+     "objetivo": {
+      "basico": 49.7763,
+      "medio": 20.5308,
+      "superior": 29.6928
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2017 (microdatos)",
+     "referencia": "20170101",
+     "publicado": "2017-05-01",
+     "objetivo": {
+      "basico": 49.5826,
+      "medio": 20.9134,
+      "superior": 29.504
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2017 (microdatos)",
+     "referencia": "20170701",
+     "publicado": "2017-11-01",
+     "objetivo": {
+      "basico": 49.0033,
+      "medio": 20.699,
+      "superior": 30.2978
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2018 (microdatos)",
+     "referencia": "20180101",
+     "publicado": "2018-05-01",
+     "objetivo": {
+      "basico": 48.8037,
+      "medio": 21.1189,
+      "superior": 30.0774
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2018 (microdatos)",
+     "referencia": "20180701",
+     "publicado": "2018-11-01",
+     "objetivo": {
+      "basico": 47.9874,
+      "medio": 21.0159,
+      "superior": 30.9967
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2019 (microdatos)",
+     "referencia": "20190101",
+     "publicado": "2019-05-01",
+     "objetivo": {
+      "basico": 47.2998,
+      "medio": 21.3059,
+      "superior": 31.3944
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2019 (microdatos)",
+     "referencia": "20190701",
+     "publicado": "2019-11-01",
+     "objetivo": {
+      "basico": 46.844,
+      "medio": 21.0737,
+      "superior": 32.0823
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2020 (microdatos)",
+     "referencia": "20200101",
+     "publicado": "2020-05-01",
+     "objetivo": {
+      "basico": 46.2204,
+      "medio": 21.4762,
+      "superior": 32.3034
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2020 (microdatos)",
+     "referencia": "20200701",
+     "publicado": "2020-11-01",
+     "objetivo": {
+      "basico": 44.9599,
+      "medio": 21.8381,
+      "superior": 33.2021
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2021 (microdatos)",
+     "referencia": "20210101",
+     "publicado": "2021-05-01",
+     "objetivo": {
+      "basico": 44.2002,
+      "medio": 22.0136,
+      "superior": 33.7862
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2021 (microdatos)",
+     "referencia": "20210701",
+     "publicado": "2021-11-01",
+     "objetivo": {
+      "basico": 43.8404,
+      "medio": 21.98,
+      "superior": 34.1796
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2022 (microdatos)",
+     "referencia": "20220101",
+     "publicado": "2022-05-01",
+     "objetivo": {
+      "basico": 43.9286,
+      "medio": 22.1555,
+      "superior": 33.9159
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2022 (microdatos)",
+     "referencia": "20220701",
+     "publicado": "2022-11-01",
+     "objetivo": {
+      "basico": 43.3194,
+      "medio": 21.8295,
+      "superior": 34.8511
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2023 (microdatos)",
+     "referencia": "20230101",
+     "publicado": "2023-05-01",
+     "objetivo": {
+      "basico": 43.5866,
+      "medio": 22.122,
+      "superior": 34.2913
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2024 (microdatos)",
+     "referencia": "20240101",
+     "publicado": "2024-05-01",
+     "objetivo": {
+      "basico": 43.0157,
+      "medio": 22.2006,
+      "superior": 34.7837
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2024 (microdatos)",
+     "referencia": "20240701",
+     "publicado": "2024-11-01",
+     "objetivo": {
+      "basico": 42.5145,
+      "medio": 22.124,
+      "superior": 35.3614
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2025 (microdatos)",
+     "referencia": "20250101",
+     "publicado": "2025-05-01",
+     "objetivo": {
+      "basico": 42.3649,
+      "medio": 22.3693,
+      "superior": 35.2659
+     }
+    },
+    {
+     "tabla": "INE EPA 3T2025 (microdatos)",
+     "referencia": "20250701",
+     "publicado": "2025-11-01",
+     "objetivo": {
+      "basico": 41.7074,
+      "medio": 22.615,
+      "superior": 35.6776
+     }
+    },
+    {
+     "tabla": "INE EPA 1T2026 (microdatos)",
+     "referencia": "20260101",
+     "publicado": "2026-05-01",
+     "objetivo": {
+      "basico": 41.1167,
+      "medio": 22.8051,
+      "superior": 36.0781
+     }
+    },
+    {
+     "tabla": "INE EPA 2T2026 (microdatos)",
+     "referencia": "20260401",
+     "publicado": "2026-08-01",
+     "objetivo": {
+      "basico": 41.0069,
+      "medio": 22.949,
+      "superior": 36.0441
+     }
+    }
+   ]
+  }
+ },
+ "console": {
+  "sexo_edad": {
+   "tranches": [
+    {
+     "desde": "2023-01",
+     "tabla": "INE 56934",
+     "referencia": "20231001",
+     "objetivo": {
+      "hombre:18-24": 4.6054,
+      "hombre:25-34": 6.8172,
+      "hombre:35-44": 8.3165,
+      "hombre:45-54": 9.8602,
+      "hombre:55-64": 8.2934,
+      "hombre:65+": 10.6296,
+      "mujer:18-24": 4.3285,
+      "mujer:25-34": 6.6242,
+      "mujer:35-44": 8.3266,
+      "mujer:45-54": 9.7679,
+      "mujer:55-64": 8.6612,
+      "mujer:65+": 13.7692
+     }
+    },
+    {
+     "desde": "2024-07",
+     "tabla": "INE 56934",
+     "referencia": "20240701",
+     "objetivo": {
+      "hombre:18-24": 4.6777,
+      "hombre:25-34": 6.8561,
+      "hombre:35-44": 8.1335,
+      "hombre:45-54": 9.8333,
+      "hombre:55-64": 8.3125,
+      "hombre:65+": 10.7419,
+      "mujer:18-24": 4.3859,
+      "mujer:25-34": 6.6227,
+      "mujer:35-44": 8.1395,
+      "mujer:45-54": 9.7523,
+      "mujer:55-64": 8.6752,
+      "mujer:65+": 13.8694
+     }
+    },
+    {
+     "desde": "2025-07",
+     "tabla": "INE 59238",
+     "referencia": "20250701",
+     "objetivo": {
+      "hombre:18-24": 4.7797,
+      "hombre:25-34": 6.9484,
+      "hombre:35-44": 7.9275,
+      "hombre:45-54": 9.7391,
+      "hombre:55-64": 8.338,
+      "hombre:65+": 10.8694,
+      "mujer:18-24": 4.4462,
+      "mujer:25-34": 6.6428,
+      "mujer:35-44": 7.9204,
+      "mujer:45-54": 9.6863,
+      "mujer:55-64": 8.7026,
+      "mujer:65+": 13.9995
+     }
+    },
+    {
+     "desde": "2026-07",
+     "tabla": "INE 59238",
+     "referencia": "20260701",
+     "objetivo": {
+      "hombre:18-24": 4.8704,
+      "hombre:25-34": 7.0382,
+      "hombre:35-44": 7.7569,
+      "hombre:45-54": 9.6226,
+      "hombre:55-64": 8.3808,
+      "hombre:65+": 11.0121,
+      "mujer:18-24": 4.5022,
+      "mujer:25-34": 6.6584,
+      "mujer:35-44": 7.7163,
+      "mujer:45-54": 9.5864,
+      "mujer:55-64": 8.7282,
+      "mujer:65+": 14.1276
+     }
+    }
+   ]
+  },
+  "estudios": {
+   "tranches": [
+    {
+     "desde": "2023-01",
+     "tabla": "INE 65069",
+     "referencia": "20231001",
+     "objetivo": {
+      "basico": 43.2522,
+      "medio": 21.8582,
+      "superior": 34.8896
+     }
+    },
+    {
+     "desde": "2024-07",
+     "tabla": "INE 65069",
+     "referencia": "20240701",
+     "objetivo": {
+      "basico": 42.5149,
+      "medio": 22.124,
+      "superior": 35.3611
+     }
+    },
+    {
+     "desde": "2025-07",
+     "tabla": "INE 65069",
+     "referencia": "20250701",
+     "objetivo": {
+      "basico": 41.7071,
+      "medio": 22.6155,
+      "superior": 35.6774
+     }
+    },
+    {
+     "desde": "2026-04",
+     "tabla": "INE 65069",
+     "referencia": "20260401",
+     "objetivo": {
+      "basico": 41.0068,
+      "medio": 22.9493,
+      "superior": 36.0438
+     }
+    }
+   ]
+  }
+ },
+ "studies": {
+  "3505": {
+   "month": "2025-04",
+   "published": "2025-05-06",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 30.70631226281453,
+    "intencion_raking_pp": 29.44322901073902,
+    "n_ef": 1896.4,
+    "iterations": 4
+   }
+  },
+  "3510": {
+   "month": "2025-05",
+   "published": "2025-06-06",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 28.354584643184037,
+    "intencion_raking_pp": 32.0669762835954,
+    "n_ef": 2000.9,
+    "iterations": 4
+   }
+  },
+  "3514": {
+   "month": "2025-06",
+   "published": "2025-06-20",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 29.21680483789464,
+    "intencion_raking_pp": 32.882997041844604,
+    "n_ef": 1919.1,
+    "iterations": 3
+   }
+  },
+  "3517": {
+   "month": "2025-07",
+   "published": "2025-07-22",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 23.12130083559142,
+    "intencion_raking_pp": 31.770625928562133,
+    "n_ef": 1660.6,
+    "iterations": 4
+   }
+  },
+  "3524": {
+   "month": "2025-09",
+   "published": "2025-09-25",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 28.100094784465373,
+    "intencion_raking_pp": 28.78933168338599,
+    "n_ef": 1751.6,
+    "iterations": 4
+   }
+  },
+  "3528": {
+   "month": "2025-10",
+   "published": "2025-10-27",
+   "weight_variable": "PESO_V2",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 28.683751878987547,
+    "intencion_raking_pp": 25.33715586832186,
+    "n_ef": 1868.9,
+    "iterations": 3
+   }
+  },
+  "3530": {
+   "month": "2025-11",
+   "published": "2025-12-01",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 27.488727820786757,
+    "intencion_raking_pp": 26.505828209821022,
+    "n_ef": 2015.7,
+    "iterations": 3
+   }
+  },
+  "3536": {
+   "month": "2025-12",
+   "published": "2025-12-17",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 27.701930525815126,
+    "intencion_raking_pp": 27.641554470476887,
+    "n_ef": 1813.1,
+    "iterations": 4
+   }
+  },
+  "3540": {
+   "month": "2026-01",
+   "published": "2026-01-28",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 26.63676711547551,
+    "intencion_raking_pp": 29.182220392127075,
+    "n_ef": 1853.5,
+    "iterations": 3
+   }
+  },
+  "3544": {
+   "month": "2026-02",
+   "published": "2026-03-02",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 27.00224792036269,
+    "intencion_raking_pp": 27.801453720079955,
+    "n_ef": 2071.4,
+    "iterations": 4
+   }
+  },
+  "3546": {
+   "month": "2026-03",
+   "published": "2026-03-27",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 27.856953558723568,
+    "intencion_raking_pp": 27.52700383779646,
+    "n_ef": 1916.1,
+    "iterations": 4
+   }
+  },
+  "3557": {
+   "month": "2026-04",
+   "published": "2026-05-07",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 29.440475283466682,
+    "intencion_raking_pp": 29.556961858107517,
+    "n_ef": 1860.0,
+    "iterations": 4
+   }
+  },
+  "3562": {
+   "month": "2026-05",
+   "published": "2026-06-26",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 30.34772971038179,
+    "intencion_raking_pp": 29.69990894786607,
+    "n_ef": 1945.4,
+    "iterations": 4
+   }
+  },
+  "3567": {
+   "month": "2026-06",
+   "published": "2026-06-26",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 26.607087447028754,
+    "intencion_raking_pp": 30.919650601598732,
+    "n_ef": 1988.3,
+    "iterations": 4
+   }
+  },
+  "3571": {
+   "month": "2026-07",
+   "published": "2026-09-07",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 27.023474001551964,
+    "intencion_raking_pp": 29.47291394221072,
+    "n_ef": 2056.2,
+    "iterations": 4
+   }
+  },
+  "3577": {
+   "month": "2026-09",
+   "published": "2026-09-23",
+   "weight_variable": "PESO",
+   "recall_anchor": 2023,
+   "observatory_check": {
+    "intencion_raking_psoe": 25.950829670316548,
+    "intencion_raking_pp": 29.986051838226622,
+    "n_ef": 2019.2,
+    "iterations": 4
+   }
+  }
+ }
+}
